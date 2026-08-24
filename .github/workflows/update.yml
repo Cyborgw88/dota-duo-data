@@ -1,0 +1,39 @@
+name: Update Dota duo data
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub cron uses UTC. 01:45 UTC = 08:45 Krasnoyarsk (UTC+7).
+    - cron: '45 1 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dota-data-update
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Fetch OpenDota and build latest.json
+        env:
+          OPENDOTA_API_KEY: ${{ secrets.OPENDOTA_API_KEY }}
+        run: node scripts/update.mjs
+      - name: Commit data if changed
+        run: |
+          git config user.name "dota-duo-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/latest.json
+          if git diff --cached --quiet; then
+            echo "No data changes"
+            exit 0
+          fi
+          git commit -m "data: update joint ranked matches"
+          git push
