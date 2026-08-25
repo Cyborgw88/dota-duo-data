@@ -2,9 +2,14 @@ name: Update Dota duo data
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update.mjs'
+      - '.github/workflows/update.yml'
   schedule:
-    # GitHub cron uses UTC. 01:45 UTC = 08:45 Krasnoyarsk (UTC+7).
-    - cron: '45 1 * * *'
+    # Refresh every hour. GitHub scheduled jobs may start a little late.
+    - cron: '17 * * * *'
 
 permissions:
   contents: write
