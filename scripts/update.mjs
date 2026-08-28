@@ -5,33 +5,28 @@ const B = 160810596;
 const BASE = 'https://api.opendota.com/api';
 const DAYS = 30;
 const LIMIT = 30;
-const PARSE_REQUEST_LIMIT = 5;
-const PARSE_WAIT_MS = 20000;
+const PARSE_LIMIT = 5;
+const WAIT_MS = 20000;
 
 const isRadiant = slot => Number(slot) < 128;
 const won = (p, radiantWin) => isRadiant(p.player_slot) ? !!radiantWin : !radiantWin;
 const laneName = role => ({0:'unknown',1:'safe',2:'mid',3:'off',4:'jungle'})[role ?? 0] ?? 'unknown';
 
-async function api(path, { method = 'GET' } = {}) {
+async function get(path) {
   const url = new URL(BASE + path);
   if (process.env.OPENDOTA_API_KEY) url.searchParams.set('api_key', process.env.OPENDOTA_API_KEY);
-  const r = await fetch(url, { method, headers: {'user-agent':'dota-duo-data/2.0'} });
-  const text = await r.text();
-  let body = null;
-  try { body = text ? JSON.parse(text) : null; } catch { body = text; }
-  if (!r.ok) throw new Error(`OpenDota ${method} ${path} ${r.status}: ${String(text).slice(0,300)}`);
-  return body;
+  const r = await fetch(url, { headers: {'user-agent':'dota-duo-data/1.1'} });
+  if (!r.ok) throw new Error(`OpenDota ${r.status}: ${(await r.text()).slice(0,300)}`);
+  return r.json();
 }
 
-const get = path => api(path);
-
-async function requestParse(matchId) {
-  try {
-    const body = await api(`/request/${matchId}`, { method: 'POST' });
-    return { requested: true, ok: true, response: body };
-  } catch (err) {
-    return { requested: true, ok: false, error: String(err?.message || err) };
-  }
+async function post(path) {
+  const url = new URL(BASE + path);
+  if (process.env.OPENDOTA_API_KEY) url.searchParams.set('api_key', process.env.OPENDOTA_API_KEY);
+  const r = await fetch(url, { method:'POST', headers:{'user-agent':'dota-duo-data/1.1'} });
+  let body = null;
+  try { body = await r.json(); } catch { body = await r.text(); }
+  return { ok:r.ok, status:r.status, response:body };
 }
 
 function inferPositions(players) {
@@ -67,42 +62,31 @@ const heroesRaw = await get('/constants/heroes');
 const heroes = new Map(Object.entries(heroesRaw).map(([id,h])=>[Number(id),h.localized_name||h.name||id]));
 const list = await get(`/players/${A}/matches?included_account_id=${B}&lobby_type=7&date=${DAYS}&limit=${LIMIT}`);
 
-async function fetchDetails(items) {
-  const details=[];
-  for(let i=0;i<items.length;i+=5){
-    details.push(...await Promise.all(items.slice(i,i+5).map(m=>get(`/matches/${m.match_id}`))));
-    if(i+5<items.length) await new Promise(r=>setTimeout(r,500));
-  }
-  return details;
+let details=[];
+for(let i=0;i<list.length;i+=5){
+  details.push(...await Promise.all(list.slice(i,i+5).map(m=>get(`/matches/${m.match_id}`))));
+  if(i+5<list.length) await new Promise(r=>setTimeout(r,500));
 }
 
-let details = await fetchDetails(list);
+const duoDetails = details.filter(m => {
+  const ps = Array.isArray(m.players) ? m.players : [];
+  const a = ps.find(p=>Number(p.account_id)===A);
+  const b = ps.find(p=>Number(p.account_id)===B);
+  return a && b && isRadiant(a.player_slot) === isRadiant(b.player_slot);
+}).sort((x,y)=>y.start_time-x.start_time);
 
-// OpenDota does not automatically parse every public match. For the newest duo games,
-// explicitly enqueue replay parsing. The next hourly run will normally see the enriched data.
-const parseCandidates = details
-  .filter(m => !m.version)
-  .sort((x,y) => (y.start_time||0) - (x.start_time||0))
-  .slice(0, PARSE_REQUEST_LIMIT);
-
-const parseRequests = {};
-for (const m of parseCandidates) {
-  parseRequests[m.match_id] = await requestParse(m.match_id);
-  await new Promise(r=>setTimeout(r,750));
+const parseRequests = new Map();
+for (const m of duoDetails.filter(m=>!m.version).slice(0, PARSE_LIMIT)) {
+  parseRequests.set(m.match_id, await post(`/request/${m.match_id}`));
 }
 
-// Give quick parses a chance to finish, then refresh just the requested matches.
-if (parseCandidates.length) {
-  await new Promise(r=>setTimeout(r,PARSE_WAIT_MS));
-  for (const candidate of parseCandidates) {
-    try {
-      const refreshed = await get(`/matches/${candidate.match_id}`);
-      const idx = details.findIndex(m=>m.match_id===candidate.match_id);
-      if (idx >= 0) details[idx] = refreshed;
-    } catch (err) {
-      parseRequests[candidate.match_id].refresh_error = String(err?.message || err);
-    }
+if (parseRequests.size) {
+  await new Promise(r=>setTimeout(r, WAIT_MS));
+  const refreshed = new Map();
+  for (const m of duoDetails.slice(0, Math.max(PARSE_LIMIT, 10))) {
+    refreshed.set(m.match_id, await get(`/matches/${m.match_id}`));
   }
+  details = details.map(m => refreshed.get(m.match_id) || m);
 }
 
 function slim(p, role, radiantWin){
@@ -117,26 +101,43 @@ function slim(p, role, radiantWin){
   };
 }
 
-const matches=details.map(m=>{
+const finalDuoDetails = details.filter(m=>{
+  const ps=Array.isArray(m.players)?m.players:[];
+  const a=ps.find(p=>Number(p.account_id)===A), b=ps.find(p=>Number(p.account_id)===B);
+  return a&&b&&isRadiant(a.player_slot)===isRadiant(b.player_slot);
+}).sort((x,y)=>y.start_time-x.start_time);
+
+const matches=finalDuoDetails.map(m=>{
   const ps=Array.isArray(m.players)?m.players:[]; const roles=inferPositions(ps);
   const a=ps.find(p=>Number(p.account_id)===A), b=ps.find(p=>Number(p.account_id)===B);
   return {
     match_id:m.match_id,start_time:m.start_time,start_iso:m.start_time?new Date(m.start_time*1000).toISOString():null,
     duration_sec:m.duration,duration_min:m.duration?Math.round(m.duration/6)/10:null,lobby_type:m.lobby_type,game_mode:m.game_mode,
     radiant_win:m.radiant_win,parsed:!!m.version,parse_version:m.version??null,
-    parse_request:parseRequests[m.match_id]??null,
-    same_team:a&&b?isRadiant(a.player_slot)===isRadiant(b.player_slot):null,
-    cyborg:a?slim(a,roles.get(A),m.radiant_win):null,goddess:b?slim(b,roles.get(B),m.radiant_win):null,
+    parse_request:parseRequests.has(m.match_id)?{requested:true,...parseRequests.get(m.match_id)}:{requested:false},
+    same_team:true,
+    cyborg:slim(a,roles.get(A),m.radiant_win),goddess:slim(b,roles.get(B),m.radiant_win),
     objectives:Array.isArray(m.objectives)?m.objectives:[],teamfights:Array.isArray(m.teamfights)?m.teamfights:[]
   };
-}).filter(m=>m.cyborg&&m.goddess&&m.same_team).sort((x,y)=>y.start_time-x.start_time);
+});
 
 await fs.mkdir('data',{recursive:true});
+await fs.mkdir('data/matches',{recursive:true});
+
+// Keep the compact rolling file for daily reports.
 await fs.writeFile('data/latest.json',JSON.stringify({
   generated_at:new Date().toISOString(),source:'OpenDota',players:{cyborg:A,goddess:B},
-  filters:{ranked_only:true,days:DAYS,limit:LIMIT},count:matches.length,
-  parsing:{requested_match_ids:Object.keys(parseRequests).map(Number),request_limit:PARSE_REQUEST_LIMIT,wait_ms:PARSE_WAIT_MS},
+  filters:{ranked_only:true,days:DAYS,limit:LIMIT},
+  count:matches.length,
+  parsing:{requested_match_ids:[...parseRequests.keys()],request_limit:PARSE_LIMIT,wait_ms:WAIT_MS},
   note:'position_guess is heuristic; use position_confidence. Recent unparsed matches are explicitly submitted to OpenDota /request/{match_id}.',
   matches
 },null,2)+'\n');
-console.log(`Saved ${matches.length} joint ranked matches; requested parsing for ${Object.keys(parseRequests).length}`);
+
+// Store full OpenDota payload for parsed duo matches so detailed reviews can use timelines,
+// kills_log, obs_log, purchase_log, runes_log, lane data, teamfights and objectives without truncating latest.json.
+for (const m of finalDuoDetails.filter(m=>m.version)) {
+  await fs.writeFile(`data/matches/${m.match_id}.json`, JSON.stringify(m,null,2)+'\n');
+}
+
+console.log(`Saved ${matches.length} joint ranked matches; full JSON for ${finalDuoDetails.filter(m=>m.version).length} parsed matches`);
