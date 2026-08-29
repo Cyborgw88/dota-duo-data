@@ -15,7 +15,7 @@ const laneName = role => ({0:'unknown',1:'safe',2:'mid',3:'off',4:'jungle'})[rol
 async function get(path) {
   const url = new URL(BASE + path);
   if (process.env.OPENDOTA_API_KEY) url.searchParams.set('api_key', process.env.OPENDOTA_API_KEY);
-  const r = await fetch(url, { headers: {'user-agent':'dota-duo-data/1.1'} });
+  const r = await fetch(url, { headers: {'user-agent':'dota-duo-data/1.2'} });
   if (!r.ok) throw new Error(`OpenDota ${r.status}: ${(await r.text()).slice(0,300)}`);
   return r.json();
 }
@@ -23,7 +23,7 @@ async function get(path) {
 async function post(path) {
   const url = new URL(BASE + path);
   if (process.env.OPENDOTA_API_KEY) url.searchParams.set('api_key', process.env.OPENDOTA_API_KEY);
-  const r = await fetch(url, { method:'POST', headers:{'user-agent':'dota-duo-data/1.1'} });
+  const r = await fetch(url, { method:'POST', headers:{'user-agent':'dota-duo-data/1.2'} });
   let body = null;
   try { body = await r.json(); } catch { body = await r.text(); }
   return { ok:r.ok, status:r.status, response:body };
@@ -92,6 +92,7 @@ if (parseRequests.size) {
 function slim(p, role, radiantWin){
   return {
     account_id:p.account_id, hero_id:p.hero_id, hero:heroes.get(Number(p.hero_id))||String(p.hero_id),
+    player_slot:p.player_slot,
     team:isRadiant(p.player_slot)?'Radiant':'Dire', won:won(p,radiantWin), kills:p.kills,deaths:p.deaths,assists:p.assists,
     last_hits:p.last_hits,denies:p.denies,gold_per_min:p.gold_per_min,xp_per_min:p.xp_per_min,
     hero_damage:p.hero_damage,tower_damage:p.tower_damage,hero_healing:p.hero_healing,
@@ -99,6 +100,25 @@ function slim(p, role, radiantWin){
     wards_observer:p.purchase_ward_observer,wards_sentry:p.purchase_ward_sentry,
     position_guess:role?.position??null,position_confidence:role?.confidence??'unknown',position_reason:role?.reason??null
   };
+}
+
+function teamfightPlayerSummary(tf, players, accountId) {
+  const idx = players.findIndex(p=>Number(p.account_id)===accountId);
+  const x = idx >= 0 && Array.isArray(tf.players) ? tf.players[idx] : null;
+  if (!x) return null;
+  return {
+    deaths:x.deaths??0,buybacks:x.buybacks??0,damage:x.damage??0,healing:x.healing??0,
+    gold_delta:x.gold_delta??0,xp_delta:x.xp_delta??0,killed:x.killed??{},
+    ability_uses:x.ability_uses??{},item_uses:x.item_uses??{},deaths_pos:x.deaths_pos??{}
+  };
+}
+
+function compactTeamfights(m) {
+  const ps = Array.isArray(m.players)?m.players:[];
+  return (Array.isArray(m.teamfights)?m.teamfights:[]).map(tf=>({
+    start:tf.start,end:tf.end,last_death:tf.last_death,deaths:tf.deaths,
+    cyborg:teamfightPlayerSummary(tf,ps,A),goddess:teamfightPlayerSummary(tf,ps,B)
+  }));
 }
 
 const finalDuoDetails = details.filter(m=>{
@@ -121,23 +141,32 @@ const matches=finalDuoDetails.map(m=>{
   };
 });
 
+const reportMatches=finalDuoDetails.map(m=>{
+  const ps=Array.isArray(m.players)?m.players:[]; const roles=inferPositions(ps);
+  const a=ps.find(p=>Number(p.account_id)===A), b=ps.find(p=>Number(p.account_id)===B);
+  return {
+    match_id:m.match_id,start_time:m.start_time,start_iso:m.start_time?new Date(m.start_time*1000).toISOString():null,
+    duration_sec:m.duration,duration_min:m.duration?Math.round(m.duration/6)/10:null,lobby_type:m.lobby_type,game_mode:m.game_mode,
+    radiant_win:m.radiant_win,parsed:!!m.version,parse_version:m.version??null,same_team:true,
+    cyborg:slim(a,roles.get(A),m.radiant_win),goddess:slim(b,roles.get(B),m.radiant_win),
+    objectives:Array.isArray(m.objectives)?m.objectives:[],teamfights:compactTeamfights(m)
+  };
+});
+
 await fs.mkdir('data',{recursive:true});
-await fs.mkdir('data/matches',{recursive:true});
 
-// Keep the compact rolling file for daily reports.
-await fs.writeFile('data/latest.json',JSON.stringify({
-  generated_at:new Date().toISOString(),source:'OpenDota',players:{cyborg:A,goddess:B},
-  filters:{ranked_only:true,days:DAYS,limit:LIMIT},
-  count:matches.length,
+const generatedAt=new Date().toISOString();
+const common={
+  generated_at:generatedAt,source:'OpenDota',players:{cyborg:A,goddess:B},
+  filters:{ranked_only:true,days:DAYS,limit:LIMIT},count:matches.length,
   parsing:{requested_match_ids:[...parseRequests.keys()],request_limit:PARSE_LIMIT,wait_ms:WAIT_MS},
-  note:'position_guess is heuristic; use position_confidence. Recent unparsed matches are explicitly submitted to OpenDota /request/{match_id}.',
-  matches
-},null,2)+'\n');
+  note:'position_guess is heuristic; use position_confidence. Recent unparsed matches are explicitly submitted to OpenDota /request/{match_id}.'
+};
 
-// Store full OpenDota payload for parsed duo matches so detailed reviews can use timelines,
-// kills_log, obs_log, purchase_log, runes_log, lane data, teamfights and objectives without truncating latest.json.
-for (const m of finalDuoDetails.filter(m=>m.version)) {
-  await fs.writeFile(`data/matches/${m.match_id}.json`, JSON.stringify(m,null,2)+'\n');
-}
+// Legacy/full rolling feed. Kept for compatibility.
+await fs.writeFile('data/latest.json',JSON.stringify({...common,matches},null,2)+'\n');
 
-console.log(`Saved ${matches.length} joint ranked matches; full JSON for ${finalDuoDetails.filter(m=>m.version).length} parsed matches`);
+// Compact feed intended for daily reports. Teamfights contain only duo-player summaries.
+await fs.writeFile('data/report.json',JSON.stringify({...common,matches:reportMatches},null,2)+'\n');
+
+console.log(`Saved ${matches.length} joint ranked matches; compact daily report feed written to data/report.json`);
