@@ -27,7 +27,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Fetch OpenDota and build latest.json
+      - name: Fetch OpenDota and build data feeds
         env:
           OPENDOTA_API_KEY: ${{ secrets.OPENDOTA_API_KEY }}
         run: node scripts/update.mjs
@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "dota-duo-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/latest.json
+          git add data/latest.json data/report.json
           if git diff --cached --quiet; then
             echo "No data changes"
             exit 0
