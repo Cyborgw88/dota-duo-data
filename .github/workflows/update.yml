@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/update.mjs'
+      - 'scripts/build-index.mjs'
       - '.github/workflows/update.yml'
   schedule:
     # Refresh every hour. GitHub scheduled jobs may start a little late.
@@ -31,11 +32,13 @@ jobs:
         env:
           OPENDOTA_API_KEY: ${{ secrets.OPENDOTA_API_KEY }}
         run: node scripts/update.mjs
+      - name: Build compact index and per-match reports
+        run: node scripts/build-index.mjs
       - name: Commit data if changed
         run: |
           git config user.name "dota-duo-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/latest.json data/report.json
+          git add data/latest.json data/report.json data/index.json data/matches
           if git diff --cached --quiet; then
             echo "No data changes"
             exit 0
