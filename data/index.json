@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T17:28:41.315Z",
+  "generated_at": "2026-08-31T18:25:36.205Z",
   "source": "OpenDota",
   "players": {
     "cyborg": 206620580,
@@ -13,14 +13,72 @@
   "count": 30,
   "parsing": {
     "requested_match_ids": [
-      8976257935,
-      8961366220
+      8976364928
     ],
     "request_limit": 5,
     "wait_ms": 20000
   },
   "note": "position_guess is heuristic; use position_confidence. Recent unparsed matches are explicitly submitted to OpenDota /request/{match_id}.",
   "matches": [
+    {
+      "match_id": 8976364928,
+      "start_time": 1788194622,
+      "start_iso": "2026-08-31T16:43:42.000Z",
+      "duration_sec": 2767,
+      "duration_min": 46.1,
+      "lobby_type": 7,
+      "game_mode": 22,
+      "radiant_win": true,
+      "parsed": false,
+      "parse_version": null,
+      "same_team": true,
+      "cyborg": {
+        "account_id": 206620580,
+        "hero_id": 46,
+        "hero": "Templar Assassin",
+        "player_slot": 3,
+        "team": "Radiant",
+        "won": true,
+        "kills": 18,
+        "deaths": 5,
+        "assists": 13,
+        "last_hits": 419,
+        "denies": 7,
+        "gold_per_min": 762,
+        "xp_per_min": 786,
+        "hero_damage": 34687,
+        "tower_damage": 22825,
+        "hero_healing": 0,
+        "lane": "unknown",
+        "position_guess": 1,
+        "position_confidence": "low",
+        "position_reason": "fallback by farm/economy"
+      },
+      "goddess": {
+        "account_id": 160810596,
+        "hero_id": 5,
+        "hero": "Crystal Maiden",
+        "player_slot": 1,
+        "team": "Radiant",
+        "won": true,
+        "kills": 18,
+        "deaths": 8,
+        "assists": 19,
+        "last_hits": 137,
+        "denies": 5,
+        "gold_per_min": 554,
+        "xp_per_min": 728,
+        "hero_damage": 31342,
+        "tower_damage": 1483,
+        "hero_healing": 135,
+        "lane": "unknown",
+        "position_guess": 5,
+        "position_confidence": "low",
+        "position_reason": "fallback by farm/economy"
+      },
+      "objective_count": 0,
+      "teamfight_count": 0
+    },
     {
       "match_id": 8976257935,
       "start_time": 1788190828,
@@ -30,8 +88,8 @@
       "lobby_type": 7,
       "game_mode": 22,
       "radiant_win": true,
-      "parsed": false,
-      "parse_version": null,
+      "parsed": true,
+      "parse_version": 22,
       "same_team": true,
       "cyborg": {
         "account_id": 206620580,
@@ -50,10 +108,14 @@
         "hero_damage": 38184,
         "tower_damage": 6067,
         "hero_healing": 110,
-        "lane": "unknown",
-        "position_guess": 4,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
+        "lane_role": 2,
+        "lane": "mid",
+        "is_roaming": false,
+        "wards_observer": 2,
+        "wards_sentry": 2,
+        "position_guess": 2,
+        "position_confidence": "high",
+        "position_reason": "lane_role=mid"
       },
       "goddess": {
         "account_id": 160810596,
@@ -72,13 +134,17 @@
         "hero_damage": 15137,
         "tower_damage": 1341,
         "hero_healing": 0,
-        "lane": "unknown",
-        "position_guess": null,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 14,
+        "wards_sentry": 23,
+        "position_guess": 5,
+        "position_confidence": "medium",
+        "position_reason": "safe lane + lower farm/economy"
       },
-      "objective_count": 0,
-      "teamfight_count": 0
+      "objective_count": 29,
+      "teamfight_count": 17
     },
     {
       "match_id": 8974903893,
@@ -1943,65 +2009,6 @@
       },
       "objective_count": 23,
       "teamfight_count": 14
-    },
-    {
-      "match_id": 8961366220,
-      "start_time": 1787504339,
-      "start_iso": "2026-08-23T16:58:59.000Z",
-      "duration_sec": 2907,
-      "duration_min": 48.5,
-      "lobby_type": 7,
-      "game_mode": 22,
-      "radiant_win": true,
-      "parsed": false,
-      "parse_version": null,
-      "same_team": true,
-      "cyborg": {
-        "account_id": 206620580,
-        "hero_id": 14,
-        "hero": "Pudge",
-        "player_slot": 131,
-        "team": "Dire",
-        "won": false,
-        "kills": 7,
-        "deaths": 11,
-        "assists": 21,
-        "last_hits": 209,
-        "denies": 12,
-        "gold_per_min": 456,
-        "xp_per_min": 730,
-        "hero_damage": 27931,
-        "tower_damage": 132,
-        "hero_healing": 0,
-        "lane": "unknown",
-        "position_guess": null,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
-      },
-      "goddess": {
-        "account_id": 160810596,
-        "hero_id": 5,
-        "hero": "Crystal Maiden",
-        "player_slot": 132,
-        "team": "Dire",
-        "won": false,
-        "kills": 2,
-        "deaths": 12,
-        "assists": 21,
-        "last_hits": 107,
-        "denies": 8,
-        "gold_per_min": 328,
-        "xp_per_min": 373,
-        "hero_damage": 17777,
-        "tower_damage": 237,
-        "hero_healing": 0,
-        "lane": "unknown",
-        "position_guess": null,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
-      },
-      "objective_count": 0,
-      "teamfight_count": 0
     }
   ]
 }

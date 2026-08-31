@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T17:28:41.315Z",
+  "generated_at": "2026-08-31T18:25:36.205Z",
   "source": "OpenDota",
   "players": {
     "cyborg": 206620580,
@@ -13,14 +13,72 @@
   "count": 30,
   "parsing": {
     "requested_match_ids": [
-      8976257935,
-      8961366220
+      8976364928
     ],
     "request_limit": 5,
     "wait_ms": 20000
   },
   "note": "position_guess is heuristic; use position_confidence. Recent unparsed matches are explicitly submitted to OpenDota /request/{match_id}.",
   "matches": [
+    {
+      "match_id": 8976364928,
+      "start_time": 1788194622,
+      "start_iso": "2026-08-31T16:43:42.000Z",
+      "duration_sec": 2767,
+      "duration_min": 46.1,
+      "lobby_type": 7,
+      "game_mode": 22,
+      "radiant_win": true,
+      "parsed": false,
+      "parse_version": null,
+      "same_team": true,
+      "cyborg": {
+        "account_id": 206620580,
+        "hero_id": 46,
+        "hero": "Templar Assassin",
+        "player_slot": 3,
+        "team": "Radiant",
+        "won": true,
+        "kills": 18,
+        "deaths": 5,
+        "assists": 13,
+        "last_hits": 419,
+        "denies": 7,
+        "gold_per_min": 762,
+        "xp_per_min": 786,
+        "hero_damage": 34687,
+        "tower_damage": 22825,
+        "hero_healing": 0,
+        "lane": "unknown",
+        "position_guess": 1,
+        "position_confidence": "low",
+        "position_reason": "fallback by farm/economy"
+      },
+      "goddess": {
+        "account_id": 160810596,
+        "hero_id": 5,
+        "hero": "Crystal Maiden",
+        "player_slot": 1,
+        "team": "Radiant",
+        "won": true,
+        "kills": 18,
+        "deaths": 8,
+        "assists": 19,
+        "last_hits": 137,
+        "denies": 5,
+        "gold_per_min": 554,
+        "xp_per_min": 728,
+        "hero_damage": 31342,
+        "tower_damage": 1483,
+        "hero_healing": 135,
+        "lane": "unknown",
+        "position_guess": 5,
+        "position_confidence": "low",
+        "position_reason": "fallback by farm/economy"
+      },
+      "objectives": [],
+      "teamfights": []
+    },
     {
       "match_id": 8976257935,
       "start_time": 1788190828,
@@ -30,8 +88,8 @@
       "lobby_type": 7,
       "game_mode": 22,
       "radiant_win": true,
-      "parsed": false,
-      "parse_version": null,
+      "parsed": true,
+      "parse_version": 22,
       "same_team": true,
       "cyborg": {
         "account_id": 206620580,
@@ -50,10 +108,14 @@
         "hero_damage": 38184,
         "tower_damage": 6067,
         "hero_healing": 110,
-        "lane": "unknown",
-        "position_guess": 4,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
+        "lane_role": 2,
+        "lane": "mid",
+        "is_roaming": false,
+        "wards_observer": 2,
+        "wards_sentry": 2,
+        "position_guess": 2,
+        "position_confidence": "high",
+        "position_reason": "lane_role=mid"
       },
       "goddess": {
         "account_id": 160810596,
@@ -72,13 +134,1092 @@
         "hero_damage": 15137,
         "tower_damage": 1341,
         "hero_healing": 0,
-        "lane": "unknown",
-        "position_guess": null,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 14,
+        "wards_sentry": 23,
+        "position_guess": 5,
+        "position_confidence": "medium",
+        "position_reason": "safe lane + lower farm/economy"
       },
-      "objectives": [],
-      "teamfights": []
+      "objectives": [
+        {
+          "time": 114,
+          "type": "CHAT_MESSAGE_FIRSTBLOOD",
+          "key": "7",
+          "slot": 0,
+          "player_slot": 0
+        },
+        {
+          "time": 521,
+          "type": "CHAT_MESSAGE_COURIER_LOST",
+          "team": 3,
+          "value": 50,
+          "killer": 1
+        },
+        {
+          "time": 524,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_abyssal_underlord",
+          "key": "npc_dota_goodguys_tower1_bot",
+          "slot": 8,
+          "player_slot": 131
+        },
+        {
+          "time": 640,
+          "type": "CHAT_MESSAGE_COURIER_LOST",
+          "team": 3,
+          "value": 45,
+          "killer": 1
+        },
+        {
+          "time": 771,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_doom_bringer",
+          "key": "npc_dota_badguys_tower1_top",
+          "slot": 0,
+          "player_slot": 0
+        },
+        {
+          "time": 877,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_badguys_melee",
+          "key": "npc_dota_goodguys_tower1_mid"
+        },
+        {
+          "time": 1010,
+          "type": "building_kill",
+          "unit": "npc_dota_goodguys_siege",
+          "key": "npc_dota_badguys_tower1_bot"
+        },
+        {
+          "time": 1234,
+          "type": "CHAT_MESSAGE_COURIER_LOST",
+          "team": 2,
+          "value": 85,
+          "killer": 128
+        },
+        {
+          "time": 1276,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_ember_spirit",
+          "key": "npc_dota_badguys_tower1_mid",
+          "slot": 3,
+          "player_slot": 3
+        },
+        {
+          "time": 1427,
+          "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+          "team": 2,
+          "slot": 4,
+          "player_slot": 4
+        },
+        {
+          "time": 1650,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_badguys_melee",
+          "key": "npc_dota_goodguys_tower1_top"
+        },
+        {
+          "time": 2128,
+          "type": "CHAT_MESSAGE_ROSHAN_KILL",
+          "team": 3
+        },
+        {
+          "time": 2130,
+          "type": "CHAT_MESSAGE_AEGIS_STOLEN",
+          "slot": 0,
+          "player_slot": 0
+        },
+        {
+          "time": 2182,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_ember_spirit",
+          "key": "npc_dota_badguys_tower2_bot",
+          "slot": 3,
+          "player_slot": 3
+        },
+        {
+          "time": 2401,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_riki",
+          "key": "npc_dota_badguys_tower2_mid",
+          "slot": 1,
+          "player_slot": 1
+        },
+        {
+          "time": 2438,
+          "type": "building_kill",
+          "unit": "npc_dota_goodguys_siege",
+          "key": "npc_dota_badguys_tower3_mid"
+        },
+        {
+          "time": 2446,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_ember_spirit",
+          "key": "npc_dota_badguys_melee_rax_mid",
+          "slot": 3,
+          "player_slot": 3
+        },
+        {
+          "time": 2447,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_goodguys_ranged",
+          "key": "npc_dota_badguys_range_rax_mid"
+        },
+        {
+          "time": 2454,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_doom_bringer",
+          "key": "npc_dota_badguys_tower3_bot",
+          "slot": 0,
+          "player_slot": 0
+        },
+        {
+          "time": 2477,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_pugna",
+          "key": "npc_dota_badguys_range_rax_bot",
+          "slot": 2,
+          "player_slot": 2
+        },
+        {
+          "time": 2491,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_riki",
+          "key": "npc_dota_badguys_melee_rax_bot",
+          "slot": 1,
+          "player_slot": 1
+        },
+        {
+          "time": 2509,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_goodguys_ranged",
+          "key": "npc_dota_badguys_tower2_top"
+        },
+        {
+          "time": 2687,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_abyssal_underlord",
+          "key": "npc_dota_goodguys_tower2_mid",
+          "slot": 8,
+          "player_slot": 131
+        },
+        {
+          "time": 2816,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_ember_spirit",
+          "key": "npc_dota_badguys_tower3_top",
+          "slot": 3,
+          "player_slot": 3
+        },
+        {
+          "time": 2847,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_lion",
+          "key": "npc_dota_badguys_range_rax_top",
+          "slot": 4,
+          "player_slot": 4
+        },
+        {
+          "time": 2864,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_doom_bringer",
+          "key": "npc_dota_badguys_melee_rax_top",
+          "slot": 0,
+          "player_slot": 0
+        },
+        {
+          "time": 2875,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_goodguys_melee_upgraded",
+          "key": "npc_dota_badguys_tower4"
+        },
+        {
+          "time": 2881,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_goodguys_flagbearer_upgraded",
+          "key": "npc_dota_badguys_tower4"
+        },
+        {
+          "time": 2890,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_doom_bringer",
+          "key": "npc_dota_badguys_fort",
+          "slot": 0,
+          "player_slot": 0
+        }
+      ],
+      "teamfights": [
+        {
+          "start": 99,
+          "end": 134,
+          "last_death": 119,
+          "deaths": 4,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 92,
+            "healing": 331,
+            "gold_delta": 363,
+            "xp_delta": 302,
+            "killed": {},
+            "ability_uses": {
+              "ember_spirit_sleight_of_fist": 1
+            },
+            "item_uses": {
+              "tango": 1,
+              "bottle": 4,
+              "branches": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 335,
+            "healing": 191,
+            "gold_delta": 40,
+            "xp_delta": 56,
+            "killed": {},
+            "ability_uses": {
+              "lion_impale": 1,
+              "lion_mana_drain": 1
+            },
+            "item_uses": {
+              "tpscroll": 1,
+              "magic_stick": 1,
+              "tango": 1,
+              "blood_grenade": 1
+            },
+            "deaths_pos": {
+              "163": {
+                "85": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 175,
+          "end": 214,
+          "last_death": 199,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 104,
+            "healing": 150,
+            "gold_delta": 192,
+            "xp_delta": 357,
+            "killed": {},
+            "ability_uses": {
+              "ember_spirit_sleight_of_fist": 1,
+              "ember_spirit_flame_guard": 1,
+              "ember_spirit_searing_chains": 1
+            },
+            "item_uses": {},
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 423,
+            "healing": 196,
+            "gold_delta": 51,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {
+              "lion_impale": 1
+            },
+            "item_uses": {
+              "tpscroll": 1,
+              "magic_stick": 1,
+              "blood_grenade": 1
+            },
+            "deaths_pos": {
+              "175": {
+                "87": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 260,
+          "end": 308,
+          "last_death": 293,
+          "deaths": 5,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 233,
+            "healing": 340,
+            "gold_delta": 66,
+            "xp_delta": 471,
+            "killed": {},
+            "ability_uses": {
+              "ember_spirit_sleight_of_fist": 2,
+              "ember_spirit_flame_guard": 1,
+              "ember_spirit_searing_chains": 1
+            },
+            "item_uses": {
+              "ward_dispenser": 1,
+              "bottle": 1
+            },
+            "deaths_pos": {
+              "110": {
+                "111": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 75,
+            "healing": 174,
+            "gold_delta": 49,
+            "xp_delta": 92,
+            "killed": {},
+            "ability_uses": {
+              "lion_impale": 1
+            },
+            "item_uses": {
+              "tpscroll": 1,
+              "ward_observer": 1,
+              "magic_stick": 1,
+              "ward_dispenser": 2
+            },
+            "deaths_pos": {
+              "176": {
+                "83": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 501,
+          "end": 556,
+          "last_death": 541,
+          "deaths": 5,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 415,
+            "healing": 606,
+            "gold_delta": 514,
+            "xp_delta": 575,
+            "killed": {
+              "npc_dota_hero_snapfire": 1
+            },
+            "ability_uses": {
+              "ember_spirit_sleight_of_fist": 1,
+              "ember_spirit_flame_guard": 2,
+              "ember_spirit_fire_remnant": 2,
+              "ember_spirit_activate_fire_remnant": 2,
+              "ember_spirit_searing_chains": 1
+            },
+            "item_uses": {
+              "famango": 1,
+              "urn_of_shadows": 1,
+              "bottle": 2
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 434,
+            "healing": 15,
+            "gold_delta": 160,
+            "xp_delta": 83,
+            "killed": {},
+            "ability_uses": {
+              "plus_high_five": 1,
+              "lion_voodoo": 1,
+              "lion_impale": 2
+            },
+            "item_uses": {
+              "ward_observer": 1,
+              "ward_dispenser": 2,
+              "smoke_of_deceit": 1
+            },
+            "deaths_pos": {
+              "82": {
+                "165": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 598,
+          "end": 633,
+          "last_death": 618,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 574,
+            "healing": 103,
+            "gold_delta": 420,
+            "xp_delta": 171,
+            "killed": {
+              "npc_dota_hero_phoenix": 1
+            },
+            "ability_uses": {
+              "ember_spirit_sleight_of_fist": 1,
+              "ember_spirit_fire_remnant": 1,
+              "ember_spirit_activate_fire_remnant": 1
+            },
+            "item_uses": {
+              "urn_of_shadows": 1,
+              "phase_boots": 1,
+              "bottle": 4
+            },
+            "deaths_pos": {
+              "120": {
+                "137": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 329,
+            "healing": 103,
+            "gold_delta": 0,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {
+              "lion_voodoo": 1,
+              "lion_impale": 1
+            },
+            "item_uses": {
+              "blood_grenade": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 658,
+          "end": 710,
+          "last_death": 695,
+          "deaths": 4,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 302,
+            "healing": 202,
+            "gold_delta": 175,
+            "xp_delta": 339,
+            "killed": {},
+            "ability_uses": {
+              "ember_spirit_sleight_of_fist": 1,
+              "ember_spirit_flame_guard": 1,
+              "ability_lamp_use": 1,
+              "ember_spirit_searing_chains": 1
+            },
+            "item_uses": {
+              "phase_boots": 5,
+              "bottle": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 167,
+            "healing": 639,
+            "gold_delta": -46,
+            "xp_delta": 162,
+            "killed": {},
+            "ability_uses": {
+              "lion_voodoo": 1,
+              "lion_impale": 2,
+              "lion_mana_drain": 1
+            },
+            "item_uses": {
+              "magic_stick": 1,
+              "magic_wand": 1
+            },
+            "deaths_pos": {
+              "77": {
+                "148": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 797,
+          "end": 838,
+          "last_death": 823,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 909,
+            "healing": 273,
+            "gold_delta": 303,
+            "xp_delta": 617,
+            "killed": {},
+            "ability_uses": {
+              "ember_spirit_sleight_of_fist": 2,
+              "ember_spirit_flame_guard": 1,
+              "ember_spirit_fire_remnant": 3,
+              "ember_spirit_searing_chains": 2,
+              "ember_spirit_activate_fire_remnant": 2
+            },
+            "item_uses": {
+              "ward_observer": 1,
+              "spirit_vessel": 1,
+              "phase_boots": 5
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 228,
+            "healing": 27,
+            "gold_delta": 77,
+            "xp_delta": 53,
+            "killed": {},
+            "ability_uses": {
+              "lion_voodoo": 1,
+              "lion_impale": 1,
+              "lion_mana_drain": 1
+            },
+            "item_uses": {
+              "tpscroll": 1,
+              "enchanted_mango": 1,
+              "magic_wand": 1
+            },
+            "deaths_pos": {
+              "111": {
+                "120": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 1206,
+          "end": 1243,
+          "last_death": 1228,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 683,
+            "healing": 556,
+            "gold_delta": 166,
+            "xp_delta": 675,
+            "killed": {},
+            "ability_uses": {
+              "ember_spirit_sleight_of_fist": 3,
+              "ember_spirit_flame_guard": 1,
+              "ember_spirit_searing_chains": 2
+            },
+            "item_uses": {
+              "madstone_bundle": 1,
+              "spirit_vessel": 1,
+              "phase_boots": 3,
+              "bottle": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 1175,
+            "healing": 301,
+            "gold_delta": 70,
+            "xp_delta": 115,
+            "killed": {},
+            "ability_uses": {
+              "lion_voodoo": 2,
+              "lion_impale": 2,
+              "lion_mana_drain": 2,
+              "lion_finger_of_death": 1
+            },
+            "item_uses": {
+              "magic_wand": 1,
+              "glimmer_cape": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 1445,
+          "end": 1494,
+          "last_death": 1479,
+          "deaths": 6,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1549,
+            "healing": 319,
+            "gold_delta": -71,
+            "xp_delta": 174,
+            "killed": {},
+            "ability_uses": {
+              "ember_spirit_sleight_of_fist": 2,
+              "ember_spirit_flame_guard": 1,
+              "ember_spirit_fire_remnant": 3,
+              "ember_spirit_activate_fire_remnant": 2,
+              "ember_spirit_searing_chains": 1
+            },
+            "item_uses": {
+              "madstone_bundle": 1,
+              "spirit_vessel": 1,
+              "phase_boots": 3,
+              "bottle": 3
+            },
+            "deaths_pos": {
+              "178": {
+                "118": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 206,
+            "healing": 248,
+            "gold_delta": -71,
+            "xp_delta": 552,
+            "killed": {},
+            "ability_uses": {
+              "lion_impale": 1,
+              "lion_mana_drain": 1
+            },
+            "item_uses": {
+              "famango": 1,
+              "magic_wand": 1,
+              "glimmer_cape": 1
+            },
+            "deaths_pos": {
+              "184": {
+                "120": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 1610,
+          "end": 1641,
+          "last_death": 1626,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 995,
+            "healing": 665,
+            "gold_delta": 172,
+            "xp_delta": 760,
+            "killed": {},
+            "ability_uses": {
+              "ember_spirit_flame_guard": 1,
+              "ember_spirit_fire_remnant": 1,
+              "ember_spirit_searing_chains": 1,
+              "ember_spirit_activate_fire_remnant": 1
+            },
+            "item_uses": {
+              "tpscroll": 1,
+              "spirit_vessel": 1,
+              "phase_boots": 2,
+              "bottle": 2
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 713,
+            "healing": 37,
+            "gold_delta": -17,
+            "xp_delta": 724,
+            "killed": {},
+            "ability_uses": {
+              "lion_impale": 1,
+              "lion_finger_of_death": 1
+            },
+            "item_uses": {
+              "ward_observer": 1,
+              "blink": 1
+            },
+            "deaths_pos": {
+              "109": {
+                "188": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 1802,
+          "end": 1838,
+          "last_death": 1823,
+          "deaths": 4,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1689,
+            "healing": 205,
+            "gold_delta": 135,
+            "xp_delta": 1429,
+            "killed": {},
+            "ability_uses": {
+              "ember_spirit_sleight_of_fist": 1,
+              "ember_spirit_fire_remnant": 1,
+              "ember_spirit_activate_fire_remnant": 2,
+              "ember_spirit_searing_chains": 2
+            },
+            "item_uses": {
+              "spirit_vessel": 2,
+              "phase_boots": 1,
+              "bottle": 3
+            },
+            "deaths_pos": {
+              "147": {
+                "117": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 71,
+            "healing": 458,
+            "gold_delta": 694,
+            "xp_delta": 2060,
+            "killed": {
+              "npc_dota_hero_phoenix": 1
+            },
+            "ability_uses": {
+              "lion_voodoo": 1,
+              "lion_impale": 1,
+              "lion_mana_drain": 1
+            },
+            "item_uses": {
+              "ward_sentry": 1,
+              "blink": 1,
+              "magic_wand": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 1897,
+          "end": 1938,
+          "last_death": 1923,
+          "deaths": 6,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1280,
+            "healing": 44,
+            "gold_delta": 285,
+            "xp_delta": 499,
+            "killed": {
+              "npc_dota_hero_snapfire": 1
+            },
+            "ability_uses": {
+              "ember_spirit_sleight_of_fist": 1,
+              "ember_spirit_fire_remnant": 1,
+              "ember_spirit_activate_fire_remnant": 1,
+              "ember_spirit_searing_chains": 1
+            },
+            "item_uses": {
+              "spirit_vessel": 1,
+              "phase_boots": 2
+            },
+            "deaths_pos": {
+              "148": {
+                "182": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 984,
+            "healing": 52,
+            "gold_delta": 91,
+            "xp_delta": 499,
+            "killed": {},
+            "ability_uses": {
+              "lion_voodoo": 1,
+              "lion_impale": 1,
+              "ability_lamp_use": 1,
+              "lion_mana_drain": 1,
+              "lion_finger_of_death": 1
+            },
+            "item_uses": {
+              "blink": 1
+            },
+            "deaths_pos": {
+              "136": {
+                "181": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 2119,
+          "end": 2160,
+          "last_death": 2145,
+          "deaths": 4,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 3222,
+            "healing": 708,
+            "gold_delta": 769,
+            "xp_delta": 3601,
+            "killed": {
+              "npc_dota_hero_phoenix": 1
+            },
+            "ability_uses": {
+              "ember_spirit_sleight_of_fist": 3,
+              "ember_spirit_flame_guard": 1,
+              "ember_spirit_fire_remnant": 3,
+              "ember_spirit_activate_fire_remnant": 3,
+              "ember_spirit_searing_chains": 2
+            },
+            "item_uses": {
+              "madstone_bundle": 2,
+              "spirit_vessel": 2,
+              "black_king_bar": 1,
+              "phase_boots": 4,
+              "bottle": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 700,
+            "healing": 89,
+            "gold_delta": 751,
+            "xp_delta": 2064,
+            "killed": {
+              "npc_dota_hero_antimage": 1
+            },
+            "ability_uses": {
+              "lion_impale": 1,
+              "lion_finger_of_death": 1
+            },
+            "item_uses": {
+              "tpscroll": 1,
+              "ghost": 1,
+              "blink": 1,
+              "glimmer_cape": 1
+            },
+            "deaths_pos": {
+              "144": {
+                "108": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 2192,
+          "end": 2227,
+          "last_death": 2212,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 40,
+            "healing": 472,
+            "gold_delta": -135,
+            "xp_delta": 128,
+            "killed": {},
+            "ability_uses": {
+              "ember_spirit_sleight_of_fist": 1
+            },
+            "item_uses": {
+              "phase_boots": 1
+            },
+            "deaths_pos": {
+              "177": {
+                "149": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 0,
+            "healing": 1,
+            "gold_delta": 384,
+            "xp_delta": 433,
+            "killed": {},
+            "ability_uses": {
+              "lion_impale": 1
+            },
+            "item_uses": {
+              "tpscroll": 1,
+              "blink": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 2337,
+          "end": 2389,
+          "last_death": 2374,
+          "deaths": 6,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 3380,
+            "healing": 1232,
+            "gold_delta": 1052,
+            "xp_delta": 5670,
+            "killed": {},
+            "ability_uses": {
+              "ember_spirit_sleight_of_fist": 4,
+              "ember_spirit_flame_guard": 1,
+              "ember_spirit_fire_remnant": 3,
+              "ember_spirit_searing_chains": 3,
+              "ember_spirit_activate_fire_remnant": 2
+            },
+            "item_uses": {
+              "black_king_bar": 1,
+              "spirit_vessel": 3,
+              "phase_boots": 6,
+              "bottle": 2
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1148,
+            "healing": 89,
+            "gold_delta": -295,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {
+              "lion_voodoo": 2,
+              "lion_impale": 1,
+              "lion_mana_drain": 1,
+              "lion_finger_of_death": 1
+            },
+            "item_uses": {
+              "blink": 1,
+              "glimmer_cape": 1
+            },
+            "deaths_pos": {
+              "125": {
+                "103": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 2490,
+          "end": 2531,
+          "last_death": 2516,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 195,
+            "healing": 767,
+            "gold_delta": 700,
+            "xp_delta": 981,
+            "killed": {},
+            "ability_uses": {
+              "ember_spirit_sleight_of_fist": 2,
+              "ember_spirit_flame_guard": 1,
+              "ember_spirit_fire_remnant": 6,
+              "ember_spirit_activate_fire_remnant": 5,
+              "ember_spirit_searing_chains": 1
+            },
+            "item_uses": {
+              "spirit_vessel": 1,
+              "phase_boots": 2
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 871,
+            "healing": 70,
+            "gold_delta": 160,
+            "xp_delta": 1301,
+            "killed": {},
+            "ability_uses": {
+              "lion_voodoo": 2,
+              "lion_impale": 2,
+              "lion_mana_drain": 2,
+              "lion_finger_of_death": 1
+            },
+            "item_uses": {
+              "ghost": 1,
+              "blink": 1,
+              "glimmer_cape": 1
+            },
+            "deaths_pos": {
+              "168": {
+                "153": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 2820,
+          "end": 2881,
+          "last_death": 2866,
+          "deaths": 7,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 4459,
+            "healing": 2124,
+            "gold_delta": 1752,
+            "xp_delta": 7155,
+            "killed": {
+              "npc_dota_hero_phoenix": 1
+            },
+            "ability_uses": {
+              "ember_spirit_sleight_of_fist": 5,
+              "ember_spirit_flame_guard": 1,
+              "ember_spirit_fire_remnant": 6,
+              "ember_spirit_searing_chains": 5,
+              "ember_spirit_activate_fire_remnant": 7
+            },
+            "item_uses": {
+              "black_king_bar": 1,
+              "spirit_vessel": 3,
+              "phase_boots": 5
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 1261,
+            "healing": 789,
+            "gold_delta": 1500,
+            "xp_delta": 3172,
+            "killed": {},
+            "ability_uses": {
+              "lion_voodoo": 4,
+              "lion_impale": 4,
+              "lion_mana_drain": 2,
+              "lion_finger_of_death": 1
+            },
+            "item_uses": {
+              "ghost": 1,
+              "blink": 2,
+              "glimmer_cape": 1
+            },
+            "deaths_pos": {}
+          }
+        }
+      ]
     },
     {
       "match_id": 8974903893,
@@ -23204,65 +24345,6 @@
           }
         }
       ]
-    },
-    {
-      "match_id": 8961366220,
-      "start_time": 1787504339,
-      "start_iso": "2026-08-23T16:58:59.000Z",
-      "duration_sec": 2907,
-      "duration_min": 48.5,
-      "lobby_type": 7,
-      "game_mode": 22,
-      "radiant_win": true,
-      "parsed": false,
-      "parse_version": null,
-      "same_team": true,
-      "cyborg": {
-        "account_id": 206620580,
-        "hero_id": 14,
-        "hero": "Pudge",
-        "player_slot": 131,
-        "team": "Dire",
-        "won": false,
-        "kills": 7,
-        "deaths": 11,
-        "assists": 21,
-        "last_hits": 209,
-        "denies": 12,
-        "gold_per_min": 456,
-        "xp_per_min": 730,
-        "hero_damage": 27931,
-        "tower_damage": 132,
-        "hero_healing": 0,
-        "lane": "unknown",
-        "position_guess": null,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
-      },
-      "goddess": {
-        "account_id": 160810596,
-        "hero_id": 5,
-        "hero": "Crystal Maiden",
-        "player_slot": 132,
-        "team": "Dire",
-        "won": false,
-        "kills": 2,
-        "deaths": 12,
-        "assists": 21,
-        "last_hits": 107,
-        "denies": 8,
-        "gold_per_min": 328,
-        "xp_per_min": 373,
-        "hero_damage": 17777,
-        "tower_damage": 237,
-        "hero_healing": 0,
-        "lane": "unknown",
-        "position_guess": null,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
-      },
-      "objectives": [],
-      "teamfights": []
     }
   ]
 }
