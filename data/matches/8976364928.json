@@ -7,8 +7,8 @@
   "lobby_type": 7,
   "game_mode": 22,
   "radiant_win": true,
-  "parsed": false,
-  "parse_version": null,
+  "parsed": true,
+  "parse_version": 22,
   "same_team": true,
   "cyborg": {
     "account_id": 206620580,
@@ -27,10 +27,12 @@
     "hero_damage": 34687,
     "tower_damage": 22825,
     "hero_healing": 0,
-    "lane": "unknown",
+    "lane_role": 1,
+    "lane": "safe",
+    "is_roaming": false,
     "position_guess": 1,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "position_confidence": "medium",
+    "position_reason": "safe lane + higher farm/economy"
   },
   "goddess": {
     "account_id": 160810596,
@@ -49,11 +51,973 @@
     "hero_damage": 31342,
     "tower_damage": 1483,
     "hero_healing": 135,
-    "lane": "unknown",
+    "lane_role": 1,
+    "lane": "safe",
+    "is_roaming": false,
+    "wards_observer": 16,
+    "wards_sentry": 26,
     "position_guess": 5,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "position_confidence": "medium",
+    "position_reason": "safe lane + lower farm/economy"
   },
-  "objectives": [],
-  "teamfights": []
+  "objectives": [
+    {
+      "time": 114,
+      "type": "CHAT_MESSAGE_FIRSTBLOOD",
+      "key": "7",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 437,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 3,
+      "value": 40,
+      "killer": 4
+    },
+    {
+      "time": 455,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 3,
+      "value": 45,
+      "killer": 4
+    },
+    {
+      "time": 623,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_ringmaster",
+      "key": "npc_dota_badguys_tower1_top",
+      "slot": 2,
+      "player_slot": 2
+    },
+    {
+      "time": 707,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 2,
+      "value": 60,
+      "killer": 130
+    },
+    {
+      "time": 987,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_tower1_mid",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 1009,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_goodguys_ranged",
+      "key": "npc_dota_badguys_tower1_bot"
+    },
+    {
+      "time": 1123,
+      "type": "CHAT_MESSAGE_ROSHAN_KILL",
+      "team": 2
+    },
+    {
+      "time": 1123,
+      "type": "CHAT_MESSAGE_AEGIS",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 1291,
+      "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+      "team": 2,
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 1387,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_tower2_bot",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 1590,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_ringmaster",
+      "key": "npc_dota_badguys_tower2_top",
+      "slot": 2,
+      "player_slot": 2
+    },
+    {
+      "time": 1678,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_tower2_mid",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 1864,
+      "type": "building_kill",
+      "unit": "npc_dota_badguys_siege",
+      "key": "npc_dota_goodguys_tower1_top"
+    },
+    {
+      "time": 1953,
+      "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+      "team": 2,
+      "slot": 2,
+      "player_slot": 2
+    },
+    {
+      "time": 1960,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_sniper",
+      "key": "npc_dota_goodguys_tower1_mid",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 2009,
+      "type": "CHAT_MESSAGE_ROSHAN_KILL",
+      "team": 2
+    },
+    {
+      "time": 2010,
+      "type": "CHAT_MESSAGE_AEGIS",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 2034,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_badguys_melee",
+      "key": "npc_dota_goodguys_tower1_bot"
+    },
+    {
+      "time": 2185,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_tower3_mid",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 2193,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_range_rax_mid",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 2213,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_melee_rax_mid",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 2288,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 3,
+      "value": 90,
+      "killer": 4
+    },
+    {
+      "time": 2348,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_crystal_maiden",
+      "key": "npc_dota_badguys_tower3_top",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 2357,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_melee_rax_top",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 2359,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_range_rax_top",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 2383,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 3,
+      "value": 125,
+      "killer": 4
+    },
+    {
+      "time": 2400,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_tower3_bot",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 2620,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 2,
+      "value": 140,
+      "killer": -1
+    },
+    {
+      "time": 2644,
+      "type": "CHAT_MESSAGE_ROSHAN_KILL",
+      "team": 2
+    },
+    {
+      "time": 2645,
+      "type": "CHAT_MESSAGE_AEGIS",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 2748,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_brewmaster",
+      "key": "npc_dota_badguys_range_rax_bot",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 2751,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_melee_rax_bot",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 2758,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_tower4",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 2761,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_tower4",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 2767,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_crystal_maiden",
+      "key": "npc_dota_badguys_fort",
+      "slot": 1,
+      "player_slot": 1
+    }
+  ],
+  "teamfights": [
+    {
+      "start": 161,
+      "end": 196,
+      "last_death": 181,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 627,
+        "healing": 214,
+        "gold_delta": 218,
+        "xp_delta": 225,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_refraction": 2,
+          "templar_assassin_meld": 1
+        },
+        "item_uses": {
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 494,
+        "healing": 172,
+        "gold_delta": 221,
+        "xp_delta": 111,
+        "killed": {
+          "npc_dota_hero_lion": 1
+        },
+        "ability_uses": {
+          "crystal_maiden_crystal_nova": 1,
+          "crystal_maiden_frostbite": 2
+        },
+        "item_uses": {
+          "magic_stick": 1,
+          "enchanted_mango": 2,
+          "blood_grenade": 1
+        },
+        "deaths_pos": {
+          "171": {
+            "91": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 426,
+      "end": 467,
+      "last_death": 452,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 123,
+        "healing": 247,
+        "gold_delta": 282,
+        "xp_delta": 451,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_refraction": 1,
+          "templar_assassin_meld": 1,
+          "templar_assassin_psionic_trap": 2
+        },
+        "item_uses": {
+          "madstone_bundle": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 733,
+        "healing": 88,
+        "gold_delta": 284,
+        "xp_delta": 429,
+        "killed": {
+          "npc_dota_hero_lion": 1
+        },
+        "ability_uses": {
+          "crystal_maiden_crystal_nova": 1,
+          "crystal_maiden_frostbite": 2
+        },
+        "item_uses": {
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "194": {
+            "107": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 486,
+      "end": 524,
+      "last_death": 509,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 179,
+        "healing": 172,
+        "gold_delta": 271,
+        "xp_delta": 459,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_refraction": 1
+        },
+        "item_uses": {},
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1743,
+        "healing": 180,
+        "gold_delta": 351,
+        "xp_delta": 311,
+        "killed": {
+          "npc_dota_hero_lion": 1
+        },
+        "ability_uses": {
+          "crystal_maiden_freezing_field": 1,
+          "crystal_maiden_crystal_nova": 1,
+          "crystal_maiden_frostbite": 2
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "smoke_of_deceit": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "85": {
+            "163": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 601,
+      "end": 645,
+      "last_death": 630,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 345,
+        "healing": 248,
+        "gold_delta": 54,
+        "xp_delta": 286,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_refraction": 1,
+          "templar_assassin_psionic_trap": 1
+        },
+        "item_uses": {
+          "power_treads": 1,
+          "faerie_fire": 1
+        },
+        "deaths_pos": {
+          "169": {
+            "89": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1478,
+        "healing": 146,
+        "gold_delta": 275,
+        "xp_delta": 289,
+        "killed": {
+          "npc_dota_hero_shredder": 1
+        },
+        "ability_uses": {
+          "crystal_maiden_freezing_field": 1,
+          "crystal_maiden_frostbite": 1
+        },
+        "item_uses": {
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "179": {
+            "99": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 691,
+      "end": 747,
+      "last_death": 732,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 133,
+        "gold_delta": 400,
+        "xp_delta": 620,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_refraction": 1,
+          "templar_assassin_psionic_trap": 1
+        },
+        "item_uses": {
+          "madstone_bundle": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1185,
+        "healing": 71,
+        "gold_delta": 616,
+        "xp_delta": 567,
+        "killed": {
+          "npc_dota_hero_lion": 1,
+          "npc_dota_hero_shredder": 1
+        },
+        "ability_uses": {
+          "crystal_maiden_freezing_field": 1,
+          "crystal_maiden_crystal_nova": 2,
+          "crystal_maiden_frostbite": 2
+        },
+        "item_uses": {
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "183": {
+            "94": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 772,
+      "end": 830,
+      "last_death": 815,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 221,
+        "gold_delta": 627,
+        "xp_delta": 776,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_refraction": 1,
+          "templar_assassin_psionic_trap": 2
+        },
+        "item_uses": {},
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 692,
+        "healing": 395,
+        "gold_delta": 458,
+        "xp_delta": 878,
+        "killed": {
+          "npc_dota_hero_drow_ranger": 1
+        },
+        "ability_uses": {
+          "crystal_maiden_freezing_field": 1,
+          "crystal_maiden_crystal_nova": 2,
+          "crystal_maiden_frostbite": 2
+        },
+        "item_uses": {
+          "foragers_stats": 1,
+          "ward_dispenser": 7,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 905,
+      "end": 964,
+      "last_death": 949,
+      "deaths": 7,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 2414,
+        "healing": 508,
+        "gold_delta": 1194,
+        "xp_delta": 1712,
+        "killed": {
+          "npc_dota_hero_drow_ranger": 1,
+          "npc_dota_hero_sniper": 1,
+          "npc_dota_hero_shredder": 1
+        },
+        "ability_uses": {
+          "templar_assassin_refraction": 3,
+          "templar_assassin_meld": 4,
+          "templar_assassin_psionic_trap": 1
+        },
+        "item_uses": {
+          "power_treads": 4,
+          "blink": 3,
+          "magic_wand": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1445,
+        "healing": 125,
+        "gold_delta": 627,
+        "xp_delta": 1120,
+        "killed": {
+          "npc_dota_hero_lion": 1
+        },
+        "ability_uses": {
+          "crystal_maiden_freezing_field": 1,
+          "crystal_maiden_crystal_nova": 3,
+          "crystal_maiden_frostbite": 1
+        },
+        "item_uses": {
+          "ward_dispenser": 4,
+          "famango": 1,
+          "magic_wand": 1,
+          "glimmer_cape": 2
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1497,
+      "end": 1545,
+      "last_death": 1530,
+      "deaths": 6,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 2287,
+        "healing": 45,
+        "gold_delta": 244,
+        "xp_delta": 781,
+        "killed": {
+          "npc_dota_hero_sniper": 1
+        },
+        "ability_uses": {
+          "templar_assassin_refraction": 1,
+          "templar_assassin_meld": 2
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "black_king_bar": 1,
+          "madstone_bundle": 1,
+          "pogo_stick": 1,
+          "blink": 1
+        },
+        "deaths_pos": {
+          "90": {
+            "165": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 2351,
+        "healing": 907,
+        "gold_delta": 542,
+        "xp_delta": 3200,
+        "killed": {},
+        "ability_uses": {
+          "crystal_maiden_crystal_clone": 1,
+          "crystal_maiden_freezing_field": 1,
+          "crystal_maiden_crystal_nova": 2,
+          "crystal_maiden_frostbite": 2
+        },
+        "item_uses": {
+          "great_famango": 1,
+          "blink": 3,
+          "glimmer_cape": 2
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1604,
+      "end": 1654,
+      "last_death": 1639,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 3465,
+        "healing": 307,
+        "gold_delta": 921,
+        "xp_delta": 1483,
+        "killed": {
+          "npc_dota_hero_lion": 1
+        },
+        "ability_uses": {
+          "templar_assassin_refraction": 3,
+          "templar_assassin_trap": 1,
+          "templar_assassin_meld": 3,
+          "templar_assassin_psionic_trap": 1
+        },
+        "item_uses": {
+          "power_treads": 1,
+          "black_king_bar": 1,
+          "madstone_bundle": 1,
+          "pogo_stick": 2,
+          "blink": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 237,
+        "healing": 87,
+        "gold_delta": 735,
+        "xp_delta": 1040,
+        "killed": {
+          "npc_dota_hero_sniper": 1,
+          "npc_dota_hero_shredder": 1
+        },
+        "ability_uses": {
+          "crystal_maiden_crystal_nova": 2,
+          "crystal_maiden_frostbite": 1
+        },
+        "item_uses": {
+          "smoke_of_deceit": 1,
+          "blink": 1,
+          "glimmer_cape": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1756,
+      "end": 1791,
+      "last_death": 1776,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1110,
+        "healing": 93,
+        "gold_delta": 604,
+        "xp_delta": 977,
+        "killed": {
+          "npc_dota_hero_sniper": 1
+        },
+        "ability_uses": {
+          "templar_assassin_refraction": 2,
+          "templar_assassin_trap": 1,
+          "templar_assassin_meld": 3,
+          "templar_assassin_psionic_trap": 1
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "blink": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 0,
+        "gold_delta": 265,
+        "xp_delta": 381,
+        "killed": {},
+        "ability_uses": {
+          "crystal_maiden_crystal_clone": 1,
+          "crystal_maiden_crystal_nova": 2,
+          "crystal_maiden_frostbite": 1
+        },
+        "item_uses": {
+          "blink": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1786,
+      "end": 1836,
+      "last_death": 1821,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1078,
+        "healing": 143,
+        "gold_delta": -468,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_refraction": 1,
+          "templar_assassin_meld": 2
+        },
+        "item_uses": {
+          "blink": 1
+        },
+        "deaths_pos": {
+          "160": {
+            "179": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 822,
+        "healing": 158,
+        "gold_delta": -71,
+        "xp_delta": 142,
+        "killed": {},
+        "ability_uses": {
+          "crystal_maiden_crystal_clone": 1,
+          "crystal_maiden_crystal_nova": 2,
+          "crystal_maiden_frostbite": 1
+        },
+        "item_uses": {
+          "blink": 1
+        },
+        "deaths_pos": {
+          "124": {
+            "175": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 2138,
+      "end": 2177,
+      "last_death": 2162,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 5285,
+        "healing": 236,
+        "gold_delta": 856,
+        "xp_delta": 3199,
+        "killed": {
+          "npc_dota_hero_skywrath_mage": 1,
+          "npc_dota_hero_lion": 1
+        },
+        "ability_uses": {
+          "templar_assassin_refraction": 3,
+          "templar_assassin_trap": 1,
+          "templar_assassin_meld": 4,
+          "templar_assassin_psionic_trap": 1
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "blink": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 3911,
+        "healing": 196,
+        "gold_delta": 564,
+        "xp_delta": 2151,
+        "killed": {
+          "npc_dota_hero_sniper": 1,
+          "npc_dota_hero_shredder": 1
+        },
+        "ability_uses": {
+          "crystal_maiden_crystal_clone": 1,
+          "crystal_maiden_freezing_field": 1,
+          "crystal_maiden_crystal_nova": 1,
+          "crystal_maiden_frostbite": 1
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "blink": 1,
+          "glimmer_cape": 1
+        },
+        "deaths_pos": {
+          "165": {
+            "169": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 2325,
+      "end": 2357,
+      "last_death": 2342,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 320,
+        "gold_delta": 475,
+        "xp_delta": 113,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_refraction": 2,
+          "templar_assassin_meld": 1
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "blink": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 7288,
+        "healing": 22,
+        "gold_delta": 1389,
+        "xp_delta": 1906,
+        "killed": {
+          "npc_dota_hero_skywrath_mage": 1,
+          "npc_dota_hero_lion": 1
+        },
+        "ability_uses": {
+          "crystal_maiden_freezing_field": 1,
+          "crystal_maiden_crystal_nova": 1,
+          "crystal_maiden_frostbite": 1
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "ward_dispenser": 4,
+          "blink": 1,
+          "glimmer_cape": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 2716,
+      "end": 2758,
+      "last_death": 2743,
+      "deaths": 6,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 5870,
+        "healing": 455,
+        "gold_delta": 2359,
+        "xp_delta": 4045,
+        "killed": {
+          "npc_dota_hero_skywrath_mage": 1,
+          "npc_dota_hero_lion": 2,
+          "npc_dota_hero_shredder": 1
+        },
+        "ability_uses": {
+          "templar_assassin_refraction": 3,
+          "templar_assassin_trap": 1,
+          "templar_assassin_meld": 3,
+          "templar_assassin_psionic_trap": 1
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "blink": 2,
+          "hurricane_pike": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 3390,
+        "healing": 253,
+        "gold_delta": 1655,
+        "xp_delta": 4045,
+        "killed": {
+          "npc_dota_hero_drow_ranger": 1
+        },
+        "ability_uses": {
+          "crystal_maiden_freezing_field": 1,
+          "crystal_maiden_crystal_nova": 4,
+          "crystal_maiden_frostbite": 2
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "boots_of_bearing": 1,
+          "blink": 1,
+          "glimmer_cape": 1
+        },
+        "deaths_pos": {}
+      }
+    }
+  ]
 }
