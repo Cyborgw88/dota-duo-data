@@ -7,8 +7,8 @@
   "lobby_type": 7,
   "game_mode": 22,
   "radiant_win": false,
-  "parsed": false,
-  "parse_version": null,
+  "parsed": true,
+  "parse_version": 22,
   "same_team": true,
   "cyborg": {
     "account_id": 206620580,
@@ -27,10 +27,12 @@
     "hero_damage": 25967,
     "tower_damage": 1872,
     "hero_healing": 106,
-    "lane": "unknown",
-    "position_guess": null,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 3,
+    "lane": "off",
+    "is_roaming": false,
+    "position_guess": 3,
+    "position_confidence": "medium",
+    "position_reason": "off lane + higher farm/economy"
   },
   "goddess": {
     "account_id": 160810596,
@@ -49,11 +51,905 @@
     "hero_damage": 16866,
     "tower_damage": 303,
     "hero_healing": 0,
-    "lane": "unknown",
-    "position_guess": null,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 1,
+    "lane": "safe",
+    "is_roaming": false,
+    "wards_observer": 17,
+    "wards_sentry": 33,
+    "position_guess": 5,
+    "position_confidence": "medium",
+    "position_reason": "safe lane + lower farm/economy"
   },
-  "objectives": [],
-  "teamfights": []
+  "objectives": [
+    {
+      "time": 11,
+      "type": "CHAT_MESSAGE_FIRSTBLOOD",
+      "key": "0",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 126,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 2,
+      "value": 30,
+      "killer": 129
+    },
+    {
+      "time": 1051,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_badguys_melee",
+      "key": "npc_dota_goodguys_tower1_mid"
+    },
+    {
+      "time": 1266,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_skeleton_king",
+      "key": "npc_dota_goodguys_tower1_top",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 1294,
+      "type": "building_kill",
+      "unit": "npc_dota_goodguys_siege",
+      "key": "npc_dota_badguys_tower1_bot"
+    },
+    {
+      "time": 1334,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_skeleton_king",
+      "key": "npc_dota_badguys_tower1_top",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 1336,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_axe",
+      "key": "npc_dota_goodguys_tower1_bot",
+      "slot": 9,
+      "player_slot": 132
+    },
+    {
+      "time": 1349,
+      "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+      "team": 3,
+      "slot": 6,
+      "player_slot": 129
+    },
+    {
+      "time": 1533,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_life_stealer",
+      "key": "npc_dota_goodguys_tower2_mid",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 1576,
+      "type": "CHAT_MESSAGE_ROSHAN_KILL",
+      "team": 3
+    },
+    {
+      "time": 1577,
+      "type": "CHAT_MESSAGE_AEGIS",
+      "slot": 8,
+      "player_slot": 131
+    },
+    {
+      "time": 1662,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_obsidian_destroyer",
+      "key": "npc_dota_goodguys_tower2_bot",
+      "slot": 8,
+      "player_slot": 131
+    },
+    {
+      "time": 1781,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_goodguys_melee",
+      "key": "npc_dota_badguys_tower1_mid"
+    },
+    {
+      "time": 1891,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_life_stealer",
+      "key": "npc_dota_goodguys_tower2_top",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 2066,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_antimage",
+      "key": "npc_dota_badguys_tower2_mid",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 2133,
+      "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+      "team": 2,
+      "slot": 2,
+      "player_slot": 2
+    },
+    {
+      "time": 2188,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_antimage",
+      "key": "npc_dota_badguys_tower2_top",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 2195,
+      "type": "CHAT_MESSAGE_ROSHAN_KILL",
+      "team": 3
+    },
+    {
+      "time": 2195,
+      "type": "CHAT_MESSAGE_AEGIS",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 2604,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_obsidian_destroyer",
+      "key": "npc_dota_goodguys_tower3_mid",
+      "slot": 8,
+      "player_slot": 131
+    },
+    {
+      "time": 2609,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_life_stealer",
+      "key": "npc_dota_goodguys_range_rax_mid",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 2644,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_life_stealer",
+      "key": "npc_dota_goodguys_tower4",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 2650,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_badguys_melee",
+      "key": "npc_dota_goodguys_melee_rax_mid"
+    },
+    {
+      "time": 2665,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_obsidian_destroyer",
+      "key": "npc_dota_goodguys_tower4",
+      "slot": 8,
+      "player_slot": 131
+    },
+    {
+      "time": 2691,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_obsidian_destroyer",
+      "key": "npc_dota_goodguys_fort",
+      "slot": 8,
+      "player_slot": 131
+    }
+  ],
+  "teamfights": [
+    {
+      "start": 288,
+      "end": 338,
+      "last_death": 323,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 347,
+        "healing": 158,
+        "gold_delta": 325,
+        "xp_delta": 392,
+        "killed": {
+          "npc_dota_hero_witch_doctor": 1
+        },
+        "ability_uses": {
+          "axe_battle_hunger": 1
+        },
+        "item_uses": {
+          "blood_grenade": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 608,
+        "healing": 282,
+        "gold_delta": 58,
+        "xp_delta": 241,
+        "killed": {},
+        "ability_uses": {
+          "lich_sinister_gaze": 1,
+          "lich_frost_shield": 1,
+          "lich_frost_nova": 3
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "clarity": 1,
+          "magic_stick": 1,
+          "tango": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 358,
+      "end": 404,
+      "last_death": 389,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 717,
+        "healing": 441,
+        "gold_delta": 324,
+        "xp_delta": 275,
+        "killed": {
+          "npc_dota_hero_antimage": 1
+        },
+        "ability_uses": {
+          "axe_berserkers_call": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "faerie_fire": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "174": {
+            "87": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 359,
+        "healing": 148,
+        "gold_delta": -28,
+        "xp_delta": 261,
+        "killed": {},
+        "ability_uses": {
+          "lich_sinister_gaze": 1,
+          "lich_frost_shield": 1,
+          "lich_death_charge": 1,
+          "lich_frost_nova": 2
+        },
+        "item_uses": {
+          "magic_stick": 1
+        },
+        "deaths_pos": {
+          "83": {
+            "167": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 581,
+      "end": 617,
+      "last_death": 602,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 403,
+        "healing": 101,
+        "gold_delta": 303,
+        "xp_delta": 360,
+        "killed": {
+          "npc_dota_hero_witch_doctor": 1
+        },
+        "ability_uses": {
+          "axe_battle_hunger": 1,
+          "axe_berserkers_call": 1,
+          "axe_culling_blade": 1
+        },
+        "item_uses": {
+          "phase_boots": 1
+        },
+        "deaths_pos": {
+          "167": {
+            "93": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 198,
+        "healing": 49,
+        "gold_delta": 83,
+        "xp_delta": 340,
+        "killed": {},
+        "ability_uses": {
+          "lich_death_charge": 1,
+          "lich_frost_nova": 1
+        },
+        "item_uses": {},
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 715,
+      "end": 745,
+      "last_death": 730,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 365,
+        "healing": 227,
+        "gold_delta": 433,
+        "xp_delta": 352,
+        "killed": {
+          "npc_dota_hero_antimage": 1
+        },
+        "ability_uses": {
+          "axe_berserkers_call": 1,
+          "axe_culling_blade": 1
+        },
+        "item_uses": {
+          "phase_boots": 3,
+          "blink": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 249,
+        "healing": 0,
+        "gold_delta": 87,
+        "xp_delta": 442,
+        "killed": {},
+        "ability_uses": {
+          "lich_sinister_gaze": 1,
+          "lich_frost_shield": 1,
+          "lich_death_charge": 1,
+          "lich_frost_nova": 1
+        },
+        "item_uses": {
+          "clarity": 1,
+          "ward_dispenser": 2
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 897,
+      "end": 972,
+      "last_death": 957,
+      "deaths": 6,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 548,
+        "healing": 567,
+        "gold_delta": 577,
+        "xp_delta": 1021,
+        "killed": {},
+        "ability_uses": {
+          "axe_battle_hunger": 1,
+          "axe_berserkers_call": 2,
+          "ability_lamp_use": 1,
+          "axe_culling_blade": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "phase_boots": 8,
+          "blink": 3,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1078,
+        "healing": 15,
+        "gold_delta": 177,
+        "xp_delta": 599,
+        "killed": {},
+        "ability_uses": {
+          "lich_sinister_gaze": 1,
+          "lich_frost_shield": 2,
+          "lich_chain_frost": 1,
+          "lich_death_charge": 1,
+          "lich_frost_nova": 3
+        },
+        "item_uses": {
+          "tpscroll": 1
+        },
+        "deaths_pos": {
+          "83": {
+            "149": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1023,
+      "end": 1063,
+      "last_death": 1048,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 867,
+        "healing": 183,
+        "gold_delta": -4,
+        "xp_delta": 345,
+        "killed": {},
+        "ability_uses": {
+          "axe_berserkers_call": 1
+        },
+        "item_uses": {
+          "phase_boots": 2,
+          "blade_mail": 1,
+          "blink": 1
+        },
+        "deaths_pos": {
+          "102": {
+            "118": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 925,
+        "healing": 16,
+        "gold_delta": 320,
+        "xp_delta": 402,
+        "killed": {},
+        "ability_uses": {
+          "lich_sinister_gaze": 1,
+          "lich_frost_shield": 1,
+          "lich_frost_nova": 2
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "ward_dispenser": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1141,
+      "end": 1209,
+      "last_death": 1194,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 2425,
+        "healing": 845,
+        "gold_delta": 615,
+        "xp_delta": 1226,
+        "killed": {
+          "npc_dota_hero_antimage": 1,
+          "npc_dota_hero_bane": 1
+        },
+        "ability_uses": {
+          "axe_battle_hunger": 1,
+          "twin_gate_portal_warp": 1,
+          "axe_berserkers_call": 3,
+          "axe_culling_blade": 3
+        },
+        "item_uses": {
+          "famango": 1,
+          "phase_boots": 5,
+          "blade_mail": 2,
+          "blink": 2,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "77": {
+            "141": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1536,
+        "healing": 221,
+        "gold_delta": 519,
+        "xp_delta": 1305,
+        "killed": {},
+        "ability_uses": {
+          "lich_sinister_gaze": 2,
+          "lich_frost_shield": 3,
+          "lich_chain_frost": 1,
+          "lich_death_charge": 1,
+          "lich_frost_nova": 3
+        },
+        "item_uses": {
+          "clarity": 1,
+          "ward_dispenser": 1,
+          "magic_wand": 2
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1371,
+      "end": 1418,
+      "last_death": 1403,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1614,
+        "healing": 556,
+        "gold_delta": -92,
+        "xp_delta": 265,
+        "killed": {},
+        "ability_uses": {
+          "axe_battle_hunger": 2,
+          "axe_berserkers_call": 1
+        },
+        "item_uses": {
+          "phase_boots": 2,
+          "blade_mail": 1,
+          "blink": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "141": {
+            "92": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1016,
+        "healing": 289,
+        "gold_delta": 90,
+        "xp_delta": 102,
+        "killed": {},
+        "ability_uses": {
+          "lich_sinister_gaze": 1,
+          "lich_chain_frost": 1
+        },
+        "item_uses": {
+          "ward_dispenser": 2
+        },
+        "deaths_pos": {
+          "143": {
+            "89": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1480,
+      "end": 1517,
+      "last_death": 1502,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 711,
+        "healing": 344,
+        "gold_delta": 895,
+        "xp_delta": 1357,
+        "killed": {
+          "npc_dota_hero_witch_doctor": 1,
+          "npc_dota_hero_bane": 1
+        },
+        "ability_uses": {
+          "axe_battle_hunger": 1,
+          "axe_berserkers_call": 1,
+          "axe_culling_blade": 1
+        },
+        "item_uses": {
+          "phase_boots": 3,
+          "pogo_stick": 2,
+          "blade_mail": 1,
+          "blink": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1313,
+        "healing": 142,
+        "gold_delta": 374,
+        "xp_delta": 1228,
+        "killed": {},
+        "ability_uses": {
+          "lich_sinister_gaze": 1,
+          "lich_frost_shield": 1,
+          "lich_chain_frost": 1,
+          "ability_lamp_use": 1,
+          "lich_frost_nova": 2
+        },
+        "item_uses": {
+          "ward_dispenser": 5,
+          "dust": 1,
+          "glimmer_cape": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1650,
+      "end": 1700,
+      "last_death": 1685,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 715,
+        "healing": 743,
+        "gold_delta": 656,
+        "xp_delta": 1168,
+        "killed": {
+          "npc_dota_hero_antimage": 1
+        },
+        "ability_uses": {
+          "axe_berserkers_call": 1,
+          "ability_lamp_use": 1,
+          "axe_culling_blade": 1
+        },
+        "item_uses": {
+          "smoke_of_deceit": 1,
+          "phase_boots": 4,
+          "pogo_stick": 1,
+          "blade_mail": 1,
+          "blink": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 97,
+        "gold_delta": 149,
+        "xp_delta": 192,
+        "killed": {},
+        "ability_uses": {},
+        "item_uses": {
+          "tpscroll": 1,
+          "ward_dispenser": 2,
+          "glimmer_cape": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1717,
+      "end": 1764,
+      "last_death": 1749,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 3961,
+        "healing": 572,
+        "gold_delta": -309,
+        "xp_delta": 7,
+        "killed": {},
+        "ability_uses": {
+          "axe_battle_hunger": 2,
+          "axe_berserkers_call": 2,
+          "axe_culling_blade": 1
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "enchanted_mango": 3,
+          "phase_boots": 3,
+          "pogo_stick": 1,
+          "blade_mail": 1,
+          "blink": 2,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "95": {
+            "99": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 743,
+        "healing": 501,
+        "gold_delta": -16,
+        "xp_delta": 181,
+        "killed": {},
+        "ability_uses": {
+          "lich_sinister_gaze": 1,
+          "lich_chain_frost": 1,
+          "lich_death_charge": 1
+        },
+        "item_uses": {
+          "dust": 1
+        },
+        "deaths_pos": {
+          "97": {
+            "103": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1980,
+      "end": 2030,
+      "last_death": 2015,
+      "deaths": 8,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1657,
+        "healing": 368,
+        "gold_delta": 380,
+        "xp_delta": 2494,
+        "killed": {
+          "npc_dota_hero_bane": 1
+        },
+        "ability_uses": {
+          "axe_battle_hunger": 1,
+          "axe_berserkers_call": 1,
+          "axe_culling_blade": 2
+        },
+        "item_uses": {
+          "jidi_pollen_bag": 1,
+          "black_king_bar": 1,
+          "phase_boots": 3,
+          "blade_mail": 1,
+          "blink": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "115": {
+            "77": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 163,
+        "healing": 38,
+        "gold_delta": 198,
+        "xp_delta": 366,
+        "killed": {},
+        "ability_uses": {
+          "lich_frost_shield": 1,
+          "lich_frost_nova": 1
+        },
+        "item_uses": {},
+        "deaths_pos": {
+          "109": {
+            "78": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 2420,
+      "end": 2474,
+      "last_death": 2459,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1603,
+        "healing": 1433,
+        "gold_delta": 831,
+        "xp_delta": 2941,
+        "killed": {},
+        "ability_uses": {
+          "axe_battle_hunger": 1,
+          "axe_berserkers_call": 1,
+          "axe_culling_blade": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "lotus_orb": 2,
+          "black_king_bar": 1,
+          "phase_boots": 4,
+          "blade_mail": 1,
+          "blink": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1516,
+        "healing": 23,
+        "gold_delta": 319,
+        "xp_delta": 1703,
+        "killed": {
+          "npc_dota_hero_bane": 1
+        },
+        "ability_uses": {
+          "lich_ice_spire": 1,
+          "lich_frost_shield": 1,
+          "lich_chain_frost": 1
+        },
+        "item_uses": {},
+        "deaths_pos": {
+          "129": {
+            "127": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 2602,
+      "end": 2642,
+      "last_death": 2627,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1148,
+        "healing": 825,
+        "gold_delta": 1058,
+        "xp_delta": 3346,
+        "killed": {
+          "npc_dota_hero_lion": 1
+        },
+        "ability_uses": {
+          "axe_battle_hunger": 1,
+          "axe_berserkers_call": 1,
+          "axe_culling_blade": 1
+        },
+        "item_uses": {
+          "lotus_orb": 1,
+          "black_king_bar": 1,
+          "enchanted_mango": 3,
+          "phase_boots": 4,
+          "blade_mail": 1,
+          "blink": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 433,
+        "healing": 97,
+        "gold_delta": 398,
+        "xp_delta": 1253,
+        "killed": {},
+        "ability_uses": {
+          "lich_sinister_gaze": 1,
+          "lich_frost_shield": 1,
+          "lich_frost_nova": 2
+        },
+        "item_uses": {
+          "ward_dispenser": 2,
+          "glimmer_cape": 1
+        },
+        "deaths_pos": {
+          "103": {
+            "104": 1
+          }
+        }
+      }
+    }
+  ]
 }
