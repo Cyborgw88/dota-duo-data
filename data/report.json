@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T20:30:53.498Z",
+  "generated_at": "2026-09-02T21:29:10.589Z",
   "source": "OpenDota",
   "players": {
     "cyborg": 206620580,
@@ -12,9 +12,7 @@
   },
   "count": 30,
   "parsing": {
-    "requested_match_ids": [
-      8979643580
-    ],
+    "requested_match_ids": [],
     "request_limit": 5,
     "wait_ms": 20000
   },
@@ -29,8 +27,8 @@
       "lobby_type": 7,
       "game_mode": 22,
       "radiant_win": true,
-      "parsed": false,
-      "parse_version": null,
+      "parsed": true,
+      "parse_version": 22,
       "same_team": true,
       "cyborg": {
         "account_id": 206620580,
@@ -49,10 +47,12 @@
         "hero_damage": 49637,
         "tower_damage": 2592,
         "hero_healing": 6926,
-        "lane": "unknown",
-        "position_guess": 4,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "position_guess": 3,
+        "position_confidence": "medium",
+        "position_reason": "off lane + higher farm/economy"
       },
       "goddess": {
         "account_id": 160810596,
@@ -71,13 +71,1606 @@
         "hero_damage": 37028,
         "tower_damage": 2287,
         "hero_healing": 1289,
-        "lane": "unknown",
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 32,
+        "wards_sentry": 54,
         "position_guess": 5,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
+        "position_confidence": "medium",
+        "position_reason": "safe lane + lower farm/economy"
       },
-      "objectives": [],
-      "teamfights": []
+      "objectives": [
+        {
+          "time": 5,
+          "type": "CHAT_MESSAGE_FIRSTBLOOD",
+          "key": "5",
+          "slot": 1,
+          "player_slot": 1
+        },
+        {
+          "time": 652,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_clinkz",
+          "key": "npc_dota_badguys_tower1_bot",
+          "slot": 2,
+          "player_slot": 2
+        },
+        {
+          "time": 984,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_goodguys_melee",
+          "key": "npc_dota_badguys_tower1_top"
+        },
+        {
+          "time": 1060,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_lion",
+          "key": "npc_dota_goodguys_tower1_mid",
+          "slot": 1,
+          "player_slot": 1
+        },
+        {
+          "time": 1143,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_clinkz",
+          "key": "npc_dota_badguys_tower1_mid",
+          "slot": 2,
+          "player_slot": 2
+        },
+        {
+          "time": 1244,
+          "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+          "team": 2,
+          "slot": 0,
+          "player_slot": 0
+        },
+        {
+          "time": 1318,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_clinkz",
+          "key": "npc_dota_badguys_tower2_bot",
+          "slot": 2,
+          "player_slot": 2
+        },
+        {
+          "time": 1579,
+          "type": "CHAT_MESSAGE_ROSHAN_KILL",
+          "team": 2
+        },
+        {
+          "time": 1579,
+          "type": "CHAT_MESSAGE_AEGIS",
+          "slot": 3,
+          "player_slot": 3
+        },
+        {
+          "time": 1606,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_badguys_melee",
+          "key": "npc_dota_goodguys_tower1_top"
+        },
+        {
+          "time": 1662,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_badguys_melee",
+          "key": "npc_dota_goodguys_tower1_bot"
+        },
+        {
+          "time": 1891,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_clinkz",
+          "key": "npc_dota_badguys_tower2_top",
+          "slot": 2,
+          "player_slot": 2
+        },
+        {
+          "time": 1961,
+          "type": "building_kill",
+          "unit": "npc_dota_badguys_siege",
+          "key": "npc_dota_goodguys_tower2_bot"
+        },
+        {
+          "time": 2103,
+          "type": "CHAT_MESSAGE_COURIER_LOST",
+          "team": 3,
+          "value": 130,
+          "killer": 2
+        },
+        {
+          "time": 2157,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_nevermore",
+          "key": "npc_dota_goodguys_tower2_top",
+          "slot": 6,
+          "player_slot": 129
+        },
+        {
+          "time": 2504,
+          "type": "CHAT_MESSAGE_ROSHAN_KILL",
+          "team": 2
+        },
+        {
+          "time": 2504,
+          "type": "CHAT_MESSAGE_AEGIS",
+          "slot": 3,
+          "player_slot": 3
+        },
+        {
+          "time": 2531,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_clinkz",
+          "key": "npc_dota_badguys_tower2_mid",
+          "slot": 2,
+          "player_slot": 2
+        },
+        {
+          "time": 2574,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_clinkz",
+          "key": "npc_dota_badguys_tower3_mid",
+          "slot": 2,
+          "player_slot": 2
+        },
+        {
+          "time": 2618,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_nevermore",
+          "key": "npc_dota_goodguys_tower2_mid",
+          "slot": 6,
+          "player_slot": 129
+        },
+        {
+          "time": 2640,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_nevermore",
+          "key": "npc_dota_goodguys_tower3_mid",
+          "slot": 6,
+          "player_slot": 129
+        },
+        {
+          "time": 2645,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_nevermore",
+          "key": "npc_dota_goodguys_range_rax_mid",
+          "slot": 6,
+          "player_slot": 129
+        },
+        {
+          "time": 2651,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_nevermore",
+          "key": "npc_dota_goodguys_melee_rax_mid",
+          "slot": 6,
+          "player_slot": 129
+        },
+        {
+          "time": 2662,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_alchemist",
+          "key": "npc_dota_goodguys_tower3_top",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 2665,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_alchemist",
+          "key": "npc_dota_goodguys_melee_rax_top",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 2667,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_nevermore",
+          "key": "npc_dota_goodguys_range_rax_top",
+          "slot": 6,
+          "player_slot": 129
+        },
+        {
+          "time": 2806,
+          "type": "CHAT_MESSAGE_COURIER_LOST",
+          "team": 2,
+          "value": 145,
+          "killer": 130
+        },
+        {
+          "time": 3153,
+          "type": "CHAT_MESSAGE_ROSHAN_KILL",
+          "team": 2
+        },
+        {
+          "time": 3153,
+          "type": "CHAT_MESSAGE_AEGIS",
+          "slot": 3,
+          "player_slot": 3
+        },
+        {
+          "time": 3363,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_alchemist",
+          "key": "npc_dota_goodguys_tower3_bot",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 3371,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_alchemist",
+          "key": "npc_dota_goodguys_melee_rax_bot",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 3373,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_vengefulspirit",
+          "key": "npc_dota_goodguys_range_rax_bot",
+          "slot": 7,
+          "player_slot": 130
+        },
+        {
+          "time": 3542,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_clinkz",
+          "key": "npc_dota_badguys_range_rax_mid",
+          "slot": 2,
+          "player_slot": 2
+        },
+        {
+          "time": 3949,
+          "type": "CHAT_MESSAGE_ROSHAN_KILL",
+          "team": 2
+        },
+        {
+          "time": 3952,
+          "type": "CHAT_MESSAGE_AEGIS",
+          "slot": 3,
+          "player_slot": 3
+        },
+        {
+          "time": 4284,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_alchemist",
+          "key": "npc_dota_goodguys_tower4",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 4343,
+          "type": "CHAT_MESSAGE_COURIER_LOST",
+          "team": 3,
+          "value": 170,
+          "killer": 2
+        },
+        {
+          "time": 4371,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_clinkz",
+          "key": "npc_dota_badguys_melee_rax_mid",
+          "slot": 2,
+          "player_slot": 2
+        },
+        {
+          "time": 4595,
+          "type": "CHAT_MESSAGE_ROSHAN_KILL",
+          "team": 3
+        },
+        {
+          "time": 4599,
+          "type": "CHAT_MESSAGE_AEGIS",
+          "slot": 7,
+          "player_slot": 130
+        },
+        {
+          "time": 4699,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_alchemist",
+          "key": "npc_dota_goodguys_tower4",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 4787,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_clinkz",
+          "key": "npc_dota_badguys_tower4",
+          "slot": 2,
+          "player_slot": 2
+        },
+        {
+          "time": 4790,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_clinkz",
+          "key": "npc_dota_badguys_tower4",
+          "slot": 2,
+          "player_slot": 2
+        },
+        {
+          "time": 4799,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_clinkz",
+          "key": "npc_dota_badguys_fort",
+          "slot": 2,
+          "player_slot": 2
+        }
+      ],
+      "teamfights": [
+        {
+          "start": 170,
+          "end": 214,
+          "last_death": 199,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 279,
+            "healing": 303,
+            "gold_delta": 193,
+            "xp_delta": 204,
+            "killed": {},
+            "ability_uses": {
+              "tidehunter_anchor_smash": 1,
+              "tidehunter_gush": 1
+            },
+            "item_uses": {
+              "magic_stick": 1,
+              "famango": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 235,
+            "healing": 49,
+            "gold_delta": 179,
+            "xp_delta": 56,
+            "killed": {},
+            "ability_uses": {
+              "plus_high_five": 1,
+              "ancient_apparition_cold_feet": 1
+            },
+            "item_uses": {
+              "tango": 1,
+              "blood_grenade": 1
+            },
+            "deaths_pos": {
+              "181": {
+                "86": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 751,
+          "end": 795,
+          "last_death": 780,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 760,
+            "healing": 295,
+            "gold_delta": 291,
+            "xp_delta": 551,
+            "killed": {},
+            "ability_uses": {
+              "tidehunter_anchor_smash": 4,
+              "tidehunter_gush": 1
+            },
+            "item_uses": {
+              "soul_ring": 1,
+              "phase_boots": 4
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 328,
+            "healing": 149,
+            "gold_delta": 212,
+            "xp_delta": 499,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_vortex": 1,
+              "ancient_apparition_cold_feet": 1
+            },
+            "item_uses": {
+              "tpscroll": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 890,
+          "end": 933,
+          "last_death": 918,
+          "deaths": 4,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 536,
+            "healing": 286,
+            "gold_delta": 95,
+            "xp_delta": 649,
+            "killed": {},
+            "ability_uses": {
+              "tidehunter_anchor_smash": 1,
+              "tidehunter_ravage": 1,
+              "tidehunter_gush": 1
+            },
+            "item_uses": {
+              "soul_ring": 1,
+              "phase_boots": 3
+            },
+            "deaths_pos": {
+              "93": {
+                "169": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 710,
+            "healing": 104,
+            "gold_delta": 36,
+            "xp_delta": 248,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_vortex": 1,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_cold_feet": 1
+            },
+            "item_uses": {
+              "magic_wand": 1
+            },
+            "deaths_pos": {
+              "125": {
+                "124": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 1240,
+          "end": 1293,
+          "last_death": 1278,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 1965,
+            "healing": 1344,
+            "gold_delta": 954,
+            "xp_delta": 1427,
+            "killed": {
+              "npc_dota_hero_rubick": 1
+            },
+            "ability_uses": {
+              "tidehunter_dead_in_the_water": 1,
+              "tidehunter_kraken_shell": 1,
+              "tidehunter_anchor_smash": 4,
+              "tidehunter_ravage": 1,
+              "tidehunter_gush": 3
+            },
+            "item_uses": {
+              "magic_stick": 1,
+              "soul_ring": 2,
+              "phase_boots": 6,
+              "blink": 3,
+              "tidehunter_fish": 2
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 0,
+            "healing": 824,
+            "gold_delta": 55,
+            "xp_delta": 1126,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_ice_vortex": 2
+            },
+            "item_uses": {
+              "arcane_boots": 1,
+              "famango": 2
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 1323,
+          "end": 1369,
+          "last_death": 1354,
+          "deaths": 5,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1249,
+            "healing": 562,
+            "gold_delta": -4,
+            "xp_delta": 567,
+            "killed": {},
+            "ability_uses": {
+              "tidehunter_dead_in_the_water": 1,
+              "tidehunter_kraken_shell": 1,
+              "tidehunter_anchor_smash": 2,
+              "tidehunter_gush": 1
+            },
+            "item_uses": {
+              "magic_stick": 1,
+              "soul_ring": 1,
+              "phase_boots": 3,
+              "blink": 1,
+              "tidehunter_fish": 2
+            },
+            "deaths_pos": {
+              "155": {
+                "132": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 0,
+            "healing": 129,
+            "gold_delta": 180,
+            "xp_delta": 1145,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_ice_vortex": 2,
+              "ability_lamp_use": 1,
+              "ancient_apparition_cold_feet": 1
+            },
+            "item_uses": {
+              "arcane_boots": 1,
+              "tpscroll": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 1478,
+          "end": 1526,
+          "last_death": 1511,
+          "deaths": 5,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 1484,
+            "healing": 1191,
+            "gold_delta": 678,
+            "xp_delta": 1466,
+            "killed": {
+              "npc_dota_hero_nevermore": 1
+            },
+            "ability_uses": {
+              "tidehunter_dead_in_the_water": 1,
+              "tidehunter_anchor_smash": 3,
+              "tidehunter_gush": 3,
+              "tidehunter_ravage": 1
+            },
+            "item_uses": {
+              "soul_ring": 1,
+              "phase_boots": 5,
+              "blink": 2,
+              "tidehunter_fish": 2
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 853,
+            "healing": 334,
+            "gold_delta": 913,
+            "xp_delta": 1938,
+            "killed": {
+              "npc_dota_hero_vengefulspirit": 1
+            },
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_ice_vortex": 4,
+              "ancient_apparition_cold_feet": 3
+            },
+            "item_uses": {
+              "ward_sentry": 1,
+              "arcane_boots": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 1525,
+          "end": 1560,
+          "last_death": 1545,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 1146,
+            "healing": 467,
+            "gold_delta": 476,
+            "xp_delta": 1156,
+            "killed": {
+              "npc_dota_hero_alchemist": 1
+            },
+            "ability_uses": {
+              "tidehunter_dead_in_the_water": 1,
+              "tidehunter_anchor_smash": 2,
+              "tidehunter_gush": 1
+            },
+            "item_uses": {
+              "phase_boots": 3,
+              "blink": 1,
+              "tidehunter_fish": 1,
+              "dust": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 551,
+            "healing": 425,
+            "gold_delta": -9,
+            "xp_delta": 1163,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_vortex": 2,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_cold_feet": 1
+            },
+            "item_uses": {
+              "famango": 1,
+              "dust": 1,
+              "magic_wand": 1,
+              "glimmer_cape": 1
+            },
+            "deaths_pos": {
+              "138": {
+                "116": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 1571,
+          "end": 1624,
+          "last_death": 1609,
+          "deaths": 6,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 432,
+            "healing": 1354,
+            "gold_delta": 128,
+            "xp_delta": 735,
+            "killed": {},
+            "ability_uses": {
+              "tidehunter_dead_in_the_water": 1,
+              "tidehunter_kraken_shell": 1,
+              "tidehunter_anchor_smash": 1,
+              "tidehunter_gush": 2
+            },
+            "item_uses": {
+              "phase_boots": 2,
+              "blink": 1
+            },
+            "deaths_pos": {
+              "161": {
+                "109": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 554,
+            "healing": 228,
+            "gold_delta": 177,
+            "xp_delta": 171,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_ice_vortex": 2,
+              "ancient_apparition_cold_feet": 1
+            },
+            "item_uses": {
+              "arcane_boots": 1,
+              "tpscroll": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 1895,
+          "end": 1940,
+          "last_death": 1925,
+          "deaths": 4,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 523,
+            "healing": 814,
+            "gold_delta": 368,
+            "xp_delta": 1153,
+            "killed": {},
+            "ability_uses": {
+              "tidehunter_dead_in_the_water": 1,
+              "tidehunter_anchor_smash": 3,
+              "tidehunter_gush": 3
+            },
+            "item_uses": {
+              "phase_boots": 5,
+              "blink": 3,
+              "tidehunter_fish": 1,
+              "dust": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 648,
+            "healing": 0,
+            "gold_delta": 366,
+            "xp_delta": 1198,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_vortex": 3,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_cold_feet": 2
+            },
+            "item_uses": {
+              "arcane_boots": 1,
+              "ward_sentry": 1,
+              "glimmer_cape": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 2275,
+          "end": 2309,
+          "last_death": 2294,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 2893,
+            "healing": 412,
+            "gold_delta": 627,
+            "xp_delta": 1497,
+            "killed": {},
+            "ability_uses": {
+              "tidehunter_kraken_shell": 1,
+              "tidehunter_anchor_smash": 1,
+              "tidehunter_gush": 2,
+              "tidehunter_ravage": 1
+            },
+            "item_uses": {
+              "shivas_guard": 1,
+              "phase_boots": 3,
+              "blink": 1,
+              "tidehunter_fish": 3,
+              "dust": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 823,
+            "healing": 180,
+            "gold_delta": -324,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ability_capture": 1,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_ice_vortex": 1,
+              "ancient_apparition_cold_feet": 1
+            },
+            "item_uses": {
+              "lotus_orb": 1,
+              "ward_dispenser": 2
+            },
+            "deaths_pos": {
+              "163": {
+                "125": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 2313,
+          "end": 2374,
+          "last_death": 2359,
+          "deaths": 5,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1527,
+            "healing": 914,
+            "gold_delta": 115,
+            "xp_delta": 3180,
+            "killed": {},
+            "ability_uses": {
+              "tidehunter_dead_in_the_water": 1,
+              "tidehunter_kraken_shell": 1,
+              "tidehunter_anchor_smash": 3,
+              "tidehunter_gush": 3
+            },
+            "item_uses": {
+              "shivas_guard": 1,
+              "phase_boots": 3,
+              "blink": 1,
+              "tidehunter_fish": 1,
+              "dust": 1
+            },
+            "deaths_pos": {
+              "168": {
+                "137": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 0,
+            "healing": 47,
+            "gold_delta": 0,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1
+            },
+            "item_uses": {
+              "tpscroll": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 2552,
+          "end": 2616,
+          "last_death": 2601,
+          "deaths": 6,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1364,
+            "healing": 1648,
+            "gold_delta": 118,
+            "xp_delta": 92,
+            "killed": {},
+            "ability_uses": {
+              "tidehunter_dead_in_the_water": 1,
+              "tidehunter_kraken_shell": 1,
+              "tidehunter_anchor_smash": 3,
+              "tidehunter_gush": 3,
+              "tidehunter_ravage": 1
+            },
+            "item_uses": {
+              "shivas_guard": 1,
+              "phase_boots": 2,
+              "blink": 1
+            },
+            "deaths_pos": {
+              "157": {
+                "150": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1842,
+            "healing": 51,
+            "gold_delta": 1391,
+            "xp_delta": 5276,
+            "killed": {
+              "npc_dota_hero_crystal_maiden": 1,
+              "npc_dota_hero_vengefulspirit": 1
+            },
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_vortex": 5,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_cold_feet": 2
+            },
+            "item_uses": {
+              "arcane_boots": 1,
+              "lotus_orb": 2
+            },
+            "deaths_pos": {
+              "151": {
+                "148": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 2709,
+          "end": 2760,
+          "last_death": 2745,
+          "deaths": 5,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 2903,
+            "healing": 1276,
+            "gold_delta": 550,
+            "xp_delta": 3104,
+            "killed": {},
+            "ability_uses": {
+              "tidehunter_dead_in_the_water": 1,
+              "tidehunter_kraken_shell": 1,
+              "tidehunter_anchor_smash": 5,
+              "tidehunter_gush": 4,
+              "tidehunter_ravage": 1
+            },
+            "item_uses": {
+              "shivas_guard": 2,
+              "phase_boots": 4,
+              "blink": 2
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1853,
+            "healing": 146,
+            "gold_delta": 160,
+            "xp_delta": 1524,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_ice_vortex": 4,
+              "ancient_apparition_cold_feet": 2
+            },
+            "item_uses": {
+              "arcane_boots": 1,
+              "lotus_orb": 2,
+              "cyclone": 1,
+              "glimmer_cape": 1
+            },
+            "deaths_pos": {
+              "158": {
+                "124": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 2881,
+          "end": 2933,
+          "last_death": 2918,
+          "deaths": 9,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1214,
+            "healing": 58,
+            "gold_delta": 324,
+            "xp_delta": 948,
+            "killed": {},
+            "ability_uses": {
+              "tidehunter_kraken_shell": 1,
+              "tidehunter_anchor_smash": 1,
+              "tidehunter_ravage": 1,
+              "tidehunter_gush": 1
+            },
+            "item_uses": {
+              "phase_boots": 1,
+              "blink": 1
+            },
+            "deaths_pos": {
+              "117": {
+                "115": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 748,
+            "healing": 400,
+            "gold_delta": 1027,
+            "xp_delta": 3164,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_ice_vortex": 2,
+              "ancient_apparition_cold_feet": 1
+            },
+            "item_uses": {
+              "ward_sentry": 1,
+              "lotus_orb": 2,
+              "glimmer_cape": 1
+            },
+            "deaths_pos": {
+              "121": {
+                "121": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 3149,
+          "end": 3182,
+          "last_death": 3167,
+          "deaths": 4,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1535,
+            "healing": 66,
+            "gold_delta": 33,
+            "xp_delta": 736,
+            "killed": {},
+            "ability_uses": {
+              "tidehunter_dead_in_the_water": 1,
+              "tidehunter_anchor_smash": 1,
+              "tidehunter_ravage": 1,
+              "tidehunter_gush": 1
+            },
+            "item_uses": {
+              "shivas_guard": 1,
+              "phase_boots": 1,
+              "blink": 1
+            },
+            "deaths_pos": {
+              "102": {
+                "135": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 804,
+            "healing": 0,
+            "gold_delta": 1008,
+            "xp_delta": 1752,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_vortex": 3,
+              "ancient_apparition_cold_feet": 3
+            },
+            "item_uses": {
+              "arcane_boots": 1,
+              "ward_dispenser": 2
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 3180,
+          "end": 3222,
+          "last_death": 3207,
+          "deaths": 5,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 1,
+            "damage": 223,
+            "healing": 434,
+            "gold_delta": 0,
+            "xp_delta": 25,
+            "killed": {},
+            "ability_uses": {
+              "tidehunter_dead_in_the_water": 1,
+              "tidehunter_kraken_shell": 1,
+              "tidehunter_anchor_smash": 2,
+              "tidehunter_gush": 2
+            },
+            "item_uses": {
+              "shivas_guard": 1,
+              "phase_boots": 2,
+              "blink": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 835,
+            "healing": 193,
+            "gold_delta": 1222,
+            "xp_delta": 3197,
+            "killed": {
+              "npc_dota_hero_vengefulspirit": 1
+            },
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_vortex": 2,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_cold_feet": 2
+            },
+            "item_uses": {
+              "arcane_boots": 1,
+              "lotus_orb": 1,
+              "cyclone": 1,
+              "glimmer_cape": 1
+            },
+            "deaths_pos": {
+              "83": {
+                "94": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 3384,
+          "end": 3429,
+          "last_death": 3414,
+          "deaths": 4,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 4806,
+            "healing": 546,
+            "gold_delta": 121,
+            "xp_delta": 2278,
+            "killed": {},
+            "ability_uses": {
+              "tidehunter_dead_in_the_water": 1,
+              "tidehunter_kraken_shell": 1,
+              "tidehunter_anchor_smash": 3,
+              "tidehunter_gush": 3,
+              "tidehunter_ravage": 2
+            },
+            "item_uses": {
+              "refresher": 1,
+              "shivas_guard": 1,
+              "phase_boots": 3,
+              "blink": 1,
+              "tidehunter_fish": 1
+            },
+            "deaths_pos": {
+              "98": {
+                "84": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 3074,
+            "healing": 793,
+            "gold_delta": 995,
+            "xp_delta": 2335,
+            "killed": {
+              "npc_dota_hero_nevermore": 1
+            },
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_vortex": 5,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_cold_feet": 3
+            },
+            "item_uses": {
+              "ward_sentry": 1,
+              "arcane_boots": 1,
+              "lotus_orb": 2
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 3430,
+          "end": 3472,
+          "last_death": 3457,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 0,
+            "healing": 0,
+            "gold_delta": 0,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {},
+            "item_uses": {},
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 1967,
+            "healing": 1028,
+            "gold_delta": 2395,
+            "xp_delta": 5049,
+            "killed": {
+              "npc_dota_hero_vengefulspirit": 1
+            },
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_vortex": 6,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_cold_feet": 4
+            },
+            "item_uses": {
+              "lotus_orb": 1,
+              "cyclone": 1,
+              "glimmer_cape": 2
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 3929,
+          "end": 4003,
+          "last_death": 3988,
+          "deaths": 7,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 1,
+            "damage": 1379,
+            "healing": 459,
+            "gold_delta": 2191,
+            "xp_delta": 1274,
+            "killed": {},
+            "ability_uses": {
+              "tidehunter_kraken_shell": 1,
+              "tidehunter_anchor_smash": 6,
+              "tidehunter_ravage": 2,
+              "tidehunter_gush": 3
+            },
+            "item_uses": {
+              "refresher": 1,
+              "demonicon": 1,
+              "shivas_guard": 2,
+              "phase_boots": 5,
+              "blink": 3
+            },
+            "deaths_pos": {
+              "145": {
+                "110": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 2730,
+            "healing": 912,
+            "gold_delta": 1422,
+            "xp_delta": 1648,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_blast_release": 2,
+              "ancient_apparition_ice_vortex": 8,
+              "ancient_apparition_cold_feet": 4
+            },
+            "item_uses": {
+              "guardian_greaves": 1,
+              "lotus_orb": 1,
+              "ward_dispenser": 3
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 4141,
+          "end": 4189,
+          "last_death": 4174,
+          "deaths": 6,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 2608,
+            "healing": 912,
+            "gold_delta": 1253,
+            "xp_delta": 6187,
+            "killed": {
+              "npc_dota_hero_nevermore": 1
+            },
+            "ability_uses": {
+              "tidehunter_kraken_shell": 1,
+              "tidehunter_anchor_smash": 5,
+              "tidehunter_gush": 2,
+              "tidehunter_ravage": 2
+            },
+            "item_uses": {
+              "refresher": 1,
+              "demonicon": 1,
+              "shivas_guard": 1,
+              "phase_boots": 4,
+              "blink": 1,
+              "tidehunter_fish": 5
+            },
+            "deaths_pos": {
+              "161": {
+                "156": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 1028,
+            "healing": 373,
+            "gold_delta": 754,
+            "xp_delta": 319,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_vortex": 9,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_cold_feet": 3
+            },
+            "item_uses": {
+              "guardian_greaves": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 4198,
+          "end": 4244,
+          "last_death": 4229,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 0,
+            "healing": 0,
+            "gold_delta": 0,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {},
+            "item_uses": {},
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 0,
+            "healing": 765,
+            "gold_delta": 435,
+            "xp_delta": 391,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_vortex": 9,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_cold_feet": 3
+            },
+            "item_uses": {
+              "greater_famango": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 4279,
+          "end": 4323,
+          "last_death": 4308,
+          "deaths": 4,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 1091,
+            "healing": 621,
+            "gold_delta": 1461,
+            "xp_delta": 3238,
+            "killed": {
+              "npc_dota_hero_alchemist": 1
+            },
+            "ability_uses": {
+              "tidehunter_dead_in_the_water": 1,
+              "tidehunter_kraken_shell": 1,
+              "tidehunter_anchor_smash": 3,
+              "tidehunter_gush": 3,
+              "tidehunter_ravage": 1
+            },
+            "item_uses": {
+              "demonicon": 1,
+              "shivas_guard": 1,
+              "phase_boots": 2,
+              "blink": 2,
+              "tidehunter_fish": 2
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 1026,
+            "healing": 942,
+            "gold_delta": 1969,
+            "xp_delta": 4852,
+            "killed": {
+              "npc_dota_hero_nevermore": 1
+            },
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_ice_vortex": 9,
+              "ancient_apparition_cold_feet": 4
+            },
+            "item_uses": {
+              "guardian_greaves": 1,
+              "lotus_orb": 2,
+              "ward_dispenser": 2,
+              "wind_waker": 1,
+              "glimmer_cape": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 4354,
+          "end": 4395,
+          "last_death": 4380,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 2054,
+            "healing": 0,
+            "gold_delta": 99,
+            "xp_delta": 2376,
+            "killed": {
+              "npc_dota_hero_crystal_maiden": 1
+            },
+            "ability_uses": {
+              "tidehunter_kraken_shell": 1,
+              "tidehunter_anchor_smash": 3,
+              "tidehunter_ravage": 1,
+              "tidehunter_gush": 1
+            },
+            "item_uses": {
+              "refresher": 1,
+              "shivas_guard": 1,
+              "phase_boots": 2,
+              "tidehunter_fish": 2,
+              "blink": 1
+            },
+            "deaths_pos": {
+              "153": {
+                "167": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 143,
+            "healing": 693,
+            "gold_delta": 735,
+            "xp_delta": 222,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_vortex": 5,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_cold_feet": 2
+            },
+            "item_uses": {},
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 4650,
+          "end": 4686,
+          "last_death": 4671,
+          "deaths": 4,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 1381,
+            "healing": 913,
+            "gold_delta": 1350,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {
+              "tidehunter_kraken_shell": 1,
+              "tidehunter_anchor_smash": 2,
+              "tidehunter_gush": 4,
+              "tidehunter_ravage": 2
+            },
+            "item_uses": {
+              "crimson_guard": 1,
+              "refresher": 1,
+              "demonicon": 1,
+              "shivas_guard": 1,
+              "phase_boots": 3,
+              "tidehunter_fish": 3
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 524,
+            "healing": 352,
+            "gold_delta": 1010,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_vortex": 7,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_cold_feet": 1
+            },
+            "item_uses": {},
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 4689,
+          "end": 4736,
+          "last_death": 4721,
+          "deaths": 7,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 1079,
+            "healing": 609,
+            "gold_delta": 4285,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {
+              "tidehunter_dead_in_the_water": 1,
+              "tidehunter_anchor_smash": 2,
+              "tidehunter_gush": 2
+            },
+            "item_uses": {
+              "crimson_guard": 1,
+              "shivas_guard": 1,
+              "phase_boots": 2,
+              "tidehunter_fish": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 2907,
+            "healing": 278,
+            "gold_delta": 1782,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {
+              "ancient_apparition_ice_blast": 1,
+              "ancient_apparition_ice_vortex": 5,
+              "ancient_apparition_ice_blast_release": 1,
+              "ancient_apparition_cold_feet": 3
+            },
+            "item_uses": {
+              "guardian_greaves": 1,
+              "lotus_orb": 2,
+              "wind_waker": 1,
+              "glimmer_cape": 1
+            },
+            "deaths_pos": {}
+          }
+        }
+      ]
     },
     {
       "match_id": 8979560571,
