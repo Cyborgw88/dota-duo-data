@@ -7,8 +7,8 @@
   "lobby_type": 7,
   "game_mode": 22,
   "radiant_win": false,
-  "parsed": false,
-  "parse_version": null,
+  "parsed": true,
+  "parse_version": 22,
   "same_team": true,
   "cyborg": {
     "account_id": 206620580,
@@ -27,10 +27,14 @@
     "hero_damage": 23933,
     "tower_damage": 427,
     "hero_healing": 306,
-    "lane": "unknown",
-    "position_guess": 4,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 2,
+    "lane": "mid",
+    "is_roaming": false,
+    "wards_observer": 2,
+    "wards_sentry": 2,
+    "position_guess": 2,
+    "position_confidence": "high",
+    "position_reason": "lane_role=mid"
   },
   "goddess": {
     "account_id": 160810596,
@@ -49,11 +53,727 @@
     "hero_damage": 14840,
     "tower_damage": 143,
     "hero_healing": 0,
-    "lane": "unknown",
+    "lane_role": 1,
+    "lane": "safe",
+    "is_roaming": false,
+    "wards_observer": 11,
+    "wards_sentry": 17,
     "position_guess": 5,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "position_confidence": "medium",
+    "position_reason": "safe lane + lower farm/economy"
   },
-  "objectives": [],
-  "teamfights": []
+  "objectives": [
+    {
+      "time": -24,
+      "type": "CHAT_MESSAGE_FIRSTBLOOD",
+      "key": "9",
+      "slot": 4,
+      "player_slot": 4
+    },
+    {
+      "time": 192,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 2,
+      "value": 35,
+      "killer": 131
+    },
+    {
+      "time": 204,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 3,
+      "value": 35,
+      "killer": 0
+    },
+    {
+      "time": 910,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_viper",
+      "key": "npc_dota_badguys_tower1_mid",
+      "slot": 2,
+      "player_slot": 2
+    },
+    {
+      "time": 913,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 3,
+      "value": 55,
+      "killer": 3
+    },
+    {
+      "time": 960,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_phantom_lancer",
+      "key": "npc_dota_badguys_tower1_bot",
+      "slot": 4,
+      "player_slot": 4
+    },
+    {
+      "time": 1138,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_phantom_lancer",
+      "key": "npc_dota_badguys_tower1_top",
+      "slot": 4,
+      "player_slot": 4
+    },
+    {
+      "time": 1217,
+      "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+      "team": 2,
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 1601,
+      "type": "CHAT_MESSAGE_ROSHAN_KILL",
+      "team": 3
+    },
+    {
+      "time": 1602,
+      "type": "CHAT_MESSAGE_AEGIS",
+      "slot": 6,
+      "player_slot": 129
+    },
+    {
+      "time": 1745,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_morphling",
+      "key": "npc_dota_goodguys_tower1_bot",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 1800,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_goodguys_tower1_top",
+      "slot": 6,
+      "player_slot": 129
+    },
+    {
+      "time": 1848,
+      "type": "building_kill",
+      "unit": "npc_dota_badguys_siege",
+      "key": "npc_dota_goodguys_tower1_mid"
+    },
+    {
+      "time": 1928,
+      "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+      "team": 3,
+      "slot": 9,
+      "player_slot": 132
+    },
+    {
+      "time": 1987,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_morphling",
+      "key": "npc_dota_goodguys_tower2_bot",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 2260,
+      "type": "building_kill",
+      "unit": "npc_dota_goodguys_siege",
+      "key": "npc_dota_badguys_tower2_top"
+    },
+    {
+      "time": 2266,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_morphling",
+      "key": "npc_dota_goodguys_tower2_mid",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 2350,
+      "type": "CHAT_MESSAGE_ROSHAN_KILL",
+      "team": 3
+    },
+    {
+      "time": 2351,
+      "type": "CHAT_MESSAGE_AEGIS",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 2431,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_morphling",
+      "key": "npc_dota_goodguys_tower2_top",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 2482,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_morphling",
+      "key": "npc_dota_goodguys_tower3_top",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 2486,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_morphling",
+      "key": "npc_dota_goodguys_range_rax_top",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 2490,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_morphling",
+      "key": "npc_dota_goodguys_melee_rax_top",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 2502,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_morphling",
+      "key": "npc_dota_goodguys_tower3_mid",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 2504,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_morphling",
+      "key": "npc_dota_goodguys_range_rax_mid",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 2508,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_morphling",
+      "key": "npc_dota_goodguys_melee_rax_mid",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 2525,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_goodguys_tower3_bot",
+      "slot": 6,
+      "player_slot": 129
+    },
+    {
+      "time": 2527,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_morphling",
+      "key": "npc_dota_goodguys_range_rax_bot",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 2532,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_morphling",
+      "key": "npc_dota_goodguys_melee_rax_bot",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 2627,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_morphling",
+      "key": "npc_dota_goodguys_tower4",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 2631,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_morphling",
+      "key": "npc_dota_goodguys_tower4",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 2639,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_goodguys_fort",
+      "slot": 6,
+      "player_slot": 129
+    }
+  ],
+  "teamfights": [
+    {
+      "start": 170,
+      "end": 211,
+      "last_death": 196,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 200,
+        "healing": 310,
+        "gold_delta": 282,
+        "xp_delta": 397,
+        "killed": {},
+        "ability_uses": {
+          "viper_nethertoxin": 2,
+          "ability_lamp_use": 1
+        },
+        "item_uses": {
+          "bottle": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 635,
+        "healing": 188,
+        "gold_delta": 17,
+        "xp_delta": 56,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 2,
+          "vengefulspirit_wave_of_terror": 2
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "blood_grenade": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "188": {
+            "91": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 365,
+      "end": 413,
+      "last_death": 398,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 0,
+        "gold_delta": 139,
+        "xp_delta": 243,
+        "killed": {},
+        "ability_uses": {
+          "viper_nethertoxin": 1
+        },
+        "item_uses": {
+          "ward_observer": 1,
+          "ward_dispenser": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 130,
+        "healing": 174,
+        "gold_delta": -27,
+        "xp_delta": 141,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 1,
+          "vengefulspirit_wave_of_terror": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "77": {
+            "152": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 479,
+      "end": 524,
+      "last_death": 509,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 149,
+        "healing": 85,
+        "gold_delta": 198,
+        "xp_delta": 191,
+        "killed": {
+          "npc_dota_hero_tusk": 1
+        },
+        "ability_uses": {
+          "viper_nethertoxin": 1
+        },
+        "item_uses": {
+          "faerie_fire": 1
+        },
+        "deaths_pos": {
+          "109": {
+            "123": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 64,
+        "healing": 45,
+        "gold_delta": 178,
+        "xp_delta": 455,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_wave_of_terror": 1
+        },
+        "item_uses": {
+          "tpscroll": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 623,
+      "end": 670,
+      "last_death": 655,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1940,
+        "healing": 404,
+        "gold_delta": 609,
+        "xp_delta": 1115,
+        "killed": {},
+        "ability_uses": {
+          "viper_nethertoxin": 3,
+          "viper_viper_strike": 1
+        },
+        "item_uses": {
+          "ward_dispenser": 2,
+          "bottle": 3
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 628,
+        "healing": 248,
+        "gold_delta": 498,
+        "xp_delta": 710,
+        "killed": {
+          "npc_dota_hero_lina": 1
+        },
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 1,
+          "vengefulspirit_nether_swap": 1,
+          "vengefulspirit_wave_of_terror": 1
+        },
+        "item_uses": {
+          "famango": 1
+        },
+        "deaths_pos": {
+          "126": {
+            "124": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 914,
+      "end": 947,
+      "last_death": 932,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 545,
+        "healing": 9,
+        "gold_delta": 433,
+        "xp_delta": 871,
+        "killed": {
+          "npc_dota_hero_lina": 1
+        },
+        "ability_uses": {
+          "viper_nethertoxin": 1,
+          "viper_viper_strike": 1
+        },
+        "item_uses": {
+          "bottle": 3
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 621,
+        "healing": 650,
+        "gold_delta": 393,
+        "xp_delta": 273,
+        "killed": {
+          "npc_dota_hero_tusk": 1
+        },
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 1,
+          "vengefulspirit_wave_of_terror": 1
+        },
+        "item_uses": {
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1040,
+      "end": 1075,
+      "last_death": 1060,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 0,
+        "gold_delta": 0,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {},
+        "item_uses": {},
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 450,
+        "healing": 636,
+        "gold_delta": 22,
+        "xp_delta": 90,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 1,
+          "vengefulspirit_nether_swap": 1,
+          "vengefulspirit_wave_of_terror": 2
+        },
+        "item_uses": {
+          "flask": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "83": {
+            "165": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1337,
+      "end": 1390,
+      "last_death": 1375,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1231,
+        "healing": 152,
+        "gold_delta": -254,
+        "xp_delta": 35,
+        "killed": {},
+        "ability_uses": {
+          "viper_nethertoxin": 1,
+          "viper_viper_strike": 1
+        },
+        "item_uses": {
+          "rod_of_atos": 1,
+          "bottle": 3
+        },
+        "deaths_pos": {
+          "151": {
+            "142": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 271,
+        "healing": 174,
+        "gold_delta": -43,
+        "xp_delta": 565,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 1,
+          "ability_lamp_use": 3,
+          "vengefulspirit_nether_swap": 1,
+          "vengefulspirit_wave_of_terror": 1
+        },
+        "item_uses": {
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "145": {
+            "145": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1516,
+      "end": 1570,
+      "last_death": 1555,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1458,
+        "healing": 79,
+        "gold_delta": -226,
+        "xp_delta": 266,
+        "killed": {},
+        "ability_uses": {
+          "viper_nethertoxin": 2,
+          "viper_viper_strike": 1,
+          "viper_nose_dive": 1
+        },
+        "item_uses": {
+          "rod_of_atos": 1,
+          "bottle": 1
+        },
+        "deaths_pos": {
+          "121": {
+            "160": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 236,
+        "healing": 395,
+        "gold_delta": 196,
+        "xp_delta": 272,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 1
+        },
+        "item_uses": {
+          "ward_dispenser": 1,
+          "famango": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "122": {
+            "159": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1934,
+      "end": 1978,
+      "last_death": 1963,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 3214,
+        "healing": 0,
+        "gold_delta": -275,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {
+          "viper_nethertoxin": 2,
+          "viper_viper_strike": 1,
+          "twin_gate_portal_warp": 2,
+          "viper_nose_dive": 1
+        },
+        "item_uses": {
+          "black_king_bar": 1
+        },
+        "deaths_pos": {
+          "167": {
+            "68": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1974,
+        "healing": 42,
+        "gold_delta": -23,
+        "xp_delta": 109,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 1,
+          "twin_gate_portal_warp": 1,
+          "vengefulspirit_nether_swap": 1,
+          "vengefulspirit_wave_of_terror": 1
+        },
+        "item_uses": {
+          "ward_sentry": 1
+        },
+        "deaths_pos": {
+          "181": {
+            "70": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 2435,
+      "end": 2498,
+      "last_death": 2483,
+      "deaths": 6,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 3252,
+        "healing": 0,
+        "gold_delta": -281,
+        "xp_delta": 523,
+        "killed": {},
+        "ability_uses": {
+          "viper_nethertoxin": 1,
+          "viper_viper_strike": 1,
+          "viper_nose_dive": 1
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "gungir": 1,
+          "bottle": 1
+        },
+        "deaths_pos": {
+          "71": {
+            "119": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1093,
+        "healing": 988,
+        "gold_delta": -122,
+        "xp_delta": 593,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 3,
+          "vengefulspirit_wave_of_terror": 4
+        },
+        "item_uses": {
+          "famango": 2,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "78": {
+            "104": 1
+          }
+        }
+      }
+    }
+  ]
 }
