@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T19:26:59.863Z",
+  "generated_at": "2026-09-05T20:29:06.022Z",
   "source": "OpenDota",
   "players": {
     "cyborg": 206620580,
@@ -13,13 +13,82 @@
   "count": 30,
   "parsing": {
     "requested_match_ids": [
-      8984425676
+      8984526431
     ],
     "request_limit": 5,
     "wait_ms": 20000
   },
   "note": "position_guess is heuristic; use position_confidence. Recent unparsed matches are explicitly submitted to OpenDota /request/{match_id}.",
   "matches": [
+    {
+      "match_id": 8984526431,
+      "start_time": 1788634075,
+      "start_iso": "2026-09-05T18:47:55.000Z",
+      "duration_sec": 2281,
+      "duration_min": 38,
+      "lobby_type": 7,
+      "game_mode": 22,
+      "radiant_win": true,
+      "parsed": false,
+      "parse_version": null,
+      "parse_request": {
+        "requested": true,
+        "ok": true,
+        "status": 200,
+        "response": {
+          "job": {
+            "jobId": 509805823
+          }
+        }
+      },
+      "same_team": true,
+      "cyborg": {
+        "account_id": 206620580,
+        "hero_id": 128,
+        "hero": "Snapfire",
+        "player_slot": 129,
+        "team": "Dire",
+        "won": false,
+        "kills": 5,
+        "deaths": 5,
+        "assists": 7,
+        "last_hits": 226,
+        "denies": 5,
+        "gold_per_min": 480,
+        "xp_per_min": 676,
+        "hero_damage": 17756,
+        "tower_damage": 269,
+        "hero_healing": 1134,
+        "lane": "unknown",
+        "position_guess": null,
+        "position_confidence": "low",
+        "position_reason": "fallback by farm/economy"
+      },
+      "goddess": {
+        "account_id": 160810596,
+        "hero_id": 5,
+        "hero": "Crystal Maiden",
+        "player_slot": 128,
+        "team": "Dire",
+        "won": false,
+        "kills": 8,
+        "deaths": 10,
+        "assists": 12,
+        "last_hits": 45,
+        "denies": 6,
+        "gold_per_min": 333,
+        "xp_per_min": 428,
+        "hero_damage": 17956,
+        "tower_damage": 24,
+        "hero_healing": 0,
+        "lane": "unknown",
+        "position_guess": null,
+        "position_confidence": "low",
+        "position_reason": "fallback by farm/economy"
+      },
+      "objectives": [],
+      "teamfights": []
+    },
     {
       "match_id": 8984425676,
       "start_time": 1788630516,
@@ -29,17 +98,10 @@
       "lobby_type": 7,
       "game_mode": 22,
       "radiant_win": false,
-      "parsed": false,
-      "parse_version": null,
+      "parsed": true,
+      "parse_version": 22,
       "parse_request": {
-        "requested": true,
-        "ok": true,
-        "status": 200,
-        "response": {
-          "job": {
-            "jobId": 509695942
-          }
-        }
+        "requested": false
       },
       "same_team": true,
       "cyborg": {
@@ -59,10 +121,12 @@
         "hero_damage": 27164,
         "tower_damage": 1632,
         "hero_healing": 2539,
-        "lane": "unknown",
-        "position_guess": 4,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "position_guess": 3,
+        "position_confidence": "medium",
+        "position_reason": "off lane + higher farm/economy"
       },
       "goddess": {
         "account_id": 160810596,
@@ -81,13 +145,2576 @@
         "hero_damage": 36157,
         "tower_damage": 0,
         "hero_healing": 2300,
-        "lane": "unknown",
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 13,
+        "wards_sentry": 23,
         "position_guess": 5,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
+        "position_confidence": "medium",
+        "position_reason": "safe lane + lower farm/economy"
       },
-      "objectives": [],
-      "teamfights": []
+      "objectives": [
+        {
+          "time": 2,
+          "type": "CHAT_MESSAGE_FIRSTBLOOD",
+          "key": "8",
+          "slot": 0,
+          "player_slot": 0
+        },
+        {
+          "time": 627,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_dark_seer",
+          "key": "npc_dota_badguys_tower1_top",
+          "slot": 1,
+          "player_slot": 1
+        },
+        {
+          "time": 799,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_invoker",
+          "key": "npc_dota_goodguys_tower1_mid",
+          "slot": 9,
+          "player_slot": 132
+        },
+        {
+          "time": 995,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_dark_seer",
+          "key": "npc_dota_badguys_tower1_mid",
+          "slot": 1,
+          "player_slot": 1
+        },
+        {
+          "time": 1060,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_goodguys_ranged",
+          "key": "npc_dota_badguys_tower1_bot"
+        },
+        {
+          "time": 1215,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_centaur",
+          "key": "npc_dota_goodguys_tower1_bot",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 1371,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_lina",
+          "key": "npc_dota_goodguys_tower1_top",
+          "slot": 6,
+          "player_slot": 129
+        },
+        {
+          "time": 1421,
+          "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+          "team": 2,
+          "slot": 4,
+          "player_slot": 4
+        },
+        {
+          "time": 1563,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_lina",
+          "key": "npc_dota_goodguys_tower2_bot",
+          "slot": 6,
+          "player_slot": 129
+        },
+        {
+          "time": 1743,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_juggernaut",
+          "key": "npc_dota_goodguys_tower2_top",
+          "slot": 7,
+          "player_slot": 130
+        },
+        {
+          "time": 1791,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_juggernaut",
+          "key": "npc_dota_goodguys_tower2_mid",
+          "slot": 7,
+          "player_slot": 130
+        },
+        {
+          "time": 1839,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_invoker",
+          "key": "npc_dota_goodguys_tower3_mid",
+          "slot": 9,
+          "player_slot": 132
+        },
+        {
+          "time": 1842,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_invoker",
+          "key": "npc_dota_goodguys_range_rax_mid",
+          "slot": 9,
+          "player_slot": 132
+        },
+        {
+          "time": 1846,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_invoker",
+          "key": "npc_dota_goodguys_melee_rax_mid",
+          "slot": 9,
+          "player_slot": 132
+        },
+        {
+          "time": 1870,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_juggernaut",
+          "key": "npc_dota_goodguys_tower3_bot",
+          "slot": 7,
+          "player_slot": 130
+        },
+        {
+          "time": 1875,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_badguys_ranged",
+          "key": "npc_dota_goodguys_range_rax_bot"
+        },
+        {
+          "time": 1919,
+          "type": "CHAT_MESSAGE_COURIER_LOST",
+          "team": 2,
+          "value": 95,
+          "killer": 130
+        },
+        {
+          "time": 2064,
+          "type": "CHAT_MESSAGE_COURIER_LOST",
+          "team": 2,
+          "value": 140,
+          "killer": 130
+        },
+        {
+          "time": 2217,
+          "type": "CHAT_MESSAGE_ROSHAN_KILL",
+          "team": 3
+        },
+        {
+          "time": 2219,
+          "type": "CHAT_MESSAGE_AEGIS",
+          "slot": 7,
+          "player_slot": 130
+        },
+        {
+          "time": 2256,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_juggernaut",
+          "key": "npc_dota_goodguys_melee_rax_bot",
+          "slot": 7,
+          "player_slot": 130
+        },
+        {
+          "time": 2364,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_juggernaut",
+          "key": "npc_dota_goodguys_tower3_top",
+          "slot": 7,
+          "player_slot": 130
+        },
+        {
+          "time": 2401,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_invoker",
+          "key": "npc_dota_goodguys_range_rax_top",
+          "slot": 9,
+          "player_slot": 132
+        },
+        {
+          "time": 2406,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_juggernaut",
+          "key": "npc_dota_goodguys_melee_rax_top",
+          "slot": 7,
+          "player_slot": 130
+        },
+        {
+          "time": 2440,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_badguys_melee_upgraded",
+          "key": "npc_dota_goodguys_tower4"
+        },
+        {
+          "time": 2464,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_juggernaut",
+          "key": "npc_dota_goodguys_tower4",
+          "slot": 7,
+          "player_slot": 130
+        },
+        {
+          "time": 2481,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_juggernaut",
+          "key": "npc_dota_goodguys_fort",
+          "slot": 7,
+          "player_slot": 130
+        }
+      ],
+      "teamfights": [
+        {
+          "start": 622,
+          "end": 663,
+          "last_death": 648,
+          "deaths": 3,
+          "players": [
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "witch_doctor_paralyzing_cask": 1,
+                "witch_doctor_maledict": 1,
+                "witch_doctor_death_ward": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "arcane_boots": 1
+              },
+              "killed": {
+                "npc_dota_hero_lina": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 993,
+              "healing": 0,
+              "gold_delta": 587,
+              "xp_delta": 917,
+              "xp_start": 2947,
+              "xp_end": 3864
+            },
+            {
+              "deaths_pos": {
+                "90": {
+                  "174": 1
+                }
+              },
+              "ability_uses": {
+                "dark_seer_ion_shell": 2
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 1027,
+              "healing": 450,
+              "gold_delta": 256,
+              "xp_delta": 174,
+              "xp_start": 3038,
+              "xp_end": 3212
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "kez_grappling_claw": 1,
+                "kez_echo_slash": 1
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 377,
+              "gold_delta": 471,
+              "xp_delta": 587,
+              "xp_start": 4820,
+              "xp_end": 5407
+            },
+            {
+              "deaths_pos": {
+                "172": {
+                  "83": 1
+                }
+              },
+              "ability_uses": {
+                "troll_warlord_switch_stance": 2,
+                "troll_warlord_whirling_axes_melee": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "magic_wand": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 119,
+              "healing": 90,
+              "gold_delta": 82,
+              "xp_delta": 108,
+              "xp_start": 2854,
+              "xp_end": 2962
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "ringmaster_impalement": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "ward_sentry": 1,
+                "tpscroll": 1
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 163,
+              "healing": 140,
+              "gold_delta": 90,
+              "xp_delta": 48,
+              "xp_start": 2425,
+              "xp_end": 2473
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "centaur_double_edge": 1,
+                "centaur_hoof_stomp": 1
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 485,
+              "healing": 151,
+              "gold_delta": 251,
+              "xp_delta": 561,
+              "xp_start": 3759,
+              "xp_end": 4320
+            },
+            {
+              "deaths_pos": {
+                "169": {
+                  "94": 1
+                }
+              },
+              "ability_uses": {
+                "lina_dragon_slave": 1,
+                "lina_light_strike_array": 1,
+                "lina_laguna_blade": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "ward_dispenser": 2
+              },
+              "killed": {
+                "npc_dota_hero_troll_warlord": 1
+              },
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 574,
+              "healing": 0,
+              "gold_delta": 387,
+              "xp_delta": 413,
+              "xp_start": 2610,
+              "xp_end": 3023
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "juggernaut_blade_fury": 1,
+                "juggernaut_healing_ward": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "tpscroll": 1,
+                "phase_boots": 3,
+                "magic_wand": 1
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 425,
+              "healing": 206,
+              "gold_delta": 465,
+              "xp_delta": 567,
+              "xp_start": 3046,
+              "xp_end": 3613
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "dark_willow_shadow_realm": 1,
+                "dark_willow_cursed_crown": 1,
+                "dark_willow_bedlam": 1,
+                "dark_willow_bramble_maze": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "ward_sentry": 1,
+                "ward_dispenser": 2
+              },
+              "killed": {
+                "npc_dota_hero_dark_seer": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 752,
+              "healing": 20,
+              "gold_delta": 347,
+              "xp_delta": 402,
+              "xp_start": 2555,
+              "xp_end": 2957
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "invoker_wex": 3,
+                "invoker_invoke": 6,
+                "invoker_tornado": 1,
+                "invoker_quas": 17,
+                "invoker_forge_spirit": 1,
+                "invoker_exort": 54
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 222,
+              "gold_delta": 178,
+              "xp_delta": 251,
+              "xp_start": 4332,
+              "xp_end": 4583
+            }
+          ]
+        },
+        {
+          "start": 1177,
+          "end": 1221,
+          "last_death": 1206,
+          "deaths": 5,
+          "players": [
+            {
+              "deaths_pos": {},
+              "ability_uses": {},
+              "ability_targets": {},
+              "item_uses": {
+                "tpscroll": 1,
+                "smoke_of_deceit": 1,
+                "dust": 1
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 17,
+              "gold_delta": 0,
+              "xp_delta": 0,
+              "xp_start": 6539,
+              "xp_end": 6539
+            },
+            {
+              "deaths_pos": {
+                "132": {
+                  "134": 1
+                }
+              },
+              "ability_uses": {
+                "dark_seer_vacuum": 1,
+                "dark_seer_wall_of_replica": 1,
+                "dark_seer_surge": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "mekansm": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 236,
+              "healing": 430,
+              "gold_delta": -110,
+              "xp_delta": 357,
+              "xp_start": 7374,
+              "xp_end": 7731
+            },
+            {
+              "deaths_pos": {
+                "137": {
+                  "123": 1
+                }
+              },
+              "ability_uses": {
+                "kez_talon_toss": 1,
+                "kez_ravens_veil": 1,
+                "kez_grappling_claw": 1,
+                "kez_switch_weapons": 2,
+                "kez_echo_slash": 2
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {
+                "npc_dota_hero_dark_willow": 1,
+                "npc_dota_hero_lina": 1,
+                "npc_dota_hero_juggernaut": 1
+              },
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 2961,
+              "healing": 351,
+              "gold_delta": 822,
+              "xp_delta": 1187,
+              "xp_start": 10170,
+              "xp_end": 11357
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "troll_warlord_whirling_axes_ranged": 1,
+                "troll_warlord_switch_stance": 2,
+                "troll_warlord_whirling_axes_melee": 2
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 86,
+              "healing": 189,
+              "gold_delta": 440,
+              "xp_delta": 345,
+              "xp_start": 8508,
+              "xp_end": 8853
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "ringmaster_tame_the_beasts": 2,
+                "ringmaster_impalement": 4,
+                "ringmaster_the_box": 1,
+                "ringmaster_wheel": 1,
+                "ringmaster_tame_the_beasts_crack": 2
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "mana_draught": 1,
+                "magic_wand": 1
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 1012,
+              "healing": 188,
+              "gold_delta": 519,
+              "xp_delta": 2276,
+              "xp_start": 7011,
+              "xp_end": 9287
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "centaur_stampede": 1,
+                "centaur_double_edge": 2
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 616,
+              "healing": 0,
+              "gold_delta": 502,
+              "xp_delta": 629,
+              "xp_start": 8773,
+              "xp_end": 9402
+            },
+            {
+              "deaths_pos": {
+                "139": {
+                  "132": 1
+                }
+              },
+              "ability_uses": {
+                "lina_dragon_slave": 1,
+                "lina_light_strike_array": 1
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 205,
+              "healing": 226,
+              "gold_delta": 61,
+              "xp_delta": 84,
+              "xp_start": 5601,
+              "xp_end": 5685
+            },
+            {
+              "deaths_pos": {
+                "139": {
+                  "125": 1
+                }
+              },
+              "ability_uses": {},
+              "ability_targets": {},
+              "item_uses": {
+                "tpscroll": 1,
+                "quelling_blade": 1,
+                "phase_boots": 2,
+                "magic_wand": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 806,
+              "healing": 209,
+              "gold_delta": 330,
+              "xp_delta": 786,
+              "xp_start": 11265,
+              "xp_end": 12051
+            },
+            {
+              "deaths_pos": {
+                "136": {
+                  "122": 1
+                }
+              },
+              "ability_uses": {
+                "dark_willow_shadow_realm": 2,
+                "dark_willow_cursed_crown": 1,
+                "dark_willow_bedlam": 1,
+                "dark_willow_bramble_maze": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "ward_sentry": 1,
+                "ward_dispenser": 1,
+                "pogo_stick": 1,
+                "magic_wand": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 700,
+              "healing": 226,
+              "gold_delta": 230,
+              "xp_delta": 1270,
+              "xp_start": 5496,
+              "xp_end": 6766
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "invoker_chaos_meteor": 1,
+                "plus_high_five": 1,
+                "invoker_wex": 15,
+                "invoker_sun_strike": 1,
+                "invoker_invoke": 15,
+                "invoker_tornado": 1,
+                "invoker_quas": 43,
+                "invoker_forge_spirit": 1,
+                "invoker_cold_snap": 1,
+                "invoker_exort": 55,
+                "invoker_ice_wall": 2,
+                "invoker_deafening_blast": 1
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {
+                "npc_dota_hero_dark_seer": 1,
+                "npc_dota_hero_kez": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 2811,
+              "healing": 658,
+              "gold_delta": 1125,
+              "xp_delta": 1468,
+              "xp_start": 14070,
+              "xp_end": 15538
+            }
+          ]
+        },
+        {
+          "start": 1306,
+          "end": 1342,
+          "last_death": 1327,
+          "deaths": 4,
+          "players": [
+            {
+              "deaths_pos": {
+                "82": {
+                  "180": 1
+                }
+              },
+              "ability_uses": {
+                "witch_doctor_paralyzing_cask": 1,
+                "witch_doctor_maledict": 1,
+                "witch_doctor_death_ward": 1
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {
+                "npc_dota_hero_dark_willow": 1
+              },
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 1255,
+              "healing": 20,
+              "gold_delta": 242,
+              "xp_delta": 1090,
+              "xp_start": 7636,
+              "xp_end": 8726
+            },
+            {
+              "deaths_pos": {
+                "89": {
+                  "173": 1
+                }
+              },
+              "ability_uses": {
+                "dark_seer_ion_shell": 1,
+                "dark_seer_vacuum": 1,
+                "dark_seer_wall_of_replica": 1,
+                "dark_seer_surge": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "blink": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 2257,
+              "healing": 365,
+              "gold_delta": 69,
+              "xp_delta": 126,
+              "xp_start": 9472,
+              "xp_end": 9598
+            },
+            {
+              "deaths_pos": {
+                "87": {
+                  "176": 1
+                }
+              },
+              "ability_uses": {
+                "kez_grappling_claw": 1,
+                "kez_switch_weapons": 1,
+                "kez_echo_slash": 1
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 259,
+              "healing": 39,
+              "gold_delta": -286,
+              "xp_delta": 126,
+              "xp_start": 12098,
+              "xp_end": 12224
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "troll_warlord_whirling_axes_ranged": 2,
+                "troll_warlord_switch_stance": 4,
+                "troll_warlord_whirling_axes_melee": 2
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 7,
+              "gold_delta": 398,
+              "xp_delta": 645,
+              "xp_start": 9920,
+              "xp_end": 10465
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {},
+              "ability_targets": {},
+              "item_uses": {
+                "ward_dispenser": 2
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 0,
+              "gold_delta": 0,
+              "xp_delta": 0,
+              "xp_start": 9584,
+              "xp_end": 9584
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "centaur_stampede": 1,
+                "centaur_double_edge": 3
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 1074,
+              "healing": 1304,
+              "gold_delta": 748,
+              "xp_delta": 904,
+              "xp_start": 11593,
+              "xp_end": 12497
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "lina_dragon_slave": 2,
+                "lina_light_strike_array": 3,
+                "lina_laguna_blade": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "arcane_boots": 1,
+                "tpscroll": 1
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 515,
+              "healing": 837,
+              "gold_delta": 511,
+              "xp_delta": 1739,
+              "xp_start": 6889,
+              "xp_end": 8623
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "juggernaut_blade_fury": 1,
+                "juggernaut_omni_slash": 1,
+                "juggernaut_healing_ward": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "phase_boots": 3,
+                "magic_wand": 1
+              },
+              "killed": {
+                "npc_dota_hero_witch_doctor": 1,
+                "npc_dota_hero_kez": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 1788,
+              "healing": 757,
+              "gold_delta": 894,
+              "xp_delta": 1307,
+              "xp_start": 13202,
+              "xp_end": 14509
+            },
+            {
+              "deaths_pos": {
+                "90": {
+                  "181": 1
+                }
+              },
+              "ability_uses": {
+                "dark_willow_shadow_realm": 1,
+                "dark_willow_cursed_crown": 1,
+                "dark_willow_bedlam": 1,
+                "dark_willow_bramble_maze": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "arcane_boots": 1,
+                "pogo_stick": 1,
+                "magic_wand": 1
+              },
+              "killed": {
+                "npc_dota_hero_dark_seer": 1
+              },
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 489,
+              "healing": 170,
+              "gold_delta": 356,
+              "xp_delta": 760,
+              "xp_start": 6857,
+              "xp_end": 7617
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "invoker_ghost_walk": 1,
+                "invoker_chaos_meteor": 1,
+                "invoker_alacrity": 1,
+                "invoker_wex": 39,
+                "invoker_invoke": 15,
+                "invoker_tornado": 1,
+                "invoker_quas": 45,
+                "invoker_cold_snap": 2,
+                "invoker_forge_spirit": 1,
+                "invoker_exort": 14,
+                "invoker_ice_wall": 1,
+                "invoker_deafening_blast": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "tpscroll": 1,
+                "meteor_hammer": 1,
+                "magic_wand": 1
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 1554,
+              "healing": 1514,
+              "gold_delta": 373,
+              "xp_delta": 1237,
+              "xp_start": 16269,
+              "xp_end": 17506
+            }
+          ]
+        },
+        {
+          "start": 1492,
+          "end": 1546,
+          "last_death": 1531,
+          "deaths": 4,
+          "players": [
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "witch_doctor_voodoo_restoration": 4,
+                "witch_doctor_paralyzing_cask": 1,
+                "witch_doctor_maledict": 1,
+                "witch_doctor_death_ward": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "arcane_boots": 1,
+                "mana_draught": 1,
+                "ward_dispenser": 3,
+                "dust": 1,
+                "magic_wand": 1,
+                "glimmer_cape": 2
+              },
+              "killed": {
+                "npc_dota_hero_centaur": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 2131,
+              "healing": 501,
+              "gold_delta": 387,
+              "xp_delta": 1136,
+              "xp_start": 9473,
+              "xp_end": 10609
+            },
+            {
+              "deaths_pos": {
+                "150": {
+                  "89": 1
+                }
+              },
+              "ability_uses": {
+                "dark_seer_ion_shell": 1,
+                "dark_seer_vacuum": 1,
+                "dark_seer_wall_of_replica": 1,
+                "dark_seer_surge": 2
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "mekansm": 1,
+                "pogo_stick": 1,
+                "helm_of_the_dominator": 1,
+                "blink": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 2120,
+              "healing": 1705,
+              "gold_delta": -40,
+              "xp_delta": 15,
+              "xp_start": 11219,
+              "xp_end": 11234
+            },
+            {
+              "deaths_pos": {
+                "155": {
+                  "100": 1
+                }
+              },
+              "ability_uses": {
+                "kez_talon_toss": 1,
+                "kez_grappling_claw": 1,
+                "kez_switch_weapons": 1,
+                "kez_echo_slash": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "black_king_bar": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 1960,
+              "healing": 16,
+              "gold_delta": -187,
+              "xp_delta": 0,
+              "xp_start": 13543,
+              "xp_end": 13543
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "troll_warlord_whirling_axes_ranged": 3,
+                "troll_warlord_switch_stance": 6,
+                "troll_warlord_battle_trance": 1,
+                "troll_warlord_whirling_axes_melee": 3
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "madstone_bundle": 1,
+                "magic_wand": 1
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 642,
+              "healing": 885,
+              "gold_delta": 272,
+              "xp_delta": 285,
+              "xp_start": 12812,
+              "xp_end": 13097
+            },
+            {
+              "deaths_pos": {
+                "141": {
+                  "80": 1
+                }
+              },
+              "ability_uses": {
+                "ringmaster_tame_the_beasts": 1,
+                "ringmaster_impalement": 2,
+                "ringmaster_the_box": 1,
+                "ringmaster_wheel": 1,
+                "ringmaster_tame_the_beasts_crack": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "arcane_boots": 1,
+                "tpscroll": 1,
+                "magic_wand": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 1580,
+              "healing": 359,
+              "gold_delta": -32,
+              "xp_delta": 1159,
+              "xp_start": 10301,
+              "xp_end": 11460
+            },
+            {
+              "deaths_pos": {
+                "148": {
+                  "80": 1
+                }
+              },
+              "ability_uses": {
+                "centaur_stampede": 1,
+                "centaur_double_edge": 3,
+                "centaur_hoof_stomp": 2
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "blink": 1
+              },
+              "killed": {
+                "npc_dota_hero_dark_seer": 1
+              },
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 1905,
+              "healing": 3288,
+              "gold_delta": 155,
+              "xp_delta": 1071,
+              "xp_start": 14605,
+              "xp_end": 15676
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {},
+              "ability_targets": {},
+              "item_uses": {
+                "tpscroll": 1
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 25,
+              "gold_delta": 0,
+              "xp_delta": 19,
+              "xp_start": 9927,
+              "xp_end": 9927
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "juggernaut_blade_fury": 2,
+                "juggernaut_omni_slash": 1,
+                "juggernaut_healing_ward": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "tpscroll": 1,
+                "madstone_bundle": 1,
+                "phase_boots": 5,
+                "magic_wand": 1
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 1163,
+              "healing": 1108,
+              "gold_delta": 497,
+              "xp_delta": 1318,
+              "xp_start": 17343,
+              "xp_end": 18642
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "dark_willow_shadow_realm": 3,
+                "dark_willow_terrorize": 1,
+                "dark_willow_bramble_maze": 2
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "arcane_boots": 1,
+                "ward_dispenser": 1,
+                "pogo_stick": 2,
+                "cyclone": 1
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 253,
+              "healing": 664,
+              "gold_delta": 279,
+              "xp_delta": 1129,
+              "xp_start": 8149,
+              "xp_end": 9259
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "invoker_ghost_walk": 2,
+                "invoker_quas": 49,
+                "invoker_cold_snap": 2,
+                "invoker_exort": 62,
+                "invoker_ice_wall": 2,
+                "invoker_chaos_meteor": 1,
+                "invoker_emp": 2,
+                "invoker_wex": 55,
+                "invoker_sun_strike": 2,
+                "invoker_invoke": 30,
+                "invoker_tornado": 1,
+                "invoker_forge_spirit": 2,
+                "invoker_deafening_blast": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "blink": 1,
+                "magic_wand": 1
+              },
+              "killed": {
+                "npc_dota_hero_kez": 1,
+                "npc_dota_hero_ringmaster": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 4443,
+              "healing": 1399,
+              "gold_delta": 1197,
+              "xp_delta": 2261,
+              "xp_start": 20608,
+              "xp_end": 22869
+            }
+          ]
+        },
+        {
+          "start": 1619,
+          "end": 1685,
+          "last_death": 1670,
+          "deaths": 5,
+          "players": [
+            {
+              "deaths_pos": {
+                "102": {
+                  "135": 1
+                }
+              },
+              "ability_uses": {
+                "witch_doctor_paralyzing_cask": 2,
+                "witch_doctor_maledict": 1,
+                "ability_lamp_use": 3,
+                "witch_doctor_death_ward": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "madstone_bundle": 1,
+                "ward_dispenser": 1,
+                "glimmer_cape": 1
+              },
+              "killed": {
+                "npc_dota_hero_centaur": 1
+              },
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 3061,
+              "healing": 35,
+              "gold_delta": 539,
+              "xp_delta": 1549,
+              "xp_start": 10656,
+              "xp_end": 12205
+            },
+            {
+              "deaths_pos": {
+                "104": {
+                  "139": 1
+                }
+              },
+              "ability_uses": {
+                "dark_seer_ion_shell": 2,
+                "dark_seer_wall_of_replica": 1,
+                "dark_seer_surge": 2
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "guardian_greaves": 1,
+                "pogo_stick": 1,
+                "blink": 2
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 611,
+              "healing": 1991,
+              "gold_delta": 136,
+              "xp_delta": 811,
+              "xp_start": 12060,
+              "xp_end": 12871
+            },
+            {
+              "deaths_pos": {
+                "117": {
+                  "148": 1
+                }
+              },
+              "ability_uses": {
+                "kez_talon_toss": 1,
+                "kez_grappling_claw": 4,
+                "kez_switch_weapons": 2,
+                "kez_raptor_dance": 1,
+                "kez_echo_slash": 3
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "black_king_bar": 1,
+                "dust": 1,
+                "magic_wand": 1
+              },
+              "killed": {
+                "npc_dota_hero_dark_willow": 1,
+                "npc_dota_hero_lina": 1
+              },
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 3374,
+              "healing": 934,
+              "gold_delta": 667,
+              "xp_delta": 1648,
+              "xp_start": 14784,
+              "xp_end": 16432
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "troll_warlord_whirling_axes_ranged": 3,
+                "troll_warlord_switch_stance": 10,
+                "troll_warlord_whirling_axes_melee": 3
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "famango": 2,
+                "magic_wand": 2
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 1712,
+              "healing": 1496,
+              "gold_delta": 487,
+              "xp_delta": 1334,
+              "xp_start": 14179,
+              "xp_end": 15513
+            },
+            {
+              "deaths_pos": {
+                "105": {
+                  "113": 1
+                }
+              },
+              "ability_uses": {
+                "ringmaster_impalement": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "tpscroll": 1,
+                "magic_wand": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 112,
+              "gold_delta": -50,
+              "xp_delta": 422,
+              "xp_start": 11714,
+              "xp_end": 12136
+            },
+            {
+              "deaths_pos": {
+                "113": {
+                  "134": 1
+                }
+              },
+              "ability_uses": {
+                "centaur_stampede": 1,
+                "centaur_hoof_stomp": 1
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 869,
+              "healing": 928,
+              "gold_delta": -325,
+              "xp_delta": 37,
+              "xp_start": 16225,
+              "xp_end": 16262
+            },
+            {
+              "deaths_pos": {
+                "113": {
+                  "116": 1
+                }
+              },
+              "ability_uses": {
+                "lina_dragon_slave": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "tpscroll": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 164,
+              "healing": 103,
+              "gold_delta": -194,
+              "xp_delta": 0,
+              "xp_start": 11374,
+              "xp_end": 11374
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "plus_high_five": 1,
+                "juggernaut_blade_fury": 1,
+                "juggernaut_omni_slash": 1,
+                "juggernaut_healing_ward": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "madstone_bundle": 2,
+                "phase_boots": 6,
+                "diffusal_blade": 2,
+                "manta": 1,
+                "magic_wand": 2
+              },
+              "killed": {
+                "npc_dota_hero_dark_seer": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 5239,
+              "healing": 1568,
+              "gold_delta": 1050,
+              "xp_delta": 3266,
+              "xp_start": 20075,
+              "xp_end": 23341
+            },
+            {
+              "deaths_pos": {
+                "100": {
+                  "131": 1
+                }
+              },
+              "ability_uses": {
+                "ability_lamp_use": 2
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "tpscroll": 1,
+                "ward_dispenser": 2,
+                "pogo_stick": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 56,
+              "gold_delta": -158,
+              "xp_delta": 0,
+              "xp_start": 10135,
+              "xp_end": 10135
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "invoker_ghost_walk": 1,
+                "plus_high_five": 1,
+                "invoker_quas": 61,
+                "invoker_cold_snap": 2,
+                "invoker_exort": 71,
+                "invoker_ice_wall": 1,
+                "invoker_chaos_meteor": 1,
+                "invoker_alacrity": 1,
+                "invoker_emp": 1,
+                "invoker_wex": 32,
+                "invoker_sun_strike": 2,
+                "invoker_invoke": 30,
+                "invoker_tornado": 2,
+                "invoker_forge_spirit": 3,
+                "invoker_deafening_blast": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "tpscroll": 1,
+                "meteor_hammer": 1,
+                "famango": 1,
+                "blink": 2,
+                "force_staff": 1
+              },
+              "killed": {
+                "npc_dota_hero_witch_doctor": 1,
+                "npc_dota_hero_kez": 1,
+                "npc_dota_hero_ringmaster": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 3384,
+              "healing": 956,
+              "gold_delta": 1849,
+              "xp_delta": 4824,
+              "xp_start": 24162,
+              "xp_end": 28986
+            }
+          ]
+        },
+        {
+          "start": 1784,
+          "end": 1849,
+          "last_death": 1834,
+          "deaths": 6,
+          "players": [
+            {
+              "deaths_pos": {
+                "87": {
+                  "95": 1
+                }
+              },
+              "ability_uses": {
+                "witch_doctor_voodoo_switcheroo": 1,
+                "witch_doctor_paralyzing_cask": 1,
+                "witch_doctor_maledict": 1,
+                "witch_doctor_death_ward": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "tpscroll": 1,
+                "glimmer_cape": 1
+              },
+              "killed": {
+                "npc_dota_hero_lina": 1
+              },
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 2734,
+              "healing": 152,
+              "gold_delta": 627,
+              "xp_delta": 2103,
+              "xp_start": 13512,
+              "xp_end": 15615
+            },
+            {
+              "deaths_pos": {
+                "80": {
+                  "93": 1
+                }
+              },
+              "ability_uses": {
+                "dark_seer_ion_shell": 1,
+                "dark_seer_vacuum": 1,
+                "dark_seer_wall_of_replica": 1,
+                "dark_seer_surge": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "guardian_greaves": 1,
+                "helm_of_the_dominator": 1,
+                "blink": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 1389,
+              "healing": 333,
+              "gold_delta": -243,
+              "xp_delta": 174,
+              "xp_start": 12906,
+              "xp_end": 13080
+            },
+            {
+              "deaths_pos": {
+                "88": {
+                  "110": 1
+                }
+              },
+              "ability_uses": {
+                "kez_ravens_veil": 1,
+                "kez_grappling_claw": 1,
+                "kez_switch_weapons": 2,
+                "kez_echo_slash": 1
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 542,
+              "healing": 0,
+              "gold_delta": -367,
+              "xp_delta": 0,
+              "xp_start": 16835,
+              "xp_end": 16835
+            },
+            {
+              "deaths_pos": {
+                "83": {
+                  "94": 1
+                }
+              },
+              "ability_uses": {
+                "troll_warlord_whirling_axes_ranged": 1,
+                "troll_warlord_switch_stance": 2,
+                "ability_lamp_use": 1,
+                "troll_warlord_whirling_axes_melee": 2
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "tpscroll": 1,
+                "madstone_bundle": 2,
+                "magic_wand": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 440,
+              "healing": 248,
+              "gold_delta": -34,
+              "xp_delta": 773,
+              "xp_start": 16024,
+              "xp_end": 16797
+            },
+            {
+              "deaths_pos": {
+                "81": {
+                  "97": 1
+                }
+              },
+              "ability_uses": {
+                "ringmaster_impalement": 2,
+                "ringmaster_the_box": 1
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 150,
+              "gold_delta": -134,
+              "xp_delta": 0,
+              "xp_start": 13543,
+              "xp_end": 13543
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "centaur_stampede": 1,
+                "centaur_double_edge": 3,
+                "centaur_hoof_stomp": 4
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "blink": 3
+              },
+              "killed": {
+                "npc_dota_hero_troll_warlord": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 2210,
+              "healing": 3309,
+              "gold_delta": 1524,
+              "xp_delta": 2756,
+              "xp_start": 18143,
+              "xp_end": 20871
+            },
+            {
+              "deaths_pos": {
+                "87": {
+                  "99": 1
+                }
+              },
+              "ability_uses": {
+                "lina_dragon_slave": 4,
+                "lina_light_strike_array": 3,
+                "lina_laguna_blade": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "arcane_boots": 1,
+                "dust": 1
+              },
+              "killed": {
+                "npc_dota_hero_dark_seer": 1
+              },
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 1777,
+              "healing": 1552,
+              "gold_delta": 980,
+              "xp_delta": 1543,
+              "xp_start": 13653,
+              "xp_end": 15196
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "juggernaut_blade_fury": 1,
+                "juggernaut_healing_ward": 1,
+                "juggernaut_omni_slash": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "disperser": 2,
+                "phase_boots": 6,
+                "magic_wand": 1
+              },
+              "killed": {
+                "npc_dota_hero_witch_doctor": 1,
+                "npc_dota_hero_kez": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 3031,
+              "healing": 3517,
+              "gold_delta": 1945,
+              "xp_delta": 2214,
+              "xp_start": 25421,
+              "xp_end": 27607
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "dark_willow_shadow_realm": 3,
+                "dark_willow_cursed_crown": 2,
+                "dark_willow_bedlam": 2,
+                "dark_willow_terrorize": 1,
+                "dark_willow_bramble_maze": 2
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "arcane_boots": 1,
+                "blink": 2,
+                "cyclone": 1,
+                "magic_wand": 2
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 824,
+              "healing": 1363,
+              "gold_delta": 931,
+              "xp_delta": 2590,
+              "xp_start": 12185,
+              "xp_end": 14775
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "invoker_ghost_walk": 1,
+                "invoker_quas": 61,
+                "invoker_cold_snap": 3,
+                "invoker_exort": 38,
+                "invoker_ice_wall": 2,
+                "invoker_chaos_meteor": 1,
+                "invoker_alacrity": 2,
+                "invoker_emp": 1,
+                "invoker_wex": 77,
+                "invoker_sun_strike": 2,
+                "invoker_invoke": 30,
+                "invoker_tornado": 1,
+                "invoker_forge_spirit": 2,
+                "invoker_deafening_blast": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "tpscroll": 1,
+                "meteor_hammer": 1,
+                "blink": 3,
+                "force_staff": 2
+              },
+              "killed": {
+                "npc_dota_hero_ringmaster": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 3101,
+              "healing": 2173,
+              "gold_delta": 1610,
+              "xp_delta": 2546,
+              "xp_start": 31083,
+              "xp_end": 33629
+            }
+          ]
+        },
+        {
+          "start": 1931,
+          "end": 1992,
+          "last_death": 1977,
+          "deaths": 6,
+          "players": [
+            {
+              "deaths_pos": {
+                "129": {
+                  "99": 1
+                }
+              },
+              "ability_uses": {
+                "witch_doctor_voodoo_restoration": 2,
+                "witch_doctor_voodoo_switcheroo": 1,
+                "witch_doctor_paralyzing_cask": 1,
+                "witch_doctor_maledict": 1
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 558,
+              "healing": 143,
+              "gold_delta": 225,
+              "xp_delta": 64,
+              "xp_start": 15723,
+              "xp_end": 15787
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "dark_seer_ion_shell": 3,
+                "dark_seer_vacuum": 1,
+                "dark_seer_surge": 4
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "guardian_greaves": 1,
+                "soul_ring": 1,
+                "pogo_stick": 1,
+                "blink": 2
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 1949,
+              "healing": 2857,
+              "gold_delta": 632,
+              "xp_delta": 3406,
+              "xp_start": 13914,
+              "xp_end": 17320
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "kez_talon_toss": 2,
+                "kez_ravens_veil": 1,
+                "kez_falcon_rush": 4,
+                "kez_grappling_claw": 5,
+                "kez_switch_weapons": 15,
+                "kez_raptor_dance": 1,
+                "kez_echo_slash": 2
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "black_king_bar": 1,
+                "magic_wand": 1
+              },
+              "killed": {
+                "npc_dota_hero_centaur": 1,
+                "npc_dota_hero_dark_willow": 1,
+                "npc_dota_hero_lina": 1,
+                "npc_dota_hero_juggernaut": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 8022,
+              "healing": 1104,
+              "gold_delta": 2718,
+              "xp_delta": 6068,
+              "xp_start": 24969,
+              "xp_end": 31037
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "troll_warlord_whirling_axes_ranged": 2,
+                "troll_warlord_switch_stance": 7,
+                "troll_warlord_battle_trance": 1,
+                "troll_warlord_whirling_axes_melee": 3
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "tpscroll": 1,
+                "dust": 1,
+                "magic_wand": 1
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 1692,
+              "healing": 4165,
+              "gold_delta": 1271,
+              "xp_delta": 3814,
+              "xp_start": 18067,
+              "xp_end": 21881
+            },
+            {
+              "deaths_pos": {
+                "105": {
+                  "96": 1
+                }
+              },
+              "ability_uses": {
+                "ringmaster_impalement": 2,
+                "ringmaster_the_box": 1,
+                "ringmaster_wheel": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "arcane_boots": 1,
+                "ghost": 1,
+                "magic_wand": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 778,
+              "healing": 234,
+              "gold_delta": 562,
+              "xp_delta": 64,
+              "xp_start": 14166,
+              "xp_end": 14230
+            },
+            {
+              "deaths_pos": {
+                "123": {
+                  "117": 1
+                }
+              },
+              "ability_uses": {
+                "centaur_double_edge": 4,
+                "centaur_hoof_stomp": 4
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "shivas_guard": 1,
+                "blink": 2
+              },
+              "killed": {
+                "npc_dota_hero_witch_doctor": 1
+              },
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 4523,
+              "healing": 4187,
+              "gold_delta": 4,
+              "xp_delta": 1502,
+              "xp_start": 21743,
+              "xp_end": 23245
+            },
+            {
+              "deaths_pos": {
+                "106": {
+                  "101": 1
+                }
+              },
+              "ability_uses": {
+                "lina_dragon_slave": 5,
+                "lina_light_strike_array": 2,
+                "lina_flame_cloak": 1,
+                "lina_laguna_blade": 1
+              },
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {
+                "npc_dota_hero_ringmaster": 1
+              },
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 1839,
+              "healing": 285,
+              "gold_delta": 158,
+              "xp_delta": 1366,
+              "xp_start": 15938,
+              "xp_end": 17304
+            },
+            {
+              "deaths_pos": {
+                "78": {
+                  "112": 1
+                }
+              },
+              "ability_uses": {
+                "juggernaut_blade_fury": 1,
+                "juggernaut_omni_slash": 1,
+                "juggernaut_healing_ward": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "disperser": 1,
+                "phase_boots": 1,
+                "manta": 1,
+                "blink": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 3902,
+              "healing": 124,
+              "gold_delta": -569,
+              "xp_delta": 0,
+              "xp_start": 29442,
+              "xp_end": 29442
+            },
+            {
+              "deaths_pos": {
+                "110": {
+                  "97": 1
+                }
+              },
+              "ability_uses": {
+                "dark_willow_shadow_realm": 2,
+                "dark_willow_terrorize": 1,
+                "dark_willow_bramble_maze": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "ward_sentry": 1,
+                "blink": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 200,
+              "healing": 124,
+              "gold_delta": -40,
+              "xp_delta": 1366,
+              "xp_start": 15088,
+              "xp_end": 16454
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "invoker_chaos_meteor": 1,
+                "invoker_ghost_walk": 1,
+                "invoker_emp": 1,
+                "invoker_wex": 28,
+                "invoker_sun_strike": 1,
+                "invoker_invoke": 18,
+                "invoker_tornado": 1,
+                "invoker_quas": 41,
+                "invoker_forge_spirit": 1,
+                "invoker_cold_snap": 1,
+                "invoker_exort": 21,
+                "invoker_ice_wall": 2
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "tpscroll": 1,
+                "gungir": 1,
+                "blink": 2,
+                "force_staff": 2
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 2346,
+              "healing": 88,
+              "gold_delta": 100,
+              "xp_delta": 136,
+              "xp_start": 33629,
+              "xp_end": 33765
+            }
+          ]
+        },
+        {
+          "start": 2245,
+          "end": 2286,
+          "last_death": 2271,
+          "deaths": 4,
+          "players": [
+            {
+              "deaths_pos": {
+                "94": {
+                  "77": 1
+                }
+              },
+              "ability_uses": {
+                "witch_doctor_voodoo_restoration": 1,
+                "witch_doctor_voodoo_switcheroo": 1,
+                "witch_doctor_paralyzing_cask": 1,
+                "witch_doctor_maledict": 1,
+                "witch_doctor_death_ward": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "tpscroll": 1,
+                "glimmer_cape": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 2641,
+              "healing": 276,
+              "gold_delta": 44,
+              "xp_delta": 274,
+              "xp_start": 20467,
+              "xp_end": 20741
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "dark_seer_ion_shell": 2,
+                "dark_seer_wall_of_replica": 1,
+                "dark_seer_surge": 3
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "guardian_greaves": 1,
+                "blink": 2
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 1,
+              "damage": 1407,
+              "healing": 1243,
+              "gold_delta": 296,
+              "xp_delta": 254,
+              "xp_start": 20997,
+              "xp_end": 21251
+            },
+            {
+              "deaths_pos": {
+                "93": {
+                  "100": 1
+                }
+              },
+              "ability_uses": {
+                "kez_talon_toss": 1,
+                "kez_shodo_sai": 1,
+                "kez_grappling_claw": 2,
+                "kez_switch_weapons": 6,
+                "kez_echo_slash": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "black_king_bar": 1
+              },
+              "killed": {
+                "npc_dota_hero_dark_willow": 1
+              },
+              "deaths": 1,
+              "buybacks": 1,
+              "damage": 5009,
+              "healing": 1086,
+              "gold_delta": -12,
+              "xp_delta": 1565,
+              "xp_start": 37284,
+              "xp_end": 38849
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {},
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 0,
+              "gold_delta": 0,
+              "xp_delta": 0,
+              "xp_start": 27300,
+              "xp_end": 27300
+            },
+            {
+              "deaths_pos": {
+                "87": {
+                  "95": 1
+                }
+              },
+              "ability_uses": {
+                "ringmaster_tame_the_beasts": 1,
+                "ringmaster_the_box": 1,
+                "ringmaster_wheel": 1,
+                "ringmaster_tame_the_beasts_crack": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "arcane_boots": 1,
+                "mana_draught": 1,
+                "magic_wand": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 1,
+              "damage": 980,
+              "healing": 477,
+              "gold_delta": -27,
+              "xp_delta": 1522,
+              "xp_start": 17957,
+              "xp_end": 19479
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "centaur_double_edge": 3,
+                "centaur_hoof_stomp": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "blink": 1
+              },
+              "killed": {
+                "npc_dota_hero_kez": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 1801,
+              "healing": 3702,
+              "gold_delta": 1138,
+              "xp_delta": 4736,
+              "xp_start": 27452,
+              "xp_end": 32074
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "lina_dragon_slave": 4,
+                "lina_light_strike_array": 3,
+                "lina_flame_cloak": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "arcane_boots": 1,
+                "dust": 1
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 3132,
+              "healing": 107,
+              "gold_delta": 680,
+              "xp_delta": 1644,
+              "xp_start": 23469,
+              "xp_end": 25113
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "juggernaut_swift_slash": 1,
+                "juggernaut_blade_fury": 1,
+                "juggernaut_healing_ward": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "disperser": 1,
+                "phase_boots": 2,
+                "manta": 1,
+                "blink": 1
+              },
+              "killed": {
+                "npc_dota_hero_witch_doctor": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 2604,
+              "healing": 956,
+              "gold_delta": 975,
+              "xp_delta": 1535,
+              "xp_start": 34901,
+              "xp_end": 36436
+            },
+            {
+              "deaths_pos": {
+                "94": {
+                  "102": 1
+                }
+              },
+              "ability_uses": {
+                "dark_willow_shadow_realm": 1,
+                "dark_willow_terrorize": 1,
+                "dark_willow_bramble_maze": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "pogo_stick": 1,
+                "blink": 1,
+                "magic_wand": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 614,
+              "healing": 365,
+              "gold_delta": 182,
+              "xp_delta": 0,
+              "xp_start": 21863,
+              "xp_end": 21863
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "invoker_chaos_meteor": 1,
+                "invoker_ghost_walk": 1,
+                "invoker_emp": 1,
+                "invoker_wex": 31,
+                "invoker_sun_strike": 1,
+                "invoker_invoke": 19,
+                "invoker_tornado": 1,
+                "invoker_quas": 74,
+                "invoker_cold_snap": 1,
+                "invoker_forge_spirit": 1,
+                "invoker_exort": 22,
+                "invoker_deafening_blast": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "blink": 2,
+                "force_staff": 1
+              },
+              "killed": {
+                "npc_dota_hero_ringmaster": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 2803,
+              "healing": 1244,
+              "gold_delta": 862,
+              "xp_delta": 4399,
+              "xp_start": 37287,
+              "xp_end": 41686
+            }
+          ]
+        },
+        {
+          "start": 2400,
+          "end": 2448,
+          "last_death": 2433,
+          "deaths": 4,
+          "players": [
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "witch_doctor_voodoo_restoration": 2,
+                "witch_doctor_voodoo_switcheroo": 1,
+                "witch_doctor_paralyzing_cask": 1,
+                "witch_doctor_maledict": 1,
+                "witch_doctor_death_ward": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "arcane_boots": 1,
+                "glimmer_cape": 1
+              },
+              "killed": {
+                "npc_dota_hero_centaur": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 7341,
+              "healing": 2405,
+              "gold_delta": 746,
+              "xp_delta": 2407,
+              "xp_start": 21005,
+              "xp_end": 23412
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {},
+              "ability_targets": {},
+              "item_uses": {},
+              "killed": {
+                "npc_dota_hero_dark_willow": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 439,
+              "healing": 0,
+              "gold_delta": 869,
+              "xp_delta": 0,
+              "xp_start": 22111,
+              "xp_end": 22111
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "kez_talon_toss": 1,
+                "kez_ravens_veil": 1,
+                "kez_falcon_rush": 2,
+                "kez_grappling_claw": 3,
+                "kez_switch_weapons": 11,
+                "kez_raptor_dance": 1,
+                "kez_echo_slash": 3
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "black_king_bar": 1
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 4105,
+              "healing": 2373,
+              "gold_delta": 952,
+              "xp_delta": 2767,
+              "xp_start": 39315,
+              "xp_end": 42082
+            },
+            {
+              "deaths_pos": {
+                "80": {
+                  "81": 1
+                }
+              },
+              "ability_uses": {
+                "troll_warlord_whirling_axes_ranged": 3,
+                "troll_warlord_switch_stance": 7,
+                "troll_warlord_battle_trance": 1,
+                "troll_warlord_whirling_axes_melee": 2
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "black_king_bar": 1,
+                "dust": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 1,
+              "damage": 5359,
+              "healing": 3405,
+              "gold_delta": 62,
+              "xp_delta": 409,
+              "xp_start": 27812,
+              "xp_end": 28221
+            },
+            {
+              "deaths_pos": {
+                "79": {
+                  "81": 1
+                }
+              },
+              "ability_uses": {
+                "ringmaster_impalement": 1,
+                "ringmaster_the_box": 1,
+                "ringmaster_wheel": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "ghost": 1,
+                "magic_wand": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 667,
+              "healing": 291,
+              "gold_delta": 18,
+              "xp_delta": 50,
+              "xp_start": 19912,
+              "xp_end": 19962
+            },
+            {
+              "deaths_pos": {
+                "80": {
+                  "82": 1
+                }
+              },
+              "ability_uses": {
+                "centaur_stampede": 1,
+                "centaur_double_edge": 3,
+                "centaur_hoof_stomp": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "shivas_guard": 1,
+                "overwhelming_blink": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 5827,
+              "healing": 2371,
+              "gold_delta": 688,
+              "xp_delta": 2972,
+              "xp_start": 35135,
+              "xp_end": 38107
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "lina_dragon_slave": 5,
+                "lina_light_strike_array": 2,
+                "lina_flame_cloak": 1,
+                "lina_laguna_blade": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "magic_wand": 1
+              },
+              "killed": {
+                "npc_dota_hero_ringmaster": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 3125,
+              "healing": 758,
+              "gold_delta": 1401,
+              "xp_delta": 1631,
+              "xp_start": 26812,
+              "xp_end": 28443
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "juggernaut_swift_slash": 1,
+                "juggernaut_blade_fury": 1,
+                "juggernaut_omni_slash": 1,
+                "juggernaut_healing_ward": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "swift_blink": 2,
+                "disperser": 1,
+                "phase_boots": 4,
+                "manta": 1
+              },
+              "killed": {},
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 3831,
+              "healing": 2067,
+              "gold_delta": 914,
+              "xp_delta": 2021,
+              "xp_start": 39301,
+              "xp_end": 41322
+            },
+            {
+              "deaths_pos": {
+                "81": {
+                  "101": 1
+                }
+              },
+              "ability_uses": {
+                "dark_willow_shadow_realm": 1,
+                "dark_willow_bramble_maze": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "force_staff": 1,
+                "cyclone": 1
+              },
+              "killed": {},
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 360,
+              "healing": 234,
+              "gold_delta": 236,
+              "xp_delta": 284,
+              "xp_start": 22773,
+              "xp_end": 23057
+            },
+            {
+              "deaths_pos": {},
+              "ability_uses": {
+                "invoker_ghost_walk": 1,
+                "invoker_quas": 24,
+                "invoker_cold_snap": 1,
+                "invoker_exort": 14,
+                "invoker_ice_wall": 1,
+                "invoker_chaos_meteor": 1,
+                "invoker_alacrity": 1,
+                "invoker_emp": 1,
+                "invoker_wex": 39,
+                "invoker_sun_strike": 1,
+                "invoker_invoke": 12,
+                "invoker_tornado": 1,
+                "invoker_forge_spirit": 1,
+                "invoker_deafening_blast": 1
+              },
+              "ability_targets": {},
+              "item_uses": {
+                "gungir": 1,
+                "blink": 2,
+                "force_staff": 1
+              },
+              "killed": {
+                "npc_dota_hero_troll_warlord": 1
+              },
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 4403,
+              "healing": 1348,
+              "gold_delta": 1148,
+              "xp_delta": 2168,
+              "xp_start": 42760,
+              "xp_end": 44928
+            }
+          ]
+        }
+      ]
     },
     {
       "match_id": 8984332945,
@@ -92181,2659 +94808,6 @@
               "xp_delta": 3042,
               "xp_start": 34805,
               "xp_end": 37847
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "match_id": 8970882979,
-      "start_time": 1787942068,
-      "start_iso": "2026-08-28T18:34:28.000Z",
-      "duration_sec": 2331,
-      "duration_min": 38.9,
-      "lobby_type": 7,
-      "game_mode": 22,
-      "radiant_win": false,
-      "parsed": true,
-      "parse_version": 22,
-      "parse_request": {
-        "requested": false
-      },
-      "same_team": true,
-      "cyborg": {
-        "account_id": 206620580,
-        "hero_id": 128,
-        "hero": "Snapfire",
-        "player_slot": 4,
-        "team": "Radiant",
-        "won": false,
-        "kills": 7,
-        "deaths": 9,
-        "assists": 14,
-        "last_hits": 87,
-        "denies": 2,
-        "gold_per_min": 342,
-        "xp_per_min": 404,
-        "hero_damage": 19957,
-        "tower_damage": 61,
-        "hero_healing": 393,
-        "lane_role": 3,
-        "lane": "off",
-        "is_roaming": false,
-        "wards_observer": 2,
-        "wards_sentry": 5,
-        "position_guess": 4,
-        "position_confidence": "medium",
-        "position_reason": "off lane + lower farm/economy"
-      },
-      "goddess": {
-        "account_id": 160810596,
-        "hero_id": 112,
-        "hero": "Winter Wyvern",
-        "player_slot": 2,
-        "team": "Radiant",
-        "won": false,
-        "kills": 4,
-        "deaths": 16,
-        "assists": 6,
-        "last_hits": 50,
-        "denies": 2,
-        "gold_per_min": 277,
-        "xp_per_min": 387,
-        "hero_damage": 13787,
-        "tower_damage": 30,
-        "hero_healing": 916,
-        "lane_role": 1,
-        "lane": "safe",
-        "is_roaming": false,
-        "wards_observer": 12,
-        "wards_sentry": 20,
-        "position_guess": 5,
-        "position_confidence": "medium",
-        "position_reason": "safe lane + lower farm/economy"
-      },
-      "objectives": [
-        {
-          "time": -29,
-          "type": "CHAT_MESSAGE_FIRSTBLOOD",
-          "key": "1",
-          "slot": 7,
-          "player_slot": 130
-        },
-        {
-          "time": 353,
-          "type": "CHAT_MESSAGE_COURIER_LOST",
-          "team": 3,
-          "value": 40,
-          "killer": 4
-        },
-        {
-          "time": 973,
-          "type": "building_kill",
-          "unit": "npc_dota_hero_luna",
-          "key": "npc_dota_goodguys_tower1_bot",
-          "slot": 0,
-          "player_slot": 0
-        },
-        {
-          "time": 1331,
-          "type": "building_kill",
-          "unit": "npc_dota_creep_goodguys_melee",
-          "key": "npc_dota_badguys_tower1_mid"
-        },
-        {
-          "time": 1357,
-          "type": "building_kill",
-          "unit": "npc_dota_creep_goodguys_melee",
-          "key": "npc_dota_badguys_tower1_top"
-        },
-        {
-          "time": 1375,
-          "type": "building_kill",
-          "unit": "npc_dota_hero_bloodseeker",
-          "key": "npc_dota_goodguys_tower1_mid",
-          "slot": 7,
-          "player_slot": 130
-        },
-        {
-          "time": 1498,
-          "type": "building_kill",
-          "unit": "npc_dota_hero_magnataur",
-          "key": "npc_dota_goodguys_tower2_bot",
-          "slot": 6,
-          "player_slot": 129
-        },
-        {
-          "time": 1558,
-          "type": "CHAT_MESSAGE_ROSHAN_KILL",
-          "team": 3
-        },
-        {
-          "time": 1559,
-          "type": "CHAT_MESSAGE_AEGIS",
-          "slot": 5,
-          "player_slot": 128
-        },
-        {
-          "time": 1618,
-          "type": "building_kill",
-          "unit": "npc_dota_hero_magnataur",
-          "key": "npc_dota_goodguys_tower1_top",
-          "slot": 6,
-          "player_slot": 129
-        },
-        {
-          "time": 1652,
-          "type": "building_kill",
-          "unit": "npc_dota_creep_badguys_ranged",
-          "key": "npc_dota_goodguys_tower2_mid"
-        },
-        {
-          "time": 1724,
-          "type": "building_kill",
-          "unit": "npc_dota_hero_bloodseeker",
-          "key": "npc_dota_goodguys_tower2_top",
-          "slot": 7,
-          "player_slot": 130
-        },
-        {
-          "time": 1879,
-          "type": "building_kill",
-          "unit": "npc_dota_creep_goodguys_ranged",
-          "key": "npc_dota_badguys_tower1_bot"
-        },
-        {
-          "time": 1982,
-          "type": "building_kill",
-          "unit": "npc_dota_hero_bloodseeker",
-          "key": "npc_dota_goodguys_tower3_bot",
-          "slot": 7,
-          "player_slot": 130
-        },
-        {
-          "time": 1986,
-          "type": "building_kill",
-          "unit": "npc_dota_hero_bloodseeker",
-          "key": "npc_dota_goodguys_range_rax_bot",
-          "slot": 7,
-          "player_slot": 130
-        },
-        {
-          "time": 1990,
-          "type": "building_kill",
-          "unit": "npc_dota_creep_badguys_ranged",
-          "key": "npc_dota_goodguys_melee_rax_bot"
-        },
-        {
-          "time": 2101,
-          "type": "building_kill",
-          "unit": "npc_dota_hero_bloodseeker",
-          "key": "npc_dota_goodguys_tower3_mid",
-          "slot": 7,
-          "player_slot": 130
-        },
-        {
-          "time": 2109,
-          "type": "building_kill",
-          "unit": "npc_dota_hero_bloodseeker",
-          "key": "npc_dota_goodguys_range_rax_mid",
-          "slot": 7,
-          "player_slot": 130
-        },
-        {
-          "time": 2117,
-          "type": "building_kill",
-          "unit": "npc_dota_hero_bloodseeker",
-          "key": "npc_dota_goodguys_melee_rax_mid",
-          "slot": 7,
-          "player_slot": 130
-        },
-        {
-          "time": 2210,
-          "type": "CHAT_MESSAGE_ROSHAN_KILL",
-          "team": 3
-        },
-        {
-          "time": 2210,
-          "type": "CHAT_MESSAGE_AEGIS",
-          "slot": 7,
-          "player_slot": 130
-        },
-        {
-          "time": 2284,
-          "type": "building_kill",
-          "unit": "npc_dota_hero_bloodseeker",
-          "key": "npc_dota_goodguys_tower3_top",
-          "slot": 7,
-          "player_slot": 130
-        },
-        {
-          "time": 2323,
-          "type": "building_kill",
-          "unit": "npc_dota_hero_magnataur",
-          "key": "npc_dota_goodguys_melee_rax_top",
-          "slot": 6,
-          "player_slot": 129
-        },
-        {
-          "time": 2326,
-          "type": "building_kill",
-          "unit": "npc_dota_hero_magnataur",
-          "key": "npc_dota_goodguys_range_rax_top",
-          "slot": 6,
-          "player_slot": 129
-        },
-        {
-          "time": 2331,
-          "type": "building_kill",
-          "unit": "dota_unknown",
-          "key": "npc_dota_goodguys_fort"
-        }
-      ],
-      "teamfights": [
-        {
-          "start": -44,
-          "end": 0,
-          "last_death": -20,
-          "deaths": 3,
-          "players": [
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "luna_lucent_beam": 3
-              },
-              "ability_targets": {},
-              "item_uses": {},
-              "killed": {
-                "npc_dota_hero_magnataur": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 440,
-              "healing": 81,
-              "gold_delta": 235,
-              "xp_delta": 76
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "sandking_sand_storm": 1
-              },
-              "ability_targets": {},
-              "item_uses": {},
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 485,
-              "healing": 35,
-              "gold_delta": 88,
-              "xp_delta": 0
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "winter_wyvern_arctic_burn": 2
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tango": 1,
-                "blood_grenade": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 720,
-              "healing": 79,
-              "gold_delta": 102,
-              "xp_delta": 76
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {},
-              "ability_targets": {},
-              "item_uses": {
-                "faerie_fire": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 686,
-              "healing": 248,
-              "gold_delta": 102,
-              "xp_delta": 25
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "snapfire_scatterblast": 2
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tango": 1,
-                "blood_grenade": 1,
-                "faerie_fire": 1
-              },
-              "killed": {
-                "npc_dota_hero_obsidian_destroyer": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 920,
-              "healing": 297,
-              "gold_delta": 235,
-              "xp_delta": 25
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {},
-              "ability_targets": {},
-              "item_uses": {
-                "ward_dispenser": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 255,
-              "healing": 23,
-              "gold_delta": 11,
-              "xp_delta": 20
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "magnataur_skewer": 1
-              },
-              "ability_targets": {},
-              "item_uses": {},
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 82,
-              "healing": 70,
-              "gold_delta": 10,
-              "xp_delta": 20
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "bloodseeker_blood_bath": 2
-              },
-              "ability_targets": {},
-              "item_uses": {},
-              "killed": {
-                "npc_dota_hero_sand_king": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 789,
-              "healing": 107,
-              "gold_delta": 293,
-              "xp_delta": 20
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "pudge_meat_hook": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tango": 1,
-                "blood_grenade": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 528,
-              "healing": 271,
-              "gold_delta": 25,
-              "xp_delta": 20
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "lich_frost_nova": 2
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "magic_stick": 1,
-                "blood_grenade": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 851,
-              "healing": 130,
-              "gold_delta": 25,
-              "xp_delta": 20
-            }
-          ]
-        },
-        {
-          "start": 186,
-          "end": 224,
-          "last_death": 209,
-          "deaths": 3,
-          "players": [
-            {
-              "deaths_pos": {
-                "172": {
-                  "95": 1
-                }
-              },
-              "ability_uses": {
-                "luna_lunar_orbit": 1,
-                "luna_lucent_beam": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1,
-                "faerie_fire": 1,
-                "magic_wand": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 389,
-              "healing": 321,
-              "gold_delta": 41,
-              "xp_delta": 90,
-              "xp_start": 716,
-              "xp_end": 778
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "sandking_scorpion_strike": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "bottle": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 0,
-              "healing": 100,
-              "gold_delta": 154,
-              "xp_delta": 202,
-              "xp_start": 1236,
-              "xp_end": 1438
-            },
-            {
-              "deaths_pos": {
-                "171": {
-                  "84": 1
-                }
-              },
-              "ability_uses": {
-                "winter_wyvern_arctic_burn": 1,
-                "winter_wyvern_splinter_blast": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 320,
-              "healing": 59,
-              "gold_delta": -24,
-              "xp_delta": 90,
-              "xp_start": 533,
-              "xp_end": 595
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "spirit_breaker_charge_of_darkness": 1
-              },
-              "ability_targets": {},
-              "item_uses": {},
-              "killed": {
-                "npc_dota_hero_bloodseeker": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 200,
-              "healing": 0,
-              "gold_delta": 292,
-              "xp_delta": 260,
-              "xp_start": 680,
-              "xp_end": 940
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "snapfire_scatterblast": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "enchanted_mango": 1,
-                "famango": 1,
-                "blood_grenade": 1,
-                "flask": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 392,
-              "healing": 519,
-              "gold_delta": 69,
-              "xp_delta": 260,
-              "xp_start": 589,
-              "xp_end": 849
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "obsidian_destroyer_astral_imprisonment": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "ward_dispenser": 2
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 131,
-              "healing": 112,
-              "gold_delta": 205,
-              "xp_delta": 300,
-              "xp_start": 1289,
-              "xp_end": 1589
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "magnataur_shockwave": 2,
-                "magnataur_skewer": 1
-              },
-              "ability_targets": {},
-              "item_uses": {},
-              "killed": {
-                "npc_dota_hero_winter_wyvern": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 415,
-              "healing": 368,
-              "gold_delta": 556,
-              "xp_delta": 569,
-              "xp_start": 610,
-              "xp_end": 1122
-            },
-            {
-              "deaths_pos": {
-                "91": {
-                  "165": 1
-                }
-              },
-              "ability_uses": {
-                "bloodseeker_blood_bath": 1
-              },
-              "ability_targets": {},
-              "item_uses": {},
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 0,
-              "healing": 168,
-              "gold_delta": -39,
-              "xp_delta": 221,
-              "xp_start": 610,
-              "xp_end": 831
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "pudge_meat_hook": 1,
-                "pudge_rot": 4
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "famango": 1,
-                "tango": 1,
-                "blood_grenade": 1
-              },
-              "killed": {
-                "npc_dota_hero_luna": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 983,
-              "healing": 284,
-              "gold_delta": 262,
-              "xp_delta": 218,
-              "xp_start": 485,
-              "xp_end": 703
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {},
-              "ability_targets": {},
-              "item_uses": {
-                "clarity": 1,
-                "magic_stick": 1,
-                "tango": 1,
-                "branches": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 85,
-              "healing": 247,
-              "gold_delta": 0,
-              "xp_delta": 16,
-              "xp_start": 608,
-              "xp_end": 624
-            }
-          ]
-        },
-        {
-          "start": 373,
-          "end": 415,
-          "last_death": 400,
-          "deaths": 3,
-          "players": [
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "luna_lunar_orbit": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "power_treads": 5,
-                "madstone_bundle": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 15,
-              "healing": 236,
-              "gold_delta": 182,
-              "xp_delta": 302,
-              "xp_start": 1595,
-              "xp_end": 1897
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "sandking_epicenter": 1,
-                "sandking_sand_storm": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "bottle": 2
-              },
-              "killed": {
-                "npc_dota_hero_lich": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 1033,
-              "healing": 267,
-              "gold_delta": 465,
-              "xp_delta": 398,
-              "xp_start": 2529,
-              "xp_end": 2927
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "winter_wyvern_arctic_burn": 1,
-                "winter_wyvern_splinter_blast": 1
-              },
-              "ability_targets": {},
-              "item_uses": {},
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 257,
-              "healing": 73,
-              "gold_delta": 79,
-              "xp_delta": 198,
-              "xp_start": 1337,
-              "xp_end": 1535
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "spirit_breaker_charge_of_darkness": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "famango": 1,
-                "phase_boots": 4,
-                "magic_wand": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 406,
-              "healing": 580,
-              "gold_delta": 242,
-              "xp_delta": 256,
-              "xp_start": 1518,
-              "xp_end": 1774
-            },
-            {
-              "deaths_pos": {
-                "85": {
-                  "170": 1
-                }
-              },
-              "ability_uses": {
-                "snapfire_firesnap_cookie": 1,
-                "snapfire_scatterblast": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "urn_of_shadows": 1,
-                "blood_grenade": 1
-              },
-              "killed": {
-                "npc_dota_hero_bloodseeker": 1
-              },
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 516,
-              "healing": 0,
-              "gold_delta": 287,
-              "xp_delta": 426,
-              "xp_start": 1239,
-              "xp_end": 1665
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "obsidian_destroyer_sanity_eclipse": 1,
-                "obsidian_destroyer_astral_imprisonment": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1
-              },
-              "killed": {
-                "npc_dota_hero_snapfire": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 649,
-              "healing": 156,
-              "gold_delta": 507,
-              "xp_delta": 761,
-              "xp_start": 2852,
-              "xp_end": 3613
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "magnataur_shockwave": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "famango": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 161,
-              "healing": 499,
-              "gold_delta": 176,
-              "xp_delta": 125,
-              "xp_start": 2037,
-              "xp_end": 2105
-            },
-            {
-              "deaths_pos": {
-                "88": {
-                  "177": 1
-                }
-              },
-              "ability_uses": {
-                "bloodseeker_blood_bath": 1,
-                "bloodseeker_bloodrage": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "magic_wand": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 656,
-              "healing": 189,
-              "gold_delta": 50,
-              "xp_delta": 85,
-              "xp_start": 1769,
-              "xp_end": 1854
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "pudge_rot": 2
-              },
-              "ability_targets": {},
-              "item_uses": {},
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 18,
-              "healing": 673,
-              "gold_delta": 49,
-              "xp_delta": 96,
-              "xp_start": 1518,
-              "xp_end": 1614
-            },
-            {
-              "deaths_pos": {
-                "88": {
-                  "166": 1
-                }
-              },
-              "ability_uses": {
-                "lich_sinister_gaze": 1,
-                "lich_frost_shield": 1,
-                "lich_frost_nova": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1,
-                "ward_dispenser": 3,
-                "magic_wand": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 242,
-              "healing": 483,
-              "gold_delta": 32,
-              "xp_delta": 97,
-              "xp_start": 910,
-              "xp_end": 1007
-            }
-          ]
-        },
-        {
-          "start": 542,
-          "end": 578,
-          "last_death": 563,
-          "deaths": 3,
-          "players": [
-            {
-              "deaths_pos": {
-                "168": {
-                  "79": 1
-                }
-              },
-              "ability_uses": {
-                "luna_lunar_orbit": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "power_treads": 1,
-                "magic_wand": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 113,
-              "healing": 190,
-              "gold_delta": -33,
-              "xp_delta": 42,
-              "xp_start": 2906,
-              "xp_end": 2948
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "sandking_scorpion_strike": 1,
-                "sandking_sand_storm": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "clarity": 1,
-                "bottle": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 0,
-              "healing": 0,
-              "gold_delta": 159,
-              "xp_delta": 346,
-              "xp_start": 5055,
-              "xp_end": 5401
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "winter_wyvern_arctic_burn": 1,
-                "winter_wyvern_cold_embrace": 1,
-                "winter_wyvern_splinter_blast": 2
-              },
-              "ability_targets": {},
-              "item_uses": {},
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 643,
-              "healing": 251,
-              "gold_delta": 137,
-              "xp_delta": 483,
-              "xp_start": 2202,
-              "xp_end": 2685
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "spirit_breaker_charge_of_darkness": 2,
-                "spirit_breaker_nether_strike": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1,
-                "phase_boots": 3
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 668,
-              "healing": 10,
-              "gold_delta": 274,
-              "xp_delta": 560,
-              "xp_start": 2403,
-              "xp_end": 2963
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "snapfire_firesnap_cookie": 1,
-                "snapfire_scatterblast": 1,
-                "snapfire_mortimer_kisses": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1,
-                "urn_of_shadows": 1
-              },
-              "killed": {
-                "npc_dota_hero_pudge": 1,
-                "npc_dota_hero_magnataur": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 568,
-              "healing": 56,
-              "gold_delta": 591,
-              "xp_delta": 455,
-              "xp_start": 2509,
-              "xp_end": 2964
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "obsidian_destroyer_astral_imprisonment": 1
-              },
-              "ability_targets": {},
-              "item_uses": {},
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 0,
-              "healing": 76,
-              "gold_delta": 217,
-              "xp_delta": 328,
-              "xp_start": 4644,
-              "xp_end": 4972
-            },
-            {
-              "deaths_pos": {
-                "176": {
-                  "92": 1
-                }
-              },
-              "ability_uses": {
-                "magnataur_shockwave": 2,
-                "magnataur_skewer": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "power_treads": 2
-              },
-              "killed": {
-                "npc_dota_hero_luna": 1
-              },
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 138,
-              "healing": 100,
-              "gold_delta": 213,
-              "xp_delta": 634,
-              "xp_start": 2914,
-              "xp_end": 3548
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "bloodseeker_bloodrage": 2
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "madstone_bundle": 1,
-                "phase_boots": 4
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 180,
-              "healing": 221,
-              "gold_delta": 350,
-              "xp_delta": 361,
-              "xp_start": 2280,
-              "xp_end": 2641
-            },
-            {
-              "deaths_pos": {
-                "179": {
-                  "87": 1
-                }
-              },
-              "ability_uses": {
-                "pudge_dismember": 1,
-                "pudge_meat_hook": 1,
-                "pudge_rot": 2
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "blood_grenade": 1,
-                "magic_wand": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 1252,
-              "healing": 305,
-              "gold_delta": 38,
-              "xp_delta": 56,
-              "xp_start": 2566,
-              "xp_end": 2622
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "ability_lamp_use": 1
-              },
-              "ability_targets": {},
-              "item_uses": {},
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 0,
-              "healing": 74,
-              "gold_delta": 0,
-              "xp_delta": 118,
-              "xp_start": 1756,
-              "xp_end": 1874
-            }
-          ]
-        },
-        {
-          "start": 733,
-          "end": 798,
-          "last_death": 783,
-          "deaths": 6,
-          "players": [
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "luna_lunar_orbit": 1,
-                "luna_lucent_beam": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "power_treads": 18,
-                "mask_of_madness": 3
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 0,
-              "healing": 637,
-              "gold_delta": 568,
-              "xp_delta": 989,
-              "xp_start": 4636,
-              "xp_end": 5625
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "sandking_burrowstrike": 3,
-                "sandking_scorpion_strike": 2,
-                "sandking_epicenter": 1,
-                "sandking_sand_storm": 2
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "bottle": 5,
-                "blink": 3
-              },
-              "killed": {
-                "npc_dota_hero_bloodseeker": 1,
-                "npc_dota_hero_lich": 1,
-                "npc_dota_hero_magnataur": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 2053,
-              "healing": 1678,
-              "gold_delta": 920,
-              "xp_delta": 1099,
-              "xp_start": 6388,
-              "xp_end": 7487
-            },
-            {
-              "deaths_pos": {
-                "128": {
-                  "124": 1
-                }
-              },
-              "ability_uses": {
-                "winter_wyvern_arctic_burn": 1,
-                "winter_wyvern_cold_embrace": 1,
-                "winter_wyvern_splinter_blast": 3,
-                "winter_wyvern_winters_curse": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "arcane_boots": 1,
-                "tpscroll": 1,
-                "ward_dispenser": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 1129,
-              "healing": 39,
-              "gold_delta": 198,
-              "xp_delta": 402,
-              "xp_start": 3382,
-              "xp_end": 3784
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "spirit_breaker_bulldoze": 2,
-                "spirit_breaker_charge_of_darkness": 3,
-                "spirit_breaker_nether_strike": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1,
-                "phase_boots": 6,
-                "tango": 2,
-                "magic_wand": 2
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 804,
-              "healing": 985,
-              "gold_delta": 353,
-              "xp_delta": 723,
-              "xp_start": 3497,
-              "xp_end": 4220
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "snapfire_firesnap_cookie": 2,
-                "snapfire_scatterblast": 3,
-                "snapfire_mortimer_kisses": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "polliwog_charm": 1,
-                "essence_distiller": 2,
-                "blood_grenade": 1
-              },
-              "killed": {
-                "npc_dota_hero_obsidian_destroyer": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 2463,
-              "healing": 252,
-              "gold_delta": 671,
-              "xp_delta": 984,
-              "xp_start": 3876,
-              "xp_end": 4860
-            },
-            {
-              "deaths_pos": {
-                "123": {
-                  "127": 1
-                }
-              },
-              "ability_uses": {
-                "obsidian_destroyer_objurgation": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1,
-                "magic_wand": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 0,
-              "healing": 489,
-              "gold_delta": -58,
-              "xp_delta": 120,
-              "xp_start": 6292,
-              "xp_end": 6412
-            },
-            {
-              "deaths_pos": {
-                "144": {
-                  "109": 1
-                }
-              },
-              "ability_uses": {
-                "magnataur_reverse_polarity": 1,
-                "magnataur_empower": 1,
-                "magnataur_shockwave": 4,
-                "magnataur_skewer": 2
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "power_treads": 3,
-                "blink": 2,
-                "magic_wand": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 1893,
-              "healing": 512,
-              "gold_delta": 4,
-              "xp_delta": 212,
-              "xp_start": 4972,
-              "xp_end": 5184
-            },
-            {
-              "deaths_pos": {
-                "144": {
-                  "116": 1
-                }
-              },
-              "ability_uses": {
-                "bloodseeker_rupture": 1,
-                "bloodseeker_blood_bath": 2,
-                "bloodseeker_bloodrage": 2
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1,
-                "phase_boots": 3,
-                "magic_wand": 2
-              },
-              "killed": {
-                "npc_dota_hero_pudge": 1
-              },
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 1046,
-              "healing": 674,
-              "gold_delta": -7,
-              "xp_delta": 204,
-              "xp_start": 3945,
-              "xp_end": 4149
-            },
-            {
-              "deaths_pos": {
-                "129": {
-                  "129": 1
-                }
-              },
-              "ability_uses": {
-                "pudge_meat_hook": 1,
-                "pudge_rot": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 774,
-              "healing": 188,
-              "gold_delta": 68,
-              "xp_delta": 250,
-              "xp_start": 3543,
-              "xp_end": 3793
-            },
-            {
-              "deaths_pos": {
-                "124": {
-                  "124": 1
-                }
-              },
-              "ability_uses": {
-                "lich_sinister_gaze": 1,
-                "lich_frost_shield": 1,
-                "lich_chain_frost": 1,
-                "lich_frost_nova": 2
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1,
-                "ward_dispenser": 2,
-                "magic_wand": 1
-              },
-              "killed": {
-                "npc_dota_hero_winter_wyvern": 1
-              },
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 2193,
-              "healing": 242,
-              "gold_delta": 316,
-              "xp_delta": 281,
-              "xp_start": 3070,
-              "xp_end": 3351
-            }
-          ]
-        },
-        {
-          "start": 1075,
-          "end": 1122,
-          "last_death": 1107,
-          "deaths": 5,
-          "players": [
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "luna_lunar_orbit": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "power_treads": 9,
-                "manta": 1,
-                "mask_of_madness": 2
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 0,
-              "healing": 242,
-              "gold_delta": 696,
-              "xp_delta": 1070,
-              "xp_start": 10756,
-              "xp_end": 11730
-            },
-            {
-              "deaths_pos": {
-                "81": {
-                  "167": 1
-                }
-              },
-              "ability_uses": {
-                "sandking_burrowstrike": 2,
-                "sandking_scorpion_strike": 1,
-                "sandking_epicenter": 1,
-                "sandking_sand_storm": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "bottle": 2
-              },
-              "killed": {
-                "npc_dota_hero_bloodseeker": 1,
-                "npc_dota_hero_pudge": 1
-              },
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 2620,
-              "healing": 190,
-              "gold_delta": 578,
-              "xp_delta": 1280,
-              "xp_start": 9742,
-              "xp_end": 11022
-            },
-            {
-              "deaths_pos": {
-                "81": {
-                  "166": 1
-                }
-              },
-              "ability_uses": {
-                "winter_wyvern_arctic_burn": 1,
-                "winter_wyvern_splinter_blast": 1
-              },
-              "ability_targets": {},
-              "item_uses": {},
-              "killed": {
-                "npc_dota_hero_lich": 1
-              },
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 854,
-              "healing": 23,
-              "gold_delta": 277,
-              "xp_delta": 247,
-              "xp_start": 6776,
-              "xp_end": 7023
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "spirit_breaker_bulldoze": 2,
-                "spirit_breaker_charge_of_darkness": 3,
-                "spirit_breaker_nether_strike": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "phase_boots": 3,
-                "invis_sword": 2,
-                "magic_wand": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 814,
-              "healing": 244,
-              "gold_delta": 111,
-              "xp_delta": 247,
-              "xp_start": 7076,
-              "xp_end": 7323
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "snapfire_firesnap_cookie": 2,
-                "snapfire_lil_shredder": 1,
-                "snapfire_scatterblast": 2,
-                "snapfire_mortimer_kisses": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1,
-                "essence_distiller": 2
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 900,
-              "healing": 309,
-              "gold_delta": 382,
-              "xp_delta": 1299,
-              "xp_start": 6673,
-              "xp_end": 7972
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "obsidian_destroyer_objurgation": 1,
-                "obsidian_destroyer_astral_imprisonment": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1,
-                "blink": 2
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 2340,
-              "healing": 48,
-              "gold_delta": 326,
-              "xp_delta": 1108,
-              "xp_start": 9431,
-              "xp_end": 10539
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "magnataur_empower": 2,
-                "magnataur_shockwave": 2,
-                "magnataur_skewer": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "blink": 1,
-                "magic_wand": 1
-              },
-              "killed": {
-                "npc_dota_hero_sand_king": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 534,
-              "healing": 607,
-              "gold_delta": 585,
-              "xp_delta": 1331,
-              "xp_start": 8857,
-              "xp_end": 10188
-            },
-            {
-              "deaths_pos": {
-                "79": {
-                  "169": 1
-                }
-              },
-              "ability_uses": {
-                "bloodseeker_rupture": 1,
-                "bloodseeker_blood_bath": 1,
-                "bloodseeker_bloodrage": 3
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "madstone_bundle": 2,
-                "phase_boots": 3,
-                "magic_wand": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 1560,
-              "healing": 566,
-              "gold_delta": 175,
-              "xp_delta": 705,
-              "xp_start": 7172,
-              "xp_end": 7877
-            },
-            {
-              "deaths_pos": {
-                "84": {
-                  "171": 1
-                }
-              },
-              "ability_uses": {
-                "pudge_dismember": 1,
-                "pudge_meat_hook": 1,
-                "pudge_flesh_heap": 1,
-                "pudge_rot": 2
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "ward_dispenser": 1,
-                "blood_grenade": 1,
-                "dust": 1,
-                "magic_wand": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 1032,
-              "healing": 450,
-              "gold_delta": 125,
-              "xp_delta": 563,
-              "xp_start": 6216,
-              "xp_end": 6779
-            },
-            {
-              "deaths_pos": {
-                "85": {
-                  "170": 1
-                }
-              },
-              "ability_uses": {
-                "lich_sinister_gaze": 1,
-                "lich_frost_shield": 1,
-                "lich_chain_frost": 1,
-                "lich_death_charge": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "magic_wand": 1
-              },
-              "killed": {
-                "npc_dota_hero_winter_wyvern": 1
-              },
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 733,
-              "healing": 176,
-              "gold_delta": 388,
-              "xp_delta": 127,
-              "xp_start": 4834,
-              "xp_end": 4961
-            }
-          ]
-        },
-        {
-          "start": 1205,
-          "end": 1265,
-          "last_death": 1250,
-          "deaths": 6,
-          "players": [
-            {
-              "deaths_pos": {
-                "130": {
-                  "102": 1
-                }
-              },
-              "ability_uses": {
-                "luna_lunar_orbit": 1,
-                "luna_eclipse": 1,
-                "luna_lucent_beam": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "power_treads": 3,
-                "magic_wand": 1,
-                "mask_of_madness": 2
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 2467,
-              "healing": 530,
-              "gold_delta": 201,
-              "xp_delta": 195,
-              "xp_start": 13326,
-              "xp_end": 13521
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "sandking_burrowstrike": 2,
-                "sandking_scorpion_strike": 4,
-                "sandking_epicenter": 1,
-                "sandking_sand_storm": 2
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "blink": 1
-              },
-              "killed": {
-                "npc_dota_hero_bloodseeker": 1,
-                "npc_dota_hero_obsidian_destroyer": 1,
-                "npc_dota_hero_lich": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 1927,
-              "healing": 441,
-              "gold_delta": 1772,
-              "xp_delta": 2718,
-              "xp_start": 11338,
-              "xp_end": 14056
-            },
-            {
-              "deaths_pos": {
-                "132": {
-                  "109": 1
-                }
-              },
-              "ability_uses": {
-                "winter_wyvern_cold_embrace": 1,
-                "winter_wyvern_winters_curse": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1,
-                "ward_dispenser": 1,
-                "blink": 2
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 823,
-              "healing": 71,
-              "gold_delta": -50,
-              "xp_delta": 0,
-              "xp_start": 7535,
-              "xp_end": 7535
-            },
-            {
-              "deaths_pos": {
-                "132": {
-                  "106": 1
-                }
-              },
-              "ability_uses": {
-                "spirit_breaker_bulldoze": 1,
-                "spirit_breaker_charge_of_darkness": 2
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "phase_boots": 2,
-                "invis_sword": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 261,
-              "healing": 52,
-              "gold_delta": -87,
-              "xp_delta": 0,
-              "xp_start": 7607,
-              "xp_end": 7607
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "snapfire_firesnap_cookie": 1,
-                "snapfire_scatterblast": 1,
-                "snapfire_mortimer_kisses": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "essence_distiller": 1,
-                "famango": 1,
-                "blink": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 2204,
-              "healing": 357,
-              "gold_delta": 449,
-              "xp_delta": 2730,
-              "xp_start": 9118,
-              "xp_end": 11848
-            },
-            {
-              "deaths_pos": {
-                "123": {
-                  "123": 1
-                }
-              },
-              "ability_uses": {
-                "obsidian_destroyer_sanity_eclipse": 1,
-                "obsidian_destroyer_objurgation": 1,
-                "obsidian_destroyer_astral_imprisonment": 2
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "blink": 1,
-                "essence_ring": 1,
-                "force_staff": 1,
-                "magic_wand": 1
-              },
-              "killed": {
-                "npc_dota_hero_winter_wyvern": 1
-              },
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 1572,
-              "healing": 348,
-              "gold_delta": 283,
-              "xp_delta": 852,
-              "xp_start": 11838,
-              "xp_end": 12690
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "magnataur_reverse_polarity": 1,
-                "magnataur_shockwave": 3,
-                "magnataur_skewer": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "blink": 1,
-                "harpoon": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 1459,
-              "healing": 698,
-              "gold_delta": 412,
-              "xp_delta": 1079,
-              "xp_start": 11002,
-              "xp_end": 12081
-            },
-            {
-              "deaths_pos": {
-                "123": {
-                  "122": 1
-                }
-              },
-              "ability_uses": {
-                "bloodseeker_rupture": 1,
-                "bloodseeker_blood_bath": 2,
-                "bloodseeker_bloodrage": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "mjollnir": 1,
-                "phase_boots": 3,
-                "magic_wand": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 633,
-              "healing": 1067,
-              "gold_delta": 576,
-              "xp_delta": 2255,
-              "xp_start": 8337,
-              "xp_end": 10592
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "pudge_dismember": 1,
-                "pudge_meat_hook": 2,
-                "pudge_flesh_heap": 1,
-                "ability_lamp_use": 1,
-                "pudge_rot": 4
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "smoke_of_deceit": 1,
-                "dust": 1,
-                "magic_wand": 1
-              },
-              "killed": {
-                "npc_dota_hero_luna": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 749,
-              "healing": 493,
-              "gold_delta": 487,
-              "xp_delta": 803,
-              "xp_start": 7150,
-              "xp_end": 7953
-            },
-            {
-              "deaths_pos": {
-                "118": {
-                  "108": 1
-                }
-              },
-              "ability_uses": {
-                "lich_sinister_gaze": 1,
-                "lich_frost_shield": 1,
-                "lich_chain_frost": 1,
-                "lich_frost_nova": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "pogo_stick": 1,
-                "dust": 1,
-                "magic_wand": 1
-              },
-              "killed": {
-                "npc_dota_hero_spirit_breaker": 1
-              },
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 2402,
-              "healing": 412,
-              "gold_delta": 368,
-              "xp_delta": 803,
-              "xp_start": 5223,
-              "xp_end": 6026
-            }
-          ]
-        },
-        {
-          "start": 1556,
-          "end": 1614,
-          "last_death": 1599,
-          "deaths": 6,
-          "players": [
-            {
-              "deaths_pos": {
-                "120": {
-                  "93": 1
-                }
-              },
-              "ability_uses": {
-                "luna_lunar_orbit": 1,
-                "luna_eclipse": 1,
-                "luna_lucent_beam": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1,
-                "madstone_bundle": 4,
-                "manta": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 1518,
-              "healing": 96,
-              "gold_delta": 247,
-              "xp_delta": 706,
-              "xp_start": 17865,
-              "xp_end": 18571
-            },
-            {
-              "deaths_pos": {
-                "121": {
-                  "88": 1
-                }
-              },
-              "ability_uses": {
-                "sandking_burrowstrike": 2,
-                "sandking_scorpion_strike": 1,
-                "sandking_epicenter": 1,
-                "sandking_sand_storm": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "blink": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 2093,
-              "healing": 307,
-              "gold_delta": -340,
-              "xp_delta": 53,
-              "xp_start": 17170,
-              "xp_end": 17223
-            },
-            {
-              "deaths_pos": {
-                "107": {
-                  "94": 1
-                }
-              },
-              "ability_uses": {
-                "winter_wyvern_cold_embrace": 1,
-                "winter_wyvern_splinter_blast": 2,
-                "winter_wyvern_winters_curse": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "arcane_boots": 1,
-                "ward_dispenser": 1,
-                "blink": 1
-              },
-              "killed": {
-                "npc_dota_hero_lich": 1
-              },
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 1471,
-              "healing": 450,
-              "gold_delta": 411,
-              "xp_delta": 828,
-              "xp_start": 9103,
-              "xp_end": 9931
-            },
-            {
-              "deaths_pos": {
-                "119": {
-                  "91": 1
-                }
-              },
-              "ability_uses": {
-                "spirit_breaker_bulldoze": 2,
-                "spirit_breaker_charge_of_darkness": 2,
-                "spirit_breaker_nether_strike": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "ward_observer": 1,
-                "madstone_bundle": 1,
-                "great_famango": 1,
-                "phase_boots": 3,
-                "invis_sword": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 746,
-              "healing": 529,
-              "gold_delta": -35,
-              "xp_delta": 547,
-              "xp_start": 9821,
-              "xp_end": 10368
-            },
-            {
-              "deaths_pos": {
-                "114": {
-                  "94": 1
-                }
-              },
-              "ability_uses": {
-                "snapfire_firesnap_cookie": 2,
-                "snapfire_lil_shredder": 1,
-                "snapfire_scatterblast": 1,
-                "snapfire_mortimer_kisses": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "madstone_bundle": 1,
-                "essence_distiller": 1,
-                "blink": 2
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 1761,
-              "healing": 350,
-              "gold_delta": -41,
-              "xp_delta": 585,
-              "xp_start": 12966,
-              "xp_end": 13551
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "plus_high_five": 1,
-                "obsidian_destroyer_sanity_eclipse": 1,
-                "obsidian_destroyer_objurgation": 1,
-                "obsidian_destroyer_astral_imprisonment": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "sheepstick": 1,
-                "blink": 1,
-                "essence_ring": 1,
-                "force_staff": 2
-              },
-              "killed": {
-                "npc_dota_hero_winter_wyvern": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 2708,
-              "healing": 262,
-              "gold_delta": 1345,
-              "xp_delta": 4540,
-              "xp_start": 19762,
-              "xp_end": 24302
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "magnataur_empower": 1,
-                "magnataur_shockwave": 3
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 0,
-              "healing": 427,
-              "gold_delta": 1047,
-              "xp_delta": 1693,
-              "xp_start": 16242,
-              "xp_end": 17935
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "bloodseeker_rupture": 1,
-                "bloodseeker_blood_bath": 1,
-                "bloodseeker_bloodrage": 2
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "madstone_bundle": 2,
-                "black_king_bar": 1,
-                "mjollnir": 1,
-                "phase_boots": 6,
-                "magic_wand": 2
-              },
-              "killed": {
-                "npc_dota_hero_snapfire": 1,
-                "npc_dota_hero_sand_king": 1,
-                "npc_dota_hero_spirit_breaker": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 5353,
-              "healing": 3252,
-              "gold_delta": 1636,
-              "xp_delta": 3366,
-              "xp_start": 16273,
-              "xp_end": 19639
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "pudge_dismember": 2,
-                "pudge_meat_hook": 2,
-                "pudge_flesh_heap": 1,
-                "ability_lamp_use": 1,
-                "pudge_rot": 4
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "blink": 2,
-                "dust": 1,
-                "magic_wand": 1,
-                "glimmer_cape": 2
-              },
-              "killed": {
-                "npc_dota_hero_luna": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 1926,
-              "healing": 1535,
-              "gold_delta": 978,
-              "xp_delta": 2772,
-              "xp_start": 10924,
-              "xp_end": 13696
-            },
-            {
-              "deaths_pos": {
-                "122": {
-                  "100": 1
-                }
-              },
-              "ability_uses": {
-                "lich_ice_spire": 1,
-                "lich_chain_frost": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "blink": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 1277,
-              "healing": 1,
-              "gold_delta": 244,
-              "xp_delta": 29,
-              "xp_start": 11497,
-              "xp_end": 11526
-            }
-          ]
-        },
-        {
-          "start": 1674,
-          "end": 1719,
-          "last_death": 1704,
-          "deaths": 3,
-          "players": [
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "luna_lunar_orbit": 1,
-                "ability_lamp_use": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "power_treads": 3,
-                "madstone_bundle": 1,
-                "manta": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 0,
-              "healing": 66,
-              "gold_delta": 711,
-              "xp_delta": 821,
-              "xp_start": 18571,
-              "xp_end": 19335
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "sandking_burrowstrike": 2,
-                "sandking_scorpion_strike": 1,
-                "sandking_sand_storm": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "blink": 2,
-                "bottle": 3
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 33,
-              "healing": 288,
-              "gold_delta": 97,
-              "xp_delta": 274,
-              "xp_start": 17589,
-              "xp_end": 17863
-            },
-            {
-              "deaths_pos": {
-                "65": {
-                  "132": 1
-                }
-              },
-              "ability_uses": {
-                "winter_wyvern_arctic_burn": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "blink": 1,
-                "dust": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 275,
-              "healing": 0,
-              "gold_delta": -157,
-              "xp_delta": 58,
-              "xp_start": 9987,
-              "xp_end": 10045
-            },
-            {
-              "deaths_pos": {
-                "75": {
-                  "115": 1
-                }
-              },
-              "ability_uses": {
-                "spirit_breaker_bulldoze": 2,
-                "spirit_breaker_nether_strike": 1,
-                "spirit_breaker_charge_of_darkness": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1,
-                "famango": 1,
-                "phase_boots": 2,
-                "invis_sword": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 485,
-              "healing": 231,
-              "gold_delta": -111,
-              "xp_delta": 150,
-              "xp_start": 10568,
-              "xp_end": 10718
-            },
-            {
-              "deaths_pos": {
-                "67": {
-                  "122": 1
-                }
-              },
-              "ability_uses": {
-                "snapfire_firesnap_cookie": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "blink": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 0,
-              "healing": 175,
-              "gold_delta": -206,
-              "xp_delta": 139,
-              "xp_start": 13910,
-              "xp_end": 14049
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "obsidian_destroyer_objurgation": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "sheepstick": 1,
-                "blink": 2,
-                "essence_ring": 1,
-                "force_staff": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 1951,
-              "healing": 226,
-              "gold_delta": 501,
-              "xp_delta": 1633,
-              "xp_start": 24858,
-              "xp_end": 26491
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {},
-              "ability_targets": {},
-              "item_uses": {},
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 0,
-              "healing": 152,
-              "gold_delta": 0,
-              "xp_delta": 0,
-              "xp_start": 18358,
-              "xp_end": 18358
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "bloodseeker_bloodrage": 3
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1,
-                "phase_boots": 4
-              },
-              "killed": {
-                "npc_dota_hero_spirit_breaker": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 485,
-              "healing": 670,
-              "gold_delta": 784,
-              "xp_delta": 1312,
-              "xp_start": 20362,
-              "xp_end": 21674
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "pudge_dismember": 1,
-                "pudge_meat_hook": 2,
-                "pudge_flesh_heap": 1,
-                "pudge_rot": 4
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "ward_sentry": 1,
-                "ward_dispenser": 1,
-                "blink": 1,
-                "dust": 1,
-                "magic_wand": 1,
-                "glimmer_cape": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 3385,
-              "healing": 977,
-              "gold_delta": 489,
-              "xp_delta": 2795,
-              "xp_start": 14049,
-              "xp_end": 16844
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "lich_sinister_gaze": 1,
-                "lich_ice_spire": 1,
-                "lich_frost_shield": 1,
-                "lich_chain_frost": 1,
-                "ability_lamp_use": 1,
-                "lich_frost_nova": 3
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "ward_sentry": 1,
-                "madstone_bundle": 1,
-                "pogo_stick": 2,
-                "blink": 2,
-                "magic_wand": 1
-              },
-              "killed": {
-                "npc_dota_hero_winter_wyvern": 1,
-                "npc_dota_hero_snapfire": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 928,
-              "healing": 1,
-              "gold_delta": 809,
-              "xp_delta": 2795,
-              "xp_start": 11684,
-              "xp_end": 14479
-            }
-          ]
-        },
-        {
-          "start": 1947,
-          "end": 1992,
-          "last_death": 1977,
-          "deaths": 4,
-          "players": [
-            {
-              "deaths_pos": {},
-              "ability_uses": {},
-              "ability_targets": {},
-              "item_uses": {
-                "manta": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 0,
-              "healing": 28,
-              "gold_delta": 609,
-              "xp_delta": 1324,
-              "xp_start": 23061,
-              "xp_end": 24385
-            },
-            {
-              "deaths_pos": {
-                "92": {
-                  "76": 1
-                }
-              },
-              "ability_uses": {
-                "sandking_burrowstrike": 1,
-                "ability_capture": 1,
-                "sandking_scorpion_strike": 1,
-                "sandking_epicenter": 1,
-                "sandking_sand_storm": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1,
-                "blink": 2
-              },
-              "killed": {
-                "npc_dota_hero_lich": 1
-              },
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 6025,
-              "healing": 121,
-              "gold_delta": 425,
-              "xp_delta": 57,
-              "xp_start": 20498,
-              "xp_end": 20555
-            },
-            {
-              "deaths_pos": {
-                "86": {
-                  "78": 1
-                }
-              },
-              "ability_uses": {
-                "winter_wyvern_winters_curse": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "tpscroll": 1,
-                "ward_dispenser": 3,
-                "blink": 1,
-                "glimmer_cape": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 0,
-              "healing": 24,
-              "gold_delta": -178,
-              "xp_delta": 0,
-              "xp_start": 10521,
-              "xp_end": 10521
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {},
-              "ability_targets": {},
-              "item_uses": {},
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 0,
-              "healing": 45,
-              "gold_delta": 0,
-              "xp_delta": 0,
-              "xp_start": 11124,
-              "xp_end": 11124
-            },
-            {
-              "deaths_pos": {
-                "96": {
-                  "81": 1
-                }
-              },
-              "ability_uses": {},
-              "ability_targets": {},
-              "item_uses": {
-                "force_staff": 1
-              },
-              "killed": {},
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 0,
-              "healing": 0,
-              "gold_delta": -238,
-              "xp_delta": 0,
-              "xp_start": 15121,
-              "xp_end": 15121
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "obsidian_destroyer_objurgation": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "sheepstick": 1,
-                "blink": 1,
-                "hurricane_pike": 1,
-                "essence_ring": 1,
-                "magic_wand": 1
-              },
-              "killed": {
-                "npc_dota_hero_winter_wyvern": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 2193,
-              "healing": 326,
-              "gold_delta": 1008,
-              "xp_delta": 1661,
-              "xp_start": 29785,
-              "xp_end": 31446
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "magnataur_empower": 1,
-                "magnataur_shockwave": 2,
-                "magnataur_skewer": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "blink": 1,
-                "harpoon": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 263,
-              "healing": 0,
-              "gold_delta": 671,
-              "xp_delta": 1168,
-              "xp_start": 21870,
-              "xp_end": 23038
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "bloodseeker_rupture": 1,
-                "bloodseeker_blood_bath": 2,
-                "bloodseeker_bloodrage": 4
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "black_king_bar": 1,
-                "phase_boots": 5,
-                "dust": 1
-              },
-              "killed": {
-                "npc_dota_hero_snapfire": 1
-              },
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 3457,
-              "healing": 1167,
-              "gold_delta": 1609,
-              "xp_delta": 1534,
-              "xp_start": 25447,
-              "xp_end": 26981
-            },
-            {
-              "deaths_pos": {},
-              "ability_uses": {
-                "pudge_dismember": 1,
-                "pudge_meat_hook": 1,
-                "pudge_flesh_heap": 1,
-                "pudge_rot": 4
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "blink": 2,
-                "dust": 1,
-                "glimmer_cape": 1
-              },
-              "killed": {},
-              "deaths": 0,
-              "buybacks": 0,
-              "damage": 529,
-              "healing": 650,
-              "gold_delta": 664,
-              "xp_delta": 1470,
-              "xp_start": 20112,
-              "xp_end": 21582
-            },
-            {
-              "deaths_pos": {
-                "94": {
-                  "74": 1
-                }
-              },
-              "ability_uses": {
-                "lich_sinister_gaze": 1,
-                "lich_ice_spire": 1,
-                "lich_frost_nova": 1
-              },
-              "ability_targets": {},
-              "item_uses": {
-                "ward_dispenser": 1,
-                "blink": 1,
-                "magic_wand": 1
-              },
-              "killed": {
-                "npc_dota_hero_sand_king": 1
-              },
-              "deaths": 1,
-              "buybacks": 0,
-              "damage": 9,
-              "healing": 132,
-              "gold_delta": 686,
-              "xp_delta": 1479,
-              "xp_start": 16152,
-              "xp_end": 17631
             }
           ]
         }
