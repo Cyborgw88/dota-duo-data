@@ -7,8 +7,8 @@
   "lobby_type": 7,
   "game_mode": 22,
   "radiant_win": true,
-  "parsed": false,
-  "parse_version": null,
+  "parsed": true,
+  "parse_version": 22,
   "same_team": true,
   "cyborg": {
     "account_id": 206620580,
@@ -27,10 +27,14 @@
     "hero_damage": 31006,
     "tower_damage": 1222,
     "hero_healing": 110,
-    "lane": "unknown",
-    "position_guess": null,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 2,
+    "lane": "mid",
+    "is_roaming": false,
+    "wards_observer": 2,
+    "wards_sentry": 2,
+    "position_guess": 2,
+    "position_confidence": "high",
+    "position_reason": "lane_role=mid"
   },
   "goddess": {
     "account_id": 160810596,
@@ -49,11 +53,784 @@
     "hero_damage": 9497,
     "tower_damage": 0,
     "hero_healing": 470,
-    "lane": "unknown",
-    "position_guess": null,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 1,
+    "lane": "safe",
+    "is_roaming": false,
+    "wards_observer": 12,
+    "wards_sentry": 24,
+    "position_guess": 5,
+    "position_confidence": "medium",
+    "position_reason": "safe lane + lower farm/economy"
   },
-  "objectives": [],
-  "teamfights": []
+  "objectives": [
+    {
+      "time": -19,
+      "type": "CHAT_MESSAGE_FIRSTBLOOD",
+      "key": "1",
+      "slot": 8,
+      "player_slot": 131
+    },
+    {
+      "time": 520,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_death_prophet",
+      "key": "npc_dota_badguys_tower1_mid",
+      "slot": 6,
+      "player_slot": 129
+    },
+    {
+      "time": 962,
+      "type": "building_kill",
+      "unit": "npc_dota_badguys_siege",
+      "key": "npc_dota_goodguys_tower1_bot"
+    },
+    {
+      "time": 1069,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_badguys_tower1_top",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1087,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_death_prophet",
+      "key": "npc_dota_goodguys_tower1_mid",
+      "slot": 6,
+      "player_slot": 129
+    },
+    {
+      "time": 1123,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_clinkz",
+      "key": "npc_dota_badguys_tower1_bot",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 1284,
+      "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+      "team": 3,
+      "slot": 8,
+      "player_slot": 131
+    },
+    {
+      "time": 1495,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_clinkz",
+      "key": "npc_dota_badguys_tower2_top",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 1659,
+      "type": "CHAT_MESSAGE_ROSHAN_KILL",
+      "team": 2
+    },
+    {
+      "time": 1659,
+      "type": "CHAT_MESSAGE_AEGIS",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1683,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_clinkz",
+      "key": "npc_dota_badguys_tower2_mid",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 1871,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_badguys_tower3_mid",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1878,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_badguys_melee_rax_mid",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1882,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_badguys_range_rax_mid",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1938,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_clinkz",
+      "key": "npc_dota_badguys_tower2_bot",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 1955,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_weaver",
+      "key": "npc_dota_goodguys_tower1_top",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 1966,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_clinkz",
+      "key": "npc_dota_badguys_tower3_bot",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 1992,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_clinkz",
+      "key": "npc_dota_badguys_melee_rax_bot",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 1999,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_clinkz",
+      "key": "npc_dota_badguys_range_rax_bot",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 2156,
+      "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+      "team": 3,
+      "slot": 6,
+      "player_slot": 129
+    },
+    {
+      "time": 2302,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_clinkz",
+      "key": "npc_dota_badguys_tower3_top",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 2320,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_clinkz",
+      "key": "npc_dota_badguys_melee_rax_top",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 2321,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_clinkz",
+      "key": "npc_dota_badguys_range_rax_top",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 2491,
+      "type": "CHAT_MESSAGE_ROSHAN_KILL",
+      "team": 2
+    },
+    {
+      "time": 2491,
+      "type": "CHAT_MESSAGE_AEGIS",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 2511,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_goodguys_melee_upgraded_mega",
+      "key": "npc_dota_badguys_tower4"
+    },
+    {
+      "time": 2519,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_badguys_tower4",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 2530,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_badguys_fort",
+      "slot": 0,
+      "player_slot": 0
+    }
+  ],
+  "teamfights": [
+    {
+      "start": 248,
+      "end": 283,
+      "last_death": 268,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 176,
+        "healing": 328,
+        "gold_delta": 80,
+        "xp_delta": 179,
+        "killed": {},
+        "ability_uses": {
+          "death_prophet_carrion_swarm": 2
+        },
+        "item_uses": {
+          "bottle": 3
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 386,
+        "healing": 1,
+        "gold_delta": 28,
+        "xp_delta": 298,
+        "killed": {},
+        "ability_uses": {
+          "lion_impale": 1,
+          "lion_mana_drain": 1
+        },
+        "item_uses": {
+          "blood_grenade": 1
+        },
+        "deaths_pos": {
+          "83": {
+            "154": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 583,
+      "end": 648,
+      "last_death": 633,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 516,
+        "healing": 147,
+        "gold_delta": 280,
+        "xp_delta": 587,
+        "killed": {},
+        "ability_uses": {
+          "death_prophet_carrion_swarm": 1,
+          "death_prophet_exorcism": 1
+        },
+        "item_uses": {
+          "power_treads": 8
+        },
+        "deaths_pos": {
+          "113": {
+            "123": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 115,
+        "healing": 39,
+        "gold_delta": -6,
+        "xp_delta": 45,
+        "killed": {},
+        "ability_uses": {
+          "lion_voodoo": 1,
+          "lion_impale": 1,
+          "lion_mana_drain": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "smoke_of_deceit": 1
+        },
+        "deaths_pos": {
+          "176": {
+            "101": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 758,
+      "end": 806,
+      "last_death": 791,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 3308,
+        "healing": 784,
+        "gold_delta": 1385,
+        "xp_delta": 1749,
+        "killed": {
+          "npc_dota_hero_pudge": 1,
+          "npc_dota_hero_vengefulspirit": 1,
+          "npc_dota_hero_lina": 1,
+          "npc_dota_hero_ringmaster": 1
+        },
+        "ability_uses": {
+          "death_prophet_spirit_siphon": 4,
+          "death_prophet_carrion_swarm": 5,
+          "ability_lamp_use": 1,
+          "death_prophet_silence": 2,
+          "death_prophet_exorcism": 1
+        },
+        "item_uses": {
+          "bottle": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 68,
+        "healing": 28,
+        "gold_delta": 216,
+        "xp_delta": 231,
+        "killed": {},
+        "ability_uses": {
+          "lion_voodoo": 1,
+          "lion_impale": 1,
+          "lion_mana_drain": 1
+        },
+        "item_uses": {},
+        "deaths_pos": {
+          "144": {
+            "138": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 910,
+      "end": 942,
+      "last_death": 927,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 2888,
+        "healing": 882,
+        "gold_delta": 704,
+        "xp_delta": 585,
+        "killed": {
+          "npc_dota_hero_vengefulspirit": 1,
+          "npc_dota_hero_ringmaster": 1
+        },
+        "ability_uses": {
+          "death_prophet_spirit_siphon": 4,
+          "death_prophet_carrion_swarm": 3,
+          "death_prophet_silence": 2,
+          "death_prophet_exorcism": 1
+        },
+        "item_uses": {
+          "bottle": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 107,
+        "healing": 45,
+        "gold_delta": -30,
+        "xp_delta": 79,
+        "killed": {},
+        "ability_uses": {
+          "lion_voodoo": 1,
+          "lion_impale": 1
+        },
+        "item_uses": {},
+        "deaths_pos": {
+          "174": {
+            "113": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1092,
+      "end": 1142,
+      "last_death": 1127,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1975,
+        "healing": 848,
+        "gold_delta": 682,
+        "xp_delta": 902,
+        "killed": {
+          "npc_dota_hero_lina": 1
+        },
+        "ability_uses": {
+          "death_prophet_spirit_siphon": 3,
+          "death_prophet_carrion_swarm": 3,
+          "death_prophet_silence": 2,
+          "death_prophet_exorcism": 1
+        },
+        "item_uses": {
+          "power_treads": 1,
+          "tpscroll": 1,
+          "bottle": 3
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 200,
+        "healing": 41,
+        "gold_delta": 141,
+        "xp_delta": 528,
+        "killed": {},
+        "ability_uses": {
+          "lion_voodoo": 1,
+          "lion_impale": 1,
+          "lion_mana_drain": 1
+        },
+        "item_uses": {
+          "blink": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1303,
+      "end": 1356,
+      "last_death": 1341,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1858,
+        "healing": 539,
+        "gold_delta": -231,
+        "xp_delta": 170,
+        "killed": {},
+        "ability_uses": {
+          "death_prophet_spirit_siphon": 3,
+          "death_prophet_carrion_swarm": 2,
+          "death_prophet_silence": 2,
+          "death_prophet_exorcism": 1
+        },
+        "item_uses": {
+          "power_treads": 1,
+          "black_king_bar": 1,
+          "dust": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "141": {
+            "116": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 516,
+        "healing": 294,
+        "gold_delta": -87,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {
+          "lion_voodoo": 1,
+          "lion_impale": 1,
+          "lion_finger_of_death": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "blink": 1
+        },
+        "deaths_pos": {
+          "128": {
+            "94": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1440,
+      "end": 1481,
+      "last_death": 1466,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 639,
+        "healing": 1117,
+        "gold_delta": 43,
+        "xp_delta": 45,
+        "killed": {},
+        "ability_uses": {
+          "death_prophet_spirit_siphon": 1,
+          "death_prophet_carrion_swarm": 1,
+          "death_prophet_silence": 1,
+          "death_prophet_exorcism": 1
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "bottle": 3,
+          "dust": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 56,
+        "healing": 849,
+        "gold_delta": -162,
+        "xp_delta": 23,
+        "killed": {},
+        "ability_uses": {
+          "lion_impale": 1
+        },
+        "item_uses": {
+          "great_famango": 1
+        },
+        "deaths_pos": {
+          "136": {
+            "143": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1610,
+      "end": 1663,
+      "last_death": 1648,
+      "deaths": 8,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 3410,
+        "healing": 1075,
+        "gold_delta": 129,
+        "xp_delta": 1147,
+        "killed": {
+          "npc_dota_hero_vengefulspirit": 1
+        },
+        "ability_uses": {
+          "death_prophet_carrion_swarm": 4,
+          "death_prophet_spirit_siphon": 4,
+          "death_prophet_silence": 2,
+          "death_prophet_exorcism": 1
+        },
+        "item_uses": {
+          "power_treads": 2,
+          "black_king_bar": 1,
+          "dust": 1
+        },
+        "deaths_pos": {
+          "139": {
+            "105": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 480,
+        "healing": 193,
+        "gold_delta": 59,
+        "xp_delta": 654,
+        "killed": {},
+        "ability_uses": {
+          "lion_voodoo": 1,
+          "lion_impale": 2,
+          "lion_mana_drain": 2
+        },
+        "item_uses": {
+          "blink": 2,
+          "dust": 1,
+          "glimmer_cape": 1
+        },
+        "deaths_pos": {
+          "135": {
+            "104": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1967,
+      "end": 2019,
+      "last_death": 2004,
+      "deaths": 6,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 5926,
+        "healing": 5271,
+        "gold_delta": 1646,
+        "xp_delta": 4924,
+        "killed": {
+          "npc_dota_hero_lina": 1
+        },
+        "ability_uses": {
+          "death_prophet_carrion_swarm": 5,
+          "death_prophet_spirit_siphon": 4,
+          "death_prophet_silence": 2,
+          "death_prophet_exorcism": 1
+        },
+        "item_uses": {
+          "power_treads": 3,
+          "black_king_bar": 1,
+          "shivas_guard": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 1,
+        "damage": 1130,
+        "healing": 336,
+        "gold_delta": 264,
+        "xp_delta": 1809,
+        "killed": {},
+        "ability_uses": {
+          "lion_voodoo": 3,
+          "lion_impale": 3,
+          "lion_mana_drain": 4,
+          "lion_finger_of_death": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "blink": 2,
+          "dust": 1,
+          "glimmer_cape": 2
+        },
+        "deaths_pos": {
+          "185": {
+            "149": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 2286,
+      "end": 2338,
+      "last_death": 2323,
+      "deaths": 6,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 3314,
+        "healing": 640,
+        "gold_delta": 1504,
+        "xp_delta": 4825,
+        "killed": {},
+        "ability_uses": {
+          "death_prophet_carrion_swarm": 6,
+          "death_prophet_spirit_siphon": 2,
+          "death_prophet_silence": 2,
+          "death_prophet_exorcism": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "black_king_bar": 1,
+          "shivas_guard": 1,
+          "dust": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 124,
+        "gold_delta": -124,
+        "xp_delta": 501,
+        "killed": {},
+        "ability_uses": {
+          "lion_voodoo": 1,
+          "ability_lamp_use": 1,
+          "lion_mana_drain": 1
+        },
+        "item_uses": {
+          "ward_dispenser": 2,
+          "glimmer_cape": 1
+        },
+        "deaths_pos": {
+          "145": {
+            "114": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 2442,
+      "end": 2495,
+      "last_death": 2480,
+      "deaths": 6,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 2964,
+        "healing": 915,
+        "gold_delta": -80,
+        "xp_delta": 2429,
+        "killed": {
+          "npc_dota_hero_vengefulspirit": 1
+        },
+        "ability_uses": {
+          "death_prophet_carrion_swarm": 3,
+          "death_prophet_spirit_siphon": 3,
+          "death_prophet_silence": 1,
+          "death_prophet_exorcism": 1,
+          "abyssal_underlord_portal_warp": 1
+        },
+        "item_uses": {
+          "power_treads": 4,
+          "black_king_bar": 1,
+          "shivas_guard": 1
+        },
+        "deaths_pos": {
+          "107": {
+            "144": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 1,
+        "damage": 0,
+        "healing": 155,
+        "gold_delta": -203,
+        "xp_delta": 232,
+        "killed": {},
+        "ability_uses": {
+          "lion_voodoo": 1,
+          "lion_impale": 2
+        },
+        "item_uses": {
+          "smoke_of_deceit": 1,
+          "blink": 2
+        },
+        "deaths_pos": {
+          "119": {
+            "151": 1
+          }
+        }
+      }
+    }
+  ]
 }
