@@ -7,8 +7,8 @@
   "lobby_type": 7,
   "game_mode": 22,
   "radiant_win": true,
-  "parsed": false,
-  "parse_version": null,
+  "parsed": true,
+  "parse_version": 22,
   "same_team": true,
   "cyborg": {
     "account_id": 206620580,
@@ -27,10 +27,13 @@
     "hero_damage": 19261,
     "tower_damage": 452,
     "hero_healing": 0,
-    "lane": "unknown",
-    "position_guess": null,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 3,
+    "lane": "off",
+    "is_roaming": false,
+    "wards_sentry": 1,
+    "position_guess": 3,
+    "position_confidence": "medium",
+    "position_reason": "off lane + higher farm/economy"
   },
   "goddess": {
     "account_id": 160810596,
@@ -49,11 +52,901 @@
     "hero_damage": 11883,
     "tower_damage": 1279,
     "hero_healing": 0,
-    "lane": "unknown",
-    "position_guess": null,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 2,
+    "lane": "mid",
+    "is_roaming": false,
+    "wards_observer": 2,
+    "wards_sentry": 1,
+    "position_guess": 2,
+    "position_confidence": "high",
+    "position_reason": "lane_role=mid"
   },
-  "objectives": [],
-  "teamfights": []
+  "objectives": [
+    {
+      "time": 5,
+      "type": "CHAT_MESSAGE_FIRSTBLOOD",
+      "key": "0",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 174,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 3,
+      "value": 30,
+      "killer": 4
+    },
+    {
+      "time": 687,
+      "type": "building_kill",
+      "unit": "npc_dota_badguys_siege",
+      "key": "npc_dota_goodguys_tower1_bot"
+    },
+    {
+      "time": 689,
+      "type": "building_kill",
+      "unit": "npc_dota_goodguys_siege",
+      "key": "npc_dota_badguys_tower1_mid"
+    },
+    {
+      "time": 734,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_windrunner",
+      "key": "npc_dota_goodguys_tower1_mid",
+      "slot": 6,
+      "player_slot": 129
+    },
+    {
+      "time": 773,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_spirit_breaker",
+      "key": "npc_dota_badguys_tower1_top",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 1133,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_badguys_tower1_bot",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 1646,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_badguys_tower2_bot",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 1781,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_badguys_tower2_mid",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 1806,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_badguys_tower2_top",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 1858,
+      "type": "CHAT_MESSAGE_ROSHAN_KILL",
+      "team": 2
+    },
+    {
+      "time": 1858,
+      "type": "CHAT_MESSAGE_AEGIS",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1954,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_badguys_tower3_bot",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 1958,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_life_stealer",
+      "key": "npc_dota_badguys_range_rax_bot",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1961,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_shadow_shaman",
+      "key": "npc_dota_badguys_melee_rax_bot",
+      "slot": 2,
+      "player_slot": 2
+    },
+    {
+      "time": 1977,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_badguys_tower3_mid",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 1981,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_shadow_shaman",
+      "key": "npc_dota_badguys_range_rax_mid",
+      "slot": 2,
+      "player_slot": 2
+    },
+    {
+      "time": 1987,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_life_stealer",
+      "key": "npc_dota_badguys_melee_rax_mid",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1997,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_life_stealer",
+      "key": "npc_dota_badguys_tower3_top",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 2001,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_life_stealer",
+      "key": "npc_dota_badguys_range_rax_top",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 2007,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_life_stealer",
+      "key": "npc_dota_badguys_melee_rax_top",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 2060,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_badguys_tower4",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 2061,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_spirit_breaker",
+      "key": "npc_dota_badguys_tower4",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 2071,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_badguys_fort",
+      "slot": 3,
+      "player_slot": 3
+    }
+  ],
+  "teamfights": [
+    {
+      "start": 299,
+      "end": 341,
+      "last_death": 326,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 397,
+        "healing": 148,
+        "gold_delta": 402,
+        "xp_delta": 336,
+        "killed": {
+          "npc_dota_hero_shadow_shaman": 1
+        },
+        "ability_uses": {
+          "slardar_slithereen_crush": 1
+        },
+        "item_uses": {
+          "blood_grenade": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 347,
+        "healing": 195,
+        "gold_delta": 82,
+        "xp_delta": 240,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 2,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 1
+        },
+        "item_uses": {
+          "bottle": 2,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "142": {
+            "130": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 439,
+      "end": 476,
+      "last_death": 461,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 430,
+        "healing": 192,
+        "gold_delta": 187,
+        "xp_delta": 192,
+        "killed": {
+          "npc_dota_hero_shadow_shaman": 1
+        },
+        "ability_uses": {
+          "slardar_slithereen_crush": 1,
+          "slardar_sprint": 1
+        },
+        "item_uses": {
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "168": {
+            "83": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 398,
+        "gold_delta": 167,
+        "xp_delta": 243,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 1
+        },
+        "item_uses": {
+          "bottle": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 464,
+      "end": 499,
+      "last_death": 484,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 26,
+        "gold_delta": 35,
+        "xp_delta": 57,
+        "killed": {},
+        "ability_uses": {
+          "slardar_sprint": 1
+        },
+        "item_uses": {
+          "tpscroll": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 371,
+        "healing": 167,
+        "gold_delta": 745,
+        "xp_delta": 666,
+        "killed": {
+          "npc_dota_hero_spirit_breaker": 1,
+          "npc_dota_hero_lion": 1
+        },
+        "ability_uses": {
+          "windrunner_powershot": 2,
+          "windrunner_focusfire": 1,
+          "windrunner_shackleshot": 1
+        },
+        "item_uses": {
+          "bottle": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 719,
+      "end": 758,
+      "last_death": 743,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 203,
+        "healing": 228,
+        "gold_delta": 142,
+        "xp_delta": 205,
+        "killed": {},
+        "ability_uses": {
+          "slardar_amplify_damage": 1,
+          "slardar_slithereen_crush": 1,
+          "slardar_sprint": 1
+        },
+        "item_uses": {
+          "blink": 1
+        },
+        "deaths_pos": {
+          "88": {
+            "174": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 218,
+        "gold_delta": 332,
+        "xp_delta": 251,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 1,
+          "windrunner_windrun": 1
+        },
+        "item_uses": {
+          "bottle": 3
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 848,
+      "end": 890,
+      "last_death": 875,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1848,
+        "healing": 401,
+        "gold_delta": -140,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {
+          "slardar_amplify_damage": 2,
+          "slardar_slithereen_crush": 2,
+          "slardar_sprint": 1
+        },
+        "item_uses": {
+          "blink": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "145": {
+            "81": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 212,
+        "gold_delta": 173,
+        "xp_delta": 343,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 2
+        },
+        "item_uses": {
+          "madstone_bundle": 1,
+          "bottle": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 902,
+      "end": 937,
+      "last_death": 922,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 125,
+        "healing": 8,
+        "gold_delta": 545,
+        "xp_delta": 594,
+        "killed": {
+          "npc_dota_hero_life_stealer": 1
+        },
+        "ability_uses": {
+          "slardar_slithereen_crush": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "blink": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 78,
+        "healing": 0,
+        "gold_delta": -96,
+        "xp_delta": 99,
+        "killed": {},
+        "ability_uses": {},
+        "item_uses": {
+          "madstone_bundle": 2,
+          "clarity": 1
+        },
+        "deaths_pos": {
+          "115": {
+            "163": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1030,
+      "end": 1073,
+      "last_death": 1058,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 460,
+        "healing": 0,
+        "gold_delta": -95,
+        "xp_delta": 291,
+        "killed": {},
+        "ability_uses": {
+          "slardar_amplify_damage": 1,
+          "slardar_slithereen_crush": 1,
+          "slardar_sprint": 1
+        },
+        "item_uses": {
+          "blink": 1
+        },
+        "deaths_pos": {
+          "107": {
+            "169": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 395,
+        "healing": 325,
+        "gold_delta": 265,
+        "xp_delta": 214,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 3,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 1
+        },
+        "item_uses": {
+          "madstone_bundle": 1,
+          "bottle": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1152,
+      "end": 1193,
+      "last_death": 1178,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1811,
+        "healing": 264,
+        "gold_delta": 256,
+        "xp_delta": 1165,
+        "killed": {
+          "npc_dota_hero_lina": 1
+        },
+        "ability_uses": {
+          "slardar_amplify_damage": 2,
+          "slardar_slithereen_crush": 2
+        },
+        "item_uses": {
+          "blink": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "157": {
+            "121": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1738,
+        "healing": 382,
+        "gold_delta": 12,
+        "xp_delta": 1125,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_focusfire": 1,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 1
+        },
+        "item_uses": {
+          "blink": 1
+        },
+        "deaths_pos": {
+          "159": {
+            "119": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1254,
+      "end": 1285,
+      "last_death": 1270,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 145,
+        "gold_delta": 488,
+        "xp_delta": 689,
+        "killed": {},
+        "ability_uses": {
+          "slardar_slithereen_crush": 2,
+          "slardar_sprint": 2
+        },
+        "item_uses": {
+          "power_treads": 8,
+          "pogo_stick": 1,
+          "blink": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 972,
+        "healing": 0,
+        "gold_delta": -22,
+        "xp_delta": 464,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_focusfire": 1,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 1
+        },
+        "item_uses": {},
+        "deaths_pos": {
+          "194": {
+            "127": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1393,
+      "end": 1439,
+      "last_death": 1424,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1359,
+        "healing": 414,
+        "gold_delta": -231,
+        "xp_delta": 42,
+        "killed": {},
+        "ability_uses": {
+          "slardar_slithereen_crush": 2,
+          "slardar_sprint": 1
+        },
+        "item_uses": {
+          "pogo_stick": 1,
+          "blink": 2,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "147": {
+            "171": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 2113,
+        "healing": 439,
+        "gold_delta": 380,
+        "xp_delta": 1168,
+        "killed": {
+          "npc_dota_hero_shadow_shaman": 1
+        },
+        "ability_uses": {
+          "windrunner_powershot": 1,
+          "windrunner_focusfire": 1,
+          "windrunner_shackleshot": 2,
+          "windrunner_windrun": 2
+        },
+        "item_uses": {
+          "blink": 1,
+          "bottle": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "139": {
+            "166": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1482,
+      "end": 1520,
+      "last_death": 1505,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 269,
+        "healing": 494,
+        "gold_delta": 290,
+        "xp_delta": 1830,
+        "killed": {},
+        "ability_uses": {
+          "slardar_amplify_damage": 1,
+          "slardar_slithereen_crush": 1,
+          "slardar_sprint": 1
+        },
+        "item_uses": {
+          "pogo_stick": 1,
+          "blink": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1144,
+        "healing": 111,
+        "gold_delta": 430,
+        "xp_delta": 1667,
+        "killed": {
+          "npc_dota_hero_lion": 1
+        },
+        "ability_uses": {
+          "windrunner_powershot": 1,
+          "windrunner_focusfire": 1,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 2
+        },
+        "item_uses": {
+          "blink": 1,
+          "bottle": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1596,
+      "end": 1649,
+      "last_death": 1634,
+      "deaths": 6,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 2298,
+        "healing": 363,
+        "gold_delta": 17,
+        "xp_delta": 1103,
+        "killed": {},
+        "ability_uses": {
+          "slardar_amplify_damage": 3,
+          "slardar_slithereen_crush": 3,
+          "slardar_sprint": 2
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "blink": 1
+        },
+        "deaths_pos": {
+          "166": {
+            "126": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 724,
+        "healing": 1055,
+        "gold_delta": 539,
+        "xp_delta": 1681,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 4,
+          "windrunner_shackleshot": 2,
+          "windrunner_windrun": 4
+        },
+        "item_uses": {
+          "blink": 2,
+          "bottle": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1729,
+      "end": 1771,
+      "last_death": 1756,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1650,
+        "healing": 886,
+        "gold_delta": 243,
+        "xp_delta": 847,
+        "killed": {},
+        "ability_uses": {
+          "slardar_amplify_damage": 1,
+          "slardar_slithereen_crush": 2,
+          "slardar_sprint": 2
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "pogo_stick": 1,
+          "blink": 2,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 124,
+        "healing": 192,
+        "gold_delta": 536,
+        "xp_delta": 1052,
+        "killed": {
+          "npc_dota_hero_shadow_shaman": 1
+        },
+        "ability_uses": {
+          "windrunner_powershot": 1,
+          "windrunner_windrun": 2
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "blink": 2,
+          "bottle": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1924,
+      "end": 1960,
+      "last_death": 1945,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 1,
+        "damage": 399,
+        "healing": 53,
+        "gold_delta": -148,
+        "xp_delta": 564,
+        "killed": {},
+        "ability_uses": {
+          "slardar_amplify_damage": 2,
+          "slardar_slithereen_crush": 1,
+          "slardar_sprint": 1
+        },
+        "item_uses": {
+          "blink": 1
+        },
+        "deaths_pos": {
+          "186": {
+            "157": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 0,
+        "gold_delta": 0,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {},
+        "item_uses": {},
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1996,
+      "end": 2045,
+      "last_death": 2030,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1917,
+        "healing": 877,
+        "gold_delta": 267,
+        "xp_delta": 46,
+        "killed": {},
+        "ability_uses": {
+          "slardar_amplify_damage": 3,
+          "slardar_slithereen_crush": 3,
+          "slardar_sprint": 2
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "blink": 3,
+          "magic_wand": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 311,
+        "healing": 3,
+        "gold_delta": -349,
+        "xp_delta": 95,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 1,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 1
+        },
+        "item_uses": {
+          "blink": 1
+        },
+        "deaths_pos": {
+          "156": {
+            "167": 1
+          }
+        }
+      }
+    }
+  ]
 }
