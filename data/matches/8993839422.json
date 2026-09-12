@@ -7,8 +7,8 @@
   "lobby_type": 7,
   "game_mode": 22,
   "radiant_win": true,
-  "parsed": false,
-  "parse_version": null,
+  "parsed": true,
+  "parse_version": 22,
   "same_team": true,
   "cyborg": {
     "account_id": 206620580,
@@ -27,10 +27,12 @@
     "hero_damage": 14332,
     "tower_damage": 2578,
     "hero_healing": 0,
-    "lane": "unknown",
-    "position_guess": 4,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 3,
+    "lane": "off",
+    "is_roaming": false,
+    "position_guess": 3,
+    "position_confidence": "medium",
+    "position_reason": "off lane + higher farm/economy"
   },
   "goddess": {
     "account_id": 160810596,
@@ -49,11 +51,593 @@
     "hero_damage": 26685,
     "tower_damage": 7823,
     "hero_healing": 0,
-    "lane": "unknown",
-    "position_guess": 3,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 2,
+    "lane": "mid",
+    "is_roaming": false,
+    "wards_observer": 2,
+    "wards_sentry": 1,
+    "position_guess": 2,
+    "position_confidence": "high",
+    "position_reason": "lane_role=mid"
   },
-  "objectives": [],
-  "teamfights": []
+  "objectives": [
+    {
+      "time": 139,
+      "type": "CHAT_MESSAGE_FIRSTBLOOD",
+      "key": "8",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 287,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 3,
+      "value": 35,
+      "killer": 2
+    },
+    {
+      "time": 630,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_meepo",
+      "key": "npc_dota_goodguys_tower1_mid",
+      "slot": 6,
+      "player_slot": 129
+    },
+    {
+      "time": 768,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_badguys_tower1_top",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 888,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 2,
+      "value": 65,
+      "killer": 128
+    },
+    {
+      "time": 1037,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_goodguys_melee",
+      "key": "npc_dota_badguys_tower1_bot"
+    },
+    {
+      "time": 1088,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_tower1_mid",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1139,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_tower2_mid",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1146,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 3,
+      "value": 70,
+      "killer": 1
+    },
+    {
+      "time": 1283,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_goodguys_ranged",
+      "key": "npc_dota_badguys_tower2_bot"
+    },
+    {
+      "time": 1339,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_badguys_tower2_top",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 1383,
+      "type": "CHAT_MESSAGE_ROSHAN_KILL",
+      "team": 2
+    },
+    {
+      "time": 1386,
+      "type": "CHAT_MESSAGE_AEGIS",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1480,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_weaver",
+      "key": "npc_dota_badguys_tower3_mid",
+      "slot": 2,
+      "player_slot": 2
+    },
+    {
+      "time": 1487,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_goodguys_melee",
+      "key": "npc_dota_badguys_melee_rax_mid"
+    },
+    {
+      "time": 1490,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_range_rax_mid",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1510,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_tower3_bot",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1519,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_weaver",
+      "key": "npc_dota_badguys_range_rax_bot",
+      "slot": 2,
+      "player_slot": 2
+    },
+    {
+      "time": 1530,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_goodguys_ranged",
+      "key": "npc_dota_badguys_melee_rax_bot"
+    },
+    {
+      "time": 1586,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_tower3_top",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1594,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_range_rax_top",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1600,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_lina",
+      "key": "npc_dota_badguys_melee_rax_top",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 1635,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_badguys_tower4",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1647,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_goodguys_ranged_upgraded",
+      "key": "npc_dota_badguys_tower4"
+    },
+    {
+      "time": 1667,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_goodguys_melee_upgraded",
+      "key": "npc_dota_badguys_fort"
+    }
+  ],
+  "teamfights": [
+    {
+      "start": 485,
+      "end": 529,
+      "last_death": 514,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 345,
+        "gold_delta": 157,
+        "xp_delta": 268,
+        "killed": {},
+        "ability_uses": {
+          "slardar_slithereen_crush": 1
+        },
+        "item_uses": {
+          "power_treads": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 602,
+        "healing": 339,
+        "gold_delta": 223,
+        "xp_delta": 510,
+        "killed": {
+          "npc_dota_hero_pudge": 1
+        },
+        "ability_uses": {
+          "lina_dragon_slave": 2,
+          "lina_light_strike_array": 1
+        },
+        "item_uses": {
+          "bottle": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "120": {
+            "116": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 583,
+      "end": 616,
+      "last_death": 601,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 255,
+        "gold_delta": 230,
+        "xp_delta": 222,
+        "killed": {},
+        "ability_uses": {
+          "slardar_slithereen_crush": 1,
+          "slardar_sprint": 1
+        },
+        "item_uses": {
+          "madstone_bundle": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 889,
+        "healing": 116,
+        "gold_delta": 311,
+        "xp_delta": 137,
+        "killed": {
+          "npc_dota_hero_pudge": 1
+        },
+        "ability_uses": {
+          "lina_dragon_slave": 1,
+          "lina_light_strike_array": 1,
+          "lina_laguna_blade": 1
+        },
+        "item_uses": {
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "116": {
+            "125": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 818,
+      "end": 852,
+      "last_death": 837,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 239,
+        "healing": 12,
+        "gold_delta": -2,
+        "xp_delta": 115,
+        "killed": {},
+        "ability_uses": {
+          "slardar_amplify_damage": 1,
+          "slardar_slithereen_crush": 1,
+          "slardar_sprint": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "blink": 1
+        },
+        "deaths_pos": {
+          "170": {
+            "88": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 717,
+        "healing": 163,
+        "gold_delta": 383,
+        "xp_delta": 409,
+        "killed": {},
+        "ability_uses": {
+          "lina_dragon_slave": 2,
+          "lina_light_strike_array": 1,
+          "lina_laguna_blade": 1
+        },
+        "item_uses": {
+          "tpscroll": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 884,
+      "end": 920,
+      "last_death": 905,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 313,
+        "healing": 91,
+        "gold_delta": 493,
+        "xp_delta": 680,
+        "killed": {},
+        "ability_uses": {
+          "slardar_amplify_damage": 1,
+          "twin_gate_portal_warp": 1,
+          "slardar_slithereen_crush": 3,
+          "slardar_sprint": 1
+        },
+        "item_uses": {
+          "power_treads": 6,
+          "tpscroll": 1,
+          "famango": 1,
+          "blink": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1184,
+        "healing": 331,
+        "gold_delta": 873,
+        "xp_delta": 1127,
+        "killed": {
+          "npc_dota_hero_undying": 1,
+          "npc_dota_hero_razor": 1
+        },
+        "ability_uses": {
+          "lina_dragon_slave": 4,
+          "lina_light_strike_array": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "bottle": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 967,
+      "end": 1036,
+      "last_death": 1021,
+      "deaths": 8,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1213,
+        "healing": 650,
+        "gold_delta": 308,
+        "xp_delta": 964,
+        "killed": {},
+        "ability_uses": {
+          "slardar_amplify_damage": 3,
+          "slardar_slithereen_crush": 4,
+          "slardar_sprint": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "polliwog_charm": 1,
+          "blink": 2,
+          "magic_wand": 2
+        },
+        "deaths_pos": {
+          "106": {
+            "162": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 4029,
+        "healing": 1078,
+        "gold_delta": 1175,
+        "xp_delta": 2259,
+        "killed": {
+          "npc_dota_hero_undying": 1,
+          "npc_dota_hero_pudge": 1,
+          "npc_dota_hero_razor": 1
+        },
+        "ability_uses": {
+          "lina_dragon_slave": 3,
+          "lina_light_strike_array": 2,
+          "lina_laguna_blade": 1
+        },
+        "item_uses": {
+          "tpscroll": 2,
+          "madstone_bundle": 1,
+          "famango": 1,
+          "bottle": 7,
+          "magic_wand": 2
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1079,
+      "end": 1117,
+      "last_death": 1102,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1398,
+        "healing": 381,
+        "gold_delta": 346,
+        "xp_delta": 488,
+        "killed": {
+          "npc_dota_hero_meepo": 1
+        },
+        "ability_uses": {
+          "slardar_amplify_damage": 2,
+          "slardar_slithereen_crush": 2,
+          "slardar_sprint": 1
+        },
+        "item_uses": {
+          "power_treads": 3,
+          "blink": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "130": {
+            "130": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 2211,
+        "healing": 279,
+        "gold_delta": 907,
+        "xp_delta": 1524,
+        "killed": {
+          "npc_dota_hero_pudge": 1
+        },
+        "ability_uses": {
+          "lina_dragon_slave": 3,
+          "lina_light_strike_array": 3,
+          "lina_laguna_blade": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "bottle": 2,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1279,
+      "end": 1316,
+      "last_death": 1301,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1435,
+        "healing": 829,
+        "gold_delta": 343,
+        "xp_delta": 1683,
+        "killed": {},
+        "ability_uses": {
+          "slardar_amplify_damage": 2,
+          "ability_lamp_use": 1,
+          "slardar_slithereen_crush": 2,
+          "slardar_sprint": 1
+        },
+        "item_uses": {
+          "power_treads": 3,
+          "famango": 2,
+          "blink": 2,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 3647,
+        "healing": 297,
+        "gold_delta": 595,
+        "xp_delta": 864,
+        "killed": {
+          "npc_dota_hero_spectre": 1
+        },
+        "ability_uses": {
+          "lina_dragon_slave": 2,
+          "lina_light_strike_array": 2,
+          "lina_laguna_blade": 1
+        },
+        "item_uses": {
+          "mana_draught": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1441,
+      "end": 1487,
+      "last_death": 1472,
+      "deaths": 6,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 2903,
+        "healing": 942,
+        "gold_delta": 962,
+        "xp_delta": 1700,
+        "killed": {
+          "npc_dota_hero_meepo": 1
+        },
+        "ability_uses": {
+          "slardar_amplify_damage": 2,
+          "slardar_slithereen_crush": 3,
+          "slardar_sprint": 2
+        },
+        "item_uses": {
+          "blink": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 3299,
+        "healing": 986,
+        "gold_delta": 742,
+        "xp_delta": 1746,
+        "killed": {},
+        "ability_uses": {
+          "lina_dragon_slave": 3,
+          "lina_light_strike_array": 4,
+          "lina_flame_cloak": 1,
+          "lina_laguna_blade": 1
+        },
+        "item_uses": {
+          "mana_draught": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      }
+    }
+  ]
 }
