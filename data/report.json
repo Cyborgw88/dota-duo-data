@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T22:22:50.701Z",
+  "generated_at": "2026-09-13T01:06:09.734Z",
   "source": "OpenDota",
   "players": {
     "cyborg": 206620580,
@@ -12,9 +12,7 @@
   },
   "count": 30,
   "parsing": {
-    "requested_match_ids": [
-      8995749149
-    ],
+    "requested_match_ids": [],
     "request_limit": 5,
     "wait_ms": 20000
   },
@@ -29,8 +27,8 @@
       "lobby_type": 7,
       "game_mode": 22,
       "radiant_win": false,
-      "parsed": false,
-      "parse_version": null,
+      "parsed": true,
+      "parse_version": 22,
       "same_team": true,
       "cyborg": {
         "account_id": 206620580,
@@ -49,10 +47,12 @@
         "hero_damage": 39283,
         "tower_damage": 2739,
         "hero_healing": 0,
-        "lane": "unknown",
-        "position_guess": null,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "position_guess": 3,
+        "position_confidence": "medium",
+        "position_reason": "off lane + higher farm/economy"
       },
       "goddess": {
         "account_id": 160810596,
@@ -71,13 +71,978 @@
         "hero_damage": 31991,
         "tower_damage": 1527,
         "hero_healing": 917,
-        "lane": "unknown",
-        "position_guess": null,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "wards_observer": 8,
+        "wards_sentry": 14,
+        "position_guess": 4,
+        "position_confidence": "medium",
+        "position_reason": "off lane + lower farm/economy"
       },
-      "objectives": [],
-      "teamfights": []
+      "objectives": [
+        {
+          "time": 5,
+          "type": "CHAT_MESSAGE_FIRSTBLOOD",
+          "key": "3",
+          "slot": 7,
+          "player_slot": 130
+        },
+        {
+          "time": 987,
+          "type": "building_kill",
+          "unit": "npc_dota_goodguys_siege",
+          "key": "npc_dota_badguys_tower1_top"
+        },
+        {
+          "time": 1000,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_snapfire",
+          "key": "npc_dota_goodguys_tower1_mid",
+          "slot": 9,
+          "player_slot": 132
+        },
+        {
+          "time": 1242,
+          "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+          "team": 2,
+          "slot": 4,
+          "player_slot": 4
+        },
+        {
+          "time": 1252,
+          "type": "building_kill",
+          "unit": "npc_dota_badguys_siege",
+          "key": "npc_dota_goodguys_tower1_top"
+        },
+        {
+          "time": 1468,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_badguys_melee",
+          "key": "npc_dota_goodguys_tower1_bot"
+        },
+        {
+          "time": 1606,
+          "type": "CHAT_MESSAGE_ROSHAN_KILL",
+          "team": 3
+        },
+        {
+          "time": 1607,
+          "type": "CHAT_MESSAGE_AEGIS",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 1684,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_goodguys_ranged",
+          "key": "npc_dota_badguys_tower1_mid"
+        },
+        {
+          "time": 1735,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_goodguys_ranged",
+          "key": "npc_dota_badguys_tower1_bot"
+        },
+        {
+          "time": 1883,
+          "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+          "team": 2,
+          "slot": 0,
+          "player_slot": 0
+        },
+        {
+          "time": 2041,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_kez",
+          "key": "npc_dota_badguys_tower2_mid",
+          "slot": 3,
+          "player_slot": 3
+        },
+        {
+          "time": 2262,
+          "type": "CHAT_MESSAGE_ROSHAN_KILL",
+          "team": 3
+        },
+        {
+          "time": 2263,
+          "type": "CHAT_MESSAGE_AEGIS",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 2376,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_life_stealer",
+          "key": "npc_dota_goodguys_tower2_bot",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 2546,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_kez",
+          "key": "npc_dota_badguys_tower2_top",
+          "slot": 3,
+          "player_slot": 3
+        },
+        {
+          "time": 2648,
+          "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+          "team": 2,
+          "slot": 3,
+          "player_slot": 3
+        },
+        {
+          "time": 2662,
+          "type": "CHAT_MESSAGE_COURIER_LOST",
+          "team": 2,
+          "value": 130,
+          "killer": -1
+        },
+        {
+          "time": 2974,
+          "type": "CHAT_MESSAGE_ROSHAN_KILL",
+          "team": 3
+        },
+        {
+          "time": 2974,
+          "type": "CHAT_MESSAGE_AEGIS",
+          "slot": 7,
+          "player_slot": 130
+        },
+        {
+          "time": 2990,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_life_stealer",
+          "key": "npc_dota_goodguys_tower2_mid",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 3009,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_badguys_melee",
+          "key": "npc_dota_goodguys_tower3_mid"
+        },
+        {
+          "time": 3026,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_badguys_melee",
+          "key": "npc_dota_goodguys_range_rax_mid"
+        },
+        {
+          "time": 3129,
+          "type": "CHAT_MESSAGE_COURIER_LOST",
+          "team": 2,
+          "value": 145,
+          "killer": 132
+        },
+        {
+          "time": 3178,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_life_stealer",
+          "key": "npc_dota_goodguys_melee_rax_mid",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 3200,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_life_stealer",
+          "key": "npc_dota_goodguys_tower3_bot",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 3204,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_mirana",
+          "key": "npc_dota_goodguys_range_rax_bot",
+          "slot": 8,
+          "player_slot": 131
+        },
+        {
+          "time": 3211,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_life_stealer",
+          "key": "npc_dota_goodguys_melee_rax_bot",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 3300,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_axe",
+          "key": "npc_dota_goodguys_tower2_top",
+          "slot": 7,
+          "player_slot": 130
+        },
+        {
+          "time": 3402,
+          "type": "building_kill",
+          "unit": "npc_dota_badguys_siege_upgraded",
+          "key": "npc_dota_goodguys_tower4"
+        },
+        {
+          "time": 3596,
+          "type": "CHAT_MESSAGE_ROSHAN_KILL",
+          "team": 3
+        },
+        {
+          "time": 3598,
+          "type": "CHAT_MESSAGE_AEGIS",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 3784,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_badguys_melee",
+          "key": "npc_dota_goodguys_tower3_top"
+        },
+        {
+          "time": 3794,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_life_stealer",
+          "key": "npc_dota_goodguys_melee_rax_top",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 3795,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_badguys_ranged",
+          "key": "npc_dota_goodguys_range_rax_top"
+        },
+        {
+          "time": 3809,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_life_stealer",
+          "key": "npc_dota_goodguys_tower4",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 3825,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_mirana",
+          "key": "npc_dota_goodguys_fort",
+          "slot": 8,
+          "player_slot": 131
+        }
+      ],
+      "teamfights": [
+        {
+          "start": 647,
+          "end": 693,
+          "last_death": 678,
+          "deaths": 4,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 0,
+            "healing": 124,
+            "gold_delta": -2,
+            "xp_delta": 44,
+            "killed": {},
+            "ability_uses": {},
+            "item_uses": {
+              "tpscroll": 1,
+              "phase_boots": 1
+            },
+            "deaths_pos": {
+              "160": {
+                "81": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 737,
+            "healing": 100,
+            "gold_delta": 230,
+            "xp_delta": 788,
+            "killed": {
+              "npc_dota_hero_vengefulspirit": 1
+            },
+            "ability_uses": {
+              "mirana_arrow": 1,
+              "mirana_leap": 1,
+              "mirana_invis": 1,
+              "mirana_starfall": 1
+            },
+            "item_uses": {
+              "ward_dispenser": 4,
+              "urn_of_shadows": 1,
+              "magic_wand": 1
+            },
+            "deaths_pos": {
+              "152": {
+                "80": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 947,
+          "end": 986,
+          "last_death": 971,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 1047,
+            "healing": 157,
+            "gold_delta": 504,
+            "xp_delta": 565,
+            "killed": {
+              "npc_dota_hero_slardar": 1
+            },
+            "ability_uses": {
+              "axe_battle_hunger": 1,
+              "axe_berserkers_call": 2,
+              "axe_culling_blade": 2
+            },
+            "item_uses": {
+              "phase_boots": 4,
+              "blink": 2
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 592,
+            "healing": 193,
+            "gold_delta": 199,
+            "xp_delta": 649,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 1,
+              "mirana_leap": 1,
+              "mirana_starfall": 1
+            },
+            "item_uses": {
+              "arcane_boots": 1,
+              "ward_dispenser": 2,
+              "urn_of_shadows": 1,
+              "magic_wand": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 1058,
+          "end": 1108,
+          "last_death": 1093,
+          "deaths": 5,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1275,
+            "healing": 368,
+            "gold_delta": 144,
+            "xp_delta": 546,
+            "killed": {},
+            "ability_uses": {
+              "axe_battle_hunger": 1,
+              "axe_berserkers_call": 1,
+              "axe_culling_blade": 1
+            },
+            "item_uses": {
+              "phase_boots": 3,
+              "blade_mail": 1,
+              "blink": 1,
+              "magic_wand": 1
+            },
+            "deaths_pos": {
+              "102": {
+                "142": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 0,
+            "healing": 488,
+            "gold_delta": 115,
+            "xp_delta": 171,
+            "killed": {},
+            "ability_uses": {
+              "mirana_leap": 2,
+              "ability_lamp_use": 1,
+              "mirana_starfall": 1
+            },
+            "item_uses": {
+              "urn_of_shadows": 1,
+              "flask": 1,
+              "magic_wand": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 1249,
+          "end": 1299,
+          "last_death": 1284,
+          "deaths": 6,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 2036,
+            "healing": 472,
+            "gold_delta": 4,
+            "xp_delta": 472,
+            "killed": {},
+            "ability_uses": {
+              "axe_battle_hunger": 2,
+              "axe_berserkers_call": 2
+            },
+            "item_uses": {
+              "phase_boots": 4,
+              "blade_mail": 2,
+              "blink": 2,
+              "magic_wand": 1
+            },
+            "deaths_pos": {
+              "176": {
+                "73": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 720,
+            "healing": 45,
+            "gold_delta": 54,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 2,
+              "mirana_leap": 1,
+              "mirana_starfall": 2
+            },
+            "item_uses": {
+              "arcane_boots": 1,
+              "essence_distiller": 2,
+              "magic_wand": 1
+            },
+            "deaths_pos": {
+              "175": {
+                "81": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 1415,
+          "end": 1467,
+          "last_death": 1452,
+          "deaths": 4,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 1974,
+            "healing": 777,
+            "gold_delta": 371,
+            "xp_delta": 801,
+            "killed": {},
+            "ability_uses": {
+              "axe_battle_hunger": 3,
+              "axe_berserkers_call": 2
+            },
+            "item_uses": {
+              "phase_boots": 5,
+              "blade_mail": 1,
+              "blink": 2,
+              "magic_wand": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 936,
+            "healing": 49,
+            "gold_delta": 896,
+            "xp_delta": 1767,
+            "killed": {
+              "npc_dota_hero_kez": 1
+            },
+            "ability_uses": {
+              "mirana_arrow": 2,
+              "mirana_invis": 1,
+              "mirana_leap": 2,
+              "mirana_starfall": 2
+            },
+            "item_uses": {
+              "arcane_boots": 1,
+              "essence_distiller": 2,
+              "ward_dispenser": 2,
+              "magic_wand": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 1701,
+          "end": 1751,
+          "last_death": 1736,
+          "deaths": 7,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1640,
+            "healing": 612,
+            "gold_delta": -107,
+            "xp_delta": 31,
+            "killed": {},
+            "ability_uses": {
+              "axe_battle_hunger": 1,
+              "axe_berserkers_call": 2
+            },
+            "item_uses": {
+              "black_king_bar": 1,
+              "smoke_of_deceit": 1,
+              "phase_boots": 3,
+              "blade_mail": 1,
+              "blink": 2,
+              "magic_wand": 1
+            },
+            "deaths_pos": {
+              "79": {
+                "117": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 677,
+            "healing": 58,
+            "gold_delta": -16,
+            "xp_delta": 927,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 2,
+              "mirana_invis": 1,
+              "mirana_leap": 1,
+              "mirana_starfall": 1
+            },
+            "item_uses": {
+              "essence_distiller": 1
+            },
+            "deaths_pos": {
+              "77": {
+                "118": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 1933,
+          "end": 1976,
+          "last_death": 1961,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 657,
+            "healing": 735,
+            "gold_delta": 286,
+            "xp_delta": 1104,
+            "killed": {},
+            "ability_uses": {
+              "axe_battle_hunger": 1,
+              "axe_berserkers_call": 1,
+              "axe_culling_blade": 1
+            },
+            "item_uses": {
+              "phase_boots": 4,
+              "blade_mail": 1,
+              "blink": 2,
+              "magic_wand": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 322,
+            "healing": 84,
+            "gold_delta": 251,
+            "xp_delta": 1089,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 2,
+              "mirana_leap": 3,
+              "mirana_starfall": 1
+            },
+            "item_uses": {
+              "essence_distiller": 2
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 2472,
+          "end": 2515,
+          "last_death": 2500,
+          "deaths": 5,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 3041,
+            "healing": 56,
+            "gold_delta": -194,
+            "xp_delta": 26,
+            "killed": {},
+            "ability_uses": {
+              "axe_berserkers_call": 1
+            },
+            "item_uses": {
+              "lotus_orb": 1,
+              "black_king_bar": 1,
+              "phase_boots": 2,
+              "blade_mail": 1,
+              "blink": 1
+            },
+            "deaths_pos": {
+              "113": {
+                "157": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 0,
+            "healing": 277,
+            "gold_delta": 0,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {},
+            "item_uses": {
+              "smoke_of_deceit": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 2683,
+          "end": 2734,
+          "last_death": 2719,
+          "deaths": 8,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 3762,
+            "healing": 214,
+            "gold_delta": 478,
+            "xp_delta": 935,
+            "killed": {},
+            "ability_uses": {
+              "axe_battle_hunger": 1,
+              "axe_berserkers_call": 1
+            },
+            "item_uses": {
+              "lotus_orb": 1,
+              "black_king_bar": 1,
+              "phase_boots": 2,
+              "blade_mail": 1,
+              "blink": 1
+            },
+            "deaths_pos": {
+              "146": {
+                "95": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1787,
+            "healing": 903,
+            "gold_delta": 703,
+            "xp_delta": 5979,
+            "killed": {
+              "npc_dota_hero_silencer": 1
+            },
+            "ability_uses": {
+              "mirana_arrow": 2,
+              "mirana_leap": 2,
+              "mirana_starfall": 1
+            },
+            "item_uses": {
+              "essence_distiller": 1,
+              "greater_famango": 1,
+              "cyclone": 1
+            },
+            "deaths_pos": {
+              "136": {
+                "96": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 2898,
+          "end": 2943,
+          "last_death": 2928,
+          "deaths": 6,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 1,
+            "damage": 4073,
+            "healing": 683,
+            "gold_delta": 44,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {
+              "axe_battle_hunger": 2,
+              "axe_berserkers_call": 2,
+              "axe_culling_blade": 1
+            },
+            "item_uses": {
+              "tpscroll": 1,
+              "lotus_orb": 2,
+              "black_king_bar": 1,
+              "phase_boots": 4,
+              "blade_mail": 1,
+              "blink": 2
+            },
+            "deaths_pos": {
+              "173": {
+                "102": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 2099,
+            "healing": 789,
+            "gold_delta": 1171,
+            "xp_delta": 4502,
+            "killed": {
+              "npc_dota_hero_vengefulspirit": 1
+            },
+            "ability_uses": {
+              "mirana_arrow": 2,
+              "mirana_invis": 1,
+              "mirana_leap": 2,
+              "mirana_starfall": 2
+            },
+            "item_uses": {
+              "greater_famango": 1,
+              "cyclone": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 3100,
+          "end": 3160,
+          "last_death": 3145,
+          "deaths": 6,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 4410,
+            "healing": 90,
+            "gold_delta": 762,
+            "xp_delta": 1725,
+            "killed": {},
+            "ability_uses": {
+              "axe_berserkers_call": 1
+            },
+            "item_uses": {
+              "lotus_orb": 1,
+              "phase_boots": 2,
+              "blade_mail": 1,
+              "blink": 1
+            },
+            "deaths_pos": {
+              "113": {
+                "162": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 3485,
+            "healing": 347,
+            "gold_delta": 1600,
+            "xp_delta": 6880,
+            "killed": {
+              "npc_dota_hero_slardar": 1,
+              "npc_dota_hero_vengefulspirit": 1
+            },
+            "ability_uses": {
+              "mirana_arrow": 3,
+              "mirana_leap": 5,
+              "mirana_invis": 1,
+              "mirana_starfall": 1
+            },
+            "item_uses": {
+              "tpscroll": 1,
+              "refresher_shard": 1,
+              "cyclone": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 3336,
+          "end": 3377,
+          "last_death": 3362,
+          "deaths": 4,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1551,
+            "healing": 325,
+            "gold_delta": -274,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {
+              "axe_battle_hunger": 2,
+              "axe_berserkers_call": 1
+            },
+            "item_uses": {
+              "black_king_bar": 1,
+              "phase_boots": 1,
+              "blade_mail": 1
+            },
+            "deaths_pos": {
+              "93": {
+                "128": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 2323,
+            "healing": 1322,
+            "gold_delta": 353,
+            "xp_delta": 3063,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 2,
+              "mirana_leap": 5,
+              "mirana_starfall": 1
+            },
+            "item_uses": {
+              "guardian_greaves": 1,
+              "essence_distiller": 2,
+              "wind_waker": 2
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 3365,
+          "end": 3399,
+          "last_death": 3384,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 0,
+            "healing": 0,
+            "gold_delta": 0,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {},
+            "item_uses": {},
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1054,
+            "healing": 549,
+            "gold_delta": 186,
+            "xp_delta": 47,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 1,
+              "mirana_leap": 1,
+              "mirana_starfall": 1
+            },
+            "item_uses": {
+              "essence_distiller": 1,
+              "wind_waker": 1
+            },
+            "deaths_pos": {
+              "90": {
+                "118": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 3740,
+          "end": 3797,
+          "last_death": 3782,
+          "deaths": 7,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 3387,
+            "healing": 3948,
+            "gold_delta": 2024,
+            "xp_delta": 5684,
+            "killed": {
+              "npc_dota_hero_slardar": 1
+            },
+            "ability_uses": {
+              "axe_battle_hunger": 2,
+              "axe_berserkers_call": 2
+            },
+            "item_uses": {
+              "lotus_orb": 3,
+              "madstone_bundle": 1,
+              "black_king_bar": 1,
+              "phase_boots": 5,
+              "blade_mail": 2,
+              "blink": 2,
+              "cheese": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 4789,
+            "healing": 406,
+            "gold_delta": 2283,
+            "xp_delta": 5571,
+            "killed": {
+              "npc_dota_hero_vengefulspirit": 2
+            },
+            "ability_uses": {
+              "mirana_arrow": 3,
+              "mirana_leap": 4,
+              "mirana_invis": 1,
+              "mirana_starfall": 2
+            },
+            "item_uses": {
+              "guardian_greaves": 1,
+              "roshans_banner": 1,
+              "essence_distiller": 2,
+              "wind_waker": 1
+            },
+            "deaths_pos": {}
+          }
+        }
+      ]
     },
     {
       "match_id": 8993928134,
