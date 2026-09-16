@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T21:31:06.306Z",
+  "generated_at": "2026-09-16T00:27:06.106Z",
   "source": "OpenDota",
   "players": {
     "cyborg": 206620580,
@@ -12,10 +12,7 @@
   },
   "count": 30,
   "parsing": {
-    "requested_match_ids": [
-      9000681382,
-      9000617167
-    ],
+    "requested_match_ids": [],
     "request_limit": 5,
     "wait_ms": 20000
   },
@@ -30,8 +27,8 @@
       "lobby_type": 7,
       "game_mode": 22,
       "radiant_win": false,
-      "parsed": false,
-      "parse_version": null,
+      "parsed": true,
+      "parse_version": 22,
       "same_team": true,
       "cyborg": {
         "account_id": 206620580,
@@ -50,10 +47,14 @@
         "hero_damage": 16811,
         "tower_damage": 973,
         "hero_healing": 0,
-        "lane": "unknown",
-        "position_guess": null,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "wards_observer": 5,
+        "wards_sentry": 19,
+        "position_guess": 4,
+        "position_confidence": "medium",
+        "position_reason": "off lane + lower farm/economy"
       },
       "goddess": {
         "account_id": 160810596,
@@ -72,13 +73,701 @@
         "hero_damage": 13316,
         "tower_damage": 6611,
         "hero_healing": 0,
-        "lane": "unknown",
-        "position_guess": null,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 12,
+        "wards_sentry": 16,
+        "position_guess": 5,
+        "position_confidence": "medium",
+        "position_reason": "safe lane + lower farm/economy"
       },
-      "objectives": [],
-      "teamfights": []
+      "objectives": [
+        {
+          "time": 67,
+          "type": "CHAT_MESSAGE_FIRSTBLOOD",
+          "key": "1",
+          "slot": 7,
+          "player_slot": 130
+        },
+        {
+          "time": 701,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_badguys_melee",
+          "key": "npc_dota_goodguys_tower1_mid"
+        },
+        {
+          "time": 892,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_badguys_flagbearer",
+          "key": "npc_dota_goodguys_tower1_bot"
+        },
+        {
+          "time": 920,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_earthshaker",
+          "key": "npc_dota_badguys_tower1_mid",
+          "slot": 2,
+          "player_slot": 2
+        },
+        {
+          "time": 1065,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_goodguys_melee",
+          "key": "npc_dota_badguys_tower1_top"
+        },
+        {
+          "time": 1130,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_shadow_shaman",
+          "key": "npc_dota_goodguys_tower1_top",
+          "slot": 9,
+          "player_slot": 132
+        },
+        {
+          "time": 1265,
+          "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+          "team": 3,
+          "slot": 7,
+          "player_slot": 130
+        },
+        {
+          "time": 1703,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_undying",
+          "key": "npc_dota_goodguys_tower2_mid",
+          "slot": 8,
+          "player_slot": 131
+        },
+        {
+          "time": 1782,
+          "type": "CHAT_MESSAGE_ROSHAN_KILL",
+          "team": 3
+        },
+        {
+          "time": 1782,
+          "type": "CHAT_MESSAGE_AEGIS",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 1869,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_tiny",
+          "key": "npc_dota_goodguys_tower2_top",
+          "slot": 6,
+          "player_slot": 129
+        },
+        {
+          "time": 1930,
+          "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+          "team": 3,
+          "slot": 6,
+          "player_slot": 129
+        },
+        {
+          "time": 1968,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_shadow_shaman",
+          "key": "npc_dota_goodguys_tower2_bot",
+          "slot": 9,
+          "player_slot": 132
+        },
+        {
+          "time": 1990,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_goodguys_melee",
+          "key": "npc_dota_badguys_tower2_top"
+        },
+        {
+          "time": 2070,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_necrolyte",
+          "key": "npc_dota_goodguys_tower3_mid",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 2082,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_tiny",
+          "key": "npc_dota_goodguys_range_rax_mid",
+          "slot": 6,
+          "player_slot": 129
+        },
+        {
+          "time": 2089,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_tiny",
+          "key": "npc_dota_goodguys_melee_rax_mid",
+          "slot": 6,
+          "player_slot": 129
+        },
+        {
+          "time": 2102,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_tiny",
+          "key": "npc_dota_goodguys_tower3_bot",
+          "slot": 6,
+          "player_slot": 129
+        },
+        {
+          "time": 2108,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_necrolyte",
+          "key": "npc_dota_goodguys_range_rax_bot",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 2121,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_shadow_shaman",
+          "key": "npc_dota_goodguys_melee_rax_bot",
+          "slot": 9,
+          "player_slot": 132
+        },
+        {
+          "time": 2557,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_shadow_shaman",
+          "key": "npc_dota_goodguys_tower3_top",
+          "slot": 9,
+          "player_slot": 132
+        },
+        {
+          "time": 2564,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_tiny",
+          "key": "npc_dota_goodguys_range_rax_top",
+          "slot": 6,
+          "player_slot": 129
+        },
+        {
+          "time": 2575,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_tiny",
+          "key": "npc_dota_goodguys_melee_rax_top",
+          "slot": 6,
+          "player_slot": 129
+        },
+        {
+          "time": 2591,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_necrolyte",
+          "key": "npc_dota_goodguys_tower4",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 2656,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_necrolyte",
+          "key": "npc_dota_goodguys_tower4",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 2680,
+          "type": "building_kill",
+          "unit": "npc_dota_badguys_siege",
+          "key": "npc_dota_goodguys_fort"
+        }
+      ],
+      "teamfights": [
+        {
+          "start": 226,
+          "end": 262,
+          "last_death": 247,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 270,
+            "healing": 242,
+            "gold_delta": 353,
+            "xp_delta": 79,
+            "killed": {
+              "npc_dota_hero_phantom_assassin": 1,
+              "npc_dota_hero_jakiro": 1
+            },
+            "ability_uses": {
+              "mirana_arrow": 1,
+              "mirana_leap": 1,
+              "mirana_starfall": 1
+            },
+            "item_uses": {
+              "magic_stick": 2,
+              "urn_of_shadows": 1
+            },
+            "deaths_pos": {
+              "163": {
+                "88": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 57,
+            "healing": 0,
+            "gold_delta": 0,
+            "xp_delta": 118,
+            "killed": {},
+            "ability_uses": {},
+            "item_uses": {},
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 601,
+          "end": 652,
+          "last_death": 637,
+          "deaths": 4,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 565,
+            "healing": 173,
+            "gold_delta": 559,
+            "xp_delta": 860,
+            "killed": {
+              "npc_dota_hero_brewmaster": 1
+            },
+            "ability_uses": {
+              "mirana_arrow": 2,
+              "mirana_leap": 2,
+              "mirana_starfall": 3
+            },
+            "item_uses": {
+              "tpscroll": 1,
+              "clarity": 1,
+              "essence_distiller": 2
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 238,
+            "healing": 621,
+            "gold_delta": 129,
+            "xp_delta": 136,
+            "killed": {},
+            "ability_uses": {
+              "shadow_shaman_shackles": 1,
+              "shadow_shaman_voodoo": 2,
+              "shadow_shaman_ether_shock": 1
+            },
+            "item_uses": {
+              "magic_wand": 1
+            },
+            "deaths_pos": {
+              "101": {
+                "178": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 861,
+          "end": 902,
+          "last_death": 887,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 494,
+            "healing": 117,
+            "gold_delta": 196,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 1,
+              "mirana_leap": 2,
+              "mirana_starfall": 1
+            },
+            "item_uses": {
+              "tpscroll": 1,
+              "essence_distiller": 1
+            },
+            "deaths_pos": {
+              "90": {
+                "179": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 120,
+            "healing": 46,
+            "gold_delta": 187,
+            "xp_delta": 95,
+            "killed": {},
+            "ability_uses": {
+              "shadow_shaman_shackles": 1,
+              "shadow_shaman_voodoo": 1
+            },
+            "item_uses": {
+              "magic_wand": 1
+            },
+            "deaths_pos": {
+              "87": {
+                "166": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 946,
+          "end": 1011,
+          "last_death": 996,
+          "deaths": 5,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 523,
+            "healing": 168,
+            "gold_delta": 48,
+            "xp_delta": 29,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 2,
+              "mirana_leap": 2,
+              "mirana_starfall": 3
+            },
+            "item_uses": {
+              "essence_distiller": 2,
+              "magic_stick": 1
+            },
+            "deaths_pos": {
+              "154": {
+                "147": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 730,
+            "healing": 176,
+            "gold_delta": 119,
+            "xp_delta": 871,
+            "killed": {},
+            "ability_uses": {
+              "shadow_shaman_shackles": 2,
+              "shadow_shaman_mass_serpent_ward": 1,
+              "shadow_shaman_voodoo": 1
+            },
+            "item_uses": {
+              "arcane_boots": 1,
+              "smoke_of_deceit": 1,
+              "magic_wand": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 1112,
+          "end": 1172,
+          "last_death": 1157,
+          "deaths": 5,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 593,
+            "healing": 167,
+            "gold_delta": 165,
+            "xp_delta": 199,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 3,
+              "mirana_leap": 3,
+              "mirana_starfall": 2
+            },
+            "item_uses": {
+              "essence_distiller": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 817,
+            "healing": 497,
+            "gold_delta": 221,
+            "xp_delta": 198,
+            "killed": {},
+            "ability_uses": {
+              "shadow_shaman_mass_serpent_ward": 1,
+              "shadow_shaman_ether_shock": 1,
+              "shadow_shaman_voodoo": 1
+            },
+            "item_uses": {
+              "mana_draught": 1,
+              "famango": 1
+            },
+            "deaths_pos": {
+              "89": {
+                "150": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 1284,
+          "end": 1328,
+          "last_death": 1313,
+          "deaths": 4,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 0,
+            "healing": 163,
+            "gold_delta": -7,
+            "xp_delta": 1144,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 1,
+              "mirana_leap": 2,
+              "mirana_starfall": 1
+            },
+            "item_uses": {
+              "force_staff": 1
+            },
+            "deaths_pos": {
+              "160": {
+                "156": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 876,
+            "healing": 227,
+            "gold_delta": 133,
+            "xp_delta": 1059,
+            "killed": {},
+            "ability_uses": {
+              "shadow_shaman_shackles": 1,
+              "shadow_shaman_mass_serpent_ward": 1,
+              "shadow_shaman_voodoo": 1,
+              "shadow_shaman_ether_shock": 1
+            },
+            "item_uses": {
+              "arcane_boots": 1,
+              "tpscroll": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 1498,
+          "end": 1567,
+          "last_death": 1552,
+          "deaths": 8,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 0,
+            "healing": 0,
+            "gold_delta": -76,
+            "xp_delta": 752,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 1,
+              "mirana_invis": 1,
+              "mirana_leap": 3
+            },
+            "item_uses": {
+              "essence_distiller": 1,
+              "pogo_stick": 1,
+              "force_staff": 1
+            },
+            "deaths_pos": {
+              "83": {
+                "169": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 201,
+            "healing": 43,
+            "gold_delta": 118,
+            "xp_delta": 355,
+            "killed": {},
+            "ability_uses": {
+              "shadow_shaman_shackles": 1,
+              "shadow_shaman_ether_shock": 2,
+              "shadow_shaman_voodoo": 1
+            },
+            "item_uses": {
+              "ward_dispenser": 2,
+              "blink": 2
+            },
+            "deaths_pos": {
+              "79": {
+                "170": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 2012,
+          "end": 2051,
+          "last_death": 2036,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 605,
+            "healing": 0,
+            "gold_delta": 476,
+            "xp_delta": 748,
+            "killed": {
+              "npc_dota_hero_windrunner": 1
+            },
+            "ability_uses": {
+              "mirana_arrow": 1,
+              "mirana_invis": 1,
+              "mirana_leap": 4
+            },
+            "item_uses": {
+              "smoke_of_deceit": 1,
+              "ward_dispenser": 1,
+              "pogo_stick": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 0,
+            "healing": 266,
+            "gold_delta": 0,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {},
+            "item_uses": {
+              "tpscroll": 1,
+              "smoke_of_deceit": 1,
+              "blink": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 2350,
+          "end": 2386,
+          "last_death": 2371,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 796,
+            "healing": 0,
+            "gold_delta": 277,
+            "xp_delta": 833,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 2,
+              "mirana_leap": 2,
+              "mirana_starfall": 1
+            },
+            "item_uses": {
+              "essence_distiller": 1,
+              "pogo_stick": 1,
+              "force_staff": 2
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 2159,
+            "healing": 253,
+            "gold_delta": 466,
+            "xp_delta": 904,
+            "killed": {
+              "npc_dota_hero_brewmaster": 1
+            },
+            "ability_uses": {
+              "shadow_shaman_shackles": 1,
+              "shadow_shaman_urnaconda": 1,
+              "shadow_shaman_mass_serpent_ward": 1,
+              "shadow_shaman_voodoo": 1,
+              "shadow_shaman_ether_shock": 2
+            },
+            "item_uses": {
+              "arcane_boots": 1,
+              "blink": 2,
+              "magic_wand": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 2456,
+          "end": 2512,
+          "last_death": 2497,
+          "deaths": 5,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1630,
+            "healing": 40,
+            "gold_delta": 142,
+            "xp_delta": 30,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 1,
+              "mirana_leap": 3,
+              "mirana_invis": 1,
+              "mirana_starfall": 1
+            },
+            "item_uses": {
+              "ward_sentry": 1,
+              "essence_distiller": 1,
+              "force_staff": 1
+            },
+            "deaths_pos": {
+              "106": {
+                "153": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 1,
+            "damage": 867,
+            "healing": 445,
+            "gold_delta": 31,
+            "xp_delta": 1842,
+            "killed": {},
+            "ability_uses": {
+              "shadow_shaman_shackles": 2,
+              "shadow_shaman_urnaconda": 1,
+              "shadow_shaman_mass_serpent_ward": 1,
+              "shadow_shaman_voodoo": 1,
+              "shadow_shaman_ether_shock": 1
+            },
+            "item_uses": {
+              "arcane_boots": 1,
+              "tpscroll": 1,
+              "blink": 1
+            },
+            "deaths_pos": {
+              "109": {
+                "163": 1
+              }
+            }
+          }
+        }
+      ]
     },
     {
       "match_id": 9000617167,
