@@ -1,4 +1,4 @@
-name: Update Dota duo data
+name: Update Dota team coaching data
 
 on:
   workflow_dispatch:
@@ -7,9 +7,9 @@ on:
     paths:
       - 'scripts/update.mjs'
       - 'scripts/build-index.mjs'
+      - 'scripts/enrich-team.mjs'
       - '.github/workflows/update.yml'
   schedule:
-    # Refresh every hour. GitHub scheduled jobs may start a little late.
     - cron: '17 * * * *'
 
 permissions:
@@ -28,12 +28,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Fetch OpenDota and build data feeds
+      - name: Fetch OpenDota and build duo feeds
         env:
           OPENDOTA_API_KEY: ${{ secrets.OPENDOTA_API_KEY }}
         run: node scripts/update.mjs
       - name: Build compact index and per-match reports
         run: node scripts/build-index.mjs
+      - name: Enrich reports with full 5v5 coaching context
+        env:
+          OPENDOTA_API_KEY: ${{ secrets.OPENDOTA_API_KEY }}
+        run: node scripts/enrich-team.mjs
       - name: Commit data if changed
         run: |
           git config user.name "dota-duo-bot"
@@ -43,5 +47,5 @@ jobs:
             echo "No data changes"
             exit 0
           fi
-          git commit -m "data: update joint ranked matches"
+          git commit -m "data: update ranked matches with team coaching context"
           git push
