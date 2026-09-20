@@ -7,8 +7,8 @@
   "lobby_type": 7,
   "game_mode": 22,
   "radiant_win": false,
-  "parsed": false,
-  "parse_version": null,
+  "parsed": true,
+  "parse_version": 22,
   "same_team": true,
   "cyborg": {
     "account_id": 206620580,
@@ -27,10 +27,12 @@
     "hero_damage": 29850,
     "tower_damage": 3726,
     "hero_healing": 2601,
-    "lane": "unknown",
-    "position_guess": null,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 3,
+    "lane": "off",
+    "is_roaming": false,
+    "position_guess": 3,
+    "position_confidence": "medium",
+    "position_reason": "off lane + higher farm/economy"
   },
   "goddess": {
     "account_id": 160810596,
@@ -49,13 +51,859 @@
     "hero_damage": 20423,
     "tower_damage": 881,
     "hero_healing": 1041,
-    "lane": "unknown",
-    "position_guess": null,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 3,
+    "lane": "off",
+    "is_roaming": false,
+    "wards_observer": 3,
+    "wards_sentry": 6,
+    "position_guess": 4,
+    "position_confidence": "medium",
+    "position_reason": "off lane + lower farm/economy"
   },
-  "objectives": [],
-  "teamfights": [],
+  "objectives": [
+    {
+      "time": -25,
+      "type": "CHAT_MESSAGE_FIRSTBLOOD",
+      "key": "2",
+      "slot": 6,
+      "player_slot": 129,
+      "victim_player_slot": 2
+    },
+    {
+      "time": 554,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_necrolyte",
+      "key": "npc_dota_goodguys_tower1_mid",
+      "slot": 6,
+      "player_slot": 129
+    },
+    {
+      "time": 574,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 3,
+      "value": 45,
+      "killer": 4
+    },
+    {
+      "time": 615,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_chaos_knight",
+      "key": "npc_dota_badguys_tower1_top",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 842,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_tidehunter",
+      "key": "npc_dota_goodguys_tower1_bot",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 956,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_tidehunter",
+      "key": "npc_dota_goodguys_tower1_top",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 986,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 3,
+      "value": 60,
+      "killer": -1
+    },
+    {
+      "time": 1093,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 2,
+      "value": 85,
+      "killer": 130
+    },
+    {
+      "time": 1234,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 2,
+      "value": 90,
+      "killer": 130
+    },
+    {
+      "time": 1322,
+      "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+      "team": 3,
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 1393,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_goodguys_melee",
+      "key": "npc_dota_badguys_tower1_mid"
+    },
+    {
+      "time": 1455,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_sven",
+      "key": "npc_dota_goodguys_tower2_bot",
+      "slot": 8,
+      "player_slot": 131
+    },
+    {
+      "time": 1548,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_juggernaut",
+      "key": "npc_dota_badguys_tower1_bot",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1714,
+      "type": "CHAT_MESSAGE_ROSHAN_KILL",
+      "team": 2
+    },
+    {
+      "time": 1715,
+      "type": "CHAT_MESSAGE_AEGIS_STOLEN",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 1755,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_necrolyte",
+      "key": "npc_dota_goodguys_tower2_mid",
+      "slot": 6,
+      "player_slot": 129
+    },
+    {
+      "time": 1786,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_sven",
+      "key": "npc_dota_goodguys_tower3_mid",
+      "slot": 8,
+      "player_slot": 131
+    },
+    {
+      "time": 1874,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_sven",
+      "key": "npc_dota_goodguys_range_rax_mid",
+      "slot": 8,
+      "player_slot": 131
+    },
+    {
+      "time": 1881,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_sven",
+      "key": "npc_dota_goodguys_melee_rax_mid",
+      "slot": 8,
+      "player_slot": 131
+    },
+    {
+      "time": 1895,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_badguys_ranged",
+      "key": "npc_dota_goodguys_tower2_top"
+    },
+    {
+      "time": 2016,
+      "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+      "team": 2,
+      "slot": 2,
+      "player_slot": 2
+    },
+    {
+      "time": 2123,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_sven",
+      "key": "npc_dota_goodguys_tower3_bot",
+      "slot": 8,
+      "player_slot": 131
+    },
+    {
+      "time": 2136,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_crystal_maiden",
+      "key": "npc_dota_goodguys_melee_rax_bot",
+      "slot": 9,
+      "player_slot": 132
+    },
+    {
+      "time": 2138,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_tidehunter",
+      "key": "npc_dota_goodguys_range_rax_bot",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 2167,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 3,
+      "value": 140,
+      "killer": -1
+    },
+    {
+      "time": 2177,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_sven",
+      "key": "npc_dota_goodguys_tower3_top",
+      "slot": 8,
+      "player_slot": 131
+    },
+    {
+      "time": 2187,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_necrolyte",
+      "key": "npc_dota_goodguys_melee_rax_top",
+      "slot": 6,
+      "player_slot": 129
+    },
+    {
+      "time": 2191,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_sven",
+      "key": "npc_dota_goodguys_range_rax_top",
+      "slot": 8,
+      "player_slot": 131
+    },
+    {
+      "time": 2216,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_sven",
+      "key": "npc_dota_goodguys_tower4",
+      "slot": 8,
+      "player_slot": 131
+    },
+    {
+      "time": 2219,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_badguys_melee",
+      "key": "npc_dota_goodguys_tower4"
+    },
+    {
+      "time": 2246,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_badguys_melee_upgraded",
+      "key": "npc_dota_goodguys_fort"
+    }
+  ],
+  "teamfights": [
+    {
+      "start": -39,
+      "end": 12,
+      "last_death": -3,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 252,
+        "healing": 339,
+        "gold_delta": 111,
+        "xp_delta": 60,
+        "killed": {},
+        "ability_uses": {
+          "tidehunter_gush": 2
+        },
+        "item_uses": {
+          "magic_stick": 1,
+          "tango": 2,
+          "faerie_fire": 1,
+          "tidehunter_fish": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 654,
+        "healing": 24,
+        "gold_delta": 111,
+        "xp_delta": 60,
+        "killed": {},
+        "ability_uses": {
+          "grimstroke_dark_artistry": 2
+        },
+        "item_uses": {
+          "ward_dispenser": 2,
+          "blood_grenade": 2
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 238,
+      "end": 295,
+      "last_death": 280,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 492,
+        "healing": 334,
+        "gold_delta": 269,
+        "xp_delta": 278,
+        "killed": {},
+        "ability_uses": {
+          "tidehunter_anchor_smash": 3,
+          "tidehunter_gush": 2
+        },
+        "item_uses": {
+          "tidehunter_fish": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "176": {
+            "95": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1469,
+        "healing": 296,
+        "gold_delta": 212,
+        "xp_delta": 278,
+        "killed": {
+          "npc_dota_hero_lion": 1
+        },
+        "ability_uses": {
+          "grimstroke_spirit_walk": 2,
+          "grimstroke_dark_artistry": 3,
+          "grimstroke_ink_creature": 3
+        },
+        "item_uses": {
+          "enchanted_mango": 1,
+          "famango": 1,
+          "magic_wand": 2
+        },
+        "deaths_pos": {
+          "178": {
+            "108": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 554,
+      "end": 609,
+      "last_death": 594,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 740,
+        "healing": 481,
+        "gold_delta": 258,
+        "xp_delta": 449,
+        "killed": {},
+        "ability_uses": {
+          "tidehunter_anchor_smash": 3,
+          "tidehunter_gush": 2
+        },
+        "item_uses": {
+          "famango": 1,
+          "phase_boots": 6,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 9,
+        "healing": 52,
+        "gold_delta": 34,
+        "xp_delta": 66,
+        "killed": {},
+        "ability_uses": {
+          "grimstroke_ink_creature": 1
+        },
+        "item_uses": {},
+        "deaths_pos": {
+          "172": {
+            "86": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 640,
+      "end": 677,
+      "last_death": 662,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1173,
+        "healing": 0,
+        "gold_delta": -25,
+        "xp_delta": 29,
+        "killed": {},
+        "ability_uses": {
+          "tidehunter_anchor_smash": 1,
+          "tidehunter_gush": 1,
+          "tidehunter_ravage": 1
+        },
+        "item_uses": {
+          "phase_boots": 1
+        },
+        "deaths_pos": {
+          "173": {
+            "83": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 820,
+        "healing": 243,
+        "gold_delta": 22,
+        "xp_delta": 305,
+        "killed": {},
+        "ability_uses": {
+          "grimstroke_soul_chain": 1,
+          "grimstroke_spirit_walk": 1,
+          "grimstroke_dark_artistry": 2,
+          "grimstroke_ink_creature": 2
+        },
+        "item_uses": {
+          "arcane_boots": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "167": {
+            "85": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 792,
+      "end": 838,
+      "last_death": 823,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1293,
+        "healing": 356,
+        "gold_delta": 845,
+        "xp_delta": 1337,
+        "killed": {
+          "npc_dota_hero_mirana": 1,
+          "npc_dota_hero_lion": 1
+        },
+        "ability_uses": {
+          "tidehunter_kraken_shell": 1,
+          "tidehunter_anchor_smash": 4,
+          "tidehunter_gush": 2,
+          "tidehunter_ravage": 1
+        },
+        "item_uses": {
+          "enchanted_mango": 1,
+          "phase_boots": 4,
+          "blood_grenade": 1,
+          "blink": 2,
+          "tidehunter_fish": 5,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 80,
+        "healing": 13,
+        "gold_delta": 281,
+        "xp_delta": 778,
+        "killed": {},
+        "ability_uses": {
+          "grimstroke_spirit_walk": 1,
+          "grimstroke_dark_artistry": 2,
+          "grimstroke_ink_creature": 1
+        },
+        "item_uses": {
+          "arcane_boots": 1,
+          "ward_sentry": 1,
+          "tpscroll": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 950,
+      "end": 1021,
+      "last_death": 1006,
+      "deaths": 8,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 2296,
+        "healing": 1422,
+        "gold_delta": 885,
+        "xp_delta": 1348,
+        "killed": {
+          "npc_dota_hero_lion": 1,
+          "npc_dota_hero_marci": 1
+        },
+        "ability_uses": {
+          "tidehunter_kraken_shell": 1,
+          "tidehunter_anchor_smash": 6,
+          "tidehunter_gush": 3,
+          "tidehunter_ravage": 1
+        },
+        "item_uses": {
+          "phase_boots": 5,
+          "blink": 2,
+          "tidehunter_fish": 4,
+          "magic_wand": 2
+        },
+        "deaths_pos": {
+          "81": {
+            "124": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 342,
+        "healing": 137,
+        "gold_delta": 354,
+        "xp_delta": 482,
+        "killed": {},
+        "ability_uses": {
+          "grimstroke_spirit_walk": 1,
+          "grimstroke_dark_artistry": 3,
+          "grimstroke_ink_creature": 2
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "famango": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "77": {
+            "142": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1177,
+      "end": 1226,
+      "last_death": 1211,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1611,
+        "healing": 16,
+        "gold_delta": 1027,
+        "xp_delta": 1615,
+        "killed": {
+          "npc_dota_hero_mirana": 1,
+          "npc_dota_hero_lion": 1
+        },
+        "ability_uses": {
+          "tidehunter_anchor_smash": 2,
+          "tidehunter_gush": 2,
+          "tidehunter_ravage": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "phase_boots": 5,
+          "blink": 2,
+          "tidehunter_fish": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 842,
+        "healing": 7,
+        "gold_delta": 426,
+        "xp_delta": 1543,
+        "killed": {},
+        "ability_uses": {
+          "grimstroke_soul_chain": 1,
+          "grimstroke_spirit_walk": 1,
+          "grimstroke_dark_artistry": 2,
+          "grimstroke_ink_creature": 2
+        },
+        "item_uses": {
+          "arcane_boots": 1,
+          "tpscroll": 1,
+          "blink": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1305,
+      "end": 1364,
+      "last_death": 1349,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 3329,
+        "healing": 2154,
+        "gold_delta": 36,
+        "xp_delta": 119,
+        "killed": {},
+        "ability_uses": {
+          "tidehunter_dead_in_the_water": 1,
+          "tidehunter_kraken_shell": 1,
+          "tidehunter_anchor_smash": 7,
+          "tidehunter_gush": 2
+        },
+        "item_uses": {
+          "phase_boots": 4,
+          "blink": 1,
+          "magic_wand": 2
+        },
+        "deaths_pos": {
+          "178": {
+            "84": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 80,
+        "gold_delta": -134,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {
+          "grimstroke_spirit_walk": 1,
+          "grimstroke_dark_artistry": 1,
+          "grimstroke_ink_creature": 1
+        },
+        "item_uses": {
+          "blink": 1
+        },
+        "deaths_pos": {
+          "191": {
+            "81": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1565,
+      "end": 1614,
+      "last_death": 1599,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1933,
+        "healing": 190,
+        "gold_delta": 522,
+        "xp_delta": 1429,
+        "killed": {},
+        "ability_uses": {
+          "tidehunter_dead_in_the_water": 1,
+          "tidehunter_anchor_smash": 4,
+          "tidehunter_gush": 2,
+          "tidehunter_ravage": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "phase_boots": 5,
+          "blink": 1,
+          "tidehunter_fish": 1,
+          "dust": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 990,
+        "healing": 450,
+        "gold_delta": -175,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {
+          "grimstroke_spirit_walk": 1,
+          "grimstroke_dark_artistry": 1,
+          "grimstroke_ink_creature": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "dust": 1
+        },
+        "deaths_pos": {
+          "116": {
+            "174": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1703,
+      "end": 1741,
+      "last_death": 1726,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1170,
+        "healing": 1043,
+        "gold_delta": 912,
+        "xp_delta": 691,
+        "killed": {
+          "npc_dota_hero_juggernaut": 1
+        },
+        "ability_uses": {
+          "tidehunter_dead_in_the_water": 1,
+          "tidehunter_anchor_smash": 5,
+          "tidehunter_gush": 3
+        },
+        "item_uses": {
+          "phase_boots": 4,
+          "tidehunter_fish": 2,
+          "blink": 1,
+          "dust": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 775,
+        "healing": 541,
+        "gold_delta": 506,
+        "xp_delta": 2086,
+        "killed": {},
+        "ability_uses": {
+          "grimstroke_soul_chain": 1,
+          "grimstroke_spirit_walk": 1,
+          "grimstroke_dark_artistry": 2,
+          "grimstroke_ink_creature": 1
+        },
+        "item_uses": {
+          "mana_draught": 1,
+          "blink": 2,
+          "glimmer_cape": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1803,
+      "end": 1856,
+      "last_death": 1841,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 4458,
+        "healing": 1014,
+        "gold_delta": 789,
+        "xp_delta": 1384,
+        "killed": {
+          "npc_dota_hero_chaos_knight": 1
+        },
+        "ability_uses": {
+          "tidehunter_dead_in_the_water": 1,
+          "tidehunter_kraken_shell": 1,
+          "tidehunter_anchor_smash": 4,
+          "tidehunter_gush": 4,
+          "tidehunter_ravage": 1
+        },
+        "item_uses": {
+          "phase_boots": 4,
+          "blink": 3,
+          "tidehunter_fish": 3,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 891,
+        "healing": 601,
+        "gold_delta": 793,
+        "xp_delta": 2689,
+        "killed": {},
+        "ability_uses": {
+          "grimstroke_spirit_walk": 1,
+          "grimstroke_dark_artistry": 4,
+          "grimstroke_ink_creature": 2
+        },
+        "item_uses": {
+          "arcane_boots": 1,
+          "mana_draught": 1,
+          "blink": 2,
+          "dust": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 2111,
+      "end": 2144,
+      "last_death": 2129,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1567,
+        "healing": 649,
+        "gold_delta": 1323,
+        "xp_delta": 1539,
+        "killed": {
+          "npc_dota_hero_mirana": 1,
+          "npc_dota_hero_lion": 1
+        },
+        "ability_uses": {
+          "tidehunter_dead_in_the_water": 1,
+          "tidehunter_anchor_smash": 1,
+          "tidehunter_gush": 2
+        },
+        "item_uses": {
+          "shivas_guard": 1,
+          "phase_boots": 4,
+          "blink": 1,
+          "tidehunter_fish": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1010,
+        "healing": 301,
+        "gold_delta": 713,
+        "xp_delta": 1539,
+        "killed": {},
+        "ability_uses": {
+          "grimstroke_soul_chain": 1,
+          "grimstroke_spirit_walk": 1,
+          "grimstroke_ink_creature": 1
+        },
+        "item_uses": {
+          "blink": 2
+        },
+        "deaths_pos": {}
+      }
+    }
+  ],
   "team_context": {
     "duo_team": "Dire",
     "radiant_win": false,
@@ -78,8 +926,12 @@
         "hero_damage": 20423,
         "tower_damage": 881,
         "hero_healing": 1041,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "wards_observer": 3,
+        "wards_sentry": 6,
+        "stuns": 22.03276,
         "level": 21,
         "item_0": 180,
         "item_1": 0,
@@ -92,8 +944,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null,
+        "buyback_count": 0,
+        "teamfight_participation": 0.8333333,
         "kills_per_min": 0.1068566340160285
       },
       {
@@ -114,8 +966,12 @@
         "hero_damage": 48865,
         "tower_damage": 6636,
         "hero_healing": 17918,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 2,
+        "lane": "mid",
+        "is_roaming": false,
+        "wards_observer": 1,
+        "wards_sentry": 2,
+        "stuns": 22.865976,
         "level": 24,
         "item_0": 36,
         "item_1": 48,
@@ -128,8 +984,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null,
+        "buyback_count": 0,
+        "teamfight_participation": 0.8333333,
         "kills_per_min": 0.4541406945681211
       },
       {
@@ -150,8 +1006,10 @@
         "hero_damage": 29850,
         "tower_damage": 3726,
         "hero_healing": 2601,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "stuns": 49.43389,
         "level": 22,
         "item_0": 119,
         "item_1": 50,
@@ -164,8 +1022,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null,
+        "buyback_count": 0,
+        "teamfight_participation": 0.8125,
         "kills_per_min": 0.3205699020480855
       },
       {
@@ -186,8 +1044,10 @@
         "hero_damage": 23944,
         "tower_damage": 17912,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "stuns": 43.967033,
         "level": 22,
         "item_0": 135,
         "item_1": 116,
@@ -200,8 +1060,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null,
+        "buyback_count": 0,
+        "teamfight_participation": 0.4375,
         "kills_per_min": 0.2938557435440784
       },
       {
@@ -222,8 +1082,12 @@
         "hero_damage": 22105,
         "tower_damage": 742,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 12,
+        "wards_sentry": 24,
+        "stuns": 50.42001,
         "level": 19,
         "item_0": 1,
         "item_1": 108,
@@ -236,8 +1100,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null,
+        "buyback_count": 0,
+        "teamfight_participation": 0.6458333,
         "kills_per_min": 0.1068566340160285
       }
     ],
@@ -260,8 +1124,10 @@
         "hero_damage": 19936,
         "tower_damage": 1320,
         "hero_healing": 6721,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "stuns": 0,
         "level": 21,
         "item_0": 63,
         "item_1": 145,
@@ -274,8 +1140,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null,
+        "buyback_count": 0,
+        "teamfight_participation": 0.53125,
         "kills_per_min": 0.18699910952804988
       },
       {
@@ -296,8 +1162,10 @@
         "hero_damage": 22835,
         "tower_damage": 370,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "stuns": 47.033356,
         "level": 21,
         "item_0": 252,
         "item_1": 63,
@@ -310,8 +1178,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null,
+        "buyback_count": 0,
+        "teamfight_participation": 0.46875,
         "kills_per_min": 0.13357079252003562
       },
       {
@@ -332,8 +1200,12 @@
         "hero_damage": 17799,
         "tower_damage": 0,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 7,
+        "wards_sentry": 20,
+        "stuns": 172.43451,
         "level": 18,
         "item_0": 1,
         "item_1": 36,
@@ -346,8 +1218,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null,
+        "buyback_count": 1,
+        "teamfight_participation": 0.53125,
         "kills_per_min": 0.13357079252003562
       },
       {
@@ -368,8 +1240,11 @@
         "hero_damage": 27021,
         "tower_damage": 556,
         "hero_healing": 475,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 2,
+        "lane": "mid",
+        "is_roaming": false,
+        "wards_observer": 1,
+        "stuns": 52.766857,
         "level": 18,
         "item_0": 50,
         "item_1": 225,
@@ -382,8 +1257,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null,
+        "buyback_count": 0,
+        "teamfight_participation": 0.5,
         "kills_per_min": 0.26714158504007124
       },
       {
@@ -404,8 +1279,12 @@
         "hero_damage": 21318,
         "tower_damage": 193,
         "hero_healing": 125,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "wards_observer": 8,
+        "wards_sentry": 9,
+        "stuns": 73.03285,
         "level": 18,
         "item_0": 108,
         "item_1": 36,
@@ -418,8 +1297,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null,
+        "buyback_count": 1,
+        "teamfight_participation": 0.65625,
         "kills_per_min": 0.1068566340160285
       }
     ],
@@ -537,12 +1416,2784 @@
     ],
     "draft_note": "For ranked games picks_bans may be absent; use the final 5v5 hero lineups for composition analysis."
   },
-  "team_teamfights": [],
+  "team_teamfights": [
+    {
+      "start": -39,
+      "end": 12,
+      "last_death": -3,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 883532162,
+          "personaname": "Incred1ble back",
+          "hero": "Juggernaut",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 650,
+          "healing": 253,
+          "gold_delta": 40,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "juggernaut_blade_fury": 1
+          },
+          "item_uses": {
+            "magic_stick": 1,
+            "quelling_blade": 3,
+            "tango": 2
+          }
+        },
+        {
+          "account_id": 111410118,
+          "personaname": "DupeKTop_ap",
+          "hero": "Chaos Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 356,
+          "healing": 80,
+          "gold_delta": 26,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "chaos_knight_chaos_bolt": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_stick": 1
+          }
+        },
+        {
+          "account_id": 1080635503,
+          "personaname": "хех)",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 385,
+          "healing": 55,
+          "gold_delta": 27,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "lion_impale": 1
+          },
+          "item_uses": {
+            "ward_sentry": 1,
+            "magic_stick": 1
+          }
+        },
+        {
+          "account_id": 1044594346,
+          "personaname": "zer0blend",
+          "hero": "Marci",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 40,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "ward_observer": 1
+          }
+        },
+        {
+          "account_id": 302649623,
+          "personaname": "пупкинс",
+          "hero": "Mirana",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 875,
+          "healing": 90,
+          "gold_delta": 28,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "mirana_arrow": 1
+          },
+          "item_uses": {
+            "magic_stick": 1,
+            "blood_grenade": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Grimstroke",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 654,
+          "healing": 24,
+          "gold_delta": 111,
+          "xp_delta": 60,
+          "killed": {},
+          "ability_uses": {
+            "grimstroke_dark_artistry": 2
+          },
+          "item_uses": {
+            "ward_dispenser": 2,
+            "blood_grenade": 2
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Necrophos",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 718,
+          "healing": 1015,
+          "gold_delta": 379,
+          "xp_delta": 60,
+          "killed": {
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "necrolyte_death_pulse": 3
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 252,
+          "healing": 339,
+          "gold_delta": 111,
+          "xp_delta": 60,
+          "killed": {},
+          "ability_uses": {
+            "tidehunter_gush": 2
+          },
+          "item_uses": {
+            "magic_stick": 1,
+            "tango": 2,
+            "faerie_fire": 1,
+            "tidehunter_fish": 1
+          }
+        },
+        {
+          "account_id": 189018480,
+          "personaname": "Thief",
+          "hero": "Sven",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 738,
+          "healing": 74,
+          "gold_delta": 244,
+          "xp_delta": 60,
+          "killed": {
+            "npc_dota_hero_chaos_knight": 1
+          },
+          "ability_uses": {
+            "ability_lamp_use": 1,
+            "sven_storm_bolt": 2
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 483,
+          "healing": 69,
+          "gold_delta": 244,
+          "xp_delta": 60,
+          "killed": {
+            "npc_dota_hero_mirana": 1
+          },
+          "ability_uses": {
+            "crystal_maiden_frostbite": 2
+          },
+          "item_uses": {
+            "clarity": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 238,
+      "end": 295,
+      "last_death": 280,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 883532162,
+          "personaname": "Incred1ble back",
+          "hero": "Juggernaut",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 965,
+          "healing": 387,
+          "gold_delta": 547,
+          "xp_delta": 689,
+          "killed": {
+            "npc_dota_hero_tidehunter": 1
+          },
+          "ability_uses": {
+            "juggernaut_blade_fury": 2,
+            "juggernaut_healing_ward": 1
+          },
+          "item_uses": {
+            "madstone_bundle": 1,
+            "magic_stick": 1,
+            "quelling_blade": 4
+          }
+        },
+        {
+          "account_id": 111410118,
+          "personaname": "DupeKTop_ap",
+          "hero": "Chaos Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 641,
+          "healing": 276,
+          "gold_delta": 315,
+          "xp_delta": 278,
+          "killed": {},
+          "ability_uses": {
+            "chaos_knight_reality_rift": 2,
+            "chaos_knight_chaos_bolt": 2
+          },
+          "item_uses": {
+            "quelling_blade": 1,
+            "enchanted_mango": 1
+          }
+        },
+        {
+          "account_id": 1080635503,
+          "personaname": "хех)",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 777,
+          "healing": 256,
+          "gold_delta": 344,
+          "xp_delta": 428,
+          "killed": {
+            "npc_dota_hero_grimstroke": 1
+          },
+          "ability_uses": {
+            "lion_impale": 3
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_stick": 2,
+            "blood_grenade": 1
+          }
+        },
+        {
+          "account_id": 1044594346,
+          "personaname": "zer0blend",
+          "hero": "Marci",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 214,
+          "healing": 215,
+          "gold_delta": 43,
+          "xp_delta": 211,
+          "killed": {},
+          "ability_uses": {
+            "marci_grapple": 1,
+            "marci_companion_run": 1
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 302649623,
+          "personaname": "пупкинс",
+          "hero": "Mirana",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 775,
+          "healing": 455,
+          "gold_delta": 349,
+          "xp_delta": 335,
+          "killed": {
+            "npc_dota_hero_crystal_maiden": 1
+          },
+          "ability_uses": {
+            "mirana_arrow": 2,
+            "mirana_leap": 2,
+            "mirana_starfall": 1
+          },
+          "item_uses": {
+            "magic_stick": 1,
+            "tango": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Grimstroke",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1469,
+          "healing": 296,
+          "gold_delta": 212,
+          "xp_delta": 278,
+          "killed": {
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "grimstroke_spirit_walk": 2,
+            "grimstroke_dark_artistry": 3,
+            "grimstroke_ink_creature": 3
+          },
+          "item_uses": {
+            "enchanted_mango": 1,
+            "famango": 1,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Necrophos",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 688,
+          "healing": 526,
+          "gold_delta": 501,
+          "xp_delta": 674,
+          "killed": {
+            "npc_dota_hero_marci": 1
+          },
+          "ability_uses": {
+            "necrolyte_ghost_shroud": 1,
+            "necrolyte_reapers_scythe": 1,
+            "necrolyte_death_pulse": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "clarity": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 492,
+          "healing": 334,
+          "gold_delta": 269,
+          "xp_delta": 278,
+          "killed": {},
+          "ability_uses": {
+            "tidehunter_anchor_smash": 3,
+            "tidehunter_gush": 2
+          },
+          "item_uses": {
+            "tidehunter_fish": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 189018480,
+          "personaname": "Thief",
+          "hero": "Sven",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 530,
+          "healing": 464,
+          "gold_delta": 85,
+          "xp_delta": 302,
+          "killed": {},
+          "ability_uses": {
+            "sven_warcry": 1,
+            "sven_storm_bolt": 2
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 544,
+          "healing": 108,
+          "gold_delta": -25,
+          "xp_delta": 90,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_crystal_nova": 1,
+            "crystal_maiden_frostbite": 3
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "tango": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 554,
+      "end": 609,
+      "last_death": 594,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 883532162,
+          "personaname": "Incred1ble back",
+          "hero": "Juggernaut",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 682,
+          "healing": 1076,
+          "gold_delta": 607,
+          "xp_delta": 358,
+          "killed": {
+            "npc_dota_hero_grimstroke": 1
+          },
+          "ability_uses": {
+            "juggernaut_blade_fury": 1,
+            "juggernaut_healing_ward": 1,
+            "juggernaut_omni_slash": 1
+          },
+          "item_uses": {
+            "power_treads": 12,
+            "magic_stick": 2,
+            "quelling_blade": 1
+          }
+        },
+        {
+          "account_id": 111410118,
+          "personaname": "DupeKTop_ap",
+          "hero": "Chaos Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 358,
+          "healing": 671,
+          "gold_delta": 621,
+          "xp_delta": 750,
+          "killed": {},
+          "ability_uses": {
+            "chaos_knight_reality_rift": 2,
+            "chaos_knight_chaos_bolt": 1
+          },
+          "item_uses": {
+            "power_treads": 3,
+            "quelling_blade": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1080635503,
+          "personaname": "хех)",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 765,
+          "healing": 15,
+          "gold_delta": 217,
+          "xp_delta": 358,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_impale": 1,
+            "ability_lamp_use": 1,
+            "lion_mana_drain": 1,
+            "lion_finger_of_death": 1
+          },
+          "item_uses": {
+            "tango": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1044594346,
+          "personaname": "zer0blend",
+          "hero": "Marci",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 704,
+          "gold_delta": 380,
+          "xp_delta": 576,
+          "killed": {},
+          "ability_uses": {
+            "marci_grapple": 2
+          },
+          "item_uses": {
+            "bottle": 6
+          }
+        },
+        {
+          "account_id": 302649623,
+          "personaname": "пупкинс",
+          "hero": "Mirana",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1013,
+          "healing": 238,
+          "gold_delta": 650,
+          "xp_delta": 593,
+          "killed": {
+            "npc_dota_hero_crystal_maiden": 1,
+            "npc_dota_hero_sven": 1
+          },
+          "ability_uses": {
+            "mirana_arrow": 1,
+            "mirana_leap": 1,
+            "mirana_starfall": 2
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Grimstroke",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 9,
+          "healing": 52,
+          "gold_delta": 34,
+          "xp_delta": 66,
+          "killed": {},
+          "ability_uses": {
+            "grimstroke_ink_creature": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Necrophos",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1097,
+          "healing": 175,
+          "gold_delta": 685,
+          "xp_delta": 481,
+          "killed": {
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "necrolyte_reapers_scythe": 1,
+            "necrolyte_death_pulse": 4
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 740,
+          "healing": 481,
+          "gold_delta": 258,
+          "xp_delta": 449,
+          "killed": {},
+          "ability_uses": {
+            "tidehunter_anchor_smash": 3,
+            "tidehunter_gush": 2
+          },
+          "item_uses": {
+            "famango": 1,
+            "phase_boots": 6,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 189018480,
+          "personaname": "Thief",
+          "hero": "Sven",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 378,
+          "gold_delta": 77,
+          "xp_delta": 130,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 92,
+          "healing": 362,
+          "gold_delta": 89,
+          "xp_delta": 133,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_frostbite": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "ward_dispenser": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 640,
+      "end": 677,
+      "last_death": 662,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 883532162,
+          "personaname": "Incred1ble back",
+          "hero": "Juggernaut",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 488,
+          "healing": 507,
+          "gold_delta": 17,
+          "xp_delta": 279,
+          "killed": {},
+          "ability_uses": {
+            "juggernaut_blade_fury": 1,
+            "juggernaut_healing_ward": 1
+          },
+          "item_uses": {
+            "power_treads": 1,
+            "magic_stick": 1,
+            "quelling_blade": 1
+          }
+        },
+        {
+          "account_id": 111410118,
+          "personaname": "DupeKTop_ap",
+          "hero": "Chaos Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 14,
+          "gold_delta": 102,
+          "xp_delta": 210,
+          "killed": {},
+          "ability_uses": {
+            "twin_gate_portal_warp": 2
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 1080635503,
+          "personaname": "хех)",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 418,
+          "healing": 238,
+          "gold_delta": 195,
+          "xp_delta": 590,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_impale": 2,
+            "lion_mana_drain": 1
+          },
+          "item_uses": {
+            "ward_dispenser": 1,
+            "blood_grenade": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1044594346,
+          "personaname": "zer0blend",
+          "hero": "Marci",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1568,
+          "healing": 696,
+          "gold_delta": 570,
+          "xp_delta": 524,
+          "killed": {
+            "npc_dota_hero_crystal_maiden": 1,
+            "npc_dota_hero_tidehunter": 1
+          },
+          "ability_uses": {
+            "marci_unleash": 1,
+            "marci_grapple": 1,
+            "marci_companion_run": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "phase_boots": 2,
+            "bottle": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 302649623,
+          "personaname": "пупкинс",
+          "hero": "Mirana",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 551,
+          "healing": 215,
+          "gold_delta": 371,
+          "xp_delta": 460,
+          "killed": {
+            "npc_dota_hero_grimstroke": 1
+          },
+          "ability_uses": {
+            "mirana_arrow": 1,
+            "mirana_leap": 2,
+            "mirana_invis": 1,
+            "twin_gate_portal_warp": 2,
+            "mirana_starfall": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "famango": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Grimstroke",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 820,
+          "healing": 243,
+          "gold_delta": 22,
+          "xp_delta": 305,
+          "killed": {},
+          "ability_uses": {
+            "grimstroke_soul_chain": 1,
+            "grimstroke_spirit_walk": 1,
+            "grimstroke_dark_artistry": 2,
+            "grimstroke_ink_creature": 2
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Necrophos",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 36,
+          "gold_delta": 124,
+          "xp_delta": 319,
+          "killed": {},
+          "ability_uses": {
+            "necrolyte_death_pulse": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1173,
+          "healing": 0,
+          "gold_delta": -25,
+          "xp_delta": 29,
+          "killed": {},
+          "ability_uses": {
+            "tidehunter_anchor_smash": 1,
+            "tidehunter_gush": 1,
+            "tidehunter_ravage": 1
+          },
+          "item_uses": {
+            "phase_boots": 1
+          }
+        },
+        {
+          "account_id": 189018480,
+          "personaname": "Thief",
+          "hero": "Sven",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 787,
+          "gold_delta": 415,
+          "xp_delta": 631,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "madstone_bundle": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1182,
+          "healing": 14,
+          "gold_delta": 220,
+          "xp_delta": 305,
+          "killed": {
+            "npc_dota_hero_juggernaut": 1
+          },
+          "ability_uses": {
+            "crystal_maiden_freezing_field": 1,
+            "crystal_maiden_crystal_nova": 1,
+            "crystal_maiden_frostbite": 2
+          },
+          "item_uses": {}
+        }
+      ]
+    },
+    {
+      "start": 792,
+      "end": 838,
+      "last_death": 823,
+      "deaths": 5,
+      "players": [
+        {
+          "account_id": 883532162,
+          "personaname": "Incred1ble back",
+          "hero": "Juggernaut",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 665,
+          "gold_delta": 176,
+          "xp_delta": 267,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "power_treads": 12,
+            "tpscroll": 1,
+            "madstone_bundle": 1,
+            "magic_stick": 1
+          }
+        },
+        {
+          "account_id": 111410118,
+          "personaname": "DupeKTop_ap",
+          "hero": "Chaos Knight",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 563,
+          "healing": 209,
+          "gold_delta": -88,
+          "xp_delta": 25,
+          "killed": {},
+          "ability_uses": {
+            "chaos_knight_phantasm": 1,
+            "chaos_knight_reality_rift": 1,
+            "chaos_knight_chaos_bolt": 1,
+            "twin_gate_portal_warp": 1
+          },
+          "item_uses": {
+            "armlet": 4,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1080635503,
+          "personaname": "хех)",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 215,
+          "healing": 267,
+          "gold_delta": -17,
+          "xp_delta": 125,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_impale": 1,
+            "lion_mana_drain": 1
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1044594346,
+          "personaname": "zer0blend",
+          "hero": "Marci",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2130,
+          "healing": 563,
+          "gold_delta": 184,
+          "xp_delta": 361,
+          "killed": {
+            "npc_dota_hero_crystal_maiden": 1
+          },
+          "ability_uses": {
+            "marci_unleash": 1,
+            "marci_grapple": 1,
+            "marci_companion_run": 1
+          },
+          "item_uses": {
+            "phase_boots": 3,
+            "bottle": 3,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 302649623,
+          "personaname": "пупкинс",
+          "hero": "Mirana",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 949,
+          "healing": 237,
+          "gold_delta": 48,
+          "xp_delta": 304,
+          "killed": {},
+          "ability_uses": {
+            "mirana_arrow": 1,
+            "mirana_leap": 2,
+            "twin_gate_portal_warp": 1,
+            "mirana_starfall": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "ward_dispenser": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Grimstroke",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 80,
+          "healing": 13,
+          "gold_delta": 281,
+          "xp_delta": 778,
+          "killed": {},
+          "ability_uses": {
+            "grimstroke_spirit_walk": 1,
+            "grimstroke_dark_artistry": 2,
+            "grimstroke_ink_creature": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "ward_sentry": 1,
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Necrophos",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 3169,
+          "healing": 2557,
+          "gold_delta": 846,
+          "xp_delta": 1337,
+          "killed": {
+            "npc_dota_hero_marci": 1,
+            "npc_dota_hero_chaos_knight": 1
+          },
+          "ability_uses": {
+            "necrolyte_ghost_shroud": 1,
+            "necrolyte_reapers_scythe": 1,
+            "necrolyte_death_pulse": 6
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1293,
+          "healing": 356,
+          "gold_delta": 845,
+          "xp_delta": 1337,
+          "killed": {
+            "npc_dota_hero_mirana": 1,
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "tidehunter_kraken_shell": 1,
+            "tidehunter_anchor_smash": 4,
+            "tidehunter_gush": 2,
+            "tidehunter_ravage": 1
+          },
+          "item_uses": {
+            "enchanted_mango": 1,
+            "phase_boots": 4,
+            "blood_grenade": 1,
+            "blink": 2,
+            "tidehunter_fish": 5,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 189018480,
+          "personaname": "Thief",
+          "hero": "Sven",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 31,
+          "gold_delta": 699,
+          "xp_delta": 998,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "power_treads": 2,
+            "tpscroll": 1,
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1412,
+          "healing": 4,
+          "gold_delta": 171,
+          "xp_delta": 232,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_freezing_field": 1,
+            "crystal_maiden_frostbite": 1
+          },
+          "item_uses": {}
+        }
+      ]
+    },
+    {
+      "start": 950,
+      "end": 1021,
+      "last_death": 1006,
+      "deaths": 8,
+      "players": [
+        {
+          "account_id": 883532162,
+          "personaname": "Incred1ble back",
+          "hero": "Juggernaut",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2043,
+          "healing": 680,
+          "gold_delta": 1168,
+          "xp_delta": 1559,
+          "killed": {
+            "npc_dota_hero_sven": 1
+          },
+          "ability_uses": {
+            "juggernaut_blade_fury": 1,
+            "juggernaut_omni_slash": 1,
+            "juggernaut_healing_ward": 1
+          },
+          "item_uses": {
+            "power_treads": 1,
+            "tpscroll": 1,
+            "madstone_bundle": 1,
+            "magic_stick": 1
+          }
+        },
+        {
+          "account_id": 111410118,
+          "personaname": "DupeKTop_ap",
+          "hero": "Chaos Knight",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 972,
+          "healing": 617,
+          "gold_delta": 2,
+          "xp_delta": 57,
+          "killed": {},
+          "ability_uses": {
+            "chaos_knight_reality_rift": 2,
+            "chaos_knight_chaos_bolt": 1
+          },
+          "item_uses": {
+            "armlet": 2,
+            "power_treads": 1,
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 1080635503,
+          "personaname": "хех)",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 996,
+          "healing": 469,
+          "gold_delta": 860,
+          "xp_delta": 2560,
+          "killed": {
+            "npc_dota_hero_tidehunter": 1
+          },
+          "ability_uses": {
+            "lion_voodoo": 2,
+            "lion_impale": 2,
+            "lion_mana_drain": 2,
+            "lion_finger_of_death": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 1044594346,
+          "personaname": "zer0blend",
+          "hero": "Marci",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2025,
+          "healing": 553,
+          "gold_delta": 1031,
+          "xp_delta": 1430,
+          "killed": {
+            "npc_dota_hero_grimstroke": 1
+          },
+          "ability_uses": {
+            "marci_unleash": 1,
+            "marci_bodyguard": 1,
+            "marci_grapple": 2,
+            "marci_companion_run": 2
+          },
+          "item_uses": {
+            "phase_boots": 4,
+            "bottle": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 302649623,
+          "personaname": "пупкинс",
+          "hero": "Mirana",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2416,
+          "healing": 633,
+          "gold_delta": 597,
+          "xp_delta": 2530,
+          "killed": {},
+          "ability_uses": {
+            "mirana_arrow": 3,
+            "mirana_leap": 2,
+            "mirana_starfall": 2
+          },
+          "item_uses": {
+            "ward_dispenser": 6,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Grimstroke",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 342,
+          "healing": 137,
+          "gold_delta": 354,
+          "xp_delta": 482,
+          "killed": {},
+          "ability_uses": {
+            "grimstroke_spirit_walk": 1,
+            "grimstroke_dark_artistry": 3,
+            "grimstroke_ink_creature": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "famango": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Necrophos",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 4518,
+          "healing": 3031,
+          "gold_delta": 843,
+          "xp_delta": 1329,
+          "killed": {
+            "npc_dota_hero_juggernaut": 1
+          },
+          "ability_uses": {
+            "necrolyte_ghost_shroud": 2,
+            "necrolyte_death_seeker": 2,
+            "necrolyte_death_pulse": 6
+          },
+          "item_uses": {
+            "madstone_bundle": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2296,
+          "healing": 1422,
+          "gold_delta": 885,
+          "xp_delta": 1348,
+          "killed": {
+            "npc_dota_hero_lion": 1,
+            "npc_dota_hero_marci": 1
+          },
+          "ability_uses": {
+            "tidehunter_kraken_shell": 1,
+            "tidehunter_anchor_smash": 6,
+            "tidehunter_gush": 3,
+            "tidehunter_ravage": 1
+          },
+          "item_uses": {
+            "phase_boots": 5,
+            "blink": 2,
+            "tidehunter_fish": 4,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 189018480,
+          "personaname": "Thief",
+          "hero": "Sven",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 565,
+          "healing": 546,
+          "gold_delta": 291,
+          "xp_delta": 482,
+          "killed": {
+            "npc_dota_hero_chaos_knight": 1
+          },
+          "ability_uses": {
+            "sven_warcry": 1,
+            "sven_gods_strength": 1,
+            "sven_storm_bolt": 1
+          },
+          "item_uses": {
+            "power_treads": 1,
+            "tpscroll": 1,
+            "magic_wand": 1,
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1204,
+          "healing": 537,
+          "gold_delta": 433,
+          "xp_delta": 1326,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_crystal_nova": 3,
+            "crystal_maiden_frostbite": 3
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "madstone_bundle": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1177,
+      "end": 1226,
+      "last_death": 1211,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 883532162,
+          "personaname": "Incred1ble back",
+          "hero": "Juggernaut",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 134,
+          "gold_delta": 631,
+          "xp_delta": 947,
+          "killed": {},
+          "ability_uses": {
+            "ability_lamp_use": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 111410118,
+          "personaname": "DupeKTop_ap",
+          "hero": "Chaos Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2104,
+          "healing": 2714,
+          "gold_delta": 305,
+          "xp_delta": 665,
+          "killed": {},
+          "ability_uses": {
+            "chaos_knight_reality_rift": 1,
+            "chaos_knight_chaos_bolt": 1
+          },
+          "item_uses": {
+            "armlet": 3,
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 1080635503,
+          "personaname": "хех)",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1022,
+          "healing": 1,
+          "gold_delta": 348,
+          "xp_delta": 589,
+          "killed": {
+            "npc_dota_hero_sven": 1
+          },
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_impale": 1,
+            "lion_mana_drain": 1,
+            "lion_finger_of_death": 1
+          },
+          "item_uses": {
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 1044594346,
+          "personaname": "zer0blend",
+          "hero": "Marci",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 50,
+          "xp_delta": 256,
+          "killed": {},
+          "ability_uses": {
+            "marci_grapple": 1,
+            "marci_companion_run": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "phase_boots": 1
+          }
+        },
+        {
+          "account_id": 302649623,
+          "personaname": "пупкинс",
+          "hero": "Mirana",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1180,
+          "healing": 0,
+          "gold_delta": 189,
+          "xp_delta": 527,
+          "killed": {},
+          "ability_uses": {
+            "mirana_arrow": 1,
+            "mirana_leap": 1,
+            "mirana_starfall": 2
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Grimstroke",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 842,
+          "healing": 7,
+          "gold_delta": 426,
+          "xp_delta": 1543,
+          "killed": {},
+          "ability_uses": {
+            "grimstroke_soul_chain": 1,
+            "grimstroke_spirit_walk": 1,
+            "grimstroke_dark_artistry": 2,
+            "grimstroke_ink_creature": 2
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "tpscroll": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Necrophos",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2734,
+          "healing": 827,
+          "gold_delta": 1070,
+          "xp_delta": 1615,
+          "killed": {},
+          "ability_uses": {
+            "necrolyte_death_seeker": 2,
+            "necrolyte_ghost_shroud": 1,
+            "necrolyte_reapers_scythe": 1,
+            "necrolyte_death_pulse": 5
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "madstone_bundle": 2
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1611,
+          "healing": 16,
+          "gold_delta": 1027,
+          "xp_delta": 1615,
+          "killed": {
+            "npc_dota_hero_mirana": 1,
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "tidehunter_anchor_smash": 2,
+            "tidehunter_gush": 2,
+            "tidehunter_ravage": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "phase_boots": 5,
+            "blink": 2,
+            "tidehunter_fish": 2
+          }
+        },
+        {
+          "account_id": 189018480,
+          "personaname": "Thief",
+          "hero": "Sven",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 160,
+          "gold_delta": 230,
+          "xp_delta": 572,
+          "killed": {},
+          "ability_uses": {
+            "sven_storm_bolt": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 163,
+          "healing": 0,
+          "gold_delta": 436,
+          "xp_delta": 483,
+          "killed": {
+            "npc_dota_hero_marci": 1
+          },
+          "ability_uses": {
+            "crystal_maiden_crystal_nova": 1,
+            "ability_lamp_use": 1
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1305,
+      "end": 1364,
+      "last_death": 1349,
+      "deaths": 5,
+      "players": [
+        {
+          "account_id": 883532162,
+          "personaname": "Incred1ble back",
+          "hero": "Juggernaut",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 3623,
+          "healing": 2193,
+          "gold_delta": 985,
+          "xp_delta": 2077,
+          "killed": {
+            "npc_dota_hero_grimstroke": 1
+          },
+          "ability_uses": {
+            "juggernaut_blade_fury": 2,
+            "juggernaut_omni_slash": 1,
+            "juggernaut_healing_ward": 1
+          },
+          "item_uses": {
+            "magic_stick": 1,
+            "manta": 1
+          }
+        },
+        {
+          "account_id": 111410118,
+          "personaname": "DupeKTop_ap",
+          "hero": "Chaos Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 4178,
+          "healing": 5059,
+          "gold_delta": 1119,
+          "xp_delta": 2364,
+          "killed": {
+            "npc_dota_hero_crystal_maiden": 1
+          },
+          "ability_uses": {
+            "chaos_knight_phantasm": 1,
+            "chaos_knight_reality_rift": 3,
+            "chaos_knight_chaos_bolt": 2
+          },
+          "item_uses": {
+            "armlet": 4,
+            "tpscroll": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1080635503,
+          "personaname": "хех)",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1308,
+          "healing": 594,
+          "gold_delta": 590,
+          "xp_delta": 1043,
+          "killed": {
+            "npc_dota_hero_tidehunter": 1
+          },
+          "ability_uses": {
+            "plus_high_five": 1,
+            "lion_voodoo": 1,
+            "lion_impale": 2,
+            "lion_mana_drain": 1,
+            "lion_finger_of_death": 1
+          },
+          "item_uses": {
+            "blink": 4,
+            "force_staff": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1044594346,
+          "personaname": "zer0blend",
+          "hero": "Marci",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 4848,
+          "healing": 3427,
+          "gold_delta": 1069,
+          "xp_delta": 1454,
+          "killed": {
+            "npc_dota_hero_necrolyte": 1,
+            "npc_dota_hero_sven": 1
+          },
+          "ability_uses": {
+            "marci_unleash": 1,
+            "marci_bodyguard": 2,
+            "marci_grapple": 2,
+            "marci_companion_run": 3
+          },
+          "item_uses": {
+            "phase_boots": 6,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 302649623,
+          "personaname": "пупкинс",
+          "hero": "Mirana",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1323,
+          "healing": 821,
+          "gold_delta": 612,
+          "xp_delta": 1781,
+          "killed": {},
+          "ability_uses": {
+            "mirana_arrow": 2,
+            "mirana_invis": 1,
+            "mirana_leap": 1,
+            "ability_lamp_use": 3,
+            "mirana_starfall": 3
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "cyclone": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Grimstroke",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 80,
+          "gold_delta": -134,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "grimstroke_spirit_walk": 1,
+            "grimstroke_dark_artistry": 1,
+            "grimstroke_ink_creature": 1
+          },
+          "item_uses": {
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Necrophos",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 5826,
+          "healing": 5631,
+          "gold_delta": -175,
+          "xp_delta": 44,
+          "killed": {},
+          "ability_uses": {
+            "necrolyte_death_seeker": 1,
+            "necrolyte_ghost_shroud": 1,
+            "necrolyte_reapers_scythe": 1,
+            "necrolyte_death_pulse": 6
+          },
+          "item_uses": {
+            "essence_ring": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 3329,
+          "healing": 2154,
+          "gold_delta": 36,
+          "xp_delta": 119,
+          "killed": {},
+          "ability_uses": {
+            "tidehunter_dead_in_the_water": 1,
+            "tidehunter_kraken_shell": 1,
+            "tidehunter_anchor_smash": 7,
+            "tidehunter_gush": 2
+          },
+          "item_uses": {
+            "phase_boots": 4,
+            "blink": 1,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 189018480,
+          "personaname": "Thief",
+          "hero": "Sven",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 168,
+          "healing": 185,
+          "gold_delta": -77,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "sven_warcry": 1,
+            "sven_gods_strength": 1,
+            "twin_gate_portal_warp": 1
+          },
+          "item_uses": {
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2433,
+          "healing": 429,
+          "gold_delta": 144,
+          "xp_delta": 44,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_freezing_field": 1,
+            "crystal_maiden_crystal_nova": 3
+          },
+          "item_uses": {
+            "dust": 1,
+            "glimmer_cape": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1565,
+      "end": 1614,
+      "last_death": 1599,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 883532162,
+          "personaname": "Incred1ble back",
+          "hero": "Juggernaut",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 81,
+          "gold_delta": 791,
+          "xp_delta": 1281,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "power_treads": 3,
+            "tpscroll": 1,
+            "madstone_bundle": 4,
+            "bfury": 1
+          }
+        },
+        {
+          "account_id": 111410118,
+          "personaname": "DupeKTop_ap",
+          "hero": "Chaos Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 6839,
+          "healing": 5085,
+          "gold_delta": 1522,
+          "xp_delta": 2063,
+          "killed": {
+            "npc_dota_hero_grimstroke": 1,
+            "npc_dota_hero_sven": 1
+          },
+          "ability_uses": {
+            "chaos_knight_phantasm": 1,
+            "chaos_knight_reality_rift": 2,
+            "chaos_knight_chaos_bolt": 2,
+            "ability_lamp_use": 1
+          },
+          "item_uses": {
+            "armlet": 10,
+            "tpscroll": 1,
+            "madstone_bundle": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1080635503,
+          "personaname": "хех)",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1024,
+          "healing": 169,
+          "gold_delta": 356,
+          "xp_delta": 2063,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 2,
+            "lion_impale": 2,
+            "lion_finger_of_death": 1
+          },
+          "item_uses": {
+            "blink": 1,
+            "force_staff": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1044594346,
+          "personaname": "zer0blend",
+          "hero": "Marci",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 1463,
+          "gold_delta": 21,
+          "xp_delta": 47,
+          "killed": {},
+          "ability_uses": {
+            "plus_high_five": 1,
+            "marci_grapple": 1,
+            "ability_lamp_use": 3,
+            "marci_companion_run": 1
+          },
+          "item_uses": {
+            "phase_boots": 5,
+            "bottle": 3
+          }
+        },
+        {
+          "account_id": 302649623,
+          "personaname": "пупкинс",
+          "hero": "Mirana",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 191,
+          "gold_delta": 0,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "mirana_invis": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "ward_dispenser": 4
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Grimstroke",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 990,
+          "healing": 450,
+          "gold_delta": -175,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "grimstroke_spirit_walk": 1,
+            "grimstroke_dark_artistry": 1,
+            "grimstroke_ink_creature": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "dust": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Necrophos",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2914,
+          "healing": 2142,
+          "gold_delta": 832,
+          "xp_delta": 1333,
+          "killed": {
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "necrolyte_death_seeker": 2,
+            "necrolyte_ghost_shroud": 1,
+            "necrolyte_reapers_scythe": 1,
+            "necrolyte_death_pulse": 4
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "madstone_bundle": 1,
+            "essence_ring": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1933,
+          "healing": 190,
+          "gold_delta": 522,
+          "xp_delta": 1429,
+          "killed": {},
+          "ability_uses": {
+            "tidehunter_dead_in_the_water": 1,
+            "tidehunter_anchor_smash": 4,
+            "tidehunter_gush": 2,
+            "tidehunter_ravage": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "phase_boots": 5,
+            "blink": 1,
+            "tidehunter_fish": 1,
+            "dust": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 189018480,
+          "personaname": "Thief",
+          "hero": "Sven",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 480,
+          "gold_delta": -4,
+          "xp_delta": 647,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "madstone_bundle": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 11,
+          "gold_delta": 48,
+          "xp_delta": 76,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "ward_sentry": 1,
+            "tpscroll": 1,
+            "glimmer_cape": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1703,
+      "end": 1741,
+      "last_death": 1726,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 883532162,
+          "personaname": "Incred1ble back",
+          "hero": "Juggernaut",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 587,
+          "healing": 521,
+          "gold_delta": -168,
+          "xp_delta": 255,
+          "killed": {},
+          "ability_uses": {
+            "juggernaut_blade_fury": 1,
+            "juggernaut_healing_ward": 1
+          },
+          "item_uses": {
+            "power_treads": 1,
+            "magic_stick": 1,
+            "manta": 1
+          }
+        },
+        {
+          "account_id": 111410118,
+          "personaname": "DupeKTop_ap",
+          "hero": "Chaos Knight",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 4197,
+          "healing": 2180,
+          "gold_delta": -183,
+          "xp_delta": 255,
+          "killed": {},
+          "ability_uses": {
+            "chaos_knight_reality_rift": 2,
+            "chaos_knight_chaos_bolt": 2
+          },
+          "item_uses": {
+            "armlet": 1,
+            "orchid": 1
+          }
+        },
+        {
+          "account_id": 1080635503,
+          "personaname": "хех)",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 10,
+          "gold_delta": 217,
+          "xp_delta": 1100,
+          "killed": {},
+          "ability_uses": {
+            "ability_lamp_use": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 1044594346,
+          "personaname": "zer0blend",
+          "hero": "Marci",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2369,
+          "healing": 420,
+          "gold_delta": 143,
+          "xp_delta": 242,
+          "killed": {},
+          "ability_uses": {
+            "marci_unleash": 1,
+            "marci_grapple": 1,
+            "marci_companion_run": 1
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "phase_boots": 2
+          }
+        },
+        {
+          "account_id": 302649623,
+          "personaname": "пупкинс",
+          "hero": "Mirana",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 747,
+          "healing": 798,
+          "gold_delta": 217,
+          "xp_delta": 1492,
+          "killed": {},
+          "ability_uses": {
+            "mirana_arrow": 2,
+            "mirana_leap": 2
+          },
+          "item_uses": {
+            "cyclone": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Grimstroke",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 775,
+          "healing": 541,
+          "gold_delta": 506,
+          "xp_delta": 2086,
+          "killed": {},
+          "ability_uses": {
+            "grimstroke_soul_chain": 1,
+            "grimstroke_spirit_walk": 1,
+            "grimstroke_dark_artistry": 2,
+            "grimstroke_ink_creature": 1
+          },
+          "item_uses": {
+            "mana_draught": 1,
+            "blink": 2,
+            "glimmer_cape": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Necrophos",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 4088,
+          "healing": 2781,
+          "gold_delta": 907,
+          "xp_delta": 2099,
+          "killed": {
+            "npc_dota_hero_chaos_knight": 1
+          },
+          "ability_uses": {
+            "necrolyte_ghost_shroud": 1,
+            "necrolyte_death_seeker": 1,
+            "necrolyte_reapers_scythe": 1,
+            "necrolyte_death_pulse": 3
+          },
+          "item_uses": {
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1170,
+          "healing": 1043,
+          "gold_delta": 912,
+          "xp_delta": 691,
+          "killed": {
+            "npc_dota_hero_juggernaut": 1
+          },
+          "ability_uses": {
+            "tidehunter_dead_in_the_water": 1,
+            "tidehunter_anchor_smash": 5,
+            "tidehunter_gush": 3
+          },
+          "item_uses": {
+            "phase_boots": 4,
+            "tidehunter_fish": 2,
+            "blink": 1,
+            "dust": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 189018480,
+          "personaname": "Thief",
+          "hero": "Sven",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1014,
+          "healing": 235,
+          "gold_delta": 584,
+          "xp_delta": 1303,
+          "killed": {
+            "npc_dota_hero_marci": 1
+          },
+          "ability_uses": {
+            "sven_warcry": 1,
+            "sven_storm_bolt": 1
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 3796,
+          "healing": 195,
+          "gold_delta": 430,
+          "xp_delta": 2061,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_freezing_field": 1,
+            "crystal_maiden_crystal_nova": 2,
+            "crystal_maiden_frostbite": 1
+          },
+          "item_uses": {
+            "enchanted_mango": 1,
+            "ward_dispenser": 1,
+            "glimmer_cape": 2
+          }
+        }
+      ]
+    },
+    {
+      "start": 1803,
+      "end": 1856,
+      "last_death": 1841,
+      "deaths": 5,
+      "players": [
+        {
+          "account_id": 883532162,
+          "personaname": "Incred1ble back",
+          "hero": "Juggernaut",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2524,
+          "healing": 801,
+          "gold_delta": -426,
+          "xp_delta": 23,
+          "killed": {},
+          "ability_uses": {
+            "juggernaut_blade_fury": 1,
+            "juggernaut_omni_slash": 1,
+            "juggernaut_healing_ward": 1
+          },
+          "item_uses": {
+            "power_treads": 3,
+            "magic_stick": 1,
+            "manta": 1
+          }
+        },
+        {
+          "account_id": 111410118,
+          "personaname": "DupeKTop_ap",
+          "hero": "Chaos Knight",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2417,
+          "healing": 336,
+          "gold_delta": -231,
+          "xp_delta": 189,
+          "killed": {},
+          "ability_uses": {
+            "chaos_knight_reality_rift": 1,
+            "chaos_knight_chaos_bolt": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 1080635503,
+          "personaname": "хех)",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1478,
+          "healing": 802,
+          "gold_delta": -234,
+          "xp_delta": 14,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 2,
+            "lion_impale": 3,
+            "lion_finger_of_death": 1
+          },
+          "item_uses": {
+            "ward_sentry": 1,
+            "force_staff": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1044594346,
+          "personaname": "zer0blend",
+          "hero": "Marci",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2215,
+          "healing": 529,
+          "gold_delta": -272,
+          "xp_delta": 75,
+          "killed": {},
+          "ability_uses": {
+            "marci_unleash": 1,
+            "marci_grapple": 1,
+            "marci_companion_run": 1
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "phase_boots": 2
+          }
+        },
+        {
+          "account_id": 302649623,
+          "personaname": "пупкинс",
+          "hero": "Mirana",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 650,
+          "healing": 323,
+          "gold_delta": -214,
+          "xp_delta": 75,
+          "killed": {},
+          "ability_uses": {
+            "mirana_arrow": 1,
+            "mirana_leap": 1,
+            "mirana_invis": 1,
+            "mirana_starfall": 1
+          },
+          "item_uses": {
+            "cyclone": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Grimstroke",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 891,
+          "healing": 601,
+          "gold_delta": 793,
+          "xp_delta": 2689,
+          "killed": {},
+          "ability_uses": {
+            "grimstroke_spirit_walk": 1,
+            "grimstroke_dark_artistry": 4,
+            "grimstroke_ink_creature": 2
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "mana_draught": 1,
+            "blink": 2,
+            "dust": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Necrophos",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2646,
+          "healing": 2779,
+          "gold_delta": 1077,
+          "xp_delta": 2707,
+          "killed": {
+            "npc_dota_hero_mirana": 1,
+            "npc_dota_hero_juggernaut": 1
+          },
+          "ability_uses": {
+            "necrolyte_death_seeker": 2,
+            "necrolyte_ghost_shroud": 2,
+            "necrolyte_reapers_scythe": 1,
+            "necrolyte_death_pulse": 7
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "lotus_orb": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 4458,
+          "healing": 1014,
+          "gold_delta": 789,
+          "xp_delta": 1384,
+          "killed": {
+            "npc_dota_hero_chaos_knight": 1
+          },
+          "ability_uses": {
+            "tidehunter_dead_in_the_water": 1,
+            "tidehunter_kraken_shell": 1,
+            "tidehunter_anchor_smash": 4,
+            "tidehunter_gush": 4,
+            "tidehunter_ravage": 1
+          },
+          "item_uses": {
+            "phase_boots": 4,
+            "blink": 3,
+            "tidehunter_fish": 3,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 189018480,
+          "personaname": "Thief",
+          "hero": "Sven",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2674,
+          "healing": 1734,
+          "gold_delta": 1354,
+          "xp_delta": 3098,
+          "killed": {
+            "npc_dota_hero_marci": 1,
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "sven_warcry": 2,
+            "sven_gods_strength": 1,
+            "sven_storm_bolt": 2
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "blink": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1873,
+          "healing": 300,
+          "gold_delta": 583,
+          "xp_delta": 2707,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_freezing_field": 1,
+            "crystal_maiden_crystal_nova": 2,
+            "crystal_maiden_frostbite": 1
+          },
+          "item_uses": {
+            "enchanted_mango": 1,
+            "blink": 2,
+            "dust": 1,
+            "glimmer_cape": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 2111,
+      "end": 2144,
+      "last_death": 2129,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 883532162,
+          "personaname": "Incred1ble back",
+          "hero": "Juggernaut",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 0,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 111410118,
+          "personaname": "DupeKTop_ap",
+          "hero": "Chaos Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 755,
+          "healing": 1829,
+          "gold_delta": 140,
+          "xp_delta": 64,
+          "killed": {},
+          "ability_uses": {
+            "chaos_knight_reality_rift": 1
+          },
+          "item_uses": {
+            "armlet": 2,
+            "tpscroll": 1,
+            "bloodthorn": 1
+          }
+        },
+        {
+          "account_id": 1080635503,
+          "personaname": "хех)",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 1,
+          "damage": 193,
+          "healing": 129,
+          "gold_delta": -296,
+          "xp_delta": 64,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_impale": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 1044594346,
+          "personaname": "zer0blend",
+          "hero": "Marci",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2072,
+          "healing": 363,
+          "gold_delta": -214,
+          "xp_delta": 64,
+          "killed": {},
+          "ability_uses": {
+            "marci_unleash": 1,
+            "marci_companion_run": 1
+          },
+          "item_uses": {
+            "nullifier": 1
+          }
+        },
+        {
+          "account_id": 302649623,
+          "personaname": "пупкинс",
+          "hero": "Mirana",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1340,
+          "healing": 555,
+          "gold_delta": -138,
+          "xp_delta": 64,
+          "killed": {},
+          "ability_uses": {
+            "mirana_arrow": 1,
+            "mirana_invis": 1,
+            "mirana_starfall": 1
+          },
+          "item_uses": {
+            "cyclone": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Grimstroke",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1010,
+          "healing": 301,
+          "gold_delta": 713,
+          "xp_delta": 1539,
+          "killed": {},
+          "ability_uses": {
+            "grimstroke_soul_chain": 1,
+            "grimstroke_spirit_walk": 1,
+            "grimstroke_ink_creature": 1
+          },
+          "item_uses": {
+            "blink": 2
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Necrophos",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1779,
+          "healing": 2535,
+          "gold_delta": 850,
+          "xp_delta": 1539,
+          "killed": {},
+          "ability_uses": {
+            "necrolyte_ghost_shroud": 1,
+            "necrolyte_death_seeker": 1,
+            "necrolyte_death_pulse": 2
+          },
+          "item_uses": {
+            "lotus_orb": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1567,
+          "healing": 649,
+          "gold_delta": 1323,
+          "xp_delta": 1539,
+          "killed": {
+            "npc_dota_hero_mirana": 1,
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "tidehunter_dead_in_the_water": 1,
+            "tidehunter_anchor_smash": 1,
+            "tidehunter_gush": 2
+          },
+          "item_uses": {
+            "shivas_guard": 1,
+            "phase_boots": 4,
+            "blink": 1,
+            "tidehunter_fish": 2
+          }
+        },
+        {
+          "account_id": 189018480,
+          "personaname": "Thief",
+          "hero": "Sven",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2462,
+          "healing": 569,
+          "gold_delta": 1093,
+          "xp_delta": 1539,
+          "killed": {
+            "npc_dota_hero_marci": 1
+          },
+          "ability_uses": {
+            "sven_warcry": 2,
+            "sven_gods_strength": 1,
+            "sven_storm_bolt": 1
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1518,
+          "healing": 12,
+          "gold_delta": 771,
+          "xp_delta": 1539,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_freezing_field": 1,
+            "crystal_maiden_crystal_nova": 1
+          },
+          "item_uses": {
+            "ward_sentry": 1,
+            "clarity": 1,
+            "ward_dispenser": 2
+          }
+        }
+      ]
+    }
+  ],
   "team_analysis_capabilities": {
     "full_lineups": true,
     "all_player_summaries": true,
-    "teamfights_available": false,
-    "objectives_available": false,
+    "teamfights_available": true,
+    "objectives_available": true,
     "picks_bans_available": true
   }
 }
