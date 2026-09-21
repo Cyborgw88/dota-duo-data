@@ -163,10 +163,25 @@ const common={
   note:'position_guess is heuristic; use position_confidence. Recent unparsed matches are explicitly submitted to OpenDota /request/{match_id}.'
 };
 
-// Legacy/full rolling feed. Kept for compatibility.
-await fs.writeFile('data/latest.json',JSON.stringify({...common,matches},null,2)+'\n');
+// Connector-friendly rolling feed. Keep latest.json deliberately small:
+// it is the discovery/health-check entry point, while detailed objectives,
+// teamfights and full 5v5 coaching context live in data/matches/{match_id}.json.
+const latestMatches = reportMatches.map(m => ({
+  match_id:m.match_id,start_time:m.start_time,start_iso:m.start_iso,
+  duration_sec:m.duration_sec,duration_min:m.duration_min,lobby_type:m.lobby_type,game_mode:m.game_mode,
+  radiant_win:m.radiant_win,parsed:m.parsed,parse_version:m.parse_version,same_team:m.same_team,
+  cyborg:m.cyborg,goddess:m.goddess,
+  objective_count:Array.isArray(m.objectives)?m.objectives.length:0,
+  teamfight_count:Array.isArray(m.teamfights)?m.teamfights.length:0
+}));
+await fs.writeFile('data/latest.json',JSON.stringify({
+  ...common,
+  schema:'connector-friendly-v2',
+  detail_path_template:'data/matches/{match_id}.json',
+  matches:latestMatches
+},null,2)+'\n');
 
-// Compact feed intended for daily reports. Teamfights contain only duo-player summaries.
+// Detailed duo feed used to build per-match files. Teamfights contain duo-player summaries.
 await fs.writeFile('data/report.json',JSON.stringify({...common,matches:reportMatches},null,2)+'\n');
 
-console.log(`Saved ${matches.length} joint ranked matches; compact daily report feed written to data/report.json`);
+console.log(`Saved ${matches.length} joint ranked matches; latest.json is connector-friendly and details remain in per-match files`);
