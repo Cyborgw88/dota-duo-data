@@ -34,10 +34,6 @@ jobs:
         run: node scripts/update.mjs
       - name: Build compact index and per-match reports
         run: node scripts/build-index.mjs
-      - name: Enrich reports with full 5v5 coaching context
-        env:
-          OPENDOTA_API_KEY: ${{ secrets.OPENDOTA_API_KEY }}
-        run: node scripts/enrich-team.mjs
       - name: Commit data if changed
         run: |
           git config user.name "dota-duo-bot"
