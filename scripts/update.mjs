@@ -121,6 +121,58 @@ function compactTeamfights(m) {
   }));
 }
 
+function coachingPlayerSummary(p) {
+  return {
+    account_id:p.account_id??null,personaname:p.personaname??null,
+    hero_id:p.hero_id,hero:heroes.get(Number(p.hero_id))||String(p.hero_id),
+    player_slot:p.player_slot,team:isRadiant(p.player_slot)?'Radiant':'Dire',
+    kills:p.kills,deaths:p.deaths,assists:p.assists,last_hits:p.last_hits,denies:p.denies,
+    gold_per_min:p.gold_per_min,xp_per_min:p.xp_per_min,net_worth:p.net_worth??null,
+    hero_damage:p.hero_damage,tower_damage:p.tower_damage,hero_healing:p.hero_healing,
+    lane_role:p.lane_role,lane:laneName(p.lane_role),is_roaming:p.is_roaming,
+    wards_observer:p.purchase_ward_observer,wards_sentry:p.purchase_ward_sentry,
+    stuns:p.stuns??null,level:p.level??null,
+    item_0:p.item_0??null,item_1:p.item_1??null,item_2:p.item_2??null,
+    item_3:p.item_3??null,item_4:p.item_4??null,item_5:p.item_5??null,
+    backpack_0:p.backpack_0??null,backpack_1:p.backpack_1??null,backpack_2:p.backpack_2??null,
+    aghanims_scepter:p.aghanims_scepter??null,aghanims_shard:p.aghanims_shard??null,
+    buyback_count:p.buyback_count??null,teamfight_participation:p.teamfight_participation??null
+  };
+}
+
+function fullTeamfights(m) {
+  const ps=Array.isArray(m.players)?m.players:[];
+  return (Array.isArray(m.teamfights)?m.teamfights:[]).map(tf=>({
+    start:tf.start,end:tf.end,last_death:tf.last_death,deaths:tf.deaths,
+    players:ps.map((p,idx)=>{
+      const x=Array.isArray(tf.players)?tf.players[idx]:null;
+      if(!x) return null;
+      return {
+        account_id:p.account_id??null,personaname:p.personaname??null,
+        hero:heroes.get(Number(p.hero_id))||String(p.hero_id),
+        team:isRadiant(p.player_slot)?'Radiant':'Dire',
+        deaths:x.deaths??0,buybacks:x.buybacks??0,damage:x.damage??0,healing:x.healing??0,
+        gold_delta:x.gold_delta??0,xp_delta:x.xp_delta??0,killed:x.killed??{},
+        ability_uses:x.ability_uses??{},item_uses:x.item_uses??{}
+      };
+    }).filter(Boolean)
+  }));
+}
+
+function teamContext(m,a) {
+  const ps=Array.isArray(m.players)?m.players:[];
+  const all=ps.map(coachingPlayerSummary);
+  const duoTeam=a?(isRadiant(a.player_slot)?'Radiant':'Dire'):null;
+  return {
+    duo_team:duoTeam,radiant_win:!!m.radiant_win,
+    allies:all.filter(p=>p.team===duoTeam),enemies:all.filter(p=>p.team!==duoTeam),
+    radiant_heroes:all.filter(p=>p.team==='Radiant').map(p=>p.hero),
+    dire_heroes:all.filter(p=>p.team==='Dire').map(p=>p.hero),
+    picks_bans:Array.isArray(m.picks_bans)?m.picks_bans:[],
+    draft_note:'For ranked games picks_bans may be absent; use the final 5v5 hero lineups for composition analysis.'
+  };
+}
+
 const finalDuoDetails = details.filter(m=>{
   const ps=Array.isArray(m.players)?m.players:[];
   const a=ps.find(p=>Number(p.account_id)===A), b=ps.find(p=>Number(p.account_id)===B);
@@ -149,7 +201,14 @@ const reportMatches=finalDuoDetails.map(m=>{
     duration_sec:m.duration,duration_min:m.duration?Math.round(m.duration/6)/10:null,lobby_type:m.lobby_type,game_mode:m.game_mode,
     radiant_win:m.radiant_win,parsed:!!m.version,parse_version:m.version??null,same_team:true,
     cyborg:slim(a,roles.get(A),m.radiant_win),goddess:slim(b,roles.get(B),m.radiant_win),
-    objectives:Array.isArray(m.objectives)?m.objectives:[],teamfights:compactTeamfights(m)
+    objectives:Array.isArray(m.objectives)?m.objectives:[],teamfights:compactTeamfights(m),
+    team_context:teamContext(m,a),team_teamfights:fullTeamfights(m),
+    team_analysis_capabilities:{
+      full_lineups:ps.length===10,all_player_summaries:ps.length===10,
+      teamfights_available:Array.isArray(m.teamfights)&&m.teamfights.length>0,
+      objectives_available:Array.isArray(m.objectives)&&m.objectives.length>0,
+      picks_bans_available:Array.isArray(m.picks_bans)&&m.picks_bans.length>0
+    }
   };
 });
 
