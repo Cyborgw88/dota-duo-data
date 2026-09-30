@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T23:00:25.737Z",
+  "generated_at": "2026-09-30T02:10:12.185Z",
   "source": "OpenDota",
   "players": {
     "cyborg": 206620580,
@@ -12,9 +12,7 @@
   },
   "count": 30,
   "parsing": {
-    "requested_match_ids": [
-      9022129970
-    ],
+    "requested_match_ids": [],
     "request_limit": 5,
     "wait_ms": 20000
   },
@@ -29,8 +27,8 @@
       "lobby_type": 7,
       "game_mode": 22,
       "radiant_win": false,
-      "parsed": false,
-      "parse_version": null,
+      "parsed": true,
+      "parse_version": 22,
       "same_team": true,
       "cyborg": {
         "account_id": 206620580,
@@ -49,10 +47,14 @@
         "hero_damage": 21206,
         "tower_damage": 818,
         "hero_healing": 72,
-        "lane": "unknown",
-        "position_guess": null,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "wards_observer": 5,
+        "wards_sentry": 16,
+        "position_guess": 4,
+        "position_confidence": "medium",
+        "position_reason": "off lane + lower farm/economy"
       },
       "goddess": {
         "account_id": 160810596,
@@ -71,13 +73,774 @@
         "hero_damage": 36202,
         "tower_damage": 545,
         "hero_healing": 125,
-        "lane": "unknown",
-        "position_guess": null,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 15,
+        "wards_sentry": 26,
+        "position_guess": 5,
+        "position_confidence": "medium",
+        "position_reason": "safe lane + lower farm/economy"
       },
-      "objectives": [],
-      "teamfights": [],
+      "objectives": [
+        {
+          "time": -4,
+          "type": "CHAT_MESSAGE_FIRSTBLOOD",
+          "key": "2",
+          "slot": 5,
+          "player_slot": 128,
+          "victim_player_slot": 2
+        },
+        {
+          "time": 92,
+          "type": "CHAT_MESSAGE_COURIER_LOST",
+          "team": 3,
+          "value": 25,
+          "killer": 4
+        },
+        {
+          "time": 254,
+          "type": "CHAT_MESSAGE_COURIER_LOST",
+          "team": 2,
+          "value": 35,
+          "killer": 132
+        },
+        {
+          "time": 532,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_night_stalker",
+          "key": "npc_dota_goodguys_tower1_bot",
+          "slot": 8,
+          "player_slot": 131
+        },
+        {
+          "time": 658,
+          "type": "CHAT_MESSAGE_COURIER_LOST",
+          "team": 2,
+          "value": 55,
+          "killer": 131
+        },
+        {
+          "time": 717,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_nevermore",
+          "key": "npc_dota_goodguys_tower1_mid",
+          "slot": 2,
+          "player_slot": 2
+        },
+        {
+          "time": 824,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_mirana",
+          "key": "npc_dota_goodguys_tower1_top",
+          "slot": 9,
+          "player_slot": 132
+        },
+        {
+          "time": 871,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_nevermore",
+          "key": "npc_dota_badguys_tower1_mid",
+          "slot": 2,
+          "player_slot": 2
+        },
+        {
+          "time": 1235,
+          "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+          "team": 3,
+          "slot": 7,
+          "player_slot": 130
+        },
+        {
+          "time": 1268,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_nevermore",
+          "key": "npc_dota_badguys_tower1_top",
+          "slot": 2,
+          "player_slot": 2
+        },
+        {
+          "time": 1574,
+          "type": "CHAT_MESSAGE_ROSHAN_KILL",
+          "team": 3
+        },
+        {
+          "time": 1576,
+          "type": "CHAT_MESSAGE_AEGIS_STOLEN",
+          "slot": 0,
+          "player_slot": 0
+        },
+        {
+          "time": 1868,
+          "type": "building_kill",
+          "unit": "npc_dota_goodguys_siege",
+          "key": "npc_dota_badguys_tower2_top"
+        },
+        {
+          "time": 1871,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_night_stalker",
+          "key": "npc_dota_goodguys_tower2_bot",
+          "slot": 8,
+          "player_slot": 131
+        },
+        {
+          "time": 1977,
+          "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+          "team": 3,
+          "slot": 9,
+          "player_slot": 132
+        },
+        {
+          "time": 2213,
+          "type": "building_kill",
+          "unit": "npc_dota_goodguys_siege",
+          "key": "npc_dota_badguys_tower1_bot"
+        },
+        {
+          "time": 2216,
+          "type": "CHAT_MESSAGE_ROSHAN_KILL",
+          "team": 3
+        },
+        {
+          "time": 2217,
+          "type": "CHAT_MESSAGE_AEGIS",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 2244,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_gyrocopter",
+          "key": "npc_dota_goodguys_tower2_mid",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 2319,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_night_stalker",
+          "key": "npc_dota_goodguys_tower2_top",
+          "slot": 8,
+          "player_slot": 131
+        },
+        {
+          "time": 2340,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_lone_druid",
+          "key": "npc_dota_badguys_tower2_bot",
+          "slot": 4,
+          "player_slot": 4
+        },
+        {
+          "time": 2340,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_dragon_knight",
+          "key": "npc_dota_goodguys_tower3_top",
+          "slot": 6,
+          "player_slot": 129
+        },
+        {
+          "time": 2345,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_night_stalker",
+          "key": "npc_dota_goodguys_range_rax_top",
+          "slot": 8,
+          "player_slot": 131
+        },
+        {
+          "time": 2351,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_gyrocopter",
+          "key": "npc_dota_goodguys_melee_rax_top",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 2452,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_gyrocopter",
+          "key": "npc_dota_goodguys_tower3_bot",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 2459,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_dragon_knight",
+          "key": "npc_dota_goodguys_range_rax_bot",
+          "slot": 6,
+          "player_slot": 129
+        },
+        {
+          "time": 2463,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_gyrocopter",
+          "key": "npc_dota_goodguys_melee_rax_bot",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 2490,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_gyrocopter",
+          "key": "npc_dota_goodguys_tower3_mid",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 2498,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_badguys_ranged",
+          "key": "npc_dota_goodguys_melee_rax_mid"
+        },
+        {
+          "time": 2499,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_gyrocopter",
+          "key": "npc_dota_goodguys_range_rax_mid",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 2692,
+          "type": "CHAT_MESSAGE_COURIER_LOST",
+          "team": 2,
+          "value": 125,
+          "killer": 132
+        },
+        {
+          "time": 2727,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_night_stalker",
+          "key": "npc_dota_goodguys_tower4",
+          "slot": 8,
+          "player_slot": 131
+        },
+        {
+          "time": 2864,
+          "type": "CHAT_MESSAGE_ROSHAN_KILL",
+          "team": 3
+        },
+        {
+          "time": 2865,
+          "type": "CHAT_MESSAGE_AEGIS",
+          "slot": 5,
+          "player_slot": 128
+        },
+        {
+          "time": 2932,
+          "type": "building_kill",
+          "unit": "npc_dota_creep_badguys_flagbearer_upgraded_mega",
+          "key": "npc_dota_goodguys_tower4"
+        },
+        {
+          "time": 2959,
+          "type": "building_kill",
+          "unit": "npc_dota_hero_gyrocopter",
+          "key": "npc_dota_goodguys_fort",
+          "slot": 5,
+          "player_slot": 128
+        }
+      ],
+      "teamfights": [
+        {
+          "start": 77,
+          "end": 109,
+          "last_death": 94,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 94,
+            "healing": 236,
+            "gold_delta": 34,
+            "xp_delta": 34,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 1
+            },
+            "item_uses": {
+              "tpscroll": 1,
+              "faerie_fire": 1
+            },
+            "deaths_pos": {
+              "152": {
+                "112": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 312,
+            "healing": 77,
+            "gold_delta": 177,
+            "xp_delta": 90,
+            "killed": {
+              "npc_dota_hero_rubick": 1
+            },
+            "ability_uses": {
+              "crystal_maiden_frostbite": 1
+            },
+            "item_uses": {
+              "tpscroll": 1,
+              "magic_stick": 1,
+              "blood_grenade": 1
+            },
+            "deaths_pos": {
+              "82": {
+                "159": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 400,
+          "end": 444,
+          "last_death": 429,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 1041,
+            "healing": 135,
+            "gold_delta": 131,
+            "xp_delta": 443,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 1,
+              "mirana_leap": 1,
+              "mirana_starfall": 2
+            },
+            "item_uses": {
+              "enchanted_mango": 1,
+              "urn_of_shadows": 1
+            },
+            "deaths_pos": {
+              "165": {
+                "86": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 347,
+            "healing": 260,
+            "gold_delta": 46,
+            "xp_delta": 382,
+            "killed": {},
+            "ability_uses": {
+              "crystal_maiden_crystal_nova": 1,
+              "crystal_maiden_frostbite": 1
+            },
+            "item_uses": {
+              "tpscroll": 1,
+              "clarity": 1,
+              "ward_dispenser": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 636,
+          "end": 687,
+          "last_death": 672,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 1020,
+            "healing": 33,
+            "gold_delta": 649,
+            "xp_delta": 566,
+            "killed": {
+              "npc_dota_hero_earthshaker": 1,
+              "npc_dota_hero_nevermore": 1
+            },
+            "ability_uses": {
+              "mirana_arrow": 2,
+              "mirana_invis": 1,
+              "mirana_leap": 2,
+              "mirana_starfall": 2
+            },
+            "item_uses": {
+              "tpscroll": 1,
+              "enchanted_mango": 2,
+              "urn_of_shadows": 2
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 1243,
+            "healing": 386,
+            "gold_delta": 197,
+            "xp_delta": 452,
+            "killed": {},
+            "ability_uses": {
+              "crystal_maiden_crystal_nova": 2,
+              "crystal_maiden_frostbite": 3
+            },
+            "item_uses": {
+              "clarity": 2,
+              "enchanted_mango": 1,
+              "magic_wand": 3
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 989,
+          "end": 1039,
+          "last_death": 1024,
+          "deaths": 4,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 928,
+            "healing": 122,
+            "gold_delta": 493,
+            "xp_delta": 1358,
+            "killed": {
+              "npc_dota_hero_nevermore": 1
+            },
+            "ability_uses": {
+              "mirana_arrow": 2,
+              "mirana_leap": 1,
+              "mirana_invis": 1,
+              "mirana_starfall": 1
+            },
+            "item_uses": {
+              "essence_distiller": 2
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 0,
+            "healing": 0,
+            "gold_delta": 199,
+            "xp_delta": 404,
+            "killed": {},
+            "ability_uses": {
+              "crystal_maiden_crystal_nova": 1
+            },
+            "item_uses": {
+              "ward_sentry": 2,
+              "tpscroll": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 1068,
+          "end": 1104,
+          "last_death": 1089,
+          "deaths": 3,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 568,
+            "healing": 308,
+            "gold_delta": 153,
+            "xp_delta": 408,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 1,
+              "mirana_leap": 2,
+              "ability_lamp_use": 1,
+              "mirana_starfall": 1
+            },
+            "item_uses": {
+              "ward_sentry": 1,
+              "essence_distiller": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 738,
+            "healing": 0,
+            "gold_delta": 2,
+            "xp_delta": 435,
+            "killed": {},
+            "ability_uses": {
+              "crystal_maiden_freezing_field": 1,
+              "crystal_maiden_frostbite": 1
+            },
+            "item_uses": {},
+            "deaths_pos": {
+              "93": {
+                "123": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 1547,
+          "end": 1609,
+          "last_death": 1594,
+          "deaths": 7,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 0,
+            "healing": 31,
+            "gold_delta": 39,
+            "xp_delta": 0,
+            "killed": {},
+            "ability_uses": {
+              "mirana_leap": 2
+            },
+            "item_uses": {
+              "tpscroll": 1,
+              "ward_dispenser": 2,
+              "force_staff": 1
+            },
+            "deaths_pos": {
+              "131": {
+                "96": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 3140,
+            "healing": 423,
+            "gold_delta": 603,
+            "xp_delta": 740,
+            "killed": {
+              "npc_dota_hero_rubick": 1
+            },
+            "ability_uses": {
+              "crystal_maiden_crystal_clone": 1,
+              "crystal_maiden_freezing_field": 1,
+              "crystal_maiden_frostbite": 1
+            },
+            "item_uses": {
+              "great_famango": 1,
+              "blink": 1,
+              "glimmer_cape": 1
+            },
+            "deaths_pos": {
+              "147": {
+                "113": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 2161,
+          "end": 2204,
+          "last_death": 2189,
+          "deaths": 6,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 555,
+            "healing": 350,
+            "gold_delta": 435,
+            "xp_delta": 1938,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 2,
+              "mirana_invis": 1,
+              "mirana_leap": 2
+            },
+            "item_uses": {
+              "boots_of_bearing": 1,
+              "force_staff": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 758,
+            "healing": 17,
+            "gold_delta": 142,
+            "xp_delta": 20,
+            "killed": {},
+            "ability_uses": {
+              "crystal_maiden_freezing_field": 1
+            },
+            "item_uses": {
+              "blink": 1,
+              "glimmer_cape": 1
+            },
+            "deaths_pos": {
+              "152": {
+                "92": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 2450,
+          "end": 2489,
+          "last_death": 2474,
+          "deaths": 5,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 0,
+            "healing": 445,
+            "gold_delta": 688,
+            "xp_delta": 1804,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 1,
+              "mirana_invis": 1,
+              "mirana_leap": 3
+            },
+            "item_uses": {
+              "boots_of_bearing": 1,
+              "force_staff": 1,
+              "glimmer_cape": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 11904,
+            "healing": 176,
+            "gold_delta": 1813,
+            "xp_delta": 3718,
+            "killed": {
+              "npc_dota_hero_rubick": 1,
+              "npc_dota_hero_earthshaker": 1,
+              "npc_dota_lone_druid_bear1": 1
+            },
+            "ability_uses": {
+              "crystal_maiden_crystal_clone": 1,
+              "crystal_maiden_freezing_field": 1,
+              "crystal_maiden_crystal_nova": 2,
+              "crystal_maiden_frostbite": 1
+            },
+            "item_uses": {
+              "black_king_bar": 1,
+              "blink": 1
+            },
+            "deaths_pos": {}
+          }
+        },
+        {
+          "start": 2498,
+          "end": 2574,
+          "last_death": 2559,
+          "deaths": 6,
+          "cyborg": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 191,
+            "healing": 1444,
+            "gold_delta": 326,
+            "xp_delta": 2468,
+            "killed": {},
+            "ability_uses": {
+              "mirana_arrow": 1,
+              "mirana_leap": 3
+            },
+            "item_uses": {
+              "essence_distiller": 1,
+              "boots_of_bearing": 1,
+              "force_staff": 1
+            },
+            "deaths_pos": {
+              "76": {
+                "78": 1
+              }
+            }
+          },
+          "goddess": {
+            "deaths": 1,
+            "buybacks": 0,
+            "damage": 671,
+            "healing": 853,
+            "gold_delta": 1541,
+            "xp_delta": 1057,
+            "killed": {
+              "npc_dota_hero_lone_druid": 1
+            },
+            "ability_uses": {
+              "crystal_maiden_crystal_clone": 3,
+              "crystal_maiden_crystal_nova": 2,
+              "crystal_maiden_frostbite": 2
+            },
+            "item_uses": {
+              "great_famango": 1,
+              "blink": 2,
+              "glimmer_cape": 1
+            },
+            "deaths_pos": {
+              "67": {
+                "136": 1
+              }
+            }
+          }
+        },
+        {
+          "start": 2664,
+          "end": 2706,
+          "last_death": 2691,
+          "deaths": 5,
+          "cyborg": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 1034,
+            "healing": 0,
+            "gold_delta": 882,
+            "xp_delta": 3262,
+            "killed": {
+              "npc_dota_hero_ancient_apparition": 1
+            },
+            "ability_uses": {
+              "mirana_arrow": 1,
+              "mirana_invis": 1,
+              "mirana_leap": 3,
+              "mirana_starfall": 1
+            },
+            "item_uses": {
+              "essence_distiller": 2,
+              "boots_of_bearing": 1,
+              "ward_dispenser": 2,
+              "force_staff": 1
+            },
+            "deaths_pos": {}
+          },
+          "goddess": {
+            "deaths": 0,
+            "buybacks": 0,
+            "damage": 5325,
+            "healing": 138,
+            "gold_delta": 1154,
+            "xp_delta": 1878,
+            "killed": {
+              "npc_dota_hero_earthshaker": 1,
+              "npc_dota_lone_druid_bear1": 1
+            },
+            "ability_uses": {
+              "crystal_maiden_crystal_clone": 1,
+              "crystal_maiden_freezing_field": 1,
+              "crystal_maiden_crystal_nova": 2,
+              "crystal_maiden_frostbite": 1
+            },
+            "item_uses": {
+              "black_king_bar": 1,
+              "blink": 2,
+              "greater_famango": 1
+            },
+            "deaths_pos": {}
+          }
+        }
+      ],
       "team_context": {
         "duo_team": "Dire",
         "radiant_win": false,
@@ -100,8 +863,10 @@
             "hero_damage": 32970,
             "tower_damage": 16891,
             "hero_healing": 0,
-            "lane": "unknown",
-            "stuns": null,
+            "lane_role": 1,
+            "lane": "safe",
+            "is_roaming": false,
+            "stuns": 17.49995,
             "level": 27,
             "item_0": 156,
             "item_1": 0,
@@ -114,8 +879,8 @@
             "backpack_2": 0,
             "aghanims_scepter": 1,
             "aghanims_shard": 0,
-            "buyback_count": null,
-            "teamfight_participation": null
+            "buyback_count": 0,
+            "teamfight_participation": 0.40384614
           },
           {
             "account_id": 147124823,
@@ -135,8 +900,11 @@
             "hero_damage": 42821,
             "tower_damage": 7983,
             "hero_healing": 0,
-            "lane": "unknown",
-            "stuns": null,
+            "lane_role": 2,
+            "lane": "mid",
+            "is_roaming": false,
+            "wards_observer": 2,
+            "stuns": 77.86614,
             "level": 27,
             "item_0": 119,
             "item_1": 98,
@@ -149,8 +917,8 @@
             "backpack_2": 0,
             "aghanims_scepter": 0,
             "aghanims_shard": 1,
-            "buyback_count": null,
-            "teamfight_participation": null
+            "buyback_count": 0,
+            "teamfight_participation": 0.6923077
           },
           {
             "account_id": 160810596,
@@ -170,8 +938,12 @@
             "hero_damage": 36202,
             "tower_damage": 545,
             "hero_healing": 125,
-            "lane": "unknown",
-            "stuns": null,
+            "lane_role": 1,
+            "lane": "safe",
+            "is_roaming": false,
+            "wards_observer": 15,
+            "wards_sentry": 26,
+            "stuns": 72.09948,
             "level": 25,
             "item_0": 214,
             "item_1": 116,
@@ -184,8 +956,8 @@
             "backpack_2": 0,
             "aghanims_scepter": 1,
             "aghanims_shard": 1,
-            "buyback_count": null,
-            "teamfight_participation": null
+            "buyback_count": 0,
+            "teamfight_participation": 0.65384614
           },
           {
             "account_id": 100870287,
@@ -205,8 +977,12 @@
             "hero_damage": 27680,
             "tower_damage": 4549,
             "hero_healing": 0,
-            "lane": "unknown",
-            "stuns": null,
+            "lane_role": 3,
+            "lane": "off",
+            "is_roaming": false,
+            "wards_observer": 1,
+            "wards_sentry": 1,
+            "stuns": 3.2327874,
             "level": 25,
             "item_0": 116,
             "item_1": 50,
@@ -219,8 +995,8 @@
             "backpack_2": 0,
             "aghanims_scepter": 0,
             "aghanims_shard": 1,
-            "buyback_count": null,
-            "teamfight_participation": null
+            "buyback_count": 0,
+            "teamfight_participation": 0.5
           },
           {
             "account_id": 206620580,
@@ -240,8 +1016,12 @@
             "hero_damage": 21206,
             "tower_damage": 818,
             "hero_healing": 72,
-            "lane": "unknown",
-            "stuns": null,
+            "lane_role": 3,
+            "lane": "off",
+            "is_roaming": false,
+            "wards_observer": 5,
+            "wards_sentry": 16,
+            "stuns": 41.133255,
             "level": 24,
             "item_0": 1852,
             "item_1": 102,
@@ -254,8 +1034,8 @@
             "backpack_2": 0,
             "aghanims_scepter": 0,
             "aghanims_shard": 1,
-            "buyback_count": null,
-            "teamfight_participation": null
+            "buyback_count": 1,
+            "teamfight_participation": 0.6923077
           }
         ],
         "enemies": [
@@ -277,8 +1057,10 @@
             "hero_damage": 32573,
             "tower_damage": 137,
             "hero_healing": 0,
-            "lane": "unknown",
-            "stuns": null,
+            "lane_role": 3,
+            "lane": "off",
+            "is_roaming": false,
+            "stuns": 136.29973,
             "level": 25,
             "item_0": 235,
             "item_1": 116,
@@ -291,8 +1073,8 @@
             "backpack_2": 0,
             "aghanims_scepter": 0,
             "aghanims_shard": 1,
-            "buyback_count": null,
-            "teamfight_participation": null
+            "buyback_count": 1,
+            "teamfight_participation": 0.56666666
           },
           {
             "account_id": 912826290,
@@ -312,8 +1094,12 @@
             "hero_damage": 14791,
             "tower_damage": 0,
             "hero_healing": 0,
-            "lane": "unknown",
-            "stuns": null,
+            "lane_role": 3,
+            "lane": "off",
+            "is_roaming": false,
+            "wards_observer": 9,
+            "wards_sentry": 16,
+            "stuns": 76.69957,
             "level": 22,
             "item_0": 218,
             "item_1": 1,
@@ -326,8 +1112,8 @@
             "backpack_2": 0,
             "aghanims_scepter": 0,
             "aghanims_shard": 1,
-            "buyback_count": null,
-            "teamfight_participation": null
+            "buyback_count": 1,
+            "teamfight_participation": 0.6666667
           },
           {
             "account_id": 909344129,
@@ -347,8 +1133,11 @@
             "hero_damage": 30779,
             "tower_damage": 2381,
             "hero_healing": 0,
-            "lane": "unknown",
-            "stuns": null,
+            "lane_role": 2,
+            "lane": "mid",
+            "is_roaming": false,
+            "wards_observer": 2,
+            "stuns": 25.797209,
             "level": 27,
             "item_0": 110,
             "item_1": 29,
@@ -361,8 +1150,8 @@
             "backpack_2": 0,
             "aghanims_scepter": 0,
             "aghanims_shard": 0,
-            "buyback_count": null,
-            "teamfight_participation": null
+            "buyback_count": 1,
+            "teamfight_participation": 0.53333336
           },
           {
             "account_id": 217573586,
@@ -382,8 +1171,12 @@
             "hero_damage": 21058,
             "tower_damage": 103,
             "hero_healing": 0,
-            "lane": "unknown",
-            "stuns": null,
+            "lane_role": 1,
+            "lane": "safe",
+            "is_roaming": false,
+            "wards_observer": 11,
+            "wards_sentry": 26,
+            "stuns": 51.599957,
             "level": 21,
             "item_0": 206,
             "item_1": 36,
@@ -396,8 +1189,8 @@
             "backpack_2": 0,
             "aghanims_scepter": 0,
             "aghanims_shard": 1,
-            "buyback_count": null,
-            "teamfight_participation": null
+            "buyback_count": 2,
+            "teamfight_participation": 0.6
           },
           {
             "account_id": 247653007,
@@ -417,8 +1210,10 @@
             "hero_damage": 32292,
             "tower_damage": 3021,
             "hero_healing": 0,
-            "lane": "unknown",
-            "stuns": null,
+            "lane_role": 1,
+            "lane": "safe",
+            "is_roaming": false,
+            "stuns": 49.10148,
             "level": 22,
             "item_0": 16,
             "item_1": 16,
@@ -431,8 +1226,8 @@
             "backpack_2": 0,
             "aghanims_scepter": 0,
             "aghanims_shard": 0,
-            "buyback_count": null,
-            "teamfight_participation": null
+            "buyback_count": 0,
+            "teamfight_participation": 0.43333334
           }
         ],
         "radiant_heroes": [
@@ -549,12 +1344,2312 @@
         ],
         "draft_note": "For ranked games picks_bans may be absent; use the final 5v5 hero lineups for composition analysis."
       },
-      "team_teamfights": [],
+      "team_teamfights": [
+        {
+          "start": 77,
+          "end": 109,
+          "last_death": 94,
+          "deaths": 3,
+          "players": [
+            {
+              "account_id": 203930661,
+              "personaname": "kolyan",
+              "hero": "Earthshaker",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 220,
+              "healing": 4,
+              "gold_delta": 196,
+              "xp_delta": 268,
+              "killed": {},
+              "ability_uses": {
+                "earthshaker_fissure": 1,
+                "earthshaker_enchant_totem": 1
+              },
+              "item_uses": {}
+            },
+            {
+              "account_id": 912826290,
+              "personaname": "EGADEMON",
+              "hero": "Rubick",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 113,
+              "healing": 119,
+              "gold_delta": 182,
+              "xp_delta": 154,
+              "killed": {
+                "npc_dota_hero_crystal_maiden": 1
+              },
+              "ability_uses": {
+                "rubick_fade_bolt": 1
+              },
+              "item_uses": {}
+            },
+            {
+              "account_id": 909344129,
+              "personaname": "目標近在咫尺",
+              "hero": "Shadow Fiend",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 792,
+              "healing": 112,
+              "gold_delta": 146,
+              "xp_delta": 280,
+              "killed": {},
+              "ability_uses": {
+                "nevermore_shadowraze2": 1,
+                "nevermore_shadowraze3": 1,
+                "nevermore_shadowraze1": 1
+              },
+              "item_uses": {}
+            },
+            {
+              "account_id": 217573586,
+              "personaname": "Оливка Outside",
+              "hero": "Ancient Apparition",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 466,
+              "healing": 277,
+              "gold_delta": 73,
+              "xp_delta": 126,
+              "killed": {},
+              "ability_uses": {},
+              "item_uses": {
+                "magic_stick": 1,
+                "blood_grenade": 1
+              }
+            },
+            {
+              "account_id": 247653007,
+              "personaname": "⭕⃤TobiVor☑",
+              "hero": "Lone Druid",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 185,
+              "healing": 257,
+              "gold_delta": 206,
+              "xp_delta": 126,
+              "killed": {
+                "npc_dota_hero_mirana": 1
+              },
+              "ability_uses": {
+                "lone_druid_entangle": 1
+              },
+              "item_uses": {
+                "tango": 1
+              }
+            },
+            {
+              "account_id": 102773730,
+              "personaname": "ПердобраЗ",
+              "hero": "Gyrocopter",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 709,
+              "healing": 81,
+              "gold_delta": 64,
+              "xp_delta": 267,
+              "killed": {},
+              "ability_uses": {
+                "gyrocopter_rocket_barrage": 2,
+                "gyrocopter_flak_cannon": 1
+              },
+              "item_uses": {}
+            },
+            {
+              "account_id": 147124823,
+              "personaname": "КОНеБАЛ",
+              "hero": "Dragon Knight",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 459,
+              "gold_delta": 124,
+              "xp_delta": 252,
+              "killed": {},
+              "ability_uses": {
+                "dragon_knight_dragon_tail": 1,
+                "dragon_knight_breathe_fire": 1
+              },
+              "item_uses": {
+                "tango": 1
+              }
+            },
+            {
+              "account_id": 160810596,
+              "personaname": "Goddess",
+              "hero": "Crystal Maiden",
+              "team": "Dire",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 312,
+              "healing": 77,
+              "gold_delta": 177,
+              "xp_delta": 90,
+              "killed": {
+                "npc_dota_hero_rubick": 1
+              },
+              "ability_uses": {
+                "crystal_maiden_frostbite": 1
+              },
+              "item_uses": {
+                "tpscroll": 1,
+                "magic_stick": 1,
+                "blood_grenade": 1
+              }
+            },
+            {
+              "account_id": 100870287,
+              "personaname": "Rise~",
+              "hero": "Night Stalker",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 266,
+              "gold_delta": 160,
+              "xp_delta": 274,
+              "killed": {},
+              "ability_uses": {
+                "night_stalker_void": 1
+              },
+              "item_uses": {
+                "quelling_blade": 2
+              }
+            },
+            {
+              "account_id": 206620580,
+              "personaname": "Cyborg",
+              "hero": "Mirana",
+              "team": "Dire",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 94,
+              "healing": 236,
+              "gold_delta": 34,
+              "xp_delta": 34,
+              "killed": {},
+              "ability_uses": {
+                "mirana_arrow": 1
+              },
+              "item_uses": {
+                "tpscroll": 1,
+                "faerie_fire": 1
+              }
+            }
+          ]
+        },
+        {
+          "start": 400,
+          "end": 444,
+          "last_death": 429,
+          "deaths": 3,
+          "players": [
+            {
+              "account_id": 203930661,
+              "personaname": "kolyan",
+              "hero": "Earthshaker",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 328,
+              "healing": 504,
+              "gold_delta": 87,
+              "xp_delta": 379,
+              "killed": {},
+              "ability_uses": {
+                "earthshaker_fissure": 1,
+                "ability_lamp_use": 1
+              },
+              "item_uses": {
+                "soul_ring": 1,
+                "tango": 1,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 912826290,
+              "personaname": "EGADEMON",
+              "hero": "Rubick",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 129,
+              "gold_delta": 152,
+              "xp_delta": 457,
+              "killed": {},
+              "ability_uses": {
+                "rubick_fade_bolt": 1,
+                "ability_lamp_use": 1
+              },
+              "item_uses": {}
+            },
+            {
+              "account_id": 909344129,
+              "personaname": "目標近在咫尺",
+              "hero": "Shadow Fiend",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 187,
+              "gold_delta": 138,
+              "xp_delta": 202,
+              "killed": {},
+              "ability_uses": {
+                "nevermore_shadowraze2": 2,
+                "nevermore_shadowraze3": 1,
+                "nevermore_shadowraze1": 1
+              },
+              "item_uses": {
+                "tpscroll": 1,
+                "madstone_bundle": 1,
+                "bottle": 1
+              }
+            },
+            {
+              "account_id": 217573586,
+              "personaname": "Оливка Outside",
+              "hero": "Ancient Apparition",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 877,
+              "healing": 235,
+              "gold_delta": 270,
+              "xp_delta": 420,
+              "killed": {},
+              "ability_uses": {
+                "ancient_apparition_ice_vortex": 3,
+                "ancient_apparition_cold_feet": 2
+              },
+              "item_uses": {
+                "ward_dispenser": 1,
+                "blood_grenade": 1,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 247653007,
+              "personaname": "⭕⃤TobiVor☑",
+              "hero": "Lone Druid",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 326,
+              "healing": 325,
+              "gold_delta": 91,
+              "xp_delta": 483,
+              "killed": {},
+              "ability_uses": {
+                "lone_druid_entangle": 1,
+                "lone_druid_spirit_bear": 1
+              },
+              "item_uses": {
+                "tpscroll": 1,
+                "tango": 1,
+                "branches": 1,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 102773730,
+              "personaname": "ПердобраЗ",
+              "hero": "Gyrocopter",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 168,
+              "healing": 162,
+              "gold_delta": 245,
+              "xp_delta": 353,
+              "killed": {},
+              "ability_uses": {
+                "gyrocopter_flak_cannon": 1
+              },
+              "item_uses": {
+                "tango": 1,
+                "branches": 1
+              }
+            },
+            {
+              "account_id": 147124823,
+              "personaname": "КОНеБАЛ",
+              "hero": "Dragon Knight",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 18,
+              "healing": 348,
+              "gold_delta": 126,
+              "xp_delta": 271,
+              "killed": {},
+              "ability_uses": {},
+              "item_uses": {
+                "tpscroll": 1,
+                "ward_observer": 1
+              }
+            },
+            {
+              "account_id": 160810596,
+              "personaname": "Goddess",
+              "hero": "Crystal Maiden",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 347,
+              "healing": 260,
+              "gold_delta": 46,
+              "xp_delta": 382,
+              "killed": {},
+              "ability_uses": {
+                "crystal_maiden_crystal_nova": 1,
+                "crystal_maiden_frostbite": 1
+              },
+              "item_uses": {
+                "tpscroll": 1,
+                "clarity": 1,
+                "ward_dispenser": 1
+              }
+            },
+            {
+              "account_id": 100870287,
+              "personaname": "Rise~",
+              "hero": "Night Stalker",
+              "team": "Dire",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 663,
+              "healing": 352,
+              "gold_delta": 293,
+              "xp_delta": 243,
+              "killed": {
+                "npc_dota_hero_lone_druid": 1
+              },
+              "ability_uses": {
+                "night_stalker_void": 2,
+                "night_stalker_midnight_feast": 1,
+                "night_stalker_crippling_fear": 1
+              },
+              "item_uses": {
+                "phase_boots": 3
+              }
+            },
+            {
+              "account_id": 206620580,
+              "personaname": "Cyborg",
+              "hero": "Mirana",
+              "team": "Dire",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 1041,
+              "healing": 135,
+              "gold_delta": 131,
+              "xp_delta": 443,
+              "killed": {},
+              "ability_uses": {
+                "mirana_arrow": 1,
+                "mirana_leap": 1,
+                "mirana_starfall": 2
+              },
+              "item_uses": {
+                "enchanted_mango": 1,
+                "urn_of_shadows": 1
+              }
+            }
+          ]
+        },
+        {
+          "start": 636,
+          "end": 687,
+          "last_death": 672,
+          "deaths": 3,
+          "players": [
+            {
+              "account_id": 203930661,
+              "personaname": "kolyan",
+              "hero": "Earthshaker",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 1027,
+              "healing": 365,
+              "gold_delta": -16,
+              "xp_delta": 276,
+              "killed": {},
+              "ability_uses": {
+                "earthshaker_fissure": 2,
+                "earthshaker_enchant_totem": 2
+              },
+              "item_uses": {
+                "tpscroll": 1,
+                "magic_wand": 2
+              }
+            },
+            {
+              "account_id": 912826290,
+              "personaname": "EGADEMON",
+              "hero": "Rubick",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 916,
+              "healing": 364,
+              "gold_delta": 92,
+              "xp_delta": 364,
+              "killed": {},
+              "ability_uses": {
+                "rubick_spell_steal": 2,
+                "rubick_fade_bolt": 2,
+                "rubick_telekinesis": 1,
+                "gyrocopter_flak_cannon": 1,
+                "rubick_telekinesis_land": 3,
+                "crystal_maiden_frostbite": 1
+              },
+              "item_uses": {
+                "tango": 1,
+                "blood_grenade": 1,
+                "magic_wand": 3
+              }
+            },
+            {
+              "account_id": 909344129,
+              "personaname": "目標近在咫尺",
+              "hero": "Shadow Fiend",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 904,
+              "healing": 16,
+              "gold_delta": 165,
+              "xp_delta": 232,
+              "killed": {
+                "npc_dota_hero_gyrocopter": 1
+              },
+              "ability_uses": {
+                "nevermore_shadowraze2": 1,
+                "nevermore_shadowraze1": 1,
+                "nevermore_requiem": 1
+              },
+              "item_uses": {
+                "cyclone": 1
+              }
+            },
+            {
+              "account_id": 217573586,
+              "personaname": "Оливка Outside",
+              "hero": "Ancient Apparition",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 325,
+              "healing": 12,
+              "gold_delta": 0,
+              "xp_delta": 0,
+              "killed": {},
+              "ability_uses": {
+                "ancient_apparition_ice_vortex": 2,
+                "ancient_apparition_cold_feet": 1
+              },
+              "item_uses": {}
+            },
+            {
+              "account_id": 247653007,
+              "personaname": "⭕⃤TobiVor☑",
+              "hero": "Lone Druid",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 397,
+              "healing": 186,
+              "gold_delta": 36,
+              "xp_delta": 165,
+              "killed": {},
+              "ability_uses": {
+                "lone_druid_entangle": 1,
+                "lone_druid_true_form": 1,
+                "twin_gate_portal_warp": 1
+              },
+              "item_uses": {
+                "madstone_bundle": 1,
+                "phase_boots": 4,
+                "magic_wand": 2
+              }
+            },
+            {
+              "account_id": 102773730,
+              "personaname": "ПердобраЗ",
+              "hero": "Gyrocopter",
+              "team": "Dire",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 941,
+              "healing": 149,
+              "gold_delta": 5,
+              "xp_delta": 0,
+              "killed": {},
+              "ability_uses": {
+                "gyrocopter_rocket_barrage": 1,
+                "gyrocopter_flak_cannon": 1
+              },
+              "item_uses": {
+                "tpscroll": 1,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 147124823,
+              "personaname": "КОНеБАЛ",
+              "hero": "Dragon Knight",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 1596,
+              "healing": 756,
+              "gold_delta": 197,
+              "xp_delta": 509,
+              "killed": {},
+              "ability_uses": {
+                "dragon_knight_dragon_tail": 2,
+                "dragon_knight_breathe_fire": 2
+              },
+              "item_uses": {
+                "power_treads": 3,
+                "soul_ring": 1
+              }
+            },
+            {
+              "account_id": 160810596,
+              "personaname": "Goddess",
+              "hero": "Crystal Maiden",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 1243,
+              "healing": 386,
+              "gold_delta": 197,
+              "xp_delta": 452,
+              "killed": {},
+              "ability_uses": {
+                "crystal_maiden_crystal_nova": 2,
+                "crystal_maiden_frostbite": 3
+              },
+              "item_uses": {
+                "clarity": 2,
+                "enchanted_mango": 1,
+                "magic_wand": 3
+              }
+            },
+            {
+              "account_id": 100870287,
+              "personaname": "Rise~",
+              "hero": "Night Stalker",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 819,
+              "healing": 73,
+              "gold_delta": 55,
+              "xp_delta": 114,
+              "killed": {},
+              "ability_uses": {
+                "night_stalker_void": 2,
+                "night_stalker_darkness": 1,
+                "twin_gate_portal_warp": 1,
+                "night_stalker_crippling_fear": 2
+              },
+              "item_uses": {
+                "ward_observer": 1,
+                "phase_boots": 5
+              }
+            },
+            {
+              "account_id": 206620580,
+              "personaname": "Cyborg",
+              "hero": "Mirana",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 1020,
+              "healing": 33,
+              "gold_delta": 649,
+              "xp_delta": 566,
+              "killed": {
+                "npc_dota_hero_earthshaker": 1,
+                "npc_dota_hero_nevermore": 1
+              },
+              "ability_uses": {
+                "mirana_arrow": 2,
+                "mirana_invis": 1,
+                "mirana_leap": 2,
+                "mirana_starfall": 2
+              },
+              "item_uses": {
+                "tpscroll": 1,
+                "enchanted_mango": 2,
+                "urn_of_shadows": 2
+              }
+            }
+          ]
+        },
+        {
+          "start": 989,
+          "end": 1039,
+          "last_death": 1024,
+          "deaths": 4,
+          "players": [
+            {
+              "account_id": 203930661,
+              "personaname": "kolyan",
+              "hero": "Earthshaker",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 1005,
+              "healing": 893,
+              "gold_delta": 96,
+              "xp_delta": 632,
+              "killed": {},
+              "ability_uses": {
+                "earthshaker_fissure": 2,
+                "earthshaker_enchant_totem": 2
+              },
+              "item_uses": {
+                "blink": 2,
+                "magic_wand": 2
+              }
+            },
+            {
+              "account_id": 912826290,
+              "personaname": "EGADEMON",
+              "hero": "Rubick",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 969,
+              "healing": 42,
+              "gold_delta": 522,
+              "xp_delta": 692,
+              "killed": {
+                "npc_dota_hero_dragon_knight": 1
+              },
+              "ability_uses": {
+                "rubick_spell_steal": 1,
+                "dragon_knight_dragon_tail": 2,
+                "rubick_fade_bolt": 3,
+                "rubick_telekinesis": 1,
+                "rubick_telekinesis_land": 2
+              },
+              "item_uses": {
+                "arcane_boots": 1
+              }
+            },
+            {
+              "account_id": 909344129,
+              "personaname": "目標近在咫尺",
+              "hero": "Shadow Fiend",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 580,
+              "healing": 53,
+              "gold_delta": -3,
+              "xp_delta": 33,
+              "killed": {},
+              "ability_uses": {},
+              "item_uses": {
+                "blink": 1,
+                "cyclone": 1
+              }
+            },
+            {
+              "account_id": 217573586,
+              "personaname": "Оливка Outside",
+              "hero": "Ancient Apparition",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 815,
+              "healing": 537,
+              "gold_delta": 2,
+              "xp_delta": 632,
+              "killed": {},
+              "ability_uses": {
+                "ancient_apparition_ice_blast": 1,
+                "ancient_apparition_ice_vortex": 3,
+                "ancient_apparition_ice_blast_release": 1,
+                "ancient_apparition_cold_feet": 1
+              },
+              "item_uses": {
+                "great_famango": 1,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 247653007,
+              "personaname": "⭕⃤TobiVor☑",
+              "hero": "Lone Druid",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 1220,
+              "gold_delta": 425,
+              "xp_delta": 881,
+              "killed": {},
+              "ability_uses": {
+                "lone_druid_entangle": 1,
+                "lone_druid_true_form": 1
+              },
+              "item_uses": {
+                "madstone_bundle": 2,
+                "phase_boots": 1
+              }
+            },
+            {
+              "account_id": 102773730,
+              "personaname": "ПердобраЗ",
+              "hero": "Gyrocopter",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 122,
+              "gold_delta": 509,
+              "xp_delta": 1057,
+              "killed": {},
+              "ability_uses": {
+                "gyrocopter_rocket_barrage": 4,
+                "gyrocopter_call_down": 1,
+                "gyrocopter_flak_cannon": 2
+              },
+              "item_uses": {
+                "madstone_bundle": 1
+              }
+            },
+            {
+              "account_id": 147124823,
+              "personaname": "КОНеБАЛ",
+              "hero": "Dragon Knight",
+              "team": "Dire",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 1230,
+              "healing": 188,
+              "gold_delta": 130,
+              "xp_delta": 396,
+              "killed": {},
+              "ability_uses": {
+                "dragon_knight_elder_dragon_form": 1,
+                "dragon_knight_dragon_tail": 1,
+                "dragon_knight_breathe_fire": 1
+              },
+              "item_uses": {
+                "madstone_bundle": 1,
+                "blink": 1
+              }
+            },
+            {
+              "account_id": 160810596,
+              "personaname": "Goddess",
+              "hero": "Crystal Maiden",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 0,
+              "gold_delta": 199,
+              "xp_delta": 404,
+              "killed": {},
+              "ability_uses": {
+                "crystal_maiden_crystal_nova": 1
+              },
+              "item_uses": {
+                "ward_sentry": 2,
+                "tpscroll": 1
+              }
+            },
+            {
+              "account_id": 100870287,
+              "personaname": "Rise~",
+              "hero": "Night Stalker",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 2406,
+              "healing": 668,
+              "gold_delta": 941,
+              "xp_delta": 1389,
+              "killed": {
+                "npc_dota_hero_rubick": 1,
+                "npc_dota_hero_ancient_apparition": 1
+              },
+              "ability_uses": {
+                "night_stalker_void": 3,
+                "night_stalker_darkness": 1,
+                "night_stalker_midnight_feast": 1,
+                "night_stalker_crippling_fear": 1
+              },
+              "item_uses": {
+                "phase_boots": 5
+              }
+            },
+            {
+              "account_id": 206620580,
+              "personaname": "Cyborg",
+              "hero": "Mirana",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 928,
+              "healing": 122,
+              "gold_delta": 493,
+              "xp_delta": 1358,
+              "killed": {
+                "npc_dota_hero_nevermore": 1
+              },
+              "ability_uses": {
+                "mirana_arrow": 2,
+                "mirana_leap": 1,
+                "mirana_invis": 1,
+                "mirana_starfall": 1
+              },
+              "item_uses": {
+                "essence_distiller": 2
+              }
+            }
+          ]
+        },
+        {
+          "start": 1068,
+          "end": 1104,
+          "last_death": 1089,
+          "deaths": 3,
+          "players": [
+            {
+              "account_id": 203930661,
+              "personaname": "kolyan",
+              "hero": "Earthshaker",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 2400,
+              "healing": 90,
+              "gold_delta": 437,
+              "xp_delta": 927,
+              "killed": {
+                "npc_dota_hero_crystal_maiden": 1
+              },
+              "ability_uses": {
+                "earthshaker_fissure": 1,
+                "earthshaker_echo_slam": 1,
+                "earthshaker_enchant_totem": 2
+              },
+              "item_uses": {
+                "soul_ring": 1,
+                "blink": 1,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 912826290,
+              "personaname": "EGADEMON",
+              "hero": "Rubick",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 63,
+              "gold_delta": 0,
+              "xp_delta": 0,
+              "killed": {},
+              "ability_uses": {
+                "rubick_spell_steal": 1
+              },
+              "item_uses": {
+                "arcane_boots": 1,
+                "tpscroll": 1
+              }
+            },
+            {
+              "account_id": 909344129,
+              "personaname": "目標近在咫尺",
+              "hero": "Shadow Fiend",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 641,
+              "gold_delta": 533,
+              "xp_delta": 870,
+              "killed": {},
+              "ability_uses": {
+                "nevermore_shadowraze2": 2,
+                "nevermore_shadowraze3": 1,
+                "nevermore_shadowraze1": 2
+              },
+              "item_uses": {
+                "madstone_bundle": 1,
+                "blink": 1,
+                "bottle": 1,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 217573586,
+              "personaname": "Оливка Outside",
+              "hero": "Ancient Apparition",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 336,
+              "healing": 0,
+              "gold_delta": 126,
+              "xp_delta": 57,
+              "killed": {},
+              "ability_uses": {
+                "ancient_apparition_ice_blast": 1,
+                "ancient_apparition_ice_blast_release": 1,
+                "ancient_apparition_ice_vortex": 1
+              },
+              "item_uses": {}
+            },
+            {
+              "account_id": 247653007,
+              "personaname": "⭕⃤TobiVor☑",
+              "hero": "Lone Druid",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 42,
+              "healing": 0,
+              "gold_delta": 866,
+              "xp_delta": 57,
+              "killed": {},
+              "ability_uses": {
+                "lone_druid_true_form": 1
+              },
+              "item_uses": {
+                "phase_boots": 1
+              }
+            },
+            {
+              "account_id": 102773730,
+              "personaname": "ПердобраЗ",
+              "hero": "Gyrocopter",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 425,
+              "gold_delta": 426,
+              "xp_delta": 732,
+              "killed": {},
+              "ability_uses": {
+                "gyrocopter_rocket_barrage": 1,
+                "gyrocopter_flak_cannon": 1
+              },
+              "item_uses": {
+                "madstone_bundle": 4,
+                "tango": 2,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 147124823,
+              "personaname": "КОНеБАЛ",
+              "hero": "Dragon Knight",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 1472,
+              "healing": 0,
+              "gold_delta": 87,
+              "xp_delta": 30,
+              "killed": {},
+              "ability_uses": {
+                "dragon_knight_dragon_tail": 1,
+                "dragon_knight_fireball": 1,
+                "dragon_knight_breathe_fire": 2
+              },
+              "item_uses": {
+                "soul_ring": 1,
+                "blink": 1
+              }
+            },
+            {
+              "account_id": 160810596,
+              "personaname": "Goddess",
+              "hero": "Crystal Maiden",
+              "team": "Dire",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 738,
+              "healing": 0,
+              "gold_delta": 2,
+              "xp_delta": 435,
+              "killed": {},
+              "ability_uses": {
+                "crystal_maiden_freezing_field": 1,
+                "crystal_maiden_frostbite": 1
+              },
+              "item_uses": {}
+            },
+            {
+              "account_id": 100870287,
+              "personaname": "Rise~",
+              "hero": "Night Stalker",
+              "team": "Dire",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 570,
+              "healing": 299,
+              "gold_delta": 141,
+              "xp_delta": 378,
+              "killed": {
+                "npc_dota_hero_lone_druid": 1
+              },
+              "ability_uses": {
+                "night_stalker_void": 1,
+                "night_stalker_crippling_fear": 1
+              },
+              "item_uses": {
+                "phase_boots": 3,
+                "medallion_of_courage": 1
+              }
+            },
+            {
+              "account_id": 206620580,
+              "personaname": "Cyborg",
+              "hero": "Mirana",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 568,
+              "healing": 308,
+              "gold_delta": 153,
+              "xp_delta": 408,
+              "killed": {},
+              "ability_uses": {
+                "mirana_arrow": 1,
+                "mirana_leap": 2,
+                "ability_lamp_use": 1,
+                "mirana_starfall": 1
+              },
+              "item_uses": {
+                "ward_sentry": 1,
+                "essence_distiller": 1
+              }
+            }
+          ]
+        },
+        {
+          "start": 1547,
+          "end": 1609,
+          "last_death": 1594,
+          "deaths": 7,
+          "players": [
+            {
+              "account_id": 203930661,
+              "personaname": "kolyan",
+              "hero": "Earthshaker",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 1783,
+              "healing": 173,
+              "gold_delta": 69,
+              "xp_delta": 1582,
+              "killed": {},
+              "ability_uses": {
+                "earthshaker_fissure": 2,
+                "earthshaker_echo_slam": 1,
+                "earthshaker_enchant_totem": 3
+              },
+              "item_uses": {
+                "blink": 2,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 912826290,
+              "personaname": "EGADEMON",
+              "hero": "Rubick",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 446,
+              "healing": 120,
+              "gold_delta": -160,
+              "xp_delta": 110,
+              "killed": {},
+              "ability_uses": {
+                "rubick_spell_steal": 1,
+                "rubick_fade_bolt": 1,
+                "rubick_telekinesis": 1
+              },
+              "item_uses": {
+                "arcane_boots": 1,
+                "ward_observer": 1,
+                "smoke_of_deceit": 1,
+                "pogo_stick": 1,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 909344129,
+              "personaname": "目標近在咫尺",
+              "hero": "Shadow Fiend",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 1738,
+              "healing": 135,
+              "gold_delta": 113,
+              "xp_delta": 841,
+              "killed": {
+                "npc_dota_hero_mirana": 1
+              },
+              "ability_uses": {
+                "nevermore_shadowraze2": 1,
+                "nevermore_shadowraze3": 1,
+                "nevermore_shadowraze1": 1,
+                "nevermore_requiem": 1
+              },
+              "item_uses": {
+                "black_king_bar": 1,
+                "mana_draught": 1,
+                "blink": 1,
+                "cyclone": 1,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 217573586,
+              "personaname": "Оливка Outside",
+              "hero": "Ancient Apparition",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 388,
+              "healing": 16,
+              "gold_delta": -7,
+              "xp_delta": 57,
+              "killed": {},
+              "ability_uses": {
+                "ancient_apparition_ice_blast": 1,
+                "ancient_apparition_ice_blast_release": 1,
+                "ancient_apparition_ice_vortex": 1,
+                "ancient_apparition_cold_feet": 1
+              },
+              "item_uses": {
+                "rod_of_atos": 1
+              }
+            },
+            {
+              "account_id": 247653007,
+              "personaname": "⭕⃤TobiVor☑",
+              "hero": "Lone Druid",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 4372,
+              "healing": 1503,
+              "gold_delta": 422,
+              "xp_delta": 1273,
+              "killed": {
+                "npc_dota_hero_crystal_maiden": 1
+              },
+              "ability_uses": {
+                "lone_druid_savage_roar": 1,
+                "lone_druid_entangle": 1,
+                "lone_druid_true_form": 1
+              },
+              "item_uses": {
+                "madstone_bundle": 1,
+                "mjollnir": 1,
+                "phase_boots": 3,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 102773730,
+              "personaname": "ПердобраЗ",
+              "hero": "Gyrocopter",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 6175,
+              "healing": 1238,
+              "gold_delta": 1309,
+              "xp_delta": 3072,
+              "killed": {
+                "npc_dota_hero_ancient_apparition": 1
+              },
+              "ability_uses": {
+                "gyrocopter_rocket_barrage": 6,
+                "gyrocopter_call_down": 1,
+                "gyrocopter_flak_cannon": 2,
+                "gyrocopter_homing_missile": 3
+              },
+              "item_uses": {
+                "black_king_bar": 1,
+                "famango": 2
+              }
+            },
+            {
+              "account_id": 147124823,
+              "personaname": "КОНеБАЛ",
+              "hero": "Dragon Knight",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 3844,
+              "healing": 1237,
+              "gold_delta": 1293,
+              "xp_delta": 3578,
+              "killed": {
+                "npc_dota_hero_lone_druid": 1,
+                "npc_dota_hero_nevermore": 1
+              },
+              "ability_uses": {
+                "dragon_knight_dragon_tail": 2,
+                "dragon_knight_fireball": 2,
+                "dragon_knight_breathe_fire": 4
+              },
+              "item_uses": {
+                "black_king_bar": 1,
+                "blink": 2
+              }
+            },
+            {
+              "account_id": 160810596,
+              "personaname": "Goddess",
+              "hero": "Crystal Maiden",
+              "team": "Dire",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 3140,
+              "healing": 423,
+              "gold_delta": 603,
+              "xp_delta": 740,
+              "killed": {
+                "npc_dota_hero_rubick": 1
+              },
+              "ability_uses": {
+                "crystal_maiden_crystal_clone": 1,
+                "crystal_maiden_freezing_field": 1,
+                "crystal_maiden_frostbite": 1
+              },
+              "item_uses": {
+                "great_famango": 1,
+                "blink": 1,
+                "glimmer_cape": 1
+              }
+            },
+            {
+              "account_id": 100870287,
+              "personaname": "Rise~",
+              "hero": "Night Stalker",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 2314,
+              "healing": 2160,
+              "gold_delta": 818,
+              "xp_delta": 2233,
+              "killed": {
+                "npc_dota_hero_earthshaker": 1
+              },
+              "ability_uses": {
+                "night_stalker_void": 4,
+                "night_stalker_midnight_feast": 1,
+                "night_stalker_crippling_fear": 2
+              },
+              "item_uses": {
+                "famango": 1,
+                "phase_boots": 5,
+                "blink": 2,
+                "medallion_of_courage": 2,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 206620580,
+              "personaname": "Cyborg",
+              "hero": "Mirana",
+              "team": "Dire",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 31,
+              "gold_delta": 39,
+              "xp_delta": 0,
+              "killed": {},
+              "ability_uses": {
+                "mirana_leap": 2
+              },
+              "item_uses": {
+                "tpscroll": 1,
+                "ward_dispenser": 2,
+                "force_staff": 1
+              }
+            }
+          ]
+        },
+        {
+          "start": 2161,
+          "end": 2204,
+          "last_death": 2189,
+          "deaths": 6,
+          "players": [
+            {
+              "account_id": 203930661,
+              "personaname": "kolyan",
+              "hero": "Earthshaker",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 0,
+              "gold_delta": -176,
+              "xp_delta": 576,
+              "killed": {},
+              "ability_uses": {},
+              "item_uses": {}
+            },
+            {
+              "account_id": 912826290,
+              "personaname": "EGADEMON",
+              "hero": "Rubick",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 473,
+              "healing": 207,
+              "gold_delta": -20,
+              "xp_delta": 589,
+              "killed": {},
+              "ability_uses": {
+                "rubick_spell_steal": 1,
+                "rubick_telekinesis": 2,
+                "rubick_fade_bolt": 1,
+                "dragon_knight_breathe_fire": 1,
+                "rubick_telekinesis_land": 3
+              },
+              "item_uses": {
+                "arcane_boots": 1,
+                "psychic_headband": 1,
+                "blink": 1,
+                "force_staff": 1,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 909344129,
+              "personaname": "目標近在咫尺",
+              "hero": "Shadow Fiend",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 4734,
+              "healing": 341,
+              "gold_delta": -180,
+              "xp_delta": 589,
+              "killed": {},
+              "ability_uses": {
+                "nevermore_frenzy": 1,
+                "nevermore_shadowraze2": 1,
+                "nevermore_shadowraze1": 1,
+                "nevermore_requiem": 1
+              },
+              "item_uses": {
+                "black_king_bar": 1,
+                "bottle": 2,
+                "blink": 1
+              }
+            },
+            {
+              "account_id": 217573586,
+              "personaname": "Оливка Outside",
+              "hero": "Ancient Apparition",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 199,
+              "healing": 445,
+              "gold_delta": 70,
+              "xp_delta": 20,
+              "killed": {},
+              "ability_uses": {
+                "ancient_apparition_ice_vortex": 1,
+                "ancient_apparition_cold_feet": 1
+              },
+              "item_uses": {
+                "rod_of_atos": 1,
+                "great_famango": 1,
+                "ward_dispenser": 2,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 247653007,
+              "personaname": "⭕⃤TobiVor☑",
+              "hero": "Lone Druid",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 4171,
+              "healing": 1187,
+              "gold_delta": 728,
+              "xp_delta": 925,
+              "killed": {
+                "npc_dota_hero_crystal_maiden": 1
+              },
+              "ability_uses": {
+                "lone_druid_entangle": 2,
+                "lone_druid_spirit_bear": 1
+              },
+              "item_uses": {
+                "madstone_bundle": 2
+              }
+            },
+            {
+              "account_id": 102773730,
+              "personaname": "ПердобраЗ",
+              "hero": "Gyrocopter",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 4709,
+              "healing": 1683,
+              "gold_delta": 584,
+              "xp_delta": 2024,
+              "killed": {
+                "npc_dota_hero_rubick": 1
+              },
+              "ability_uses": {
+                "gyrocopter_rocket_barrage": 2,
+                "gyrocopter_flak_cannon": 1,
+                "gyrocopter_homing_missile": 3
+              },
+              "item_uses": {
+                "madstone_bundle": 1
+              }
+            },
+            {
+              "account_id": 147124823,
+              "personaname": "КОНеБАЛ",
+              "hero": "Dragon Knight",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 3605,
+              "healing": 1040,
+              "gold_delta": 1169,
+              "xp_delta": 3615,
+              "killed": {
+                "npc_dota_hero_earthshaker": 1,
+                "npc_dota_lone_druid_bear1": 1
+              },
+              "ability_uses": {
+                "dragon_knight_elder_dragon_form": 1,
+                "dragon_knight_dragon_tail": 2,
+                "dragon_knight_fireball": 1,
+                "dragon_knight_breathe_fire": 4
+              },
+              "item_uses": {
+                "black_king_bar": 1,
+                "soul_ring": 1,
+                "blink": 2,
+                "orchid": 1
+              }
+            },
+            {
+              "account_id": 160810596,
+              "personaname": "Goddess",
+              "hero": "Crystal Maiden",
+              "team": "Dire",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 758,
+              "healing": 17,
+              "gold_delta": 142,
+              "xp_delta": 20,
+              "killed": {},
+              "ability_uses": {
+                "crystal_maiden_freezing_field": 1
+              },
+              "item_uses": {
+                "blink": 1,
+                "glimmer_cape": 1
+              }
+            },
+            {
+              "account_id": 100870287,
+              "personaname": "Rise~",
+              "hero": "Night Stalker",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 4683,
+              "healing": 2177,
+              "gold_delta": 1061,
+              "xp_delta": 3457,
+              "killed": {
+                "npc_dota_hero_nevermore": 1,
+                "npc_dota_hero_ancient_apparition": 1
+              },
+              "ability_uses": {
+                "night_stalker_void": 4,
+                "night_stalker_darkness": 1,
+                "night_stalker_midnight_feast": 1,
+                "night_stalker_crippling_fear": 2
+              },
+              "item_uses": {
+                "black_king_bar": 1,
+                "phase_boots": 3,
+                "blink": 1,
+                "harpoon": 2,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 206620580,
+              "personaname": "Cyborg",
+              "hero": "Mirana",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 555,
+              "healing": 350,
+              "gold_delta": 435,
+              "xp_delta": 1938,
+              "killed": {},
+              "ability_uses": {
+                "mirana_arrow": 2,
+                "mirana_invis": 1,
+                "mirana_leap": 2
+              },
+              "item_uses": {
+                "boots_of_bearing": 1,
+                "force_staff": 1
+              }
+            }
+          ]
+        },
+        {
+          "start": 2450,
+          "end": 2489,
+          "last_death": 2474,
+          "deaths": 5,
+          "players": [
+            {
+              "account_id": 203930661,
+              "personaname": "kolyan",
+              "hero": "Earthshaker",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 7388,
+              "healing": 13,
+              "gold_delta": 622,
+              "xp_delta": 2217,
+              "killed": {
+                "npc_dota_hero_night_stalker": 1
+              },
+              "ability_uses": {
+                "earthshaker_fissure": 2,
+                "earthshaker_echo_slam": 1,
+                "earthshaker_enchant_totem": 3
+              },
+              "item_uses": {
+                "blink": 1
+              }
+            },
+            {
+              "account_id": 912826290,
+              "personaname": "EGADEMON",
+              "hero": "Rubick",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 86,
+              "healing": 7,
+              "gold_delta": -250,
+              "xp_delta": 99,
+              "killed": {},
+              "ability_uses": {
+                "rubick_fade_bolt": 1,
+                "rubick_telekinesis": 1
+              },
+              "item_uses": {
+                "dust": 1
+              }
+            },
+            {
+              "account_id": 909344129,
+              "personaname": "目標近在咫尺",
+              "hero": "Shadow Fiend",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 1995,
+              "healing": 1924,
+              "gold_delta": 620,
+              "xp_delta": 2497,
+              "killed": {},
+              "ability_uses": {
+                "nevermore_frenzy": 1,
+                "nevermore_shadowraze2": 2,
+                "nevermore_shadowraze3": 2,
+                "nevermore_requiem": 1
+              },
+              "item_uses": {
+                "black_king_bar": 1,
+                "blink": 1,
+                "bottle": 1
+              }
+            },
+            {
+              "account_id": 217573586,
+              "personaname": "Оливка Outside",
+              "hero": "Ancient Apparition",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 460,
+              "healing": 123,
+              "gold_delta": 73,
+              "xp_delta": 41,
+              "killed": {},
+              "ability_uses": {
+                "ancient_apparition_ice_blast": 1,
+                "ancient_apparition_ice_vortex": 2,
+                "ancient_apparition_ice_blast_release": 1,
+                "ancient_apparition_cold_feet": 1
+              },
+              "item_uses": {
+                "rod_of_atos": 1,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 247653007,
+              "personaname": "⭕⃤TobiVor☑",
+              "hero": "Lone Druid",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 452,
+              "healing": 61,
+              "gold_delta": 287,
+              "xp_delta": 0,
+              "killed": {},
+              "ability_uses": {
+                "lone_druid_spirit_bear": 1
+              },
+              "item_uses": {}
+            },
+            {
+              "account_id": 102773730,
+              "personaname": "ПердобраЗ",
+              "hero": "Gyrocopter",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 743,
+              "healing": 269,
+              "gold_delta": 1481,
+              "xp_delta": 825,
+              "killed": {
+                "npc_dota_hero_ancient_apparition": 1
+              },
+              "ability_uses": {
+                "gyrocopter_rocket_barrage": 1,
+                "gyrocopter_flak_cannon": 1,
+                "gyrocopter_homing_missile": 1
+              },
+              "item_uses": {
+                "black_king_bar": 1
+              }
+            },
+            {
+              "account_id": 147124823,
+              "personaname": "КОНеБАЛ",
+              "hero": "Dragon Knight",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 201,
+              "healing": 658,
+              "gold_delta": 725,
+              "xp_delta": 2048,
+              "killed": {},
+              "ability_uses": {
+                "dragon_knight_elder_dragon_form": 1,
+                "dragon_knight_breathe_fire": 1
+              },
+              "item_uses": {
+                "blink": 1
+              }
+            },
+            {
+              "account_id": 160810596,
+              "personaname": "Goddess",
+              "hero": "Crystal Maiden",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 11904,
+              "healing": 176,
+              "gold_delta": 1813,
+              "xp_delta": 3718,
+              "killed": {
+                "npc_dota_hero_rubick": 1,
+                "npc_dota_hero_earthshaker": 1,
+                "npc_dota_lone_druid_bear1": 1
+              },
+              "ability_uses": {
+                "crystal_maiden_crystal_clone": 1,
+                "crystal_maiden_freezing_field": 1,
+                "crystal_maiden_crystal_nova": 2,
+                "crystal_maiden_frostbite": 1
+              },
+              "item_uses": {
+                "black_king_bar": 1,
+                "blink": 1
+              }
+            },
+            {
+              "account_id": 100870287,
+              "personaname": "Rise~",
+              "hero": "Night Stalker",
+              "team": "Dire",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 188,
+              "gold_delta": -44,
+              "xp_delta": 98,
+              "killed": {},
+              "ability_uses": {},
+              "item_uses": {
+                "phase_boots": 1
+              }
+            },
+            {
+              "account_id": 206620580,
+              "personaname": "Cyborg",
+              "hero": "Mirana",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 445,
+              "gold_delta": 688,
+              "xp_delta": 1804,
+              "killed": {},
+              "ability_uses": {
+                "mirana_arrow": 1,
+                "mirana_invis": 1,
+                "mirana_leap": 3
+              },
+              "item_uses": {
+                "boots_of_bearing": 1,
+                "force_staff": 1,
+                "glimmer_cape": 1
+              }
+            }
+          ]
+        },
+        {
+          "start": 2498,
+          "end": 2574,
+          "last_death": 2559,
+          "deaths": 6,
+          "players": [
+            {
+              "account_id": 203930661,
+              "personaname": "kolyan",
+              "hero": "Earthshaker",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 86,
+              "gold_delta": 405,
+              "xp_delta": 398,
+              "killed": {},
+              "ability_uses": {
+                "earthshaker_fissure": 2,
+                "earthshaker_enchant_totem": 3
+              },
+              "item_uses": {
+                "blink": 1
+              }
+            },
+            {
+              "account_id": 912826290,
+              "personaname": "EGADEMON",
+              "hero": "Rubick",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 1010,
+              "healing": 228,
+              "gold_delta": 1539,
+              "xp_delta": 7673,
+              "killed": {},
+              "ability_uses": {
+                "mirana_leap": 4,
+                "rubick_spell_steal": 2,
+                "rubick_fade_bolt": 4,
+                "rubick_telekinesis": 4,
+                "rubick_telekinesis_land": 6,
+                "crystal_maiden_frostbite": 2
+              },
+              "item_uses": {
+                "arcane_boots": 1,
+                "dust": 1
+              }
+            },
+            {
+              "account_id": 909344129,
+              "personaname": "目標近在咫尺",
+              "hero": "Shadow Fiend",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 1,
+              "damage": 5007,
+              "healing": 1296,
+              "gold_delta": 2205,
+              "xp_delta": 6187,
+              "killed": {
+                "npc_dota_hero_crystal_maiden": 1
+              },
+              "ability_uses": {
+                "nevermore_frenzy": 1,
+                "nevermore_shadowraze2": 4,
+                "nevermore_shadowraze3": 4,
+                "nevermore_shadowraze1": 4,
+                "nevermore_requiem": 1
+              },
+              "item_uses": {
+                "bottle": 4,
+                "blink": 2
+              }
+            },
+            {
+              "account_id": 217573586,
+              "personaname": "Оливка Outside",
+              "hero": "Ancient Apparition",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 887,
+              "healing": 120,
+              "gold_delta": 1573,
+              "xp_delta": 7457,
+              "killed": {
+                "npc_dota_hero_dragon_knight": 1
+              },
+              "ability_uses": {
+                "ancient_apparition_ice_blast": 1,
+                "ancient_apparition_ice_blast_release": 1,
+                "ancient_apparition_ice_vortex": 4,
+                "ancient_apparition_cold_feet": 1
+              },
+              "item_uses": {
+                "rod_of_atos": 1
+              }
+            },
+            {
+              "account_id": 247653007,
+              "personaname": "⭕⃤TobiVor☑",
+              "hero": "Lone Druid",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 6535,
+              "healing": 1088,
+              "gold_delta": 1831,
+              "xp_delta": 1711,
+              "killed": {
+                "npc_dota_hero_gyrocopter": 1
+              },
+              "ability_uses": {},
+              "item_uses": {
+                "tpscroll": 1,
+                "magic_wand": 1
+              }
+            },
+            {
+              "account_id": 102773730,
+              "personaname": "ПердобраЗ",
+              "hero": "Gyrocopter",
+              "team": "Dire",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 2488,
+              "healing": 1093,
+              "gold_delta": 900,
+              "xp_delta": 2686,
+              "killed": {
+                "npc_dota_hero_nevermore": 1
+              },
+              "ability_uses": {
+                "gyrocopter_rocket_barrage": 2,
+                "gyrocopter_call_down": 1,
+                "gyrocopter_flak_cannon": 1,
+                "gyrocopter_homing_missile": 2
+              },
+              "item_uses": {
+                "satanic": 1
+              }
+            },
+            {
+              "account_id": 147124823,
+              "personaname": "КОНеБАЛ",
+              "hero": "Dragon Knight",
+              "team": "Dire",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 7889,
+              "healing": 800,
+              "gold_delta": 131,
+              "xp_delta": 2468,
+              "killed": {},
+              "ability_uses": {
+                "dragon_knight_dragon_tail": 5,
+                "dragon_knight_fireball": 3,
+                "dragon_knight_breathe_fire": 4
+              },
+              "item_uses": {
+                "black_king_bar": 1,
+                "shivas_guard": 2,
+                "blink": 1,
+                "orchid": 2
+              }
+            },
+            {
+              "account_id": 160810596,
+              "personaname": "Goddess",
+              "hero": "Crystal Maiden",
+              "team": "Dire",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 671,
+              "healing": 853,
+              "gold_delta": 1541,
+              "xp_delta": 1057,
+              "killed": {
+                "npc_dota_hero_lone_druid": 1
+              },
+              "ability_uses": {
+                "crystal_maiden_crystal_clone": 3,
+                "crystal_maiden_crystal_nova": 2,
+                "crystal_maiden_frostbite": 2
+              },
+              "item_uses": {
+                "great_famango": 1,
+                "blink": 2,
+                "glimmer_cape": 1
+              }
+            },
+            {
+              "account_id": 100870287,
+              "personaname": "Rise~",
+              "hero": "Night Stalker",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 226,
+              "gold_delta": 457,
+              "xp_delta": 441,
+              "killed": {},
+              "ability_uses": {
+                "night_stalker_void": 2,
+                "night_stalker_crippling_fear": 1
+              },
+              "item_uses": {
+                "tpscroll": 1,
+                "phase_boots": 1,
+                "blink": 1
+              }
+            },
+            {
+              "account_id": 206620580,
+              "personaname": "Cyborg",
+              "hero": "Mirana",
+              "team": "Dire",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 191,
+              "healing": 1444,
+              "gold_delta": 326,
+              "xp_delta": 2468,
+              "killed": {},
+              "ability_uses": {
+                "mirana_arrow": 1,
+                "mirana_leap": 3
+              },
+              "item_uses": {
+                "essence_distiller": 1,
+                "boots_of_bearing": 1,
+                "force_staff": 1
+              }
+            }
+          ]
+        },
+        {
+          "start": 2664,
+          "end": 2706,
+          "last_death": 2691,
+          "deaths": 5,
+          "players": [
+            {
+              "account_id": 203930661,
+              "personaname": "kolyan",
+              "hero": "Earthshaker",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 644,
+              "healing": 522,
+              "gold_delta": 57,
+              "xp_delta": 2286,
+              "killed": {},
+              "ability_uses": {
+                "earthshaker_echo_slam": 1
+              },
+              "item_uses": {
+                "blink": 1
+              }
+            },
+            {
+              "account_id": 912826290,
+              "personaname": "EGADEMON",
+              "hero": "Rubick",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 454,
+              "gold_delta": -199,
+              "xp_delta": 0,
+              "killed": {},
+              "ability_uses": {},
+              "item_uses": {
+                "blink": 1,
+                "force_staff": 1
+              }
+            },
+            {
+              "account_id": 909344129,
+              "personaname": "目標近在咫尺",
+              "hero": "Shadow Fiend",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 757,
+              "gold_delta": 328,
+              "xp_delta": 172,
+              "killed": {},
+              "ability_uses": {
+                "nevermore_shadowraze2": 2,
+                "nevermore_shadowraze3": 1,
+                "nevermore_shadowraze1": 1
+              },
+              "item_uses": {
+                "clarity": 1,
+                "blink": 1
+              }
+            },
+            {
+              "account_id": 217573586,
+              "personaname": "Оливка Outside",
+              "hero": "Ancient Apparition",
+              "team": "Radiant",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 1363,
+              "healing": 438,
+              "gold_delta": 650,
+              "xp_delta": 2428,
+              "killed": {
+                "npc_dota_hero_gyrocopter": 1
+              },
+              "ability_uses": {
+                "ancient_apparition_ice_blast": 1,
+                "ancient_apparition_ice_blast_release": 1,
+                "ancient_apparition_ice_vortex": 1,
+                "ancient_apparition_cold_feet": 1
+              },
+              "item_uses": {
+                "rod_of_atos": 1,
+                "ward_dispenser": 1,
+                "force_staff": 1
+              }
+            },
+            {
+              "account_id": 247653007,
+              "personaname": "⭕⃤TobiVor☑",
+              "hero": "Lone Druid",
+              "team": "Radiant",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 2391,
+              "healing": 1278,
+              "gold_delta": 796,
+              "xp_delta": 169,
+              "killed": {},
+              "ability_uses": {
+                "lone_druid_entangle": 1,
+                "lone_druid_spirit_bear": 1
+              },
+              "item_uses": {}
+            },
+            {
+              "account_id": 102773730,
+              "personaname": "ПердобраЗ",
+              "hero": "Gyrocopter",
+              "team": "Dire",
+              "deaths": 1,
+              "buybacks": 0,
+              "damage": 0,
+              "healing": 210,
+              "gold_delta": -472,
+              "xp_delta": 199,
+              "killed": {},
+              "ability_uses": {},
+              "item_uses": {}
+            },
+            {
+              "account_id": 147124823,
+              "personaname": "КОНеБАЛ",
+              "hero": "Dragon Knight",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 2226,
+              "healing": 425,
+              "gold_delta": 914,
+              "xp_delta": 3711,
+              "killed": {},
+              "ability_uses": {
+                "dragon_knight_elder_dragon_form": 1,
+                "dragon_knight_dragon_tail": 2,
+                "dragon_knight_fireball": 1,
+                "dragon_knight_breathe_fire": 2
+              },
+              "item_uses": {
+                "blink": 2,
+                "orchid": 1
+              }
+            },
+            {
+              "account_id": 160810596,
+              "personaname": "Goddess",
+              "hero": "Crystal Maiden",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 5325,
+              "healing": 138,
+              "gold_delta": 1154,
+              "xp_delta": 1878,
+              "killed": {
+                "npc_dota_hero_earthshaker": 1,
+                "npc_dota_lone_druid_bear1": 1
+              },
+              "ability_uses": {
+                "crystal_maiden_crystal_clone": 1,
+                "crystal_maiden_freezing_field": 1,
+                "crystal_maiden_crystal_nova": 2,
+                "crystal_maiden_frostbite": 1
+              },
+              "item_uses": {
+                "black_king_bar": 1,
+                "blink": 2,
+                "greater_famango": 1
+              }
+            },
+            {
+              "account_id": 100870287,
+              "personaname": "Rise~",
+              "hero": "Night Stalker",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 2181,
+              "healing": 548,
+              "gold_delta": 1272,
+              "xp_delta": 3437,
+              "killed": {
+                "npc_dota_hero_rubick": 1
+              },
+              "ability_uses": {
+                "night_stalker_void": 3,
+                "night_stalker_darkness": 1,
+                "night_stalker_midnight_feast": 1,
+                "night_stalker_crippling_fear": 1
+              },
+              "item_uses": {
+                "black_king_bar": 1,
+                "phase_boots": 4,
+                "blink": 2,
+                "dust": 1,
+                "harpoon": 1
+              }
+            },
+            {
+              "account_id": 206620580,
+              "personaname": "Cyborg",
+              "hero": "Mirana",
+              "team": "Dire",
+              "deaths": 0,
+              "buybacks": 0,
+              "damage": 1034,
+              "healing": 0,
+              "gold_delta": 882,
+              "xp_delta": 3262,
+              "killed": {
+                "npc_dota_hero_ancient_apparition": 1
+              },
+              "ability_uses": {
+                "mirana_arrow": 1,
+                "mirana_invis": 1,
+                "mirana_leap": 3,
+                "mirana_starfall": 1
+              },
+              "item_uses": {
+                "essence_distiller": 2,
+                "boots_of_bearing": 1,
+                "ward_dispenser": 2,
+                "force_staff": 1
+              }
+            }
+          ]
+        }
+      ],
       "team_analysis_capabilities": {
         "full_lineups": true,
         "all_player_summaries": true,
-        "teamfights_available": false,
-        "objectives_available": false,
+        "teamfights_available": true,
+        "objectives_available": true,
         "picks_bans_available": true
       }
     },
