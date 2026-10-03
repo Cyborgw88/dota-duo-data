@@ -7,8 +7,8 @@
   "lobby_type": 7,
   "game_mode": 22,
   "radiant_win": false,
-  "parsed": false,
-  "parse_version": null,
+  "parsed": true,
+  "parse_version": 22,
   "same_team": true,
   "cyborg": {
     "account_id": 206620580,
@@ -27,10 +27,13 @@
     "hero_damage": 15991,
     "tower_damage": 219,
     "hero_healing": 125,
-    "lane": "unknown",
-    "position_guess": 4,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 3,
+    "lane": "off",
+    "is_roaming": false,
+    "wards_sentry": 2,
+    "position_guess": 3,
+    "position_confidence": "medium",
+    "position_reason": "off lane + higher farm/economy"
   },
   "goddess": {
     "account_id": 160810596,
@@ -49,13 +52,732 @@
     "hero_damage": 7571,
     "tower_damage": 22,
     "hero_healing": 0,
-    "lane": "unknown",
-    "position_guess": null,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 1,
+    "lane": "safe",
+    "is_roaming": false,
+    "wards_observer": 11,
+    "wards_sentry": 17,
+    "position_guess": 5,
+    "position_confidence": "medium",
+    "position_reason": "safe lane + lower farm/economy"
   },
-  "objectives": [],
-  "teamfights": [],
+  "objectives": [
+    {
+      "time": 6,
+      "type": "CHAT_MESSAGE_FIRSTBLOOD",
+      "key": "7",
+      "slot": 1,
+      "player_slot": 1,
+      "victim_player_slot": 130
+    },
+    {
+      "time": 77,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 3,
+      "value": 30,
+      "killer": 3
+    },
+    {
+      "time": 574,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 2,
+      "value": 45,
+      "killer": 129
+    },
+    {
+      "time": 590,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 3,
+      "value": 40,
+      "killer": -1
+    },
+    {
+      "time": 646,
+      "type": "building_kill",
+      "unit": "npc_dota_badguys_siege",
+      "key": "npc_dota_goodguys_tower1_mid"
+    },
+    {
+      "time": 667,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_phantom_lancer",
+      "key": "npc_dota_goodguys_tower1_top",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 857,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_furion",
+      "key": "npc_dota_goodguys_tower1_bot",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 1195,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_furion",
+      "key": "npc_dota_goodguys_tower2_bot",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 1331,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_disruptor",
+      "key": "npc_dota_goodguys_tower2_mid",
+      "slot": 6,
+      "player_slot": 129
+    },
+    {
+      "time": 1389,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_phantom_lancer",
+      "key": "npc_dota_goodguys_tower2_top",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 1548,
+      "type": "building_kill",
+      "unit": "npc_dota_badguys_siege",
+      "key": "npc_dota_goodguys_tower3_mid"
+    },
+    {
+      "time": 1641,
+      "type": "CHAT_MESSAGE_ROSHAN_KILL",
+      "team": 3
+    },
+    {
+      "time": 1641,
+      "type": "CHAT_MESSAGE_AEGIS",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 1709,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_phantom_lancer",
+      "key": "npc_dota_goodguys_range_rax_mid",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 1740,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_phantom_lancer",
+      "key": "npc_dota_goodguys_melee_rax_mid",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 1766,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_furion",
+      "key": "npc_dota_goodguys_tower3_top",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 1776,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_primal_beast",
+      "key": "npc_dota_goodguys_melee_rax_top",
+      "slot": 8,
+      "player_slot": 131
+    },
+    {
+      "time": 1777,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_phantom_lancer",
+      "key": "npc_dota_goodguys_range_rax_top",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 1819,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_disruptor",
+      "key": "npc_dota_goodguys_tower4",
+      "slot": 6,
+      "player_slot": 129
+    },
+    {
+      "time": 1821,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_furion",
+      "key": "npc_dota_goodguys_tower4",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 1846,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_badguys_melee_upgraded",
+      "key": "npc_dota_goodguys_fort"
+    }
+  ],
+  "teamfights": [
+    {
+      "start": 280,
+      "end": 322,
+      "last_death": 307,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 668,
+        "healing": 278,
+        "gold_delta": 73,
+        "xp_delta": 128,
+        "killed": {},
+        "ability_uses": {
+          "razor_plasma_field": 2,
+          "razor_static_link": 1
+        },
+        "item_uses": {
+          "quelling_blade": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "80": {
+            "154": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 0,
+        "gold_delta": 49,
+        "xp_delta": 63,
+        "killed": {},
+        "ability_uses": {},
+        "item_uses": {},
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 412,
+      "end": 475,
+      "last_death": 460,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 160,
+        "gold_delta": 235,
+        "xp_delta": 566,
+        "killed": {},
+        "ability_uses": {
+          "razor_plasma_field": 2,
+          "ability_lamp_use": 1
+        },
+        "item_uses": {},
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 678,
+        "healing": 776,
+        "gold_delta": 119,
+        "xp_delta": 537,
+        "killed": {},
+        "ability_uses": {
+          "lion_voodoo": 1,
+          "lion_impale": 3,
+          "lion_mana_drain": 2
+        },
+        "item_uses": {
+          "famango": 1,
+          "blood_grenade": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 704,
+      "end": 743,
+      "last_death": 728,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 152,
+        "gold_delta": 282,
+        "xp_delta": 585,
+        "killed": {},
+        "ability_uses": {
+          "razor_plasma_field": 2
+        },
+        "item_uses": {
+          "phase_boots": 4
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 415,
+        "healing": 278,
+        "gold_delta": 223,
+        "xp_delta": 825,
+        "killed": {},
+        "ability_uses": {
+          "lion_voodoo": 1,
+          "lion_impale": 1,
+          "lion_mana_drain": 2,
+          "lion_finger_of_death": 1
+        },
+        "item_uses": {
+          "ward_dispenser": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 763,
+      "end": 808,
+      "last_death": 793,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1061,
+        "healing": 468,
+        "gold_delta": 15,
+        "xp_delta": 11,
+        "killed": {},
+        "ability_uses": {
+          "razor_plasma_field": 2,
+          "razor_static_link": 1
+        },
+        "item_uses": {
+          "ward_sentry": 1,
+          "phase_boots": 6,
+          "magic_wand": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 742,
+        "gold_delta": 62,
+        "xp_delta": 90,
+        "killed": {},
+        "ability_uses": {
+          "lion_voodoo": 1,
+          "lion_impale": 1
+        },
+        "item_uses": {
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 966,
+      "end": 997,
+      "last_death": 982,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 5,
+        "gold_delta": 0,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {},
+        "item_uses": {
+          "tpscroll": 1,
+          "phase_boots": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 465,
+        "healing": 85,
+        "gold_delta": 283,
+        "xp_delta": 589,
+        "killed": {
+          "npc_dota_hero_furion": 1
+        },
+        "ability_uses": {
+          "lion_impale": 1,
+          "lion_finger_of_death": 1
+        },
+        "item_uses": {},
+        "deaths_pos": {
+          "108": {
+            "78": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1077,
+      "end": 1124,
+      "last_death": 1109,
+      "deaths": 6,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1789,
+        "healing": 712,
+        "gold_delta": 794,
+        "xp_delta": 1324,
+        "killed": {
+          "npc_dota_hero_phantom_lancer": 1,
+          "npc_dota_hero_furion": 1
+        },
+        "ability_uses": {
+          "razor_plasma_field": 4,
+          "razor_static_link": 1,
+          "razor_eye_of_the_storm": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "phase_boots": 4,
+          "magic_wand": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 764,
+        "healing": 553,
+        "gold_delta": 143,
+        "xp_delta": 620,
+        "killed": {},
+        "ability_uses": {
+          "lion_voodoo": 2,
+          "lion_impale": 2,
+          "lion_mana_drain": 1,
+          "lion_finger_of_death": 1
+        },
+        "item_uses": {
+          "magic_wand": 2
+        },
+        "deaths_pos": {
+          "96": {
+            "154": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1341,
+      "end": 1390,
+      "last_death": 1375,
+      "deaths": 8,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 2006,
+        "healing": 563,
+        "gold_delta": 724,
+        "xp_delta": 4068,
+        "killed": {
+          "npc_dota_hero_disruptor": 1
+        },
+        "ability_uses": {
+          "razor_plasma_field": 3,
+          "razor_static_link": 1,
+          "razor_eye_of_the_storm": 1
+        },
+        "item_uses": {
+          "crimson_guard": 1,
+          "phase_boots": 3,
+          "essence_ring": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "91": {
+            "115": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 97,
+        "gold_delta": -104,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {},
+        "item_uses": {
+          "magic_wand": 1,
+          "glimmer_cape": 1
+        },
+        "deaths_pos": {
+          "80": {
+            "119": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1468,
+      "end": 1528,
+      "last_death": 1513,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 854,
+        "healing": 806,
+        "gold_delta": 65,
+        "xp_delta": 327,
+        "killed": {},
+        "ability_uses": {
+          "razor_plasma_field": 2,
+          "razor_static_link": 1,
+          "razor_eye_of_the_storm": 1
+        },
+        "item_uses": {
+          "crimson_guard": 1,
+          "tpscroll": 1,
+          "phase_boots": 2,
+          "essence_ring": 1,
+          "magic_wand": 2
+        },
+        "deaths_pos": {
+          "129": {
+            "129": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 585,
+        "healing": 269,
+        "gold_delta": -113,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {
+          "lion_voodoo": 1,
+          "lion_finger_of_death": 1
+        },
+        "item_uses": {
+          "ward_dispenser": 2,
+          "magic_wand": 1,
+          "glimmer_cape": 1
+        },
+        "deaths_pos": {
+          "116": {
+            "127": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1529,
+      "end": 1565,
+      "last_death": 1550,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 1,
+        "damage": 1711,
+        "healing": 710,
+        "gold_delta": 614,
+        "xp_delta": 1578,
+        "killed": {},
+        "ability_uses": {
+          "razor_plasma_field": 3,
+          "razor_static_link": 1,
+          "razor_eye_of_the_storm": 1
+        },
+        "item_uses": {
+          "crimson_guard": 1,
+          "phase_boots": 3,
+          "essence_ring": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 1,
+        "damage": 807,
+        "healing": 253,
+        "gold_delta": 420,
+        "xp_delta": 1528,
+        "killed": {},
+        "ability_uses": {
+          "lion_voodoo": 2,
+          "lion_impale": 3,
+          "lion_mana_drain": 2
+        },
+        "item_uses": {
+          "ward_dispenser": 1,
+          "magic_wand": 1,
+          "glimmer_cape": 2
+        },
+        "deaths_pos": {
+          "94": {
+            "75": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1555,
+      "end": 1590,
+      "last_death": 1575,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 689,
+        "healing": 2105,
+        "gold_delta": 445,
+        "xp_delta": 2907,
+        "killed": {},
+        "ability_uses": {
+          "razor_plasma_field": 2
+        },
+        "item_uses": {
+          "phase_boots": 4,
+          "essence_ring": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 316,
+        "healing": 63,
+        "gold_delta": 282,
+        "xp_delta": 1,
+        "killed": {},
+        "ability_uses": {
+          "lion_voodoo": 1,
+          "lion_impale": 1,
+          "lion_mana_drain": 2
+        },
+        "item_uses": {
+          "glimmer_cape": 1
+        },
+        "deaths_pos": {
+          "88": {
+            "76": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1714,
+      "end": 1754,
+      "last_death": 1739,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 0,
+        "gold_delta": 0,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {},
+        "item_uses": {},
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 616,
+        "healing": 1364,
+        "gold_delta": 306,
+        "xp_delta": 685,
+        "killed": {
+          "npc_dota_hero_disruptor": 1
+        },
+        "ability_uses": {
+          "lion_voodoo": 1,
+          "lion_impale": 1,
+          "lion_mana_drain": 1,
+          "lion_finger_of_death": 1
+        },
+        "item_uses": {
+          "smoke_of_deceit": 1,
+          "magic_wand": 1,
+          "glimmer_cape": 1
+        },
+        "deaths_pos": {
+          "129": {
+            "128": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1782,
+      "end": 1822,
+      "last_death": 1807,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1574,
+        "healing": 293,
+        "gold_delta": -96,
+        "xp_delta": 144,
+        "killed": {},
+        "ability_uses": {
+          "razor_plasma_field": 1,
+          "razor_static_link": 1,
+          "razor_eye_of_the_storm": 1
+        },
+        "item_uses": {
+          "crimson_guard": 1,
+          "phase_boots": 2,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "82": {
+            "98": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1113,
+        "healing": 361,
+        "gold_delta": 89,
+        "xp_delta": 105,
+        "killed": {},
+        "ability_uses": {
+          "lion_impale": 1,
+          "lion_finger_of_death": 1
+        },
+        "item_uses": {
+          "smoke_of_deceit": 1,
+          "blink": 1
+        },
+        "deaths_pos": {
+          "92": {
+            "96": 1
+          }
+        }
+      }
+    }
+  ],
   "team_context": {
     "duo_team": "Radiant",
     "radiant_win": false,
@@ -78,8 +800,11 @@
         "hero_damage": 10954,
         "tower_damage": 602,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 1,
+        "stuns": 36.666565,
         "level": 16,
         "item_0": 172,
         "item_1": 63,
@@ -92,8 +817,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 1,
+        "teamfight_participation": 0.6315789
       },
       {
         "account_id": 160810596,
@@ -113,8 +838,12 @@
         "hero_damage": 7571,
         "tower_damage": 22,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 11,
+        "wards_sentry": 17,
+        "stuns": 89.96665,
         "level": 12,
         "item_0": 216,
         "item_1": 0,
@@ -127,8 +856,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 1,
+        "teamfight_participation": 0.6315789
       },
       {
         "account_id": 102773730,
@@ -148,8 +877,11 @@
         "hero_damage": 19428,
         "tower_damage": 103,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "wards_sentry": 8,
+        "stuns": 0,
         "level": 12,
         "item_0": 38,
         "item_1": 267,
@@ -162,8 +894,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 1,
+        "teamfight_participation": 0.84210527
       },
       {
         "account_id": 206620580,
@@ -183,8 +915,11 @@
         "hero_damage": 15991,
         "tower_damage": 219,
         "hero_healing": 125,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "wards_sentry": 2,
+        "stuns": 0,
         "level": 19,
         "item_0": 21,
         "item_1": 50,
@@ -197,8 +932,8 @@
         "backpack_2": 11,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 1,
+        "teamfight_participation": 0.57894737
       },
       {
         "account_id": 147124823,
@@ -218,8 +953,12 @@
         "hero_damage": 20230,
         "tower_damage": 132,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 2,
+        "lane": "mid",
+        "is_roaming": false,
+        "wards_observer": 2,
+        "wards_sentry": 1,
+        "stuns": 0.5666992,
         "level": 17,
         "item_0": 166,
         "item_1": 63,
@@ -232,8 +971,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.7368421
       }
     ],
     "enemies": [
@@ -255,8 +994,12 @@
         "hero_damage": 34555,
         "tower_damage": 8480,
         "hero_healing": 1768,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 2,
+        "lane": "mid",
+        "is_roaming": false,
+        "wards_observer": 3,
+        "wards_sentry": 1,
+        "stuns": 0,
         "level": 21,
         "item_0": 1,
         "item_1": 267,
@@ -269,8 +1012,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.68333334
       },
       {
         "account_id": 1245741563,
@@ -290,8 +1033,12 @@
         "hero_damage": 8327,
         "tower_damage": 326,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": true,
+        "wards_observer": 5,
+        "wards_sentry": 9,
+        "stuns": 0,
         "level": 16,
         "item_0": 180,
         "item_1": 0,
@@ -304,8 +1051,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.6166667
       },
       {
         "account_id": 1892194979,
@@ -325,8 +1072,11 @@
         "hero_damage": 21116,
         "tower_damage": 12058,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 1,
+        "stuns": 0,
         "level": 23,
         "item_0": 147,
         "item_1": 114,
@@ -339,8 +1089,8 @@
         "backpack_2": 1575,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.55
       },
       {
         "account_id": 180143988,
@@ -360,8 +1110,10 @@
         "hero_damage": 42431,
         "tower_damage": 2821,
         "hero_healing": 125,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "stuns": 85.36686,
         "level": 24,
         "item_0": 178,
         "item_1": 108,
@@ -374,8 +1126,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.6
       },
       {
         "account_id": 957298987,
@@ -395,8 +1147,12 @@
         "hero_damage": 8733,
         "tower_damage": 888,
         "hero_healing": 17749,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "wards_observer": 5,
+        "wards_sentry": 10,
+        "stuns": 43.766804,
         "level": 17,
         "item_0": 0,
         "item_1": 36,
@@ -409,8 +1165,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.45
       }
     ],
     "radiant_heroes": [
@@ -515,12 +1271,2802 @@
     ],
     "draft_note": "For ranked games picks_bans may be absent; use the final 5v5 hero lineups for composition analysis."
   },
-  "team_teamfights": [],
+  "team_teamfights": [
+    {
+      "start": 280,
+      "end": 322,
+      "last_death": 307,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Sven",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 225,
+          "gold_delta": 115,
+          "xp_delta": 242,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "quelling_blade": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 49,
+          "xp_delta": 63,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "ПердобраЗ",
+          "hero": "Venomancer",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 398,
+          "healing": 402,
+          "gold_delta": 189,
+          "xp_delta": 128,
+          "killed": {
+            "npc_dota_hero_disruptor": 1
+          },
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_snakebite": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "famango": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Razor",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 668,
+          "healing": 278,
+          "gold_delta": 73,
+          "xp_delta": 128,
+          "killed": {},
+          "ability_uses": {
+            "razor_plasma_field": 2,
+            "razor_static_link": 1
+          },
+          "item_uses": {
+            "quelling_blade": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Sniper",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 173,
+          "gold_delta": 234,
+          "xp_delta": 366,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 806030054,
+          "personaname": "player 3",
+          "hero": "Nature's Prophet",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 536,
+          "healing": 78,
+          "gold_delta": 342,
+          "xp_delta": 299,
+          "killed": {
+            "npc_dota_hero_razor": 1
+          },
+          "ability_uses": {
+            "furion_teleportation": 1,
+            "furion_sprout": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "urn_of_shadows": 1
+          }
+        },
+        {
+          "account_id": 1245741563,
+          "personaname": "Старая Шишига",
+          "hero": "Disruptor",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 340,
+          "healing": 157,
+          "gold_delta": 76,
+          "xp_delta": 90,
+          "killed": {},
+          "ability_uses": {
+            "disruptor_glimpse": 1,
+            "disruptor_thunder_strike": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_stick": 1
+          }
+        },
+        {
+          "account_id": 1892194979,
+          "personaname": "Леопольд",
+          "hero": "Phantom Lancer",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 908,
+          "healing": 397,
+          "gold_delta": 471,
+          "xp_delta": 537,
+          "killed": {
+            "npc_dota_hero_venomancer": 1
+          },
+          "ability_uses": {
+            "phantom_lancer_doppelwalk": 1,
+            "phantom_lancer_phantom_edge": 1,
+            "phantom_lancer_spirit_lance": 2
+          },
+          "item_uses": {
+            "power_treads": 3,
+            "madstone_bundle": 1,
+            "tango": 1,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 180143988,
+          "personaname": "PRIME SIGMA THOMAS SHELBY",
+          "hero": "Primal Beast",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 203,
+          "gold_delta": 303,
+          "xp_delta": 356,
+          "killed": {},
+          "ability_uses": {
+            "primal_beast_trample": 1
+          },
+          "item_uses": {
+            "tango": 1
+          }
+        },
+        {
+          "account_id": 957298987,
+          "personaname": "новичок в доте",
+          "hero": "Oracle",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 180,
+          "gold_delta": 0,
+          "xp_delta": 99,
+          "killed": {},
+          "ability_uses": {
+            "oracle_purifying_flames": 1
+          },
+          "item_uses": {}
+        }
+      ]
+    },
+    {
+      "start": 412,
+      "end": 475,
+      "last_death": 460,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Sven",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 66,
+          "healing": 185,
+          "gold_delta": 60,
+          "xp_delta": 162,
+          "killed": {},
+          "ability_uses": {
+            "sven_warcry": 2,
+            "sven_storm_bolt": 1
+          },
+          "item_uses": {
+            "power_treads": 5,
+            "tpscroll": 1,
+            "madstone_bundle": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 678,
+          "healing": 776,
+          "gold_delta": 119,
+          "xp_delta": 537,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_impale": 3,
+            "lion_mana_drain": 2
+          },
+          "item_uses": {
+            "famango": 1,
+            "blood_grenade": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "ПердобраЗ",
+          "hero": "Venomancer",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1631,
+          "healing": 141,
+          "gold_delta": 18,
+          "xp_delta": 20,
+          "killed": {},
+          "ability_uses": {
+            "venomancer_venomous_gale": 2,
+            "venomancer_snakebite": 2,
+            "venomancer_plague_ward": 4
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Razor",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 160,
+          "gold_delta": 235,
+          "xp_delta": 566,
+          "killed": {},
+          "ability_uses": {
+            "razor_plasma_field": 2,
+            "ability_lamp_use": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Sniper",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1487,
+          "healing": 283,
+          "gold_delta": 148,
+          "xp_delta": 206,
+          "killed": {
+            "npc_dota_hero_oracle": 1
+          },
+          "ability_uses": {
+            "sniper_take_aim": 2,
+            "sniper_shrapnel": 3,
+            "sniper_assassinate": 1
+          },
+          "item_uses": {
+            "power_treads": 5,
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 806030054,
+          "personaname": "player 3",
+          "hero": "Nature's Prophet",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1365,
+          "healing": 674,
+          "gold_delta": 662,
+          "xp_delta": 905,
+          "killed": {
+            "npc_dota_hero_sniper": 1
+          },
+          "ability_uses": {
+            "furion_teleportation": 1,
+            "furion_sprout": 2,
+            "furion_wrath_of_nature": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "urn_of_shadows": 1
+          }
+        },
+        {
+          "account_id": 1245741563,
+          "personaname": "Старая Шишига",
+          "hero": "Disruptor",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 119,
+          "healing": 974,
+          "gold_delta": 10,
+          "xp_delta": 24,
+          "killed": {},
+          "ability_uses": {
+            "disruptor_thunder_strike": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_stick": 1,
+            "smoke_of_deceit": 1
+          }
+        },
+        {
+          "account_id": 1892194979,
+          "personaname": "Леопольд",
+          "hero": "Phantom Lancer",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 401,
+          "gold_delta": 459,
+          "xp_delta": 712,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "madstone_bundle": 1
+          }
+        },
+        {
+          "account_id": 180143988,
+          "personaname": "PRIME SIGMA THOMAS SHELBY",
+          "hero": "Primal Beast",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1098,
+          "healing": 634,
+          "gold_delta": 176,
+          "xp_delta": 488,
+          "killed": {},
+          "ability_uses": {
+            "primal_beast_trample": 2,
+            "primal_beast_onslaught_release": 2,
+            "primal_beast_onslaught": 2,
+            "primal_beast_uproar": 2
+          },
+          "item_uses": {
+            "magic_stick": 3,
+            "famango": 1,
+            "tango": 1
+          }
+        },
+        {
+          "account_id": 957298987,
+          "personaname": "новичок в доте",
+          "hero": "Oracle",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1169,
+          "healing": 1193,
+          "gold_delta": 446,
+          "xp_delta": 470,
+          "killed": {
+            "npc_dota_hero_venomancer": 1,
+            "npc_dota_hero_sven": 1
+          },
+          "ability_uses": {
+            "oracle_fates_edict": 1,
+            "oracle_purifying_flames": 7,
+            "oracle_fortunes_end": 2
+          },
+          "item_uses": {
+            "madstone_bundle": 1,
+            "magic_wand": 2
+          }
+        }
+      ]
+    },
+    {
+      "start": 704,
+      "end": 743,
+      "last_death": 728,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Sven",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 447,
+          "healing": 715,
+          "gold_delta": 809,
+          "xp_delta": 780,
+          "killed": {
+            "npc_dota_hero_furion": 1
+          },
+          "ability_uses": {
+            "sven_warcry": 1,
+            "sven_gods_strength": 1,
+            "sven_storm_bolt": 1
+          },
+          "item_uses": {
+            "quelling_blade": 1,
+            "magic_wand": 1,
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 415,
+          "healing": 278,
+          "gold_delta": 223,
+          "xp_delta": 825,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_impale": 1,
+            "lion_mana_drain": 2,
+            "lion_finger_of_death": 1
+          },
+          "item_uses": {
+            "ward_dispenser": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "ПердобраЗ",
+          "hero": "Venomancer",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 401,
+          "healing": 45,
+          "gold_delta": 282,
+          "xp_delta": 622,
+          "killed": {},
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_snakebite": 1,
+            "venomancer_plague_ward": 4
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Razor",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 152,
+          "gold_delta": 282,
+          "xp_delta": 585,
+          "killed": {},
+          "ability_uses": {
+            "razor_plasma_field": 2
+          },
+          "item_uses": {
+            "phase_boots": 4
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Sniper",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1398,
+          "healing": 165,
+          "gold_delta": 436,
+          "xp_delta": 298,
+          "killed": {
+            "npc_dota_hero_phantom_lancer": 1
+          },
+          "ability_uses": {
+            "sniper_shrapnel": 1,
+            "sniper_take_aim": 1
+          },
+          "item_uses": {
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 806030054,
+          "personaname": "player 3",
+          "hero": "Nature's Prophet",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1518,
+          "healing": 559,
+          "gold_delta": 15,
+          "xp_delta": 958,
+          "killed": {},
+          "ability_uses": {
+            "furion_teleportation": 1,
+            "furion_sprout": 2,
+            "furion_wrath_of_nature": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "spirit_vessel": 1,
+            "kobold_cup": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1245741563,
+          "personaname": "Старая Шишига",
+          "hero": "Disruptor",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 0,
+          "xp_delta": 31,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "arcane_boots": 1,
+            "kobold_cup": 1
+          }
+        },
+        {
+          "account_id": 1892194979,
+          "personaname": "Леопольд",
+          "hero": "Phantom Lancer",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 514,
+          "healing": 195,
+          "gold_delta": 277,
+          "xp_delta": 176,
+          "killed": {
+            "npc_dota_hero_sniper": 1
+          },
+          "ability_uses": {
+            "phantom_lancer_doppelwalk": 1,
+            "phantom_lancer_spirit_lance": 1
+          },
+          "item_uses": {
+            "power_treads": 4,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 180143988,
+          "personaname": "PRIME SIGMA THOMAS SHELBY",
+          "hero": "Primal Beast",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 170,
+          "healing": 265,
+          "gold_delta": 316,
+          "xp_delta": 304,
+          "killed": {},
+          "ability_uses": {
+            "primal_beast_trample": 1
+          },
+          "item_uses": {
+            "soul_ring": 1,
+            "phase_boots": 2
+          }
+        },
+        {
+          "account_id": 957298987,
+          "personaname": "новичок в доте",
+          "hero": "Oracle",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 183,
+          "gold_delta": 45,
+          "xp_delta": 247,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "ward_sentry": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 763,
+      "end": 808,
+      "last_death": 793,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Sven",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 131,
+          "healing": 648,
+          "gold_delta": 61,
+          "xp_delta": 2,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_wand": 1,
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 742,
+          "gold_delta": 62,
+          "xp_delta": 90,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_impale": 1
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "ПердобраЗ",
+          "hero": "Venomancer",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 773,
+          "healing": 233,
+          "gold_delta": -10,
+          "xp_delta": 2,
+          "killed": {},
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_snakebite": 1,
+            "venomancer_plague_ward": 5
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Razor",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1061,
+          "healing": 468,
+          "gold_delta": 15,
+          "xp_delta": 11,
+          "killed": {},
+          "ability_uses": {
+            "razor_plasma_field": 2,
+            "razor_static_link": 1
+          },
+          "item_uses": {
+            "ward_sentry": 1,
+            "phase_boots": 6,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Sniper",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1539,
+          "healing": 108,
+          "gold_delta": 400,
+          "xp_delta": 587,
+          "killed": {
+            "npc_dota_hero_disruptor": 1
+          },
+          "ability_uses": {
+            "sniper_shrapnel": 3,
+            "sniper_take_aim": 1
+          },
+          "item_uses": {
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 806030054,
+          "personaname": "player 3",
+          "hero": "Nature's Prophet",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 636,
+          "healing": 31,
+          "gold_delta": 39,
+          "xp_delta": 35,
+          "killed": {},
+          "ability_uses": {
+            "furion_teleportation": 1,
+            "furion_sprout": 1
+          },
+          "item_uses": {
+            "spirit_vessel": 1,
+            "kobold_cup": 1
+          }
+        },
+        {
+          "account_id": 1245741563,
+          "personaname": "Старая Шишига",
+          "hero": "Disruptor",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 497,
+          "healing": 254,
+          "gold_delta": 74,
+          "xp_delta": 440,
+          "killed": {},
+          "ability_uses": {
+            "disruptor_kinetic_field": 2,
+            "disruptor_glimpse": 1,
+            "disruptor_thunder_strike": 2
+          },
+          "item_uses": {
+            "kobold_cup": 1,
+            "magic_stick": 1,
+            "famango": 1
+          }
+        },
+        {
+          "account_id": 1892194979,
+          "personaname": "Леопольд",
+          "hero": "Phantom Lancer",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1024,
+          "healing": 463,
+          "gold_delta": 384,
+          "xp_delta": 432,
+          "killed": {
+            "npc_dota_hero_sven": 1
+          },
+          "ability_uses": {
+            "phantom_lancer_doppelwalk": 2,
+            "phantom_lancer_spirit_lance": 3
+          },
+          "item_uses": {
+            "power_treads": 7,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 180143988,
+          "personaname": "PRIME SIGMA THOMAS SHELBY",
+          "hero": "Primal Beast",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 759,
+          "healing": 824,
+          "gold_delta": 231,
+          "xp_delta": 175,
+          "killed": {
+            "npc_dota_hero_venomancer": 1
+          },
+          "ability_uses": {
+            "primal_beast_trample": 1,
+            "primal_beast_onslaught_release": 1,
+            "primal_beast_onslaught": 1,
+            "primal_beast_uproar": 2
+          },
+          "item_uses": {
+            "magic_stick": 2,
+            "phase_boots": 4,
+            "veil_of_discord": 1
+          }
+        },
+        {
+          "account_id": 957298987,
+          "personaname": "новичок в доте",
+          "hero": "Oracle",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1099,
+          "healing": 2116,
+          "gold_delta": 140,
+          "xp_delta": 450,
+          "killed": {},
+          "ability_uses": {
+            "oracle_false_promise": 1,
+            "oracle_fates_edict": 2,
+            "oracle_purifying_flames": 6,
+            "oracle_fortunes_end": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 966,
+      "end": 997,
+      "last_death": 982,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Sven",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 11,
+          "gold_delta": 161,
+          "xp_delta": 256,
+          "killed": {},
+          "ability_uses": {
+            "sven_warcry": 1
+          },
+          "item_uses": {
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 465,
+          "healing": 85,
+          "gold_delta": 283,
+          "xp_delta": 589,
+          "killed": {
+            "npc_dota_hero_furion": 1
+          },
+          "ability_uses": {
+            "lion_impale": 1,
+            "lion_finger_of_death": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "ПердобраЗ",
+          "hero": "Venomancer",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 18,
+          "healing": 12,
+          "gold_delta": 147,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Razor",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 5,
+          "gold_delta": 0,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "tpscroll": 1,
+            "phase_boots": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Sniper",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1203,
+          "healing": 56,
+          "gold_delta": 186,
+          "xp_delta": 897,
+          "killed": {},
+          "ability_uses": {
+            "sniper_take_aim": 1
+          },
+          "item_uses": {
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 806030054,
+          "personaname": "player 3",
+          "hero": "Nature's Prophet",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 491,
+          "healing": 0,
+          "gold_delta": -51,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "furion_sprout": 1,
+            "furion_force_of_nature": 1
+          },
+          "item_uses": {
+            "spirit_vessel": 1,
+            "kobold_cup": 1,
+            "orchid": 1
+          }
+        },
+        {
+          "account_id": 1245741563,
+          "personaname": "Старая Шишига",
+          "hero": "Disruptor",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 66,
+          "healing": 140,
+          "gold_delta": 247,
+          "xp_delta": 688,
+          "killed": {},
+          "ability_uses": {
+            "disruptor_kinetic_field": 1,
+            "disruptor_thunder_strike": 1
+          },
+          "item_uses": {
+            "magic_stick": 1
+          }
+        },
+        {
+          "account_id": 1892194979,
+          "personaname": "Леопольд",
+          "hero": "Phantom Lancer",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 210,
+          "gold_delta": 237,
+          "xp_delta": 316,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 180143988,
+          "personaname": "PRIME SIGMA THOMAS SHELBY",
+          "hero": "Primal Beast",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1559,
+          "healing": 418,
+          "gold_delta": 752,
+          "xp_delta": 688,
+          "killed": {
+            "npc_dota_hero_sniper": 1,
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "primal_beast_trample": 1,
+            "primal_beast_onslaught_release": 1,
+            "primal_beast_pulverize": 1,
+            "primal_beast_rock_throw": 1,
+            "ability_lamp_use": 1,
+            "primal_beast_onslaught": 1,
+            "primal_beast_uproar": 1
+          },
+          "item_uses": {
+            "magic_stick": 1,
+            "soul_ring": 1,
+            "phase_boots": 3,
+            "veil_of_discord": 1
+          }
+        },
+        {
+          "account_id": 957298987,
+          "personaname": "новичок в доте",
+          "hero": "Oracle",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 701,
+          "healing": 1411,
+          "gold_delta": 287,
+          "xp_delta": 688,
+          "killed": {},
+          "ability_uses": {
+            "oracle_fates_edict": 1,
+            "oracle_purifying_flames": 4,
+            "oracle_fortunes_end": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1077,
+      "end": 1124,
+      "last_death": 1109,
+      "deaths": 6,
+      "players": [
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Sven",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 912,
+          "healing": 841,
+          "gold_delta": 62,
+          "xp_delta": 82,
+          "killed": {},
+          "ability_uses": {
+            "sven_gods_strength": 1,
+            "sven_storm_bolt": 1
+          },
+          "item_uses": {
+            "madstone_bundle": 1,
+            "quelling_blade": 1,
+            "magic_wand": 1,
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 764,
+          "healing": 553,
+          "gold_delta": 143,
+          "xp_delta": 620,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 2,
+            "lion_impale": 2,
+            "lion_mana_drain": 1,
+            "lion_finger_of_death": 1
+          },
+          "item_uses": {
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "ПердобраЗ",
+          "hero": "Venomancer",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1207,
+          "healing": 496,
+          "gold_delta": 368,
+          "xp_delta": 1512,
+          "killed": {},
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_snakebite": 1,
+            "venomancer_plague_ward": 4,
+            "venomancer_noxious_plague": 1
+          },
+          "item_uses": {
+            "madstone_bundle": 1,
+            "urn_of_shadows": 1,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Razor",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1789,
+          "healing": 712,
+          "gold_delta": 794,
+          "xp_delta": 1324,
+          "killed": {
+            "npc_dota_hero_phantom_lancer": 1,
+            "npc_dota_hero_furion": 1
+          },
+          "ability_uses": {
+            "razor_plasma_field": 4,
+            "razor_static_link": 1,
+            "razor_eye_of_the_storm": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "phase_boots": 4,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Sniper",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 526,
+          "healing": 0,
+          "gold_delta": 45,
+          "xp_delta": 20,
+          "killed": {},
+          "ability_uses": {
+            "sniper_shrapnel": 2,
+            "sniper_assassinate": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 806030054,
+          "personaname": "player 3",
+          "hero": "Nature's Prophet",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2885,
+          "healing": 26,
+          "gold_delta": 647,
+          "xp_delta": 1282,
+          "killed": {
+            "npc_dota_hero_sniper": 1
+          },
+          "ability_uses": {
+            "furion_teleportation": 1,
+            "furion_sprout": 2,
+            "furion_force_of_nature": 1,
+            "furion_wrath_of_nature": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "spirit_vessel": 1,
+            "kobold_cup": 1,
+            "blood_grenade": 1,
+            "orchid": 1
+          }
+        },
+        {
+          "account_id": 1245741563,
+          "personaname": "Старая Шишига",
+          "hero": "Disruptor",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1261,
+          "healing": 162,
+          "gold_delta": 410,
+          "xp_delta": 856,
+          "killed": {
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "disruptor_kinetic_field": 2,
+            "disruptor_glimpse": 1,
+            "disruptor_static_storm": 1,
+            "disruptor_thunder_strike": 2
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "kobold_cup": 1,
+            "magic_stick": 1,
+            "smoke_of_deceit": 1
+          }
+        },
+        {
+          "account_id": 1892194979,
+          "personaname": "Леопольд",
+          "hero": "Phantom Lancer",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 651,
+          "healing": 362,
+          "gold_delta": -166,
+          "xp_delta": 88,
+          "killed": {},
+          "ability_uses": {
+            "phantom_lancer_doppelwalk": 1,
+            "phantom_lancer_spirit_lance": 1
+          },
+          "item_uses": {
+            "power_treads": 1,
+            "manta": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 180143988,
+          "personaname": "PRIME SIGMA THOMAS SHELBY",
+          "hero": "Primal Beast",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2594,
+          "healing": 339,
+          "gold_delta": 683,
+          "xp_delta": 1825,
+          "killed": {
+            "npc_dota_hero_sven": 1
+          },
+          "ability_uses": {
+            "primal_beast_trample": 1,
+            "primal_beast_onslaught_release": 2,
+            "primal_beast_pulverize": 1,
+            "primal_beast_rock_throw": 2,
+            "ability_lamp_use": 1,
+            "primal_beast_onslaught": 2,
+            "primal_beast_uproar": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "madstone_bundle": 1,
+            "soul_ring": 1,
+            "phase_boots": 3,
+            "veil_of_discord": 1
+          }
+        },
+        {
+          "account_id": 957298987,
+          "personaname": "новичок в доте",
+          "hero": "Oracle",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1241,
+          "healing": 1755,
+          "gold_delta": 364,
+          "xp_delta": 717,
+          "killed": {
+            "npc_dota_hero_venomancer": 1
+          },
+          "ability_uses": {
+            "oracle_false_promise": 1,
+            "oracle_fates_edict": 2,
+            "oracle_purifying_flames": 5,
+            "oracle_fortunes_end": 3
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "tpscroll": 1,
+            "magic_wand": 2
+          }
+        }
+      ]
+    },
+    {
+      "start": 1341,
+      "end": 1390,
+      "last_death": 1375,
+      "deaths": 8,
+      "players": [
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Sven",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2092,
+          "healing": 231,
+          "gold_delta": -115,
+          "xp_delta": 281,
+          "killed": {},
+          "ability_uses": {
+            "sven_warcry": 1,
+            "sven_gods_strength": 1,
+            "sven_storm_bolt": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "blink": 2,
+            "medallion_of_courage": 1,
+            "mask_of_madness": 2
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 97,
+          "gold_delta": -104,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "magic_wand": 1,
+            "glimmer_cape": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "ПердобраЗ",
+          "hero": "Venomancer",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 1,
+          "damage": 2383,
+          "healing": 212,
+          "gold_delta": 892,
+          "xp_delta": 189,
+          "killed": {
+            "npc_dota_hero_oracle": 1
+          },
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_snakebite": 1,
+            "venomancer_plague_ward": 3,
+            "venomancer_noxious_plague": 1
+          },
+          "item_uses": {
+            "pogo_stick": 3,
+            "urn_of_shadows": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Razor",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2006,
+          "healing": 563,
+          "gold_delta": 724,
+          "xp_delta": 4068,
+          "killed": {
+            "npc_dota_hero_disruptor": 1
+          },
+          "ability_uses": {
+            "razor_plasma_field": 3,
+            "razor_static_link": 1,
+            "razor_eye_of_the_storm": 1
+          },
+          "item_uses": {
+            "crimson_guard": 1,
+            "phase_boots": 3,
+            "essence_ring": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Sniper",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1604,
+          "healing": 256,
+          "gold_delta": 668,
+          "xp_delta": 1014,
+          "killed": {
+            "npc_dota_hero_furion": 1
+          },
+          "ability_uses": {
+            "sniper_shrapnel": 2,
+            "sniper_take_aim": 1,
+            "sniper_assassinate": 1
+          },
+          "item_uses": {
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 806030054,
+          "personaname": "player 3",
+          "hero": "Nature's Prophet",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2561,
+          "healing": 0,
+          "gold_delta": 1049,
+          "xp_delta": 731,
+          "killed": {
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "furion_teleportation": 1,
+            "furion_sprout": 2,
+            "furion_wrath_of_nature": 1,
+            "furion_curse_of_the_forest": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "spirit_vessel": 1,
+            "blink": 1,
+            "orchid": 1
+          }
+        },
+        {
+          "account_id": 1245741563,
+          "personaname": "Старая Шишига",
+          "hero": "Disruptor",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 974,
+          "healing": 25,
+          "gold_delta": 345,
+          "xp_delta": 788,
+          "killed": {
+            "npc_dota_hero_venomancer": 1
+          },
+          "ability_uses": {
+            "disruptor_kinetic_field": 2,
+            "disruptor_glimpse": 2,
+            "disruptor_thunder_strike": 2,
+            "disruptor_static_storm": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "magic_stick": 1,
+            "blink": 2
+          }
+        },
+        {
+          "account_id": 1892194979,
+          "personaname": "Леопольд",
+          "hero": "Phantom Lancer",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2232,
+          "healing": 408,
+          "gold_delta": 1215,
+          "xp_delta": 2875,
+          "killed": {
+            "npc_dota_hero_sniper": 1,
+            "npc_dota_hero_razor": 1
+          },
+          "ability_uses": {
+            "phantom_lancer_doppelwalk": 1,
+            "phantom_lancer_spirit_lance": 3
+          },
+          "item_uses": {
+            "mana_draught": 1
+          }
+        },
+        {
+          "account_id": 180143988,
+          "personaname": "PRIME SIGMA THOMAS SHELBY",
+          "hero": "Primal Beast",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2793,
+          "healing": 1105,
+          "gold_delta": 715,
+          "xp_delta": 2571,
+          "killed": {
+            "npc_dota_hero_sven": 1
+          },
+          "ability_uses": {
+            "primal_beast_trample": 1,
+            "primal_beast_onslaught_release": 1,
+            "primal_beast_pulverize": 1,
+            "primal_beast_rock_throw": 2,
+            "primal_beast_onslaught": 1,
+            "primal_beast_uproar": 1
+          },
+          "item_uses": {
+            "soul_ring": 1,
+            "phase_boots": 4,
+            "veil_of_discord": 1
+          }
+        },
+        {
+          "account_id": 957298987,
+          "personaname": "новичок в доте",
+          "hero": "Oracle",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 473,
+          "healing": 709,
+          "gold_delta": 106,
+          "xp_delta": 731,
+          "killed": {},
+          "ability_uses": {
+            "oracle_false_promise": 1,
+            "oracle_fates_edict": 1,
+            "oracle_purifying_flames": 3,
+            "oracle_fortunes_end": 2
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "blink": 1,
+            "dust": 1,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1468,
+      "end": 1528,
+      "last_death": 1513,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Sven",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 917,
+          "gold_delta": 321,
+          "xp_delta": 607,
+          "killed": {},
+          "ability_uses": {
+            "sven_warcry": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "madstone_bundle": 1,
+            "quelling_blade": 1,
+            "blink": 3,
+            "mask_of_madness": 2
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 585,
+          "healing": 269,
+          "gold_delta": -113,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_finger_of_death": 1
+          },
+          "item_uses": {
+            "ward_dispenser": 2,
+            "magic_wand": 1,
+            "glimmer_cape": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "ПердобраЗ",
+          "hero": "Venomancer",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 680,
+          "healing": 220,
+          "gold_delta": -88,
+          "xp_delta": 58,
+          "killed": {},
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_snakebite": 1,
+            "venomancer_plague_ward": 2
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Razor",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 854,
+          "healing": 806,
+          "gold_delta": 65,
+          "xp_delta": 327,
+          "killed": {},
+          "ability_uses": {
+            "razor_plasma_field": 2,
+            "razor_static_link": 1,
+            "razor_eye_of_the_storm": 1
+          },
+          "item_uses": {
+            "crimson_guard": 1,
+            "tpscroll": 1,
+            "phase_boots": 2,
+            "essence_ring": 1,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Sniper",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 344,
+          "healing": 422,
+          "gold_delta": 485,
+          "xp_delta": 1126,
+          "killed": {},
+          "ability_uses": {
+            "sniper_shrapnel": 2,
+            "sniper_take_aim": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 806030054,
+          "personaname": "player 3",
+          "hero": "Nature's Prophet",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 5203,
+          "healing": 481,
+          "gold_delta": 1289,
+          "xp_delta": 3092,
+          "killed": {
+            "npc_dota_hero_venomancer": 1,
+            "npc_dota_hero_lion": 1,
+            "npc_dota_hero_sniper": 1
+          },
+          "ability_uses": {
+            "furion_teleportation": 2,
+            "furion_sprout": 3,
+            "furion_force_of_nature": 1,
+            "furion_wrath_of_nature": 1,
+            "ability_lamp_use": 1,
+            "furion_curse_of_the_forest": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "spirit_vessel": 3,
+            "blink": 2,
+            "orchid": 2
+          }
+        },
+        {
+          "account_id": 1245741563,
+          "personaname": "Старая Шишига",
+          "hero": "Disruptor",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 400,
+          "healing": 95,
+          "gold_delta": 444,
+          "xp_delta": 1422,
+          "killed": {},
+          "ability_uses": {
+            "disruptor_kinetic_field": 2,
+            "disruptor_glimpse": 1,
+            "disruptor_static_storm": 1,
+            "disruptor_thunder_strike": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "mana_draught": 1,
+            "magic_stick": 2,
+            "ward_dispenser": 1,
+            "smoke_of_deceit": 1,
+            "blink": 2
+          }
+        },
+        {
+          "account_id": 1892194979,
+          "personaname": "Леопольд",
+          "hero": "Phantom Lancer",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 707,
+          "healing": 1001,
+          "gold_delta": 1034,
+          "xp_delta": 1317,
+          "killed": {
+            "npc_dota_hero_razor": 1
+          },
+          "ability_uses": {
+            "phantom_lancer_spirit_lance": 3
+          },
+          "item_uses": {
+            "mana_draught": 1,
+            "orchid": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 180143988,
+          "personaname": "PRIME SIGMA THOMAS SHELBY",
+          "hero": "Primal Beast",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1089,
+          "healing": 271,
+          "gold_delta": 498,
+          "xp_delta": 1254,
+          "killed": {},
+          "ability_uses": {
+            "primal_beast_trample": 2,
+            "primal_beast_onslaught_release": 1,
+            "primal_beast_pulverize": 1,
+            "primal_beast_rock_throw": 2,
+            "primal_beast_onslaught": 1,
+            "primal_beast_uproar": 1
+          },
+          "item_uses": {
+            "soul_ring": 1,
+            "phase_boots": 7,
+            "veil_of_discord": 3
+          }
+        },
+        {
+          "account_id": 957298987,
+          "personaname": "новичок в доте",
+          "hero": "Oracle",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1523,
+          "healing": 2774,
+          "gold_delta": 220,
+          "xp_delta": 1031,
+          "killed": {},
+          "ability_uses": {
+            "oracle_false_promise": 1,
+            "oracle_fates_edict": 3,
+            "oracle_purifying_flames": 9,
+            "oracle_fortunes_end": 4
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "clarity": 2,
+            "blink": 1,
+            "magic_wand": 2
+          }
+        }
+      ]
+    },
+    {
+      "start": 1529,
+      "end": 1565,
+      "last_death": 1550,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Sven",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 1,
+          "damage": 3228,
+          "healing": 952,
+          "gold_delta": 1010,
+          "xp_delta": 1671,
+          "killed": {
+            "npc_dota_hero_oracle": 1,
+            "npc_dota_hero_furion": 1
+          },
+          "ability_uses": {
+            "sven_warcry": 2,
+            "sven_gods_strength": 1,
+            "sven_storm_bolt": 3
+          },
+          "item_uses": {
+            "blink": 2,
+            "magic_wand": 1,
+            "medallion_of_courage": 2,
+            "mask_of_madness": 2
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 1,
+          "damage": 807,
+          "healing": 253,
+          "gold_delta": 420,
+          "xp_delta": 1528,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 2,
+            "lion_impale": 3,
+            "lion_mana_drain": 2
+          },
+          "item_uses": {
+            "ward_dispenser": 1,
+            "magic_wand": 1,
+            "glimmer_cape": 2
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "ПердобраЗ",
+          "hero": "Venomancer",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1133,
+          "healing": 11,
+          "gold_delta": 0,
+          "xp_delta": 14,
+          "killed": {},
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_snakebite": 1,
+            "venomancer_plague_ward": 2,
+            "venomancer_noxious_plague": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "urn_of_shadows": 1,
+            "pogo_stick": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Razor",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 1,
+          "damage": 1711,
+          "healing": 710,
+          "gold_delta": 614,
+          "xp_delta": 1578,
+          "killed": {},
+          "ability_uses": {
+            "razor_plasma_field": 3,
+            "razor_static_link": 1,
+            "razor_eye_of_the_storm": 1
+          },
+          "item_uses": {
+            "crimson_guard": 1,
+            "phase_boots": 3,
+            "essence_ring": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Sniper",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 10,
+          "gold_delta": 50,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 806030054,
+          "personaname": "player 3",
+          "hero": "Nature's Prophet",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2375,
+          "healing": 255,
+          "gold_delta": -148,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "furion_teleportation": 1,
+            "furion_sprout": 1,
+            "furion_force_of_nature": 1,
+            "furion_curse_of_the_forest": 1
+          },
+          "item_uses": {
+            "spirit_vessel": 1,
+            "bloodthorn": 1,
+            "essence_ring": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1245741563,
+          "personaname": "Старая Шишига",
+          "hero": "Disruptor",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 402,
+          "healing": 240,
+          "gold_delta": 456,
+          "xp_delta": 994,
+          "killed": {
+            "npc_dota_hero_sven": 1
+          },
+          "ability_uses": {
+            "disruptor_kinetic_field": 2,
+            "disruptor_glimpse": 1,
+            "disruptor_thunder_strike": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "mana_draught": 1,
+            "smoke_of_deceit": 1,
+            "blink": 2
+          }
+        },
+        {
+          "account_id": 1892194979,
+          "personaname": "Леопольд",
+          "hero": "Phantom Lancer",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1928,
+          "healing": 558,
+          "gold_delta": 678,
+          "xp_delta": 1541,
+          "killed": {
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "phantom_lancer_doppelwalk": 2,
+            "phantom_lancer_spirit_lance": 3
+          },
+          "item_uses": {
+            "power_treads": 1,
+            "manta": 1,
+            "orchid": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 180143988,
+          "personaname": "PRIME SIGMA THOMAS SHELBY",
+          "hero": "Primal Beast",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 6854,
+          "healing": 848,
+          "gold_delta": 206,
+          "xp_delta": 639,
+          "killed": {},
+          "ability_uses": {
+            "primal_beast_trample": 1,
+            "primal_beast_onslaught_release": 1,
+            "primal_beast_pulverize": 1,
+            "primal_beast_rock_throw": 1,
+            "primal_beast_onslaught": 2,
+            "primal_beast_uproar": 2
+          },
+          "item_uses": {
+            "shivas_guard": 1,
+            "soul_ring": 1,
+            "phase_boots": 3,
+            "veil_of_discord": 1
+          }
+        },
+        {
+          "account_id": 957298987,
+          "personaname": "новичок в доте",
+          "hero": "Oracle",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 225,
+          "healing": 667,
+          "gold_delta": 11,
+          "xp_delta": 57,
+          "killed": {},
+          "ability_uses": {
+            "oracle_fates_edict": 1,
+            "oracle_purifying_flames": 1,
+            "oracle_fortunes_end": 1
+          },
+          "item_uses": {
+            "blink": 1,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1555,
+      "end": 1590,
+      "last_death": 1575,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Sven",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 474,
+          "healing": 333,
+          "gold_delta": 142,
+          "xp_delta": 1,
+          "killed": {},
+          "ability_uses": {
+            "sven_warcry": 1,
+            "sven_storm_bolt": 1
+          },
+          "item_uses": {
+            "blink": 1,
+            "medallion_of_courage": 1,
+            "magic_wand": 1,
+            "mask_of_madness": 2
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 316,
+          "healing": 63,
+          "gold_delta": 282,
+          "xp_delta": 1,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_impale": 1,
+            "lion_mana_drain": 2
+          },
+          "item_uses": {
+            "glimmer_cape": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "ПердобраЗ",
+          "hero": "Venomancer",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1643,
+          "healing": 10,
+          "gold_delta": 258,
+          "xp_delta": 1,
+          "killed": {},
+          "ability_uses": {
+            "venomancer_venomous_gale": 2,
+            "venomancer_snakebite": 1,
+            "venomancer_plague_ward": 3,
+            "venomancer_noxious_plague": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "urn_of_shadows": 1,
+            "pogo_stick": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Razor",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 689,
+          "healing": 2105,
+          "gold_delta": 445,
+          "xp_delta": 2907,
+          "killed": {},
+          "ability_uses": {
+            "razor_plasma_field": 2
+          },
+          "item_uses": {
+            "phase_boots": 4,
+            "essence_ring": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Sniper",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1060,
+          "healing": 571,
+          "gold_delta": 597,
+          "xp_delta": 2906,
+          "killed": {},
+          "ability_uses": {
+            "sniper_shrapnel": 1,
+            "sniper_take_aim": 1,
+            "sniper_assassinate": 1,
+            "sniper_concussive_grenade": 1
+          },
+          "item_uses": {
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 806030054,
+          "personaname": "player 3",
+          "hero": "Nature's Prophet",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 76,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 1245741563,
+          "personaname": "Старая Шишига",
+          "hero": "Disruptor",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 198,
+          "healing": 15,
+          "gold_delta": 328,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "disruptor_kinetic_field": 1,
+            "disruptor_glimpse": 1
+          },
+          "item_uses": {
+            "mana_draught": 1,
+            "magic_stick": 1,
+            "blink": 2
+          }
+        },
+        {
+          "account_id": 1892194979,
+          "personaname": "Леопольд",
+          "hero": "Phantom Lancer",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 25,
+          "healing": 695,
+          "gold_delta": 659,
+          "xp_delta": 712,
+          "killed": {},
+          "ability_uses": {
+            "phantom_lancer_doppelwalk": 1,
+            "phantom_lancer_spirit_lance": 1
+          },
+          "item_uses": {
+            "power_treads": 1,
+            "orchid": 1
+          }
+        },
+        {
+          "account_id": 180143988,
+          "personaname": "PRIME SIGMA THOMAS SHELBY",
+          "hero": "Primal Beast",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 5768,
+          "healing": 1264,
+          "gold_delta": 615,
+          "xp_delta": 4000,
+          "killed": {
+            "npc_dota_hero_venomancer": 1,
+            "npc_dota_hero_lion": 1,
+            "npc_dota_hero_sven": 1
+          },
+          "ability_uses": {
+            "primal_beast_trample": 1,
+            "primal_beast_rock_throw": 1,
+            "primal_beast_onslaught": 1,
+            "primal_beast_uproar": 2
+          },
+          "item_uses": {
+            "shivas_guard": 1,
+            "phase_boots": 3,
+            "veil_of_discord": 1
+          }
+        },
+        {
+          "account_id": 957298987,
+          "personaname": "новичок в доте",
+          "hero": "Oracle",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 76,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        }
+      ]
+    },
+    {
+      "start": 1714,
+      "end": 1754,
+      "last_death": 1739,
+      "deaths": 5,
+      "players": [
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Sven",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1316,
+          "healing": 1348,
+          "gold_delta": -86,
+          "xp_delta": 685,
+          "killed": {},
+          "ability_uses": {
+            "sven_gods_strength": 1,
+            "sven_storm_bolt": 1
+          },
+          "item_uses": {
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 616,
+          "healing": 1364,
+          "gold_delta": 306,
+          "xp_delta": 685,
+          "killed": {
+            "npc_dota_hero_disruptor": 1
+          },
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_impale": 1,
+            "lion_mana_drain": 1,
+            "lion_finger_of_death": 1
+          },
+          "item_uses": {
+            "smoke_of_deceit": 1,
+            "magic_wand": 1,
+            "glimmer_cape": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "ПердобраЗ",
+          "hero": "Venomancer",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1847,
+          "healing": 1,
+          "gold_delta": 146,
+          "xp_delta": 845,
+          "killed": {},
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_plague_ward": 3,
+            "venomancer_noxious_plague": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Razor",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 0,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Sniper",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 622,
+          "healing": 89,
+          "gold_delta": 74,
+          "xp_delta": 127,
+          "killed": {},
+          "ability_uses": {
+            "sniper_shrapnel": 1,
+            "sniper_take_aim": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 806030054,
+          "personaname": "player 3",
+          "hero": "Nature's Prophet",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 437,
+          "healing": 449,
+          "gold_delta": 428,
+          "xp_delta": 1511,
+          "killed": {},
+          "ability_uses": {
+            "furion_sprout": 1,
+            "furion_force_of_nature": 1
+          },
+          "item_uses": {
+            "spirit_vessel": 1,
+            "bloodthorn": 1,
+            "blink": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1245741563,
+          "personaname": "Старая Шишига",
+          "hero": "Disruptor",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 457,
+          "healing": 0,
+          "gold_delta": 32,
+          "xp_delta": 112,
+          "killed": {},
+          "ability_uses": {
+            "disruptor_kinetic_field": 1,
+            "disruptor_static_storm": 1,
+            "disruptor_thunder_strike": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 1892194979,
+          "personaname": "Леопольд",
+          "hero": "Phantom Lancer",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1291,
+          "healing": 700,
+          "gold_delta": 1608,
+          "xp_delta": 2817,
+          "killed": {
+            "npc_dota_hero_sven": 1
+          },
+          "ability_uses": {
+            "phantom_lancer_doppelwalk": 3,
+            "phantom_lancer_spirit_lance": 1
+          },
+          "item_uses": {
+            "manta": 1,
+            "orchid": 1
+          }
+        },
+        {
+          "account_id": 180143988,
+          "personaname": "PRIME SIGMA THOMAS SHELBY",
+          "hero": "Primal Beast",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 4293,
+          "healing": 1350,
+          "gold_delta": 1385,
+          "xp_delta": 2746,
+          "killed": {
+            "npc_dota_hero_venomancer": 1,
+            "npc_dota_hero_sniper": 1,
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "primal_beast_trample": 1,
+            "primal_beast_onslaught_release": 1,
+            "primal_beast_pulverize": 1,
+            "primal_beast_rock_throw": 2,
+            "primal_beast_onslaught": 1,
+            "primal_beast_uproar": 1
+          },
+          "item_uses": {
+            "great_famango": 1,
+            "shivas_guard": 1,
+            "phase_boots": 4,
+            "veil_of_discord": 2
+          }
+        },
+        {
+          "account_id": 957298987,
+          "personaname": "новичок в доте",
+          "hero": "Oracle",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 625,
+          "healing": 889,
+          "gold_delta": 398,
+          "xp_delta": 1178,
+          "killed": {},
+          "ability_uses": {
+            "oracle_false_promise": 1,
+            "oracle_fates_edict": 1,
+            "oracle_purifying_flames": 6,
+            "oracle_fortunes_end": 2
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1782,
+      "end": 1822,
+      "last_death": 1807,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Sven",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 238,
+          "healing": 366,
+          "gold_delta": -296,
+          "xp_delta": 127,
+          "killed": {},
+          "ability_uses": {
+            "sven_warcry": 1,
+            "sven_storm_bolt": 1
+          },
+          "item_uses": {
+            "blink": 1,
+            "medallion_of_courage": 1,
+            "magic_wand": 1,
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Lion",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1113,
+          "healing": 361,
+          "gold_delta": 89,
+          "xp_delta": 105,
+          "killed": {},
+          "ability_uses": {
+            "lion_impale": 1,
+            "lion_finger_of_death": 1
+          },
+          "item_uses": {
+            "smoke_of_deceit": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "ПердобраЗ",
+          "hero": "Venomancer",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 615,
+          "healing": 992,
+          "gold_delta": 111,
+          "xp_delta": 216,
+          "killed": {},
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_plague_ward": 5,
+            "venomancer_noxious_plague": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "spirit_vessel": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Razor",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1574,
+          "healing": 293,
+          "gold_delta": -96,
+          "xp_delta": 144,
+          "killed": {},
+          "ability_uses": {
+            "razor_plasma_field": 1,
+            "razor_static_link": 1,
+            "razor_eye_of_the_storm": 1
+          },
+          "item_uses": {
+            "crimson_guard": 1,
+            "phase_boots": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Sniper",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1263,
+          "healing": 109,
+          "gold_delta": 110,
+          "xp_delta": 97,
+          "killed": {},
+          "ability_uses": {
+            "sniper_shrapnel": 1,
+            "sniper_take_aim": 1,
+            "sniper_concussive_grenade": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 806030054,
+          "personaname": "player 3",
+          "hero": "Nature's Prophet",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2400,
+          "healing": 1210,
+          "gold_delta": 1019,
+          "xp_delta": 1006,
+          "killed": {
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "furion_teleportation": 1,
+            "furion_sprout": 2,
+            "furion_force_of_nature": 1,
+            "furion_wrath_of_nature": 1,
+            "furion_curse_of_the_forest": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "spirit_vessel": 2,
+            "bloodthorn": 2,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 1245741563,
+          "personaname": "Старая Шишига",
+          "hero": "Disruptor",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 643,
+          "xp_delta": 18,
+          "killed": {},
+          "ability_uses": {
+            "disruptor_kinetic_field": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "tpscroll": 1,
+            "mana_draught": 1,
+            "blink": 2
+          }
+        },
+        {
+          "account_id": 1892194979,
+          "personaname": "Леопольд",
+          "hero": "Phantom Lancer",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2257,
+          "healing": 1172,
+          "gold_delta": 906,
+          "xp_delta": 1951,
+          "killed": {},
+          "ability_uses": {
+            "phantom_lancer_spirit_lance": 3
+          },
+          "item_uses": {
+            "orchid": 1
+          }
+        },
+        {
+          "account_id": 180143988,
+          "personaname": "PRIME SIGMA THOMAS SHELBY",
+          "hero": "Primal Beast",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 5952,
+          "healing": 1636,
+          "gold_delta": 827,
+          "xp_delta": 1951,
+          "killed": {
+            "npc_dota_hero_razor": 1
+          },
+          "ability_uses": {
+            "primal_beast_trample": 1,
+            "primal_beast_onslaught_release": 1,
+            "primal_beast_pulverize": 1,
+            "primal_beast_rock_throw": 1,
+            "primal_beast_onslaught": 1,
+            "primal_beast_uproar": 2
+          },
+          "item_uses": {
+            "shivas_guard": 1,
+            "soul_ring": 1,
+            "phase_boots": 2,
+            "veil_of_discord": 2
+          }
+        },
+        {
+          "account_id": 957298987,
+          "personaname": "новичок в доте",
+          "hero": "Oracle",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 533,
+          "healing": 1825,
+          "gold_delta": 898,
+          "xp_delta": 1923,
+          "killed": {
+            "npc_dota_hero_sven": 1
+          },
+          "ability_uses": {
+            "oracle_fates_edict": 1,
+            "oracle_purifying_flames": 5,
+            "oracle_fortunes_end": 3,
+            "oracle_rain_of_destiny": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "magic_wand": 2
+          }
+        }
+      ]
+    }
+  ],
   "team_analysis_capabilities": {
     "full_lineups": true,
     "all_player_summaries": true,
-    "teamfights_available": false,
-    "objectives_available": false,
+    "teamfights_available": true,
+    "objectives_available": true,
     "picks_bans_available": true
   }
 }
