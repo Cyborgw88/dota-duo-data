@@ -7,8 +7,8 @@
   "lobby_type": 7,
   "game_mode": 22,
   "radiant_win": true,
-  "parsed": false,
-  "parse_version": null,
+  "parsed": true,
+  "parse_version": 22,
   "same_team": true,
   "cyborg": {
     "account_id": 206620580,
@@ -27,10 +27,14 @@
     "hero_damage": 14179,
     "tower_damage": 0,
     "hero_healing": 125,
-    "lane": "unknown",
-    "position_guess": null,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 3,
+    "lane": "off",
+    "is_roaming": false,
+    "wards_observer": 2,
+    "wards_sentry": 8,
+    "position_guess": 4,
+    "position_confidence": "medium",
+    "position_reason": "off lane + lower farm/economy"
   },
   "goddess": {
     "account_id": 160810596,
@@ -49,13 +53,843 @@
     "hero_damage": 19766,
     "tower_damage": 1730,
     "hero_healing": 0,
-    "lane": "unknown",
-    "position_guess": null,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 3,
+    "lane": "off",
+    "is_roaming": false,
+    "position_guess": 3,
+    "position_confidence": "medium",
+    "position_reason": "off lane + higher farm/economy"
   },
-  "objectives": [],
-  "teamfights": [],
+  "objectives": [
+    {
+      "time": 107,
+      "type": "CHAT_MESSAGE_FIRSTBLOOD",
+      "key": "9",
+      "slot": 2,
+      "player_slot": 2,
+      "victim_player_slot": 132
+    },
+    {
+      "time": 578,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_goodguys_melee",
+      "key": "npc_dota_badguys_tower1_top"
+    },
+    {
+      "time": 648,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_invoker",
+      "key": "npc_dota_badguys_tower1_mid",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 755,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_skywrath_mage",
+      "key": "npc_dota_badguys_tower1_bot",
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1297,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_invoker",
+      "key": "npc_dota_badguys_tower2_mid",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 1462,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_dragon_knight",
+      "key": "npc_dota_badguys_tower2_bot",
+      "slot": 2,
+      "player_slot": 2
+    },
+    {
+      "time": 1560,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_invoker",
+      "key": "npc_dota_badguys_tower3_mid",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 1580,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_invoker",
+      "key": "npc_dota_badguys_range_rax_mid",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 1589,
+      "type": "building_kill",
+      "unit": "npc_dota_goodguys_siege",
+      "key": "npc_dota_badguys_melee_rax_mid"
+    },
+    {
+      "time": 1617,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_spectre",
+      "key": "npc_dota_badguys_tower2_top",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 1915,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_badguys_ranged",
+      "key": "npc_dota_goodguys_tower1_top"
+    },
+    {
+      "time": 1954,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_dragon_knight",
+      "key": "npc_dota_badguys_tower3_bot",
+      "slot": 2,
+      "player_slot": 2
+    },
+    {
+      "time": 1958,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_dragon_knight",
+      "key": "npc_dota_badguys_range_rax_bot",
+      "slot": 2,
+      "player_slot": 2
+    },
+    {
+      "time": 1965,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_dragon_knight",
+      "key": "npc_dota_badguys_melee_rax_bot",
+      "slot": 2,
+      "player_slot": 2
+    },
+    {
+      "time": 2267,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_spectre",
+      "key": "npc_dota_badguys_tower3_top",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 2276,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_dragon_knight",
+      "key": "npc_dota_badguys_range_rax_top",
+      "slot": 2,
+      "player_slot": 2
+    },
+    {
+      "time": 2278,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_goodguys_ranged_upgraded",
+      "key": "npc_dota_badguys_tower4"
+    },
+    {
+      "time": 2294,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_goodguys_flagbearer",
+      "key": "npc_dota_badguys_melee_rax_top"
+    },
+    {
+      "time": 2303,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_spirit_breaker",
+      "key": "npc_dota_badguys_tower4",
+      "slot": 4,
+      "player_slot": 4
+    },
+    {
+      "time": 2307,
+      "type": "building_kill",
+      "unit": "dota_unknown",
+      "key": "npc_dota_badguys_fort"
+    }
+  ],
+  "teamfights": [
+    {
+      "start": 391,
+      "end": 423,
+      "last_death": 408,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 153,
+        "gold_delta": 46,
+        "xp_delta": 256,
+        "killed": {},
+        "ability_uses": {
+          "ability_lamp_use": 1
+        },
+        "item_uses": {},
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 259,
+        "gold_delta": 121,
+        "xp_delta": 113,
+        "killed": {},
+        "ability_uses": {},
+        "item_uses": {},
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 509,
+      "end": 559,
+      "last_death": 544,
+      "deaths": 6,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 631,
+        "healing": 105,
+        "gold_delta": 263,
+        "xp_delta": 434,
+        "killed": {
+          "npc_dota_hero_skywrath_mage": 1
+        },
+        "ability_uses": {
+          "magnataur_shockwave": 2,
+          "magnataur_skewer": 1
+        },
+        "item_uses": {},
+        "deaths_pos": {
+          "86": {
+            "166": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 428,
+        "healing": 166,
+        "gold_delta": 211,
+        "xp_delta": 494,
+        "killed": {
+          "npc_dota_hero_spirit_breaker": 1
+        },
+        "ability_uses": {
+          "windrunner_powershot": 1,
+          "windrunner_focusfire": 1,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "90": {
+            "175": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 587,
+      "end": 637,
+      "last_death": 622,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 349,
+        "healing": 32,
+        "gold_delta": 39,
+        "xp_delta": 247,
+        "killed": {},
+        "ability_uses": {
+          "magnataur_shockwave": 1,
+          "magnataur_skewer": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "smoke_of_deceit": 1
+        },
+        "deaths_pos": {
+          "139": {
+            "131": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 175,
+        "healing": 0,
+        "gold_delta": 422,
+        "xp_delta": 381,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 3,
+          "windrunner_windrun": 1
+        },
+        "item_uses": {
+          "tpscroll": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 714,
+      "end": 749,
+      "last_death": 734,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 908,
+        "healing": 0,
+        "gold_delta": 289,
+        "xp_delta": 0,
+        "killed": {
+          "npc_dota_hero_spectre": 1
+        },
+        "ability_uses": {
+          "magnataur_reverse_polarity": 1,
+          "magnataur_shockwave": 1,
+          "magnataur_skewer": 1
+        },
+        "item_uses": {},
+        "deaths_pos": {
+          "177": {
+            "74": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 374,
+        "gold_delta": 21,
+        "xp_delta": 114,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 1,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 1
+        },
+        "item_uses": {
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "186": {
+            "90": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 906,
+      "end": 941,
+      "last_death": 926,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 581,
+        "healing": 0,
+        "gold_delta": 283,
+        "xp_delta": 850,
+        "killed": {},
+        "ability_uses": {
+          "magnataur_reverse_polarity": 1,
+          "magnataur_shockwave": 1,
+          "magnataur_skewer": 1
+        },
+        "item_uses": {
+          "blink": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 310,
+        "healing": 174,
+        "gold_delta": 85,
+        "xp_delta": 727,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_focusfire": 1,
+          "windrunner_powershot": 1,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 1
+        },
+        "item_uses": {
+          "clarity": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "148": {
+            "142": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 955,
+      "end": 993,
+      "last_death": 978,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 687,
+        "healing": 12,
+        "gold_delta": -4,
+        "xp_delta": 209,
+        "killed": {},
+        "ability_uses": {
+          "magnataur_shockwave": 2,
+          "magnataur_skewer": 1
+        },
+        "item_uses": {
+          "ward_sentry": 1,
+          "ward_dispenser": 1,
+          "blink": 1,
+          "dust": 1
+        },
+        "deaths_pos": {
+          "177": {
+            "101": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 605,
+        "healing": 5,
+        "gold_delta": -117,
+        "xp_delta": 34,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_focusfire": 1,
+          "windrunner_powershot": 1,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 1
+        },
+        "item_uses": {
+          "tpscroll": 1
+        },
+        "deaths_pos": {
+          "171": {
+            "110": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1096,
+      "end": 1151,
+      "last_death": 1136,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 197,
+        "healing": 0,
+        "gold_delta": 20,
+        "xp_delta": 423,
+        "killed": {},
+        "ability_uses": {
+          "magnataur_empower": 1,
+          "magnataur_shockwave": 1
+        },
+        "item_uses": {
+          "blink": 1
+        },
+        "deaths_pos": {
+          "124": {
+            "159": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1035,
+        "healing": 230,
+        "gold_delta": 273,
+        "xp_delta": 198,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_focusfire": 1,
+          "windrunner_powershot": 1,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 2
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "122": {
+            "176": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1260,
+      "end": 1322,
+      "last_death": 1307,
+      "deaths": 6,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 614,
+        "healing": 348,
+        "gold_delta": 56,
+        "xp_delta": 1423,
+        "killed": {},
+        "ability_uses": {
+          "magnataur_reverse_polarity": 1,
+          "magnataur_empower": 1,
+          "magnataur_shockwave": 1,
+          "magnataur_skewer": 2
+        },
+        "item_uses": {
+          "blink": 2
+        },
+        "deaths_pos": {
+          "180": {
+            "137": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 139,
+        "healing": 415,
+        "gold_delta": -161,
+        "xp_delta": 247,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 1,
+          "windrunner_focusfire": 1,
+          "windrunner_windrun": 2
+        },
+        "item_uses": {
+          "tpscroll": 1
+        },
+        "deaths_pos": {
+          "159": {
+            "98": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1416,
+      "end": 1461,
+      "last_death": 1446,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 0,
+        "gold_delta": 97,
+        "xp_delta": 70,
+        "killed": {},
+        "ability_uses": {
+          "magnataur_shockwave": 1,
+          "magnataur_skewer": 1
+        },
+        "item_uses": {
+          "blink": 1,
+          "force_staff": 1,
+          "dust": 1
+        },
+        "deaths_pos": {
+          "193": {
+            "126": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 773,
+        "healing": 362,
+        "gold_delta": -1,
+        "xp_delta": 216,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 2,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 2
+        },
+        "item_uses": {
+          "magic_wand": 2
+        },
+        "deaths_pos": {
+          "184": {
+            "152": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1472,
+      "end": 1523,
+      "last_death": 1508,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 673,
+        "healing": 56,
+        "gold_delta": 48,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {
+          "magnataur_reverse_polarity": 1,
+          "magnataur_shockwave": 1,
+          "magnataur_skewer": 1
+        },
+        "item_uses": {
+          "blink": 1,
+          "dust": 1
+        },
+        "deaths_pos": {
+          "151": {
+            "145": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 507,
+        "healing": 168,
+        "gold_delta": 743,
+        "xp_delta": 1219,
+        "killed": {
+          "npc_dota_hero_dragon_knight": 1
+        },
+        "ability_uses": {
+          "windrunner_powershot": 2,
+          "windrunner_focusfire": 1,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 3
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1688,
+      "end": 1727,
+      "last_death": 1712,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 2170,
+        "healing": 235,
+        "gold_delta": 758,
+        "xp_delta": 2362,
+        "killed": {},
+        "ability_uses": {
+          "magnataur_reverse_polarity": 1,
+          "magnataur_empower": 1,
+          "magnataur_shockwave": 2,
+          "magnataur_skewer": 1
+        },
+        "item_uses": {
+          "blink": 1,
+          "force_staff": 1,
+          "dust": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1345,
+        "healing": 603,
+        "gold_delta": 949,
+        "xp_delta": 2407,
+        "killed": {
+          "npc_dota_hero_spectre": 1
+        },
+        "ability_uses": {
+          "windrunner_powershot": 3,
+          "windrunner_focusfire": 1,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 2
+        },
+        "item_uses": {
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1819,
+      "end": 1865,
+      "last_death": 1850,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 936,
+        "healing": 80,
+        "gold_delta": 766,
+        "xp_delta": 1612,
+        "killed": {
+          "npc_dota_hero_dragon_knight": 1
+        },
+        "ability_uses": {
+          "magnataur_reverse_polarity": 1,
+          "magnataur_shockwave": 2,
+          "magnataur_skewer": 1
+        },
+        "item_uses": {
+          "blink": 1,
+          "force_staff": 1,
+          "dust": 1
+        },
+        "deaths_pos": {
+          "115": {
+            "173": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1096,
+        "healing": 661,
+        "gold_delta": 516,
+        "xp_delta": 1654,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 2,
+          "windrunner_focusfire": 1,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 2
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "hurricane_pike": 1,
+          "magic_wand": 2
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 2237,
+      "end": 2285,
+      "last_death": 2270,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 324,
+        "healing": 31,
+        "gold_delta": 66,
+        "xp_delta": 19,
+        "killed": {},
+        "ability_uses": {
+          "magnataur_reverse_polarity": 1,
+          "magnataur_empower": 1
+        },
+        "item_uses": {
+          "blink": 1,
+          "force_staff": 1
+        },
+        "deaths_pos": {
+          "148": {
+            "169": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 1,
+        "damage": 1581,
+        "healing": 144,
+        "gold_delta": 81,
+        "xp_delta": 2373,
+        "killed": {
+          "npc_dota_hero_invoker": 1
+        },
+        "ability_uses": {
+          "windrunner_focusfire": 1,
+          "windrunner_shackleshot": 2,
+          "windrunner_windrun": 2
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "hurricane_pike": 2
+        },
+        "deaths_pos": {
+          "145": {
+            "174": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 2273,
+      "end": 2306,
+      "last_death": 2291,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 6,
+        "gold_delta": 0,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {},
+        "item_uses": {},
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 1,
+        "damage": 86,
+        "healing": 17,
+        "gold_delta": -399,
+        "xp_delta": 12,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 1
+        },
+        "item_uses": {
+          "hurricane_pike": 1
+        },
+        "deaths_pos": {
+          "162": {
+            "182": 1
+          }
+        }
+      }
+    }
+  ],
   "team_context": {
     "duo_team": "Dire",
     "radiant_win": true,
@@ -78,8 +912,12 @@
         "hero_damage": 35300,
         "tower_damage": 0,
         "hero_healing": 61,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 2,
+        "lane": "mid",
+        "is_roaming": false,
+        "wards_observer": 1,
+        "wards_sentry": 1,
+        "stuns": 140.8347,
         "level": 23,
         "item_0": 180,
         "item_1": 36,
@@ -92,8 +930,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 1,
+        "teamfight_participation": 0.75
       },
       {
         "account_id": 206620580,
@@ -113,8 +951,12 @@
         "hero_damage": 14179,
         "tower_damage": 0,
         "hero_healing": 125,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "wards_observer": 2,
+        "wards_sentry": 8,
+        "stuns": 53.067207,
         "level": 17,
         "item_0": 40,
         "item_1": 102,
@@ -127,8 +969,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 1,
+        "teamfight_participation": 0.65625
       },
       {
         "account_id": 160810596,
@@ -148,8 +990,10 @@
         "hero_damage": 19766,
         "tower_damage": 1730,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "stuns": 27.933752,
         "level": 22,
         "item_0": 73,
         "item_1": 116,
@@ -162,8 +1006,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 1,
+        "teamfight_participation": 0.53125
       },
       {
         "account_id": 147124823,
@@ -183,8 +1027,10 @@
         "hero_damage": 18836,
         "tower_damage": 0,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "stuns": 2.6665895,
         "level": 21,
         "item_0": 63,
         "item_1": 598,
@@ -197,8 +1043,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.34375
       },
       {
         "account_id": 102773730,
@@ -218,8 +1064,12 @@
         "hero_damage": 10038,
         "tower_damage": 0,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 13,
+        "wards_sentry": 24,
+        "stuns": 103.46699,
         "level": 19,
         "item_0": 1,
         "item_1": 102,
@@ -232,8 +1082,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.65625
       }
     ],
     "enemies": [
@@ -255,8 +1105,12 @@
         "hero_damage": 23002,
         "tower_damage": 1171,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "wards_observer": 3,
+        "wards_sentry": 9,
+        "stuns": 20.000147,
         "level": 25,
         "item_0": 48,
         "item_1": 77,
@@ -269,8 +1123,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.5081967
       },
       {
         "account_id": 93882714,
@@ -290,8 +1144,10 @@
         "hero_damage": 33452,
         "tower_damage": 11172,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 2,
+        "lane": "mid",
+        "is_roaming": false,
+        "stuns": 60.03357,
         "level": 24,
         "item_0": 223,
         "item_1": 235,
@@ -304,8 +1160,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.55737704
       },
       {
         "account_id": 493147667,
@@ -325,8 +1181,10 @@
         "hero_damage": 27970,
         "tower_damage": 7354,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "stuns": 55.732613,
         "level": 25,
         "item_0": 112,
         "item_1": 0,
@@ -339,8 +1197,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.52459013
       },
       {
         "account_id": 365223515,
@@ -360,8 +1218,10 @@
         "hero_damage": 35084,
         "tower_damage": 5718,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "stuns": 0,
         "level": 24,
         "item_0": 63,
         "item_1": 127,
@@ -374,8 +1234,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.4918033
       },
       {
         "account_id": 123219364,
@@ -395,8 +1255,12 @@
         "hero_damage": 23184,
         "tower_damage": 1910,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 14,
+        "wards_sentry": 15,
+        "stuns": 91.20084,
         "level": 23,
         "item_0": 108,
         "item_1": 152,
@@ -409,8 +1273,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.60655737
       }
     ],
     "radiant_heroes": [
@@ -545,12 +1409,3227 @@
     ],
     "draft_note": "For ranked games picks_bans may be absent; use the final 5v5 hero lineups for composition analysis."
   },
-  "team_teamfights": [],
+  "team_teamfights": [
+    {
+      "start": 391,
+      "end": 423,
+      "last_death": 408,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 119423415,
+          "personaname": "Cor4uoY",
+          "hero": "Skywrath Mage",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 363,
+          "healing": 59,
+          "gold_delta": 79,
+          "xp_delta": 341,
+          "killed": {},
+          "ability_uses": {
+            "skywrath_mage_arcane_bolt": 2,
+            "skywrath_mage_concussive_shot": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 93882714,
+          "personaname": "im fine",
+          "hero": "Invoker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 57,
+          "healing": 386,
+          "gold_delta": 155,
+          "xp_delta": 300,
+          "killed": {},
+          "ability_uses": {
+            "invoker_invoke": 2,
+            "invoker_quas": 53,
+            "invoker_exort": 15
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 493147667,
+          "personaname": "the king and the queers",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 587,
+          "healing": 245,
+          "gold_delta": 252,
+          "xp_delta": 398,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_breathe_fire": 1
+          },
+          "item_uses": {
+            "tango_single": 1,
+            "soul_ring": 1
+          }
+        },
+        {
+          "account_id": 365223515,
+          "personaname": "Денис Вячеславыч",
+          "hero": "Spectre",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 116,
+          "healing": 3,
+          "gold_delta": 123,
+          "xp_delta": 270,
+          "killed": {},
+          "ability_uses": {
+            "spectre_spectral_dagger": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "quelling_blade": 1
+          }
+        },
+        {
+          "account_id": 123219364,
+          "personaname": "Измор системы 50%",
+          "hero": "Spirit Breaker",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 625,
+          "healing": 0,
+          "gold_delta": 349,
+          "xp_delta": 211,
+          "killed": {
+            "npc_dota_hero_kez": 1,
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "spirit_breaker_charge_of_darkness": 1
+          },
+          "item_uses": {
+            "blood_grenade": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Nyx Assassin",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 414,
+          "gold_delta": 179,
+          "xp_delta": 423,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "clarity": 1,
+            "bottle": 3
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Magnus",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 153,
+          "gold_delta": 46,
+          "xp_delta": 256,
+          "killed": {},
+          "ability_uses": {
+            "ability_lamp_use": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 259,
+          "gold_delta": 121,
+          "xp_delta": 113,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Kez",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 305,
+          "gold_delta": -5,
+          "xp_delta": 74,
+          "killed": {},
+          "ability_uses": {
+            "kez_shodo_sai": 1,
+            "kez_grappling_claw": 1,
+            "kez_switch_weapons": 1
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Lion",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 377,
+          "healing": 124,
+          "gold_delta": 401,
+          "xp_delta": 274,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_impale": 1,
+            "lion_mana_drain": 1
+          },
+          "item_uses": {
+            "blood_grenade": 1,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 509,
+      "end": 559,
+      "last_death": 544,
+      "deaths": 6,
+      "players": [
+        {
+          "account_id": 119423415,
+          "personaname": "Cor4uoY",
+          "hero": "Skywrath Mage",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 689,
+          "healing": 1,
+          "gold_delta": 89,
+          "xp_delta": 205,
+          "killed": {},
+          "ability_uses": {
+            "skywrath_mage_arcane_bolt": 3,
+            "skywrath_mage_concussive_shot": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 93882714,
+          "personaname": "im fine",
+          "hero": "Invoker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 682,
+          "healing": 604,
+          "gold_delta": 330,
+          "xp_delta": 442,
+          "killed": {},
+          "ability_uses": {
+            "invoker_invoke": 1,
+            "invoker_quas": 33,
+            "invoker_cold_snap": 1,
+            "invoker_forge_spirit": 1,
+            "invoker_exort": 23,
+            "invoker_ice_wall": 1
+          },
+          "item_uses": {
+            "meteor_hammer": 1,
+            "blood_grenade": 1
+          }
+        },
+        {
+          "account_id": 493147667,
+          "personaname": "the king and the queers",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2006,
+          "healing": 285,
+          "gold_delta": 767,
+          "xp_delta": 925,
+          "killed": {
+            "npc_dota_hero_lion": 1,
+            "npc_dota_hero_magnataur": 1
+          },
+          "ability_uses": {
+            "dragon_knight_elder_dragon_form": 1,
+            "dragon_knight_dragon_tail": 2,
+            "dragon_knight_breathe_fire": 3
+          },
+          "item_uses": {
+            "soul_ring": 1
+          }
+        },
+        {
+          "account_id": 365223515,
+          "personaname": "Денис Вячеславыч",
+          "hero": "Spectre",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1040,
+          "healing": 207,
+          "gold_delta": 485,
+          "xp_delta": 912,
+          "killed": {
+            "npc_dota_hero_windrunner": 1
+          },
+          "ability_uses": {
+            "spectre_spectral_dagger": 2,
+            "spectre_reality": 2,
+            "spectre_haunt": 1,
+            "spectre_shadow_step": 1
+          },
+          "item_uses": {
+            "power_treads": 9,
+            "clarity": 1,
+            "quelling_blade": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 123219364,
+          "personaname": "Измор системы 50%",
+          "hero": "Spirit Breaker",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 329,
+          "healing": 128,
+          "gold_delta": 160,
+          "xp_delta": 128,
+          "killed": {
+            "npc_dota_hero_kez": 1
+          },
+          "ability_uses": {
+            "twin_gate_portal_warp": 1,
+            "spirit_breaker_charge_of_darkness": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "ward_observer": 1,
+            "phase_boots": 2
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Nyx Assassin",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 997,
+          "healing": 383,
+          "gold_delta": 117,
+          "xp_delta": 413,
+          "killed": {},
+          "ability_uses": {
+            "nyx_assassin_spiked_carapace": 1,
+            "nyx_assassin_jolt": 1,
+            "nyx_assassin_vendetta": 1,
+            "nyx_assassin_impale": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Magnus",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 631,
+          "healing": 105,
+          "gold_delta": 263,
+          "xp_delta": 434,
+          "killed": {
+            "npc_dota_hero_skywrath_mage": 1
+          },
+          "ability_uses": {
+            "magnataur_shockwave": 2,
+            "magnataur_skewer": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 428,
+          "healing": 166,
+          "gold_delta": 211,
+          "xp_delta": 494,
+          "killed": {
+            "npc_dota_hero_spirit_breaker": 1
+          },
+          "ability_uses": {
+            "windrunner_powershot": 1,
+            "windrunner_focusfire": 1,
+            "windrunner_shackleshot": 1,
+            "windrunner_windrun": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Kez",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 167,
+          "gold_delta": -18,
+          "xp_delta": 57,
+          "killed": {},
+          "ability_uses": {
+            "kez_grappling_claw": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Lion",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 77,
+          "healing": 54,
+          "gold_delta": 93,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 2,
+            "lion_impale": 2,
+            "lion_mana_drain": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 587,
+      "end": 637,
+      "last_death": 622,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 119423415,
+          "personaname": "Cor4uoY",
+          "hero": "Skywrath Mage",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 861,
+          "healing": 126,
+          "gold_delta": 354,
+          "xp_delta": 510,
+          "killed": {
+            "npc_dota_hero_nyx_assassin": 1
+          },
+          "ability_uses": {
+            "skywrath_mage_arcane_bolt": 3,
+            "skywrath_mage_concussive_shot": 2,
+            "skywrath_mage_mystic_flare": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 93882714,
+          "personaname": "im fine",
+          "hero": "Invoker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1702,
+          "healing": 467,
+          "gold_delta": 474,
+          "xp_delta": 736,
+          "killed": {
+            "npc_dota_hero_magnataur": 1
+          },
+          "ability_uses": {
+            "invoker_wex": 4,
+            "invoker_sun_strike": 1,
+            "invoker_invoke": 8,
+            "invoker_tornado": 1,
+            "invoker_forge_spirit": 2,
+            "invoker_quas": 6,
+            "invoker_cold_snap": 1,
+            "invoker_exort": 37,
+            "invoker_ice_wall": 1,
+            "invoker_deafening_blast": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "clarity": 1,
+            "meteor_hammer": 1
+          }
+        },
+        {
+          "account_id": 493147667,
+          "personaname": "the king and the queers",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 170,
+          "healing": 579,
+          "gold_delta": 308,
+          "xp_delta": 647,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_breathe_fire": 3
+          },
+          "item_uses": {
+            "madstone_bundle": 3,
+            "soul_ring": 1
+          }
+        },
+        {
+          "account_id": 365223515,
+          "personaname": "Денис Вячеславыч",
+          "hero": "Spectre",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 176,
+          "healing": 371,
+          "gold_delta": 75,
+          "xp_delta": 385,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "power_treads": 1
+          }
+        },
+        {
+          "account_id": 123219364,
+          "personaname": "Измор системы 50%",
+          "hero": "Spirit Breaker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 456,
+          "healing": 322,
+          "gold_delta": 374,
+          "xp_delta": 698,
+          "killed": {
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "spirit_breaker_charge_of_darkness": 1,
+            "spirit_breaker_nether_strike": 1
+          },
+          "item_uses": {
+            "phase_boots": 5,
+            "blood_grenade": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Nyx Assassin",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 362,
+          "healing": 793,
+          "gold_delta": 7,
+          "xp_delta": 88,
+          "killed": {},
+          "ability_uses": {
+            "nyx_assassin_spiked_carapace": 1,
+            "nyx_assassin_impale": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "bottle": 5
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Magnus",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 349,
+          "healing": 32,
+          "gold_delta": 39,
+          "xp_delta": 247,
+          "killed": {},
+          "ability_uses": {
+            "magnataur_shockwave": 1,
+            "magnataur_skewer": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "smoke_of_deceit": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 175,
+          "healing": 0,
+          "gold_delta": 422,
+          "xp_delta": 381,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_powershot": 3,
+            "windrunner_windrun": 1
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Kez",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 268,
+          "healing": 278,
+          "gold_delta": 270,
+          "xp_delta": 385,
+          "killed": {},
+          "ability_uses": {
+            "kez_grappling_claw": 2,
+            "kez_switch_weapons": 2,
+            "kez_echo_slash": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Lion",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 124,
+          "healing": 81,
+          "gold_delta": -1,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_impale": 1
+          },
+          "item_uses": {
+            "dust": 1,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 714,
+      "end": 749,
+      "last_death": 734,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 119423415,
+          "personaname": "Cor4uoY",
+          "hero": "Skywrath Mage",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 992,
+          "healing": 130,
+          "gold_delta": 338,
+          "xp_delta": 637,
+          "killed": {
+            "npc_dota_hero_magnataur": 1
+          },
+          "ability_uses": {
+            "skywrath_mage_arcane_bolt": 4,
+            "skywrath_mage_concussive_shot": 1
+          },
+          "item_uses": {
+            "ward_sentry": 1,
+            "ward_dispenser": 2
+          }
+        },
+        {
+          "account_id": 93882714,
+          "personaname": "im fine",
+          "hero": "Invoker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1659,
+          "healing": 107,
+          "gold_delta": 419,
+          "xp_delta": 532,
+          "killed": {
+            "npc_dota_hero_windrunner": 1
+          },
+          "ability_uses": {
+            "invoker_chaos_meteor": 1,
+            "invoker_alacrity": 1,
+            "invoker_wex": 10,
+            "invoker_sun_strike": 1,
+            "invoker_invoke": 6,
+            "invoker_quas": 6,
+            "invoker_cold_snap": 1,
+            "invoker_forge_spirit": 1,
+            "invoker_exort": 47,
+            "invoker_ice_wall": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "madstone_bundle": 1,
+            "clarity": 1,
+            "meteor_hammer": 1
+          }
+        },
+        {
+          "account_id": 493147667,
+          "personaname": "the king and the queers",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 592,
+          "healing": 224,
+          "gold_delta": 340,
+          "xp_delta": 664,
+          "killed": {
+            "npc_dota_hero_nyx_assassin": 1
+          },
+          "ability_uses": {
+            "dragon_knight_elder_dragon_form": 1,
+            "dragon_knight_dragon_tail": 1,
+            "dragon_knight_breathe_fire": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "madstone_bundle": 1,
+            "famango": 1,
+            "soul_ring": 1
+          }
+        },
+        {
+          "account_id": 365223515,
+          "personaname": "Денис Вячеславыч",
+          "hero": "Spectre",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 362,
+          "healing": 232,
+          "gold_delta": 8,
+          "xp_delta": 254,
+          "killed": {},
+          "ability_uses": {
+            "spectre_spectral_dagger": 1,
+            "spectre_shadow_step": 1
+          },
+          "item_uses": {
+            "power_treads": 6,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 123219364,
+          "personaname": "Измор системы 50%",
+          "hero": "Spirit Breaker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 125,
+          "gold_delta": 74,
+          "xp_delta": 445,
+          "killed": {},
+          "ability_uses": {
+            "ability_lamp_use": 1
+          },
+          "item_uses": {
+            "ward_dispenser": 2,
+            "famango": 1,
+            "phase_boots": 3
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Nyx Assassin",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 373,
+          "healing": 263,
+          "gold_delta": 44,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "nyx_assassin_spiked_carapace": 1,
+            "nyx_assassin_jolt": 1,
+            "nyx_assassin_impale": 1
+          },
+          "item_uses": {
+            "bottle": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Magnus",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 908,
+          "healing": 0,
+          "gold_delta": 289,
+          "xp_delta": 0,
+          "killed": {
+            "npc_dota_hero_spectre": 1
+          },
+          "ability_uses": {
+            "magnataur_reverse_polarity": 1,
+            "magnataur_shockwave": 1,
+            "magnataur_skewer": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 374,
+          "gold_delta": 21,
+          "xp_delta": 114,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_powershot": 1,
+            "windrunner_shackleshot": 1,
+            "windrunner_windrun": 1
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Kez",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 370,
+          "gold_delta": 39,
+          "xp_delta": 171,
+          "killed": {},
+          "ability_uses": {
+            "kez_grappling_claw": 1,
+            "kez_switch_weapons": 1
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Lion",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 10,
+          "gold_delta": 0,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "ward_sentry": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 906,
+      "end": 941,
+      "last_death": 926,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 119423415,
+          "personaname": "Cor4uoY",
+          "hero": "Skywrath Mage",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 22,
+          "xp_delta": 539,
+          "killed": {},
+          "ability_uses": {
+            "ability_lamp_use": 1
+          },
+          "item_uses": {
+            "tango": 1
+          }
+        },
+        {
+          "account_id": 93882714,
+          "personaname": "im fine",
+          "hero": "Invoker",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1133,
+          "healing": 68,
+          "gold_delta": -57,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "invoker_chaos_meteor": 1,
+            "invoker_wex": 1,
+            "invoker_invoke": 1,
+            "invoker_cold_snap": 1,
+            "invoker_ice_wall": 1,
+            "invoker_exort": 8
+          },
+          "item_uses": {
+            "meteor_hammer": 1
+          }
+        },
+        {
+          "account_id": 493147667,
+          "personaname": "the king and the queers",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 170,
+          "healing": 456,
+          "gold_delta": 325,
+          "xp_delta": 625,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_breathe_fire": 3
+          },
+          "item_uses": {
+            "madstone_bundle": 3,
+            "soul_ring": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 365223515,
+          "personaname": "Денис Вячеславыч",
+          "hero": "Spectre",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 372,
+          "gold_delta": 208,
+          "xp_delta": 430,
+          "killed": {},
+          "ability_uses": {
+            "spectre_spectral_dagger": 2
+          },
+          "item_uses": {
+            "power_treads": 6,
+            "madstone_bundle": 2
+          }
+        },
+        {
+          "account_id": 123219364,
+          "personaname": "Измор системы 50%",
+          "hero": "Spirit Breaker",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 172,
+          "healing": 4,
+          "gold_delta": 258,
+          "xp_delta": 1529,
+          "killed": {
+            "npc_dota_hero_windrunner": 1
+          },
+          "ability_uses": {
+            "spirit_breaker_charge_of_darkness": 1
+          },
+          "item_uses": {
+            "phase_boots": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Nyx Assassin",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 349,
+          "healing": 566,
+          "gold_delta": 471,
+          "xp_delta": 746,
+          "killed": {
+            "npc_dota_hero_spirit_breaker": 1
+          },
+          "ability_uses": {
+            "nyx_assassin_jolt": 1,
+            "nyx_assassin_impale": 2
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "tpscroll": 1,
+            "madstone_bundle": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Magnus",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 581,
+          "healing": 0,
+          "gold_delta": 283,
+          "xp_delta": 850,
+          "killed": {},
+          "ability_uses": {
+            "magnataur_reverse_polarity": 1,
+            "magnataur_shockwave": 1,
+            "magnataur_skewer": 1
+          },
+          "item_uses": {
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 310,
+          "healing": 174,
+          "gold_delta": 85,
+          "xp_delta": 727,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_focusfire": 1,
+            "windrunner_powershot": 1,
+            "windrunner_shackleshot": 1,
+            "windrunner_windrun": 1
+          },
+          "item_uses": {
+            "clarity": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Kez",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 145,
+          "gold_delta": 123,
+          "xp_delta": 195,
+          "killed": {},
+          "ability_uses": {
+            "kez_echo_slash": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "madstone_bundle": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Lion",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 396,
+          "healing": 0,
+          "gold_delta": 646,
+          "xp_delta": 794,
+          "killed": {
+            "npc_dota_hero_invoker": 1
+          },
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_impale": 1,
+            "lion_mana_drain": 1,
+            "lion_finger_of_death": 1
+          },
+          "item_uses": {}
+        }
+      ]
+    },
+    {
+      "start": 955,
+      "end": 993,
+      "last_death": 978,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 119423415,
+          "personaname": "Cor4uoY",
+          "hero": "Skywrath Mage",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1191,
+          "healing": 29,
+          "gold_delta": 55,
+          "xp_delta": 248,
+          "killed": {},
+          "ability_uses": {
+            "skywrath_mage_arcane_bolt": 3,
+            "skywrath_mage_concussive_shot": 2,
+            "skywrath_mage_mystic_flare": 1,
+            "skywrath_mage_ancient_seal": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "rod_of_atos": 1
+          }
+        },
+        {
+          "account_id": 93882714,
+          "personaname": "im fine",
+          "hero": "Invoker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1770,
+          "healing": 646,
+          "gold_delta": 446,
+          "xp_delta": 1347,
+          "killed": {
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "invoker_wex": 9,
+            "invoker_sun_strike": 1,
+            "invoker_invoke": 8,
+            "invoker_tornado": 1,
+            "invoker_quas": 21,
+            "invoker_cold_snap": 2,
+            "invoker_exort": 14,
+            "invoker_ice_wall": 1,
+            "invoker_deafening_blast": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 493147667,
+          "personaname": "the king and the queers",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 275,
+          "healing": 561,
+          "gold_delta": 292,
+          "xp_delta": 429,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_elder_dragon_form": 1,
+            "dragon_knight_dragon_tail": 1,
+            "dragon_knight_breathe_fire": 1
+          },
+          "item_uses": {
+            "soul_ring": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 365223515,
+          "personaname": "Денис Вячеславыч",
+          "hero": "Spectre",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1273,
+          "healing": 435,
+          "gold_delta": 812,
+          "xp_delta": 911,
+          "killed": {
+            "npc_dota_hero_windrunner": 1,
+            "npc_dota_hero_magnataur": 1
+          },
+          "ability_uses": {
+            "spectre_reality": 1,
+            "spectre_spectral_dagger": 1,
+            "spectre_haunt": 1,
+            "spectre_shadow_step": 1
+          },
+          "item_uses": {
+            "quelling_blade": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 123219364,
+          "personaname": "Измор системы 50%",
+          "hero": "Spirit Breaker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 32,
+          "gold_delta": 0,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Nyx Assassin",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 499,
+          "healing": 287,
+          "gold_delta": 177,
+          "xp_delta": 313,
+          "killed": {},
+          "ability_uses": {
+            "nyx_assassin_spiked_carapace": 2,
+            "nyx_assassin_impale": 2,
+            "nyx_assassin_vendetta": 1
+          },
+          "item_uses": {
+            "bottle": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Magnus",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 687,
+          "healing": 12,
+          "gold_delta": -4,
+          "xp_delta": 209,
+          "killed": {},
+          "ability_uses": {
+            "magnataur_shockwave": 2,
+            "magnataur_skewer": 1
+          },
+          "item_uses": {
+            "ward_sentry": 1,
+            "ward_dispenser": 1,
+            "blink": 1,
+            "dust": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 605,
+          "healing": 5,
+          "gold_delta": -117,
+          "xp_delta": 34,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_focusfire": 1,
+            "windrunner_powershot": 1,
+            "windrunner_shackleshot": 1,
+            "windrunner_windrun": 1
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Kez",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 961,
+          "gold_delta": 138,
+          "xp_delta": 242,
+          "killed": {},
+          "ability_uses": {
+            "kez_echo_slash": 1
+          },
+          "item_uses": {
+            "madstone_bundle": 1,
+            "polliwog_charm": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Lion",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 111,
+          "healing": 0,
+          "gold_delta": -74,
+          "xp_delta": 38,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_impale": 1,
+            "lion_mana_drain": 1
+          },
+          "item_uses": {
+            "dust": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1096,
+      "end": 1151,
+      "last_death": 1136,
+      "deaths": 5,
+      "players": [
+        {
+          "account_id": 119423415,
+          "personaname": "Cor4uoY",
+          "hero": "Skywrath Mage",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 866,
+          "healing": 0,
+          "gold_delta": 78,
+          "xp_delta": 291,
+          "killed": {},
+          "ability_uses": {
+            "skywrath_mage_arcane_bolt": 1,
+            "skywrath_mage_concussive_shot": 1,
+            "skywrath_mage_mystic_flare": 1,
+            "skywrath_mage_ancient_seal": 1,
+            "ability_lamp_use": 1
+          },
+          "item_uses": {
+            "rod_of_atos": 1
+          }
+        },
+        {
+          "account_id": 93882714,
+          "personaname": "im fine",
+          "hero": "Invoker",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1337,
+          "healing": 218,
+          "gold_delta": 291,
+          "xp_delta": 1283,
+          "killed": {
+            "npc_dota_hero_windrunner": 1
+          },
+          "ability_uses": {
+            "invoker_chaos_meteor": 1,
+            "invoker_wex": 2,
+            "invoker_sun_strike": 1,
+            "invoker_invoke": 4,
+            "invoker_cold_snap": 1,
+            "invoker_quas": 4,
+            "invoker_ice_wall": 1,
+            "invoker_exort": 8,
+            "invoker_deafening_blast": 1
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 493147667,
+          "personaname": "the king and the queers",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 170,
+          "healing": 860,
+          "gold_delta": 526,
+          "xp_delta": 935,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_fireball": 2,
+            "dragon_knight_breathe_fire": 2
+          },
+          "item_uses": {
+            "power_treads": 10,
+            "madstone_bundle": 3,
+            "soul_ring": 1,
+            "blink": 2
+          }
+        },
+        {
+          "account_id": 365223515,
+          "personaname": "Денис Вячеславыч",
+          "hero": "Spectre",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 549,
+          "gold_delta": 581,
+          "xp_delta": 1313,
+          "killed": {},
+          "ability_uses": {
+            "spectre_spectral_dagger": 1
+          },
+          "item_uses": {
+            "power_treads": 6,
+            "madstone_bundle": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 123219364,
+          "personaname": "Измор системы 50%",
+          "hero": "Spirit Breaker",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1272,
+          "healing": 0,
+          "gold_delta": 275,
+          "xp_delta": 943,
+          "killed": {
+            "npc_dota_hero_magnataur": 1
+          },
+          "ability_uses": {
+            "spirit_breaker_bulldoze": 1,
+            "spirit_breaker_charge_of_darkness": 2,
+            "spirit_breaker_nether_strike": 1
+          },
+          "item_uses": {
+            "phase_boots": 4
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Nyx Assassin",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1536,
+          "healing": 103,
+          "gold_delta": 1196,
+          "xp_delta": 2659,
+          "killed": {
+            "npc_dota_hero_invoker": 1,
+            "npc_dota_hero_spirit_breaker": 1
+          },
+          "ability_uses": {
+            "nyx_assassin_jolt": 2,
+            "nyx_assassin_impale": 3
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "furion_gold_bag": 1,
+            "dagon": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Magnus",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 197,
+          "healing": 0,
+          "gold_delta": 20,
+          "xp_delta": 423,
+          "killed": {},
+          "ability_uses": {
+            "magnataur_empower": 1,
+            "magnataur_shockwave": 1
+          },
+          "item_uses": {
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1035,
+          "healing": 230,
+          "gold_delta": 273,
+          "xp_delta": 198,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_focusfire": 1,
+            "windrunner_powershot": 1,
+            "windrunner_shackleshot": 1,
+            "windrunner_windrun": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Kez",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1784,
+          "healing": 597,
+          "gold_delta": 790,
+          "xp_delta": 959,
+          "killed": {
+            "npc_dota_hero_skywrath_mage": 1
+          },
+          "ability_uses": {
+            "kez_talon_toss": 1,
+            "kez_falcon_rush": 1,
+            "kez_grappling_claw": 1,
+            "kez_switch_weapons": 2,
+            "kez_raptor_dance": 1,
+            "kez_echo_slash": 2
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Lion",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 338,
+          "healing": 270,
+          "gold_delta": 129,
+          "xp_delta": 589,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 2,
+            "lion_impale": 2,
+            "lion_mana_drain": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "dust": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1260,
+      "end": 1322,
+      "last_death": 1307,
+      "deaths": 6,
+      "players": [
+        {
+          "account_id": 119423415,
+          "personaname": "Cor4uoY",
+          "hero": "Skywrath Mage",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 539,
+          "healing": 0,
+          "gold_delta": 541,
+          "xp_delta": 804,
+          "killed": {
+            "npc_dota_hero_windrunner": 1
+          },
+          "ability_uses": {
+            "skywrath_mage_arcane_bolt": 1,
+            "skywrath_mage_concussive_shot": 1,
+            "skywrath_mage_ancient_seal": 1
+          },
+          "item_uses": {
+            "rod_of_atos": 1
+          }
+        },
+        {
+          "account_id": 93882714,
+          "personaname": "im fine",
+          "hero": "Invoker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1156,
+          "healing": 196,
+          "gold_delta": 861,
+          "xp_delta": 717,
+          "killed": {},
+          "ability_uses": {
+            "invoker_alacrity": 1,
+            "invoker_wex": 26,
+            "invoker_sun_strike": 2,
+            "invoker_invoke": 8,
+            "invoker_quas": 4,
+            "invoker_forge_spirit": 2,
+            "invoker_exort": 36
+          },
+          "item_uses": {
+            "meteor_hammer": 2
+          }
+        },
+        {
+          "account_id": 493147667,
+          "personaname": "the king and the queers",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 4153,
+          "healing": 1022,
+          "gold_delta": 2136,
+          "xp_delta": 5490,
+          "killed": {
+            "npc_dota_hero_nyx_assassin": 1,
+            "npc_dota_hero_kez": 1,
+            "npc_dota_hero_magnataur": 1
+          },
+          "ability_uses": {
+            "dragon_knight_dragon_tail": 3,
+            "dragon_knight_fireball": 2,
+            "dragon_knight_breathe_fire": 3
+          },
+          "item_uses": {
+            "soul_ring": 1,
+            "blink": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 365223515,
+          "personaname": "Денис Вячеславыч",
+          "hero": "Spectre",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 534,
+          "healing": 61,
+          "gold_delta": 619,
+          "xp_delta": 1125,
+          "killed": {},
+          "ability_uses": {
+            "spectre_reality": 1,
+            "spectre_spectral_dagger": 1,
+            "spectre_haunt": 1,
+            "spectre_shadow_step": 1
+          },
+          "item_uses": {
+            "power_treads": 3
+          }
+        },
+        {
+          "account_id": 123219364,
+          "personaname": "Измор системы 50%",
+          "hero": "Spirit Breaker",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 438,
+          "healing": 37,
+          "gold_delta": 235,
+          "xp_delta": 997,
+          "killed": {
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "spirit_breaker_bulldoze": 1,
+            "spirit_breaker_charge_of_darkness": 1
+          },
+          "item_uses": {
+            "phase_boots": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Nyx Assassin",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1369,
+          "healing": 195,
+          "gold_delta": 725,
+          "xp_delta": 1881,
+          "killed": {
+            "npc_dota_hero_skywrath_mage": 1,
+            "npc_dota_hero_spirit_breaker": 1
+          },
+          "ability_uses": {
+            "nyx_assassin_spiked_carapace": 1,
+            "nyx_assassin_jolt": 2,
+            "nyx_assassin_impale": 1
+          },
+          "item_uses": {
+            "dagon_2": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Magnus",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 614,
+          "healing": 348,
+          "gold_delta": 56,
+          "xp_delta": 1423,
+          "killed": {},
+          "ability_uses": {
+            "magnataur_reverse_polarity": 1,
+            "magnataur_empower": 1,
+            "magnataur_shockwave": 1,
+            "magnataur_skewer": 2
+          },
+          "item_uses": {
+            "blink": 2
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 139,
+          "healing": 415,
+          "gold_delta": -161,
+          "xp_delta": 247,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_powershot": 1,
+            "windrunner_focusfire": 1,
+            "windrunner_windrun": 2
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Kez",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1078,
+          "healing": 541,
+          "gold_delta": 86,
+          "xp_delta": 401,
+          "killed": {},
+          "ability_uses": {
+            "kez_grappling_claw": 1,
+            "kez_echo_slash": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Lion",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 91,
+          "gold_delta": -68,
+          "xp_delta": 914,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 2,
+            "lion_impale": 1
+          },
+          "item_uses": {
+            "tango": 1,
+            "blink": 2
+          }
+        }
+      ]
+    },
+    {
+      "start": 1416,
+      "end": 1461,
+      "last_death": 1446,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 119423415,
+          "personaname": "Cor4uoY",
+          "hero": "Skywrath Mage",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 33,
+          "gold_delta": 412,
+          "xp_delta": 1473,
+          "killed": {},
+          "ability_uses": {
+            "skywrath_mage_arcane_bolt": 4
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 93882714,
+          "personaname": "im fine",
+          "hero": "Invoker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 986,
+          "healing": 989,
+          "gold_delta": 728,
+          "xp_delta": 997,
+          "killed": {
+            "npc_dota_hero_magnataur": 1
+          },
+          "ability_uses": {
+            "invoker_ghost_walk": 1,
+            "invoker_alacrity": 1,
+            "invoker_wex": 10,
+            "invoker_sun_strike": 1,
+            "invoker_invoke": 8,
+            "invoker_tornado": 1,
+            "invoker_quas": 20,
+            "invoker_forge_spirit": 1,
+            "invoker_exort": 12,
+            "invoker_deafening_blast": 1
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 493147667,
+          "personaname": "the king and the queers",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 192,
+          "gold_delta": 217,
+          "xp_delta": 403,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_fireball": 1
+          },
+          "item_uses": {
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 365223515,
+          "personaname": "Денис Вячеславыч",
+          "hero": "Spectre",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 4057,
+          "healing": 67,
+          "gold_delta": 262,
+          "xp_delta": 2340,
+          "killed": {
+            "npc_dota_hero_windrunner": 1
+          },
+          "ability_uses": {
+            "spectre_reality": 3,
+            "spectre_spectral_dagger": 2,
+            "spectre_haunt": 1,
+            "spectre_shadow_step": 1
+          },
+          "item_uses": {
+            "blade_mail": 1
+          }
+        },
+        {
+          "account_id": 123219364,
+          "personaname": "Измор системы 50%",
+          "hero": "Spirit Breaker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 288,
+          "gold_delta": 376,
+          "xp_delta": 1170,
+          "killed": {},
+          "ability_uses": {
+            "spirit_breaker_bulldoze": 1,
+            "spirit_breaker_charge_of_darkness": 1
+          },
+          "item_uses": {
+            "phase_boots": 2
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Nyx Assassin",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1021,
+          "healing": 543,
+          "gold_delta": 493,
+          "xp_delta": 2082,
+          "killed": {
+            "npc_dota_hero_spectre": 1
+          },
+          "ability_uses": {
+            "nyx_assassin_jolt": 1,
+            "nyx_assassin_vendetta": 1,
+            "nyx_assassin_impale": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "dagon_3": 1,
+            "bottle": 3
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Magnus",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 97,
+          "xp_delta": 70,
+          "killed": {},
+          "ability_uses": {
+            "magnataur_shockwave": 1,
+            "magnataur_skewer": 1
+          },
+          "item_uses": {
+            "blink": 1,
+            "force_staff": 1,
+            "dust": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 773,
+          "healing": 362,
+          "gold_delta": -1,
+          "xp_delta": 216,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_powershot": 2,
+            "windrunner_shackleshot": 1,
+            "windrunner_windrun": 2
+          },
+          "item_uses": {
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Kez",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 662,
+          "gold_delta": 286,
+          "xp_delta": 398,
+          "killed": {},
+          "ability_uses": {
+            "kez_echo_slash": 2
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Lion",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 53,
+          "gold_delta": 126,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        }
+      ]
+    },
+    {
+      "start": 1472,
+      "end": 1523,
+      "last_death": 1508,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 119423415,
+          "personaname": "Cor4uoY",
+          "hero": "Skywrath Mage",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 27,
+          "gold_delta": 0,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 93882714,
+          "personaname": "im fine",
+          "hero": "Invoker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2979,
+          "healing": 1003,
+          "gold_delta": 1062,
+          "xp_delta": 2390,
+          "killed": {
+            "npc_dota_hero_kez": 1,
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "invoker_ghost_walk": 1,
+            "invoker_chaos_meteor": 1,
+            "invoker_wex": 26,
+            "invoker_sun_strike": 2,
+            "invoker_invoke": 19,
+            "invoker_tornado": 1,
+            "invoker_quas": 46,
+            "invoker_cold_snap": 2,
+            "invoker_forge_spirit": 1,
+            "invoker_exort": 26,
+            "invoker_ice_wall": 2,
+            "invoker_deafening_blast": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 493147667,
+          "personaname": "the king and the queers",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 3068,
+          "healing": 536,
+          "gold_delta": 422,
+          "xp_delta": 1432,
+          "killed": {
+            "npc_dota_hero_magnataur": 1
+          },
+          "ability_uses": {
+            "dragon_knight_elder_dragon_form": 1,
+            "dragon_knight_dragon_tail": 2,
+            "dragon_knight_fireball": 1,
+            "dragon_knight_breathe_fire": 2,
+            "ability_lamp_use": 1
+          },
+          "item_uses": {
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 365223515,
+          "personaname": "Денис Вячеславыч",
+          "hero": "Spectre",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 184,
+          "healing": 11,
+          "gold_delta": 0,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "spectre_spectral_dagger": 1,
+            "spectre_shadow_step": 1
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 123219364,
+          "personaname": "Измор системы 50%",
+          "hero": "Spirit Breaker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 757,
+          "healing": 597,
+          "gold_delta": 304,
+          "xp_delta": 1361,
+          "killed": {},
+          "ability_uses": {
+            "spirit_breaker_bulldoze": 1,
+            "spirit_breaker_charge_of_darkness": 1,
+            "spirit_breaker_nether_strike": 1
+          },
+          "item_uses": {
+            "ancient_janggo": 1,
+            "phase_boots": 5,
+            "dust": 1,
+            "invis_sword": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Nyx Assassin",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2720,
+          "healing": 598,
+          "gold_delta": 291,
+          "xp_delta": 1342,
+          "killed": {},
+          "ability_uses": {
+            "nyx_assassin_spiked_carapace": 4,
+            "nyx_assassin_jolt": 4,
+            "nyx_assassin_impale": 3,
+            "nyx_assassin_vendetta": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "dagon_3": 2,
+            "dust": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Magnus",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 673,
+          "healing": 56,
+          "gold_delta": 48,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "magnataur_reverse_polarity": 1,
+            "magnataur_shockwave": 1,
+            "magnataur_skewer": 1
+          },
+          "item_uses": {
+            "blink": 1,
+            "dust": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 507,
+          "healing": 168,
+          "gold_delta": 743,
+          "xp_delta": 1219,
+          "killed": {
+            "npc_dota_hero_dragon_knight": 1
+          },
+          "ability_uses": {
+            "windrunner_powershot": 2,
+            "windrunner_focusfire": 1,
+            "windrunner_shackleshot": 1,
+            "windrunner_windrun": 3
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Kez",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 275,
+          "gold_delta": 8,
+          "xp_delta": 162,
+          "killed": {},
+          "ability_uses": {
+            "kez_grappling_claw": 1,
+            "kez_echo_slash": 1
+          },
+          "item_uses": {
+            "famango": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Lion",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1508,
+          "healing": 40,
+          "gold_delta": 121,
+          "xp_delta": 1366,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_impale": 2,
+            "lion_mana_drain": 1,
+            "lion_finger_of_death": 1
+          },
+          "item_uses": {
+            "ward_dispenser": 1,
+            "blink": 2
+          }
+        }
+      ]
+    },
+    {
+      "start": 1688,
+      "end": 1727,
+      "last_death": 1712,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 119423415,
+          "personaname": "Cor4uoY",
+          "hero": "Skywrath Mage",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 86,
+          "gold_delta": 181,
+          "xp_delta": 338,
+          "killed": {},
+          "ability_uses": {
+            "skywrath_mage_arcane_bolt": 5,
+            "skywrath_mage_concussive_shot": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "madstone_bundle": 2,
+            "ward_dispenser": 3
+          }
+        },
+        {
+          "account_id": 93882714,
+          "personaname": "im fine",
+          "hero": "Invoker",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 609,
+          "healing": 185,
+          "gold_delta": -430,
+          "xp_delta": 89,
+          "killed": {},
+          "ability_uses": {
+            "invoker_wex": 9,
+            "invoker_invoke": 3,
+            "invoker_tornado": 1,
+            "invoker_quas": 3,
+            "invoker_cold_snap": 1,
+            "invoker_exort": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 493147667,
+          "personaname": "the king and the queers",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1314,
+          "healing": 507,
+          "gold_delta": -282,
+          "xp_delta": 117,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_elder_dragon_form": 1,
+            "dragon_knight_dragon_tail": 1,
+            "dragon_knight_fireball": 1,
+            "dragon_knight_breathe_fire": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 365223515,
+          "personaname": "Денис Вячеславыч",
+          "hero": "Spectre",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 4513,
+          "healing": 337,
+          "gold_delta": -63,
+          "xp_delta": 324,
+          "killed": {},
+          "ability_uses": {
+            "spectre_spectral_dagger": 1,
+            "spectre_shadow_step": 1
+          },
+          "item_uses": {
+            "blade_mail": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 123219364,
+          "personaname": "Измор системы 50%",
+          "hero": "Spirit Breaker",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 373,
+          "healing": 0,
+          "gold_delta": -206,
+          "xp_delta": 117,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "phase_boots": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Nyx Assassin",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2157,
+          "healing": 907,
+          "gold_delta": 790,
+          "xp_delta": 2352,
+          "killed": {},
+          "ability_uses": {
+            "nyx_assassin_spiked_carapace": 2,
+            "nyx_assassin_jolt": 1,
+            "nyx_assassin_impale": 2,
+            "nyx_assassin_vendetta": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "dagon_3": 1,
+            "dust": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Magnus",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2170,
+          "healing": 235,
+          "gold_delta": 758,
+          "xp_delta": 2362,
+          "killed": {},
+          "ability_uses": {
+            "magnataur_reverse_polarity": 1,
+            "magnataur_empower": 1,
+            "magnataur_shockwave": 2,
+            "magnataur_skewer": 1
+          },
+          "item_uses": {
+            "blink": 1,
+            "force_staff": 1,
+            "dust": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1345,
+          "healing": 603,
+          "gold_delta": 949,
+          "xp_delta": 2407,
+          "killed": {
+            "npc_dota_hero_spectre": 1
+          },
+          "ability_uses": {
+            "windrunner_powershot": 3,
+            "windrunner_focusfire": 1,
+            "windrunner_shackleshot": 1,
+            "windrunner_windrun": 2
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Kez",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 4054,
+          "healing": 569,
+          "gold_delta": 1726,
+          "xp_delta": 2673,
+          "killed": {
+            "npc_dota_hero_invoker": 1,
+            "npc_dota_hero_spirit_breaker": 1
+          },
+          "ability_uses": {
+            "kez_grappling_claw": 2,
+            "kez_switch_weapons": 1,
+            "kez_raptor_dance": 1,
+            "kez_echo_slash": 3
+          },
+          "item_uses": {
+            "manta": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Lion",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1017,
+          "healing": 399,
+          "gold_delta": 1201,
+          "xp_delta": 2661,
+          "killed": {
+            "npc_dota_hero_dragon_knight": 1
+          },
+          "ability_uses": {
+            "lion_voodoo": 2,
+            "lion_impale": 1,
+            "lion_mana_drain": 1,
+            "lion_finger_of_death": 1
+          },
+          "item_uses": {
+            "ward_dispenser": 2,
+            "blink": 2,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1819,
+      "end": 1865,
+      "last_death": 1850,
+      "deaths": 5,
+      "players": [
+        {
+          "account_id": 119423415,
+          "personaname": "Cor4uoY",
+          "hero": "Skywrath Mage",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 11,
+          "gold_delta": 559,
+          "xp_delta": 766,
+          "killed": {},
+          "ability_uses": {
+            "skywrath_mage_arcane_bolt": 10,
+            "skywrath_mage_concussive_shot": 2
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 93882714,
+          "personaname": "im fine",
+          "hero": "Invoker",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1456,
+          "healing": 1306,
+          "gold_delta": 16,
+          "xp_delta": 2151,
+          "killed": {},
+          "ability_uses": {
+            "invoker_chaos_meteor": 1,
+            "invoker_alacrity": 1,
+            "invoker_wex": 6,
+            "invoker_sun_strike": 1,
+            "invoker_invoke": 10,
+            "invoker_quas": 18,
+            "invoker_cold_snap": 2,
+            "invoker_exort": 17,
+            "invoker_ice_wall": 1,
+            "invoker_deafening_blast": 1
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 493147667,
+          "personaname": "the king and the queers",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1504,
+          "healing": 663,
+          "gold_delta": 339,
+          "xp_delta": 97,
+          "killed": {
+            "npc_dota_hero_lion": 1
+          },
+          "ability_uses": {
+            "dragon_knight_elder_dragon_form": 1,
+            "dragon_knight_dragon_tail": 1,
+            "dragon_knight_fireball": 1,
+            "dragon_knight_breathe_fire": 1
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 365223515,
+          "personaname": "Денис Вячеславыч",
+          "hero": "Spectre",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 3485,
+          "healing": 0,
+          "gold_delta": 97,
+          "xp_delta": 221,
+          "killed": {},
+          "ability_uses": {
+            "spectre_reality": 1,
+            "spectre_haunt": 1
+          },
+          "item_uses": {
+            "blade_mail": 1
+          }
+        },
+        {
+          "account_id": 123219364,
+          "personaname": "Измор системы 50%",
+          "hero": "Spirit Breaker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1117,
+          "healing": 24,
+          "gold_delta": 708,
+          "xp_delta": 2365,
+          "killed": {
+            "npc_dota_hero_magnataur": 1
+          },
+          "ability_uses": {
+            "spirit_breaker_bulldoze": 2,
+            "spirit_breaker_charge_of_darkness": 2
+          },
+          "item_uses": {
+            "ward_sentry": 1,
+            "ancient_janggo": 1,
+            "ward_dispenser": 1,
+            "phase_boots": 4,
+            "dust": 1,
+            "invis_sword": 2
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Nyx Assassin",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 4877,
+          "healing": 1481,
+          "gold_delta": 733,
+          "xp_delta": 2935,
+          "killed": {},
+          "ability_uses": {
+            "nyx_assassin_unburrow": 1,
+            "nyx_assassin_spiked_carapace": 4,
+            "nyx_assassin_burrow": 1,
+            "nyx_assassin_jolt": 5,
+            "nyx_assassin_impale": 3
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "dagon_3": 2,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Magnus",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 936,
+          "healing": 80,
+          "gold_delta": 766,
+          "xp_delta": 1612,
+          "killed": {
+            "npc_dota_hero_dragon_knight": 1
+          },
+          "ability_uses": {
+            "magnataur_reverse_polarity": 1,
+            "magnataur_shockwave": 2,
+            "magnataur_skewer": 1
+          },
+          "item_uses": {
+            "blink": 1,
+            "force_staff": 1,
+            "dust": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1096,
+          "healing": 661,
+          "gold_delta": 516,
+          "xp_delta": 1654,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_powershot": 2,
+            "windrunner_focusfire": 1,
+            "windrunner_shackleshot": 1,
+            "windrunner_windrun": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "hurricane_pike": 1,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Kez",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2837,
+          "healing": 1916,
+          "gold_delta": 1555,
+          "xp_delta": 3201,
+          "killed": {
+            "npc_dota_hero_invoker": 1
+          },
+          "ability_uses": {
+            "kez_grappling_claw": 2,
+            "kez_raptor_dance": 1,
+            "kez_echo_slash": 3
+          },
+          "item_uses": {
+            "manta": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Lion",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 486,
+          "healing": 50,
+          "gold_delta": 546,
+          "xp_delta": 1460,
+          "killed": {
+            "npc_dota_hero_spectre": 1
+          },
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_impale": 1,
+            "lion_finger_of_death": 1
+          },
+          "item_uses": {
+            "ward_observer": 1,
+            "ward_dispenser": 2,
+            "blink": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 2237,
+      "end": 2285,
+      "last_death": 2270,
+      "deaths": 5,
+      "players": [
+        {
+          "account_id": 119423415,
+          "personaname": "Cor4uoY",
+          "hero": "Skywrath Mage",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 5471,
+          "healing": 11,
+          "gold_delta": 1190,
+          "xp_delta": 3889,
+          "killed": {
+            "npc_dota_hero_nyx_assassin": 1
+          },
+          "ability_uses": {
+            "skywrath_mage_arcane_bolt": 8,
+            "skywrath_mage_concussive_shot": 3,
+            "skywrath_mage_mystic_flare": 2,
+            "skywrath_mage_ancient_seal": 4
+          },
+          "item_uses": {
+            "rod_of_atos": 2
+          }
+        },
+        {
+          "account_id": 93882714,
+          "personaname": "im fine",
+          "hero": "Invoker",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": -101,
+          "xp_delta": 547,
+          "killed": {},
+          "ability_uses": {
+            "invoker_wex": 3,
+            "invoker_invoke": 2,
+            "invoker_quas": 6,
+            "invoker_exort": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 493147667,
+          "personaname": "the king and the queers",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 3019,
+          "healing": 877,
+          "gold_delta": 948,
+          "xp_delta": 3342,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_elder_dragon_form": 1,
+            "dragon_knight_dragon_tail": 3,
+            "dragon_knight_fireball": 2,
+            "dragon_knight_breathe_fire": 3
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "black_king_bar": 1,
+            "blink": 1,
+            "dust": 1
+          }
+        },
+        {
+          "account_id": 365223515,
+          "personaname": "Денис Вячеславыч",
+          "hero": "Spectre",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 5308,
+          "healing": 671,
+          "gold_delta": 2222,
+          "xp_delta": 4298,
+          "killed": {
+            "npc_dota_hero_windrunner": 1,
+            "npc_dota_hero_lion": 1,
+            "npc_dota_hero_magnataur": 1
+          },
+          "ability_uses": {
+            "spectre_reality": 1,
+            "spectre_spectral_dagger": 2,
+            "spectre_haunt": 1,
+            "spectre_shadow_step": 1
+          },
+          "item_uses": {
+            "manta": 1,
+            "blade_mail": 1
+          }
+        },
+        {
+          "account_id": 123219364,
+          "personaname": "Измор системы 50%",
+          "hero": "Spirit Breaker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1205,
+          "healing": 0,
+          "gold_delta": 957,
+          "xp_delta": 1607,
+          "killed": {},
+          "ability_uses": {
+            "spirit_breaker_bulldoze": 2,
+            "spirit_breaker_charge_of_darkness": 2,
+            "spirit_breaker_nether_strike": 1
+          },
+          "item_uses": {
+            "ancient_janggo": 2,
+            "rapier": 1,
+            "phase_boots": 4,
+            "dust": 1,
+            "invis_sword": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Nyx Assassin",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 1,
+          "damage": 2092,
+          "healing": 1323,
+          "gold_delta": -90,
+          "xp_delta": 141,
+          "killed": {},
+          "ability_uses": {
+            "nyx_assassin_spiked_carapace": 3,
+            "nyx_assassin_burrow": 1,
+            "nyx_assassin_jolt": 1,
+            "nyx_assassin_impale": 2,
+            "nyx_assassin_vendetta": 1
+          },
+          "item_uses": {
+            "dagon_4": 1,
+            "dust": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Magnus",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 324,
+          "healing": 31,
+          "gold_delta": 66,
+          "xp_delta": 19,
+          "killed": {},
+          "ability_uses": {
+            "magnataur_reverse_polarity": 1,
+            "magnataur_empower": 1
+          },
+          "item_uses": {
+            "blink": 1,
+            "force_staff": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 1,
+          "damage": 1581,
+          "healing": 144,
+          "gold_delta": 81,
+          "xp_delta": 2373,
+          "killed": {
+            "npc_dota_hero_invoker": 1
+          },
+          "ability_uses": {
+            "windrunner_focusfire": 1,
+            "windrunner_shackleshot": 2,
+            "windrunner_windrun": 2
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "hurricane_pike": 2
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Kez",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2583,
+          "healing": 1523,
+          "gold_delta": 78,
+          "xp_delta": 126,
+          "killed": {},
+          "ability_uses": {
+            "kez_ravens_veil": 1,
+            "kez_falcon_rush": 2,
+            "kez_switch_weapons": 6,
+            "kez_raptor_dance": 1,
+            "kez_echo_slash": 1
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Lion",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 860,
+          "healing": 124,
+          "gold_delta": 72,
+          "xp_delta": 2398,
+          "killed": {},
+          "ability_uses": {
+            "lion_voodoo": 1,
+            "lion_impale": 1,
+            "lion_mana_drain": 1,
+            "lion_finger_of_death": 1
+          },
+          "item_uses": {
+            "ward_dispenser": 3,
+            "blink": 1,
+            "force_staff": 1,
+            "magic_wand": 1,
+            "glimmer_cape": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 2273,
+      "end": 2306,
+      "last_death": 2291,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 119423415,
+          "personaname": "Cor4uoY",
+          "hero": "Skywrath Mage",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1854,
+          "healing": 32,
+          "gold_delta": 1602,
+          "xp_delta": 2900,
+          "killed": {
+            "npc_dota_hero_nyx_assassin": 1,
+            "npc_dota_hero_windrunner": 1
+          },
+          "ability_uses": {
+            "skywrath_mage_arcane_bolt": 3,
+            "skywrath_mage_concussive_shot": 1,
+            "skywrath_mage_mystic_flare": 1,
+            "skywrath_mage_ancient_seal": 1
+          },
+          "item_uses": {
+            "rod_of_atos": 1
+          }
+        },
+        {
+          "account_id": 93882714,
+          "personaname": "im fine",
+          "hero": "Invoker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 535,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 493147667,
+          "personaname": "the king and the queers",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 3380,
+          "healing": 857,
+          "gold_delta": 1061,
+          "xp_delta": 2900,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_dragon_tail": 1,
+            "dragon_knight_fireball": 1,
+            "dragon_knight_breathe_fire": 1
+          },
+          "item_uses": {
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 365223515,
+          "personaname": "Денис Вячеславыч",
+          "hero": "Spectre",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1691,
+          "healing": 278,
+          "gold_delta": 1201,
+          "xp_delta": 2900,
+          "killed": {
+            "npc_dota_hero_kez": 1
+          },
+          "ability_uses": {
+            "spectre_spectral_dagger": 1,
+            "spectre_shadow_step": 1
+          },
+          "item_uses": {
+            "manta": 1
+          }
+        },
+        {
+          "account_id": 123219364,
+          "personaname": "Измор системы 50%",
+          "hero": "Spirit Breaker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2143,
+          "healing": 599,
+          "gold_delta": 1154,
+          "xp_delta": 2768,
+          "killed": {},
+          "ability_uses": {
+            "spirit_breaker_bulldoze": 1,
+            "spirit_breaker_charge_of_darkness": 1
+          },
+          "item_uses": {
+            "ancient_janggo": 1,
+            "phase_boots": 2
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Nyx Assassin",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2311,
+          "healing": 131,
+          "gold_delta": -355,
+          "xp_delta": 24,
+          "killed": {},
+          "ability_uses": {
+            "nyx_assassin_spiked_carapace": 1,
+            "nyx_assassin_vendetta": 1,
+            "nyx_assassin_impale": 1
+          },
+          "item_uses": {
+            "dagon_4": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Magnus",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 6,
+          "gold_delta": 0,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 1,
+          "damage": 86,
+          "healing": 17,
+          "gold_delta": -399,
+          "xp_delta": 12,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_shackleshot": 1,
+            "windrunner_windrun": 1
+          },
+          "item_uses": {
+            "hurricane_pike": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "КОНеБАЛ",
+          "hero": "Kez",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2221,
+          "healing": 1109,
+          "gold_delta": -357,
+          "xp_delta": 136,
+          "killed": {},
+          "ability_uses": {
+            "kez_falcon_rush": 1,
+            "kez_switch_weapons": 3,
+            "kez_echo_slash": 1
+          },
+          "item_uses": {
+            "manta": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Lion",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 0,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        }
+      ]
+    }
+  ],
   "team_analysis_capabilities": {
     "full_lineups": true,
     "all_player_summaries": true,
-    "teamfights_available": false,
-    "objectives_available": false,
+    "teamfights_available": true,
+    "objectives_available": true,
     "picks_bans_available": true
   }
 }
