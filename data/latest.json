@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T17:56:14.632Z",
+  "generated_at": "2026-11-10T23:29:13.245Z",
   "source": "OpenDota",
   "players": {
     "cyborg": 206620580,
@@ -13,7 +13,7 @@
   "count": 30,
   "parsing": {
     "requested_match_ids": [
-      9083466291
+      9084618950
     ],
     "request_limit": 5,
     "wait_ms": 20000
@@ -23,6 +23,65 @@
   "detail_path_template": "data/matches/{match_id}.json",
   "matches": [
     {
+      "match_id": 9084618950,
+      "start_time": 1794329552,
+      "start_iso": "2026-11-10T16:52:32.000Z",
+      "duration_sec": 1951,
+      "duration_min": 32.5,
+      "lobby_type": 7,
+      "game_mode": 22,
+      "radiant_win": false,
+      "parsed": false,
+      "parse_version": null,
+      "same_team": true,
+      "cyborg": {
+        "account_id": 206620580,
+        "hero_id": 38,
+        "hero": "Beastmaster",
+        "player_slot": 1,
+        "team": "Radiant",
+        "won": false,
+        "kills": 1,
+        "deaths": 7,
+        "assists": 7,
+        "last_hits": 215,
+        "denies": 8,
+        "gold_per_min": 438,
+        "xp_per_min": 585,
+        "hero_damage": 24058,
+        "tower_damage": 2084,
+        "hero_healing": 837,
+        "lane": "unknown",
+        "position_guess": 1,
+        "position_confidence": "low",
+        "position_reason": "fallback by farm/economy"
+      },
+      "goddess": {
+        "account_id": 160810596,
+        "hero_id": 5,
+        "hero": "Crystal Maiden",
+        "player_slot": 2,
+        "team": "Radiant",
+        "won": false,
+        "kills": 9,
+        "deaths": 12,
+        "assists": 14,
+        "last_hits": 27,
+        "denies": 2,
+        "gold_per_min": 316,
+        "xp_per_min": 335,
+        "hero_damage": 16333,
+        "tower_damage": 97,
+        "hero_healing": 0,
+        "lane": "unknown",
+        "position_guess": 5,
+        "position_confidence": "low",
+        "position_reason": "fallback by farm/economy"
+      },
+      "objective_count": 0,
+      "teamfight_count": 0
+    },
+    {
       "match_id": 9083466291,
       "start_time": 1794248147,
       "start_iso": "2026-11-09T18:15:47.000Z",
@@ -31,8 +90,8 @@
       "lobby_type": 7,
       "game_mode": 22,
       "radiant_win": false,
-      "parsed": false,
-      "parse_version": null,
+      "parsed": true,
+      "parse_version": 22,
       "same_team": true,
       "cyborg": {
         "account_id": 206620580,
@@ -51,10 +110,14 @@
         "hero_damage": 47329,
         "tower_damage": 4777,
         "hero_healing": 0,
-        "lane": "unknown",
-        "position_guess": 3,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
+        "lane_role": 2,
+        "lane": "mid",
+        "is_roaming": false,
+        "wards_observer": 1,
+        "wards_sentry": 1,
+        "position_guess": 2,
+        "position_confidence": "high",
+        "position_reason": "lane_role=mid"
       },
       "goddess": {
         "account_id": 160810596,
@@ -73,13 +136,15 @@
         "hero_damage": 24737,
         "tower_damage": 2873,
         "hero_healing": 0,
-        "lane": "unknown",
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
         "position_guess": 1,
-        "position_confidence": "low",
-        "position_reason": "fallback by farm/economy"
+        "position_confidence": "medium",
+        "position_reason": "safe lane + higher farm/economy"
       },
-      "objective_count": 0,
-      "teamfight_count": 0
+      "objective_count": 30,
+      "teamfight_count": 17
     },
     {
       "match_id": 9083404511,
@@ -1914,71 +1979,6 @@
       },
       "objective_count": 22,
       "teamfight_count": 18
-    },
-    {
-      "match_id": 9067368618,
-      "start_time": 1793293433,
-      "start_iso": "2026-10-29T17:03:53.000Z",
-      "duration_sec": 1978,
-      "duration_min": 33,
-      "lobby_type": 7,
-      "game_mode": 22,
-      "radiant_win": false,
-      "parsed": true,
-      "parse_version": 22,
-      "same_team": true,
-      "cyborg": {
-        "account_id": 206620580,
-        "hero_id": 96,
-        "hero": "Centaur Warrunner",
-        "player_slot": 132,
-        "team": "Dire",
-        "won": true,
-        "kills": 3,
-        "deaths": 5,
-        "assists": 18,
-        "last_hits": 211,
-        "denies": 19,
-        "gold_per_min": 544,
-        "xp_per_min": 605,
-        "hero_damage": 13346,
-        "tower_damage": 4373,
-        "hero_healing": 0,
-        "lane_role": 3,
-        "lane": "off",
-        "is_roaming": false,
-        "position_guess": 3,
-        "position_confidence": "medium",
-        "position_reason": "off lane + higher farm/economy"
-      },
-      "goddess": {
-        "account_id": 160810596,
-        "hero_id": 30,
-        "hero": "Witch Doctor",
-        "player_slot": 131,
-        "team": "Dire",
-        "won": true,
-        "kills": 4,
-        "deaths": 6,
-        "assists": 15,
-        "last_hits": 51,
-        "denies": 6,
-        "gold_per_min": 389,
-        "xp_per_min": 477,
-        "hero_damage": 8717,
-        "tower_damage": 370,
-        "hero_healing": 2680,
-        "lane_role": 1,
-        "lane": "safe",
-        "is_roaming": false,
-        "wards_observer": 12,
-        "wards_sentry": 19,
-        "position_guess": 5,
-        "position_confidence": "medium",
-        "position_reason": "safe lane + lower farm/economy"
-      },
-      "objective_count": 25,
-      "teamfight_count": 9
     }
   ]
 }
