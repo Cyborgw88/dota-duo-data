@@ -7,8 +7,8 @@
   "lobby_type": 7,
   "game_mode": 22,
   "radiant_win": true,
-  "parsed": false,
-  "parse_version": null,
+  "parsed": true,
+  "parse_version": 22,
   "same_team": true,
   "cyborg": {
     "account_id": 206620580,
@@ -27,10 +27,13 @@
     "hero_damage": 24368,
     "tower_damage": 3243,
     "hero_healing": 0,
-    "lane": "unknown",
-    "position_guess": null,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 1,
+    "lane": "safe",
+    "is_roaming": false,
+    "wards_observer": 1,
+    "position_guess": 1,
+    "position_confidence": "medium",
+    "position_reason": "safe lane + higher farm/economy"
   },
   "goddess": {
     "account_id": 160810596,
@@ -49,13 +52,904 @@
     "hero_damage": 21571,
     "tower_damage": 695,
     "hero_healing": 0,
-    "lane": "unknown",
-    "position_guess": null,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 3,
+    "lane": "off",
+    "is_roaming": false,
+    "wards_observer": 3,
+    "wards_sentry": 7,
+    "position_guess": 4,
+    "position_confidence": "medium",
+    "position_reason": "off lane + lower farm/economy"
   },
-  "objectives": [],
-  "teamfights": [],
+  "objectives": [
+    {
+      "time": -3,
+      "type": "CHAT_MESSAGE_FIRSTBLOOD",
+      "key": "2",
+      "slot": 7,
+      "player_slot": 130,
+      "victim_player_slot": 2
+    },
+    {
+      "time": 454,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 2,
+      "value": 45,
+      "killer": 130
+    },
+    {
+      "time": 708,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_ogre_magi",
+      "key": "npc_dota_goodguys_tower1_mid",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 893,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_night_stalker",
+      "key": "npc_dota_badguys_tower1_top",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 1012,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_badguys_flagbearer",
+      "key": "npc_dota_goodguys_tower1_bot"
+    },
+    {
+      "time": 1097,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 3,
+      "value": 65,
+      "killer": 3
+    },
+    {
+      "time": 1100,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 3,
+      "value": 90,
+      "killer": 3
+    },
+    {
+      "time": 1222,
+      "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+      "team": 3,
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 1589,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_templar_assassin",
+      "key": "npc_dota_goodguys_tower2_bot",
+      "slot": 9,
+      "player_slot": 132
+    },
+    {
+      "time": 1682,
+      "type": "CHAT_MESSAGE_ROSHAN_KILL",
+      "team": 2
+    },
+    {
+      "time": 1683,
+      "type": "CHAT_MESSAGE_AEGIS",
+      "slot": 4,
+      "player_slot": 4
+    },
+    {
+      "time": 1697,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_night_stalker",
+      "key": "npc_dota_badguys_tower1_mid",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 1698,
+      "type": "building_kill",
+      "unit": "npc_dota_badguys_siege",
+      "key": "npc_dota_goodguys_tower1_top"
+    },
+    {
+      "time": 2000,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_slark",
+      "key": "npc_dota_badguys_tower2_mid",
+      "slot": 4,
+      "player_slot": 4
+    },
+    {
+      "time": 2031,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_slark",
+      "key": "npc_dota_badguys_tower3_mid",
+      "slot": 4,
+      "player_slot": 4
+    },
+    {
+      "time": 2045,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_night_stalker",
+      "key": "npc_dota_badguys_range_rax_mid",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 2051,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_goodguys_ranged",
+      "key": "npc_dota_badguys_tower1_bot"
+    },
+    {
+      "time": 2074,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_windrunner",
+      "key": "npc_dota_badguys_tower2_top",
+      "slot": 5,
+      "player_slot": 128
+    },
+    {
+      "time": 2215,
+      "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+      "team": 2,
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 2354,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_goodguys_ranged_upgraded",
+      "key": "npc_dota_badguys_melee_rax_mid"
+    },
+    {
+      "time": 2461,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_rubick",
+      "key": "npc_dota_badguys_tower3_top",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 2469,
+      "type": "building_kill",
+      "unit": "npc_dota_goodguys_siege",
+      "key": "npc_dota_badguys_range_rax_top"
+    },
+    {
+      "time": 2477,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_goodguys_melee",
+      "key": "npc_dota_badguys_melee_rax_top"
+    },
+    {
+      "time": 2499,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_night_stalker",
+      "key": "npc_dota_badguys_tower4",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 2503,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_night_stalker",
+      "key": "npc_dota_badguys_tower4",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 2540,
+      "type": "building_kill",
+      "unit": "npc_dota_badguys_siege",
+      "key": "npc_dota_goodguys_tower3_bot"
+    },
+    {
+      "time": 2547,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_night_stalker",
+      "key": "npc_dota_badguys_fort",
+      "slot": 3,
+      "player_slot": 3
+    }
+  ],
+  "teamfights": [
+    {
+      "start": 424,
+      "end": 461,
+      "last_death": 446,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 65,
+        "healing": 330,
+        "gold_delta": 76,
+        "xp_delta": 182,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_refraction": 1,
+          "templar_assassin_meld": 1
+        },
+        "item_uses": {
+          "power_treads": 1,
+          "famango": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "82": {
+            "167": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 241,
+        "gold_delta": 45,
+        "xp_delta": 90,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 1,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 1
+        },
+        "item_uses": {},
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 499,
+      "end": 540,
+      "last_death": 525,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 76,
+        "healing": 64,
+        "gold_delta": 289,
+        "xp_delta": 469,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_refraction": 1,
+          "templar_assassin_meld": 4,
+          "templar_assassin_psionic_trap": 1
+        },
+        "item_uses": {
+          "power_treads": 4,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 967,
+        "healing": 31,
+        "gold_delta": 360,
+        "xp_delta": 456,
+        "killed": {
+          "npc_dota_hero_slark": 1
+        },
+        "ability_uses": {
+          "windrunner_powershot": 2,
+          "windrunner_shackleshot": 1
+        },
+        "item_uses": {
+          "blood_grenade": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 547,
+      "end": 587,
+      "last_death": 572,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 69,
+        "healing": 170,
+        "gold_delta": 239,
+        "xp_delta": 154,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_refraction": 1,
+          "templar_assassin_meld": 2
+        },
+        "item_uses": {
+          "madstone_bundle": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1420,
+        "healing": 558,
+        "gold_delta": 651,
+        "xp_delta": 707,
+        "killed": {
+          "npc_dota_hero_rubick": 1
+        },
+        "ability_uses": {
+          "windrunner_powershot": 2,
+          "windrunner_focusfire": 1,
+          "windrunner_shackleshot": 2,
+          "windrunner_windrun": 2
+        },
+        "item_uses": {
+          "enchanted_mango": 1,
+          "flask": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 652,
+      "end": 689,
+      "last_death": 674,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 119,
+        "gold_delta": 164,
+        "xp_delta": 368,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_trap": 1,
+          "templar_assassin_meld": 4,
+          "templar_assassin_psionic_trap": 1
+        },
+        "item_uses": {
+          "ward_observer": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1074,
+        "healing": 94,
+        "gold_delta": 523,
+        "xp_delta": 421,
+        "killed": {
+          "npc_dota_hero_rubick": 1,
+          "npc_dota_hero_techies": 1
+        },
+        "ability_uses": {
+          "windrunner_powershot": 1,
+          "windrunner_focusfire": 1,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "ward_dispenser": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 831,
+      "end": 870,
+      "last_death": 855,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 638,
+        "healing": 294,
+        "gold_delta": -60,
+        "xp_delta": 142,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_refraction": 1,
+          "templar_assassin_meld": 1,
+          "templar_assassin_psionic_trap": 1
+        },
+        "item_uses": {
+          "power_treads": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "67": {
+            "147": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 621,
+        "healing": 247,
+        "gold_delta": -104,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 1,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 1
+        },
+        "item_uses": {},
+        "deaths_pos": {
+          "69": {
+            "147": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 896,
+      "end": 952,
+      "last_death": 937,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 117,
+        "healing": 272,
+        "gold_delta": 644,
+        "xp_delta": 1019,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_meld": 2,
+          "templar_assassin_psionic_trap": 1
+        },
+        "item_uses": {
+          "madstone_bundle": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1406,
+        "healing": 98,
+        "gold_delta": -8,
+        "xp_delta": 57,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_focusfire": 1,
+          "windrunner_powershot": 2,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 2
+        },
+        "item_uses": {
+          "arcane_boots": 1,
+          "smoke_of_deceit": 1,
+          "flask": 1
+        },
+        "deaths_pos": {
+          "107": {
+            "145": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1246,
+      "end": 1297,
+      "last_death": 1282,
+      "deaths": 7,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 2748,
+        "healing": 466,
+        "gold_delta": 12,
+        "xp_delta": 438,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_refraction": 2,
+          "templar_assassin_meld": 5,
+          "templar_assassin_psionic_trap": 1
+        },
+        "item_uses": {
+          "blink": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "143": {
+            "92": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1034,
+        "healing": 244,
+        "gold_delta": 40,
+        "xp_delta": 466,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 2,
+          "windrunner_focusfire": 1,
+          "windrunner_shackleshot": 1,
+          "ability_lamp_use": 1,
+          "windrunner_windrun": 2,
+          "windrunner_gale_force": 1
+        },
+        "item_uses": {
+          "force_staff": 1
+        },
+        "deaths_pos": {
+          "138": {
+            "95": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1526,
+      "end": 1575,
+      "last_death": 1560,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 2764,
+        "healing": 627,
+        "gold_delta": 658,
+        "xp_delta": 1390,
+        "killed": {
+          "npc_dota_hero_techies": 1
+        },
+        "ability_uses": {
+          "templar_assassin_refraction": 3,
+          "templar_assassin_trap": 4,
+          "templar_assassin_meld": 5,
+          "templar_assassin_psionic_trap": 3
+        },
+        "item_uses": {
+          "blink": 3,
+          "force_staff": 2,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1294,
+        "healing": 166,
+        "gold_delta": 623,
+        "xp_delta": 1434,
+        "killed": {
+          "npc_dota_hero_slark": 1
+        },
+        "ability_uses": {
+          "windrunner_powershot": 4,
+          "windrunner_focusfire": 1,
+          "windrunner_shackleshot": 2,
+          "windrunner_windrun": 4,
+          "windrunner_gale_force": 1
+        },
+        "item_uses": {
+          "arcane_boots": 1,
+          "force_staff": 2
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1615,
+      "end": 1652,
+      "last_death": 1637,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 2204,
+        "healing": 20,
+        "gold_delta": -238,
+        "xp_delta": 530,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_refraction": 1,
+          "templar_assassin_meld": 3
+        },
+        "item_uses": {
+          "blink": 1,
+          "hurricane_pike": 1
+        },
+        "deaths_pos": {
+          "143": {
+            "108": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 996,
+        "healing": 283,
+        "gold_delta": 124,
+        "xp_delta": 530,
+        "killed": {
+          "npc_dota_hero_techies": 1
+        },
+        "ability_uses": {
+          "windrunner_focusfire": 1,
+          "windrunner_powershot": 2,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 2,
+          "windrunner_gale_force": 1
+        },
+        "item_uses": {
+          "force_staff": 1
+        },
+        "deaths_pos": {
+          "143": {
+            "111": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1637,
+      "end": 1681,
+      "last_death": 1666,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 0,
+        "gold_delta": -336,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {},
+        "item_uses": {},
+        "deaths_pos": {
+          "143": {
+            "108": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 599,
+        "healing": 283,
+        "gold_delta": -211,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 1,
+          "windrunner_windrun": 1
+        },
+        "item_uses": {
+          "force_staff": 1
+        },
+        "deaths_pos": {
+          "143": {
+            "111": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1931,
+      "end": 2000,
+      "last_death": 1985,
+      "deaths": 6,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 3187,
+        "healing": 353,
+        "gold_delta": -146,
+        "xp_delta": 738,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_refraction": 2,
+          "templar_assassin_trap": 2,
+          "templar_assassin_meld": 4,
+          "templar_assassin_psionic_trap": 2
+        },
+        "item_uses": {
+          "blink": 2,
+          "hurricane_pike": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "138": {
+            "139": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1198,
+        "healing": 506,
+        "gold_delta": -89,
+        "xp_delta": 745,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 2,
+          "windrunner_focusfire": 1,
+          "windrunner_shackleshot": 2,
+          "windrunner_windrun": 3,
+          "windrunner_gale_force": 1
+        },
+        "item_uses": {
+          "arcane_boots": 1,
+          "force_staff": 2,
+          "orchid": 2
+        },
+        "deaths_pos": {
+          "156": {
+            "147": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 2245,
+      "end": 2318,
+      "last_death": 2303,
+      "deaths": 8,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 5675,
+        "healing": 316,
+        "gold_delta": 577,
+        "xp_delta": 5373,
+        "killed": {
+          "npc_dota_hero_techies": 1
+        },
+        "ability_uses": {
+          "templar_assassin_refraction": 4,
+          "templar_assassin_trap": 1,
+          "templar_assassin_meld": 6,
+          "templar_assassin_psionic_trap": 1
+        },
+        "item_uses": {
+          "blink": 2,
+          "hurricane_pike": 2
+        },
+        "deaths_pos": {
+          "127": {
+            "154": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 402,
+        "gold_delta": -291,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 1,
+          "windrunner_windrun": 2
+        },
+        "item_uses": {
+          "ward_dispenser": 2,
+          "force_staff": 1
+        },
+        "deaths_pos": {
+          "106": {
+            "162": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 2426,
+      "end": 2469,
+      "last_death": 2454,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 43,
+        "gold_delta": -469,
+        "xp_delta": 194,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_refraction": 1,
+          "templar_assassin_meld": 1
+        },
+        "item_uses": {
+          "hurricane_pike": 1
+        },
+        "deaths_pos": {
+          "162": {
+            "174": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 811,
+        "healing": 768,
+        "gold_delta": 39,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_focusfire": 1,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 1,
+          "windrunner_gale_force": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "orchid": 1
+        },
+        "deaths_pos": {
+          "163": {
+            "178": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 2500,
+      "end": 2547,
+      "last_death": 2532,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1609,
+        "healing": 337,
+        "gold_delta": 125,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {
+          "templar_assassin_refraction": 1,
+          "templar_assassin_meld": 2
+        },
+        "item_uses": {
+          "blink": 1,
+          "hurricane_pike": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 236,
+        "healing": 587,
+        "gold_delta": -159,
+        "xp_delta": 238,
+        "killed": {},
+        "ability_uses": {
+          "windrunner_powershot": 1,
+          "windrunner_focusfire": 1,
+          "windrunner_shackleshot": 1,
+          "windrunner_windrun": 3,
+          "windrunner_gale_force": 1
+        },
+        "item_uses": {
+          "hurricane_pike": 1,
+          "orchid": 1
+        },
+        "deaths_pos": {
+          "181": {
+            "174": 1
+          }
+        }
+      }
+    }
+  ],
   "team_context": {
     "duo_team": "Dire",
     "radiant_win": true,
@@ -78,8 +972,12 @@
         "hero_damage": 21571,
         "tower_damage": 695,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "wards_observer": 3,
+        "wards_sentry": 7,
+        "stuns": 38.433723,
         "level": 17,
         "item_0": 77,
         "item_1": 98,
@@ -92,8 +990,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.65789473
       },
       {
         "account_id": 337386027,
@@ -113,8 +1011,12 @@
         "hero_damage": 14857,
         "tower_damage": 138,
         "hero_healing": 194,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 12,
+        "wards_sentry": 25,
+        "stuns": 73.03314,
         "level": 18,
         "item_0": 116,
         "item_1": 0,
@@ -127,8 +1029,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.5
       },
       {
         "account_id": 147124823,
@@ -148,8 +1050,11 @@
         "hero_damage": 42309,
         "tower_damage": 588,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 2,
+        "lane": "mid",
+        "is_roaming": false,
+        "wards_observer": 2,
+        "stuns": 107.50412,
         "level": 25,
         "item_0": 176,
         "item_1": 50,
@@ -162,8 +1067,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.84210527
       },
       {
         "account_id": 102773730,
@@ -183,8 +1088,10 @@
         "hero_damage": 20246,
         "tower_damage": 343,
         "hero_healing": 1260,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "stuns": 37.368267,
         "level": 21,
         "item_0": 1,
         "item_1": 178,
@@ -197,8 +1104,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.6315789
       },
       {
         "account_id": 206620580,
@@ -218,8 +1125,11 @@
         "hero_damage": 24368,
         "tower_damage": 3243,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 1,
+        "stuns": 0,
         "level": 24,
         "item_0": 63,
         "item_1": 263,
@@ -232,8 +1142,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.47368422
       }
     ],
     "enemies": [
@@ -255,8 +1165,12 @@
         "hero_damage": 23090,
         "tower_damage": 1372,
         "hero_healing": 13714,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 13,
+        "wards_sentry": 21,
+        "stuns": 13.833864,
         "level": 24,
         "item_0": 1848,
         "item_1": 180,
@@ -269,8 +1183,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.7234042
       },
       {
         "account_id": 1269496060,
@@ -290,8 +1204,12 @@
         "hero_damage": 40245,
         "tower_damage": 5598,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 2,
+        "lane": "mid",
+        "is_roaming": false,
+        "wards_observer": 1,
+        "wards_sentry": 1,
+        "stuns": 62.777977,
         "level": 26,
         "item_0": 29,
         "item_1": 277,
@@ -304,8 +1222,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.78723407
       },
       {
         "account_id": 1275197214,
@@ -325,8 +1243,12 @@
         "hero_damage": 23085,
         "tower_damage": 1394,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "wards_observer": 4,
+        "wards_sentry": 9,
+        "stuns": 28.63382,
         "level": 22,
         "item_0": 277,
         "item_1": 232,
@@ -339,8 +1261,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.5744681
       },
       {
         "account_id": 1264912323,
@@ -360,8 +1282,10 @@
         "hero_damage": 27816,
         "tower_damage": 8368,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "stuns": 3.1666253,
         "level": 24,
         "item_0": 116,
         "item_1": 112,
@@ -374,8 +1298,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.82978725
       },
       {
         "account_id": 1486831671,
@@ -395,8 +1319,10 @@
         "hero_damage": 14486,
         "tower_damage": 4629,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "stuns": 0,
         "level": 24,
         "item_0": 63,
         "item_1": 108,
@@ -409,8 +1335,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.44680852
       }
     ],
     "radiant_heroes": [
@@ -533,12 +1459,3323 @@
     ],
     "draft_note": "For ranked games picks_bans may be absent; use the final 5v5 hero lineups for composition analysis."
   },
-  "team_teamfights": [],
+  "team_teamfights": [
+    {
+      "start": 424,
+      "end": 461,
+      "last_death": 446,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 1470128769,
+          "personaname": "+2818419471093492",
+          "hero": "Winter Wyvern",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 137,
+          "healing": 0,
+          "gold_delta": 0,
+          "xp_delta": 73,
+          "killed": {},
+          "ability_uses": {
+            "winter_wyvern_arctic_burn": 1,
+            "winter_wyvern_splinter_blast": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 1269496060,
+          "personaname": "logicа",
+          "hero": "Rubick",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1002,
+          "healing": 160,
+          "gold_delta": 246,
+          "xp_delta": 266,
+          "killed": {
+            "npc_dota_hero_crystal_maiden": 1
+          },
+          "ability_uses": {
+            "ogre_magi_ignite": 1,
+            "rubick_spell_steal": 1,
+            "rubick_fade_bolt": 2,
+            "rubick_telekinesis": 1,
+            "rubick_telekinesis_land": 1,
+            "crystal_maiden_frostbite": 1
+          },
+          "item_uses": {
+            "faerie_fire": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1275197214,
+          "personaname": "наруто кун",
+          "hero": "Techies",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 632,
+          "healing": 235,
+          "gold_delta": 181,
+          "xp_delta": 381,
+          "killed": {},
+          "ability_uses": {
+            "techies_suicide": 1,
+            "techies_reactive_tazer": 2,
+            "techies_sticky_bomb": 1
+          },
+          "item_uses": {
+            "magic_stick": 1,
+            "ward_dispenser": 2
+          }
+        },
+        {
+          "account_id": 1264912323,
+          "personaname": "Ненавистник Эстонии",
+          "hero": "Night Stalker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 594,
+          "healing": 581,
+          "gold_delta": 394,
+          "xp_delta": 324,
+          "killed": {
+            "npc_dota_hero_templar_assassin": 1
+          },
+          "ability_uses": {
+            "night_stalker_void": 2,
+            "night_stalker_midnight_feast": 1,
+            "night_stalker_crippling_fear": 1
+          },
+          "item_uses": {
+            "phase_boots": 1,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 1486831671,
+          "personaname": "миша",
+          "hero": "Slark",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 153,
+          "healing": 129,
+          "gold_delta": 110,
+          "xp_delta": 130,
+          "killed": {},
+          "ability_uses": {
+            "slark_pounce": 1,
+            "slark_dark_pact": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 241,
+          "gold_delta": 45,
+          "xp_delta": 90,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_powershot": 1,
+            "windrunner_shackleshot": 1,
+            "windrunner_windrun": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 564,
+          "healing": 51,
+          "gold_delta": 93,
+          "xp_delta": 28,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_crystal_nova": 1,
+            "crystal_maiden_frostbite": 2
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "ОХЛАМОН",
+          "hero": "Ogre Magi",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1819,
+          "healing": 449,
+          "gold_delta": 393,
+          "xp_delta": 664,
+          "killed": {
+            "npc_dota_hero_rubick": 1
+          },
+          "ability_uses": {
+            "ogre_magi_bloodlust": 1,
+            "ogre_magi_ignite": 2,
+            "ogre_magi_fireblast": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "bottle": 4
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 166,
+          "healing": 125,
+          "gold_delta": 171,
+          "xp_delta": 147,
+          "killed": {},
+          "ability_uses": {
+            "tidehunter_anchor_smash": 2
+          },
+          "item_uses": {
+            "phase_boots": 3
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Templar Assassin",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 65,
+          "healing": 330,
+          "gold_delta": 76,
+          "xp_delta": 182,
+          "killed": {},
+          "ability_uses": {
+            "templar_assassin_refraction": 1,
+            "templar_assassin_meld": 1
+          },
+          "item_uses": {
+            "power_treads": 1,
+            "famango": 1,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 499,
+      "end": 540,
+      "last_death": 525,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 1470128769,
+          "personaname": "+2818419471093492",
+          "hero": "Winter Wyvern",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 414,
+          "healing": 453,
+          "gold_delta": -36,
+          "xp_delta": 200,
+          "killed": {},
+          "ability_uses": {
+            "winter_wyvern_arctic_burn": 1,
+            "winter_wyvern_cold_embrace": 1,
+            "winter_wyvern_splinter_blast": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_stick": 1
+          }
+        },
+        {
+          "account_id": 1269496060,
+          "personaname": "logicа",
+          "hero": "Rubick",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 395,
+          "healing": 103,
+          "gold_delta": 289,
+          "xp_delta": 403,
+          "killed": {},
+          "ability_uses": {
+            "rubick_spell_steal": 1,
+            "templar_assassin_refraction": 1,
+            "rubick_fade_bolt": 1
+          },
+          "item_uses": {
+            "ward_observer": 1,
+            "ward_dispenser": 2
+          }
+        },
+        {
+          "account_id": 1275197214,
+          "personaname": "наруто кун",
+          "hero": "Techies",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 435,
+          "healing": 514,
+          "gold_delta": 110,
+          "xp_delta": 212,
+          "killed": {},
+          "ability_uses": {
+            "techies_suicide": 1
+          },
+          "item_uses": {
+            "magic_stick": 1,
+            "ward_dispenser": 2
+          }
+        },
+        {
+          "account_id": 1264912323,
+          "personaname": "Ненавистник Эстонии",
+          "hero": "Night Stalker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 352,
+          "healing": 68,
+          "gold_delta": 302,
+          "xp_delta": 489,
+          "killed": {
+            "npc_dota_hero_crystal_maiden": 1
+          },
+          "ability_uses": {
+            "night_stalker_void": 1,
+            "night_stalker_midnight_feast": 1,
+            "ability_lamp_use": 1,
+            "night_stalker_crippling_fear": 1
+          },
+          "item_uses": {
+            "phase_boots": 2
+          }
+        },
+        {
+          "account_id": 1486831671,
+          "personaname": "миша",
+          "hero": "Slark",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 296,
+          "healing": 392,
+          "gold_delta": -82,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "slark_pounce": 1,
+            "slark_dark_pact": 1
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 967,
+          "healing": 31,
+          "gold_delta": 360,
+          "xp_delta": 456,
+          "killed": {
+            "npc_dota_hero_slark": 1
+          },
+          "ability_uses": {
+            "windrunner_powershot": 2,
+            "windrunner_shackleshot": 1
+          },
+          "item_uses": {
+            "blood_grenade": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 116,
+          "healing": 0,
+          "gold_delta": 112,
+          "xp_delta": 138,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_crystal_nova": 1
+          },
+          "item_uses": {
+            "ward_sentry": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "ОХЛАМОН",
+          "hero": "Ogre Magi",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 588,
+          "healing": 185,
+          "gold_delta": 659,
+          "xp_delta": 508,
+          "killed": {
+            "npc_dota_hero_winter_wyvern": 1
+          },
+          "ability_uses": {
+            "ogre_magi_bloodlust": 1,
+            "ogre_magi_ignite": 1,
+            "ogre_magi_fireblast": 1
+          },
+          "item_uses": {
+            "hand_of_midas": 1,
+            "madstone_bundle": 3,
+            "bottle": 4
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 434,
+          "healing": 348,
+          "gold_delta": 246,
+          "xp_delta": 409,
+          "killed": {},
+          "ability_uses": {
+            "tidehunter_anchor_smash": 3,
+            "tidehunter_gush": 1
+          },
+          "item_uses": {
+            "soul_ring": 1,
+            "phase_boots": 4,
+            "tidehunter_fish": 1,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Templar Assassin",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 76,
+          "healing": 64,
+          "gold_delta": 289,
+          "xp_delta": 469,
+          "killed": {},
+          "ability_uses": {
+            "templar_assassin_refraction": 1,
+            "templar_assassin_meld": 4,
+            "templar_assassin_psionic_trap": 1
+          },
+          "item_uses": {
+            "power_treads": 4,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 547,
+      "end": 587,
+      "last_death": 572,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 1470128769,
+          "personaname": "+2818419471093492",
+          "hero": "Winter Wyvern",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 982,
+          "healing": 294,
+          "gold_delta": -38,
+          "xp_delta": 150,
+          "killed": {},
+          "ability_uses": {
+            "winter_wyvern_arctic_burn": 1,
+            "winter_wyvern_cold_embrace": 1,
+            "winter_wyvern_splinter_blast": 2
+          },
+          "item_uses": {
+            "madstone_bundle": 1,
+            "magic_stick": 1,
+            "blood_grenade": 1
+          }
+        },
+        {
+          "account_id": 1269496060,
+          "personaname": "logicа",
+          "hero": "Rubick",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 913,
+          "healing": 251,
+          "gold_delta": -32,
+          "xp_delta": 28,
+          "killed": {},
+          "ability_uses": {
+            "rubick_spell_steal": 1,
+            "tidehunter_anchor_smash": 2,
+            "rubick_fade_bolt": 1,
+            "rubick_telekinesis": 1,
+            "rubick_telekinesis_land": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1275197214,
+          "personaname": "наруто кун",
+          "hero": "Techies",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 9,
+          "gold_delta": 0,
+          "xp_delta": 38,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 1264912323,
+          "personaname": "Ненавистник Эстонии",
+          "hero": "Night Stalker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 372,
+          "gold_delta": 306,
+          "xp_delta": 346,
+          "killed": {},
+          "ability_uses": {
+            "night_stalker_midnight_feast": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 1486831671,
+          "personaname": "миша",
+          "hero": "Slark",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 521,
+          "healing": 96,
+          "gold_delta": 35,
+          "xp_delta": 122,
+          "killed": {},
+          "ability_uses": {
+            "slark_pounce": 1,
+            "slark_dark_pact": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1420,
+          "healing": 558,
+          "gold_delta": 651,
+          "xp_delta": 707,
+          "killed": {
+            "npc_dota_hero_rubick": 1
+          },
+          "ability_uses": {
+            "windrunner_powershot": 2,
+            "windrunner_focusfire": 1,
+            "windrunner_shackleshot": 2,
+            "windrunner_windrun": 2
+          },
+          "item_uses": {
+            "enchanted_mango": 1,
+            "flask": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 113,
+          "healing": 29,
+          "gold_delta": 305,
+          "xp_delta": 401,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_crystal_nova": 1,
+            "crystal_maiden_frostbite": 1
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "ОХЛАМОН",
+          "hero": "Ogre Magi",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 351,
+          "healing": 385,
+          "gold_delta": 406,
+          "xp_delta": 369,
+          "killed": {
+            "npc_dota_hero_winter_wyvern": 1
+          },
+          "ability_uses": {
+            "ogre_magi_bloodlust": 1,
+            "ogre_magi_ignite": 1,
+            "ogre_magi_fireblast": 1
+          },
+          "item_uses": {
+            "madstone_bundle": 1,
+            "phase_boots": 3,
+            "bottle": 3
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1426,
+          "healing": 352,
+          "gold_delta": 492,
+          "xp_delta": 297,
+          "killed": {
+            "npc_dota_hero_slark": 1
+          },
+          "ability_uses": {
+            "tidehunter_anchor_smash": 3,
+            "tidehunter_gush": 2,
+            "tidehunter_ravage": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "soul_ring": 1,
+            "phase_boots": 3,
+            "tidehunter_fish": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Templar Assassin",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 69,
+          "healing": 170,
+          "gold_delta": 239,
+          "xp_delta": 154,
+          "killed": {},
+          "ability_uses": {
+            "templar_assassin_refraction": 1,
+            "templar_assassin_meld": 2
+          },
+          "item_uses": {
+            "madstone_bundle": 1,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 652,
+      "end": 689,
+      "last_death": 674,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 1470128769,
+          "personaname": "+2818419471093492",
+          "hero": "Winter Wyvern",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 572,
+          "healing": 158,
+          "gold_delta": -38,
+          "xp_delta": 124,
+          "killed": {},
+          "ability_uses": {
+            "winter_wyvern_arctic_burn": 1,
+            "winter_wyvern_cold_embrace": 1,
+            "winter_wyvern_splinter_blast": 2
+          },
+          "item_uses": {
+            "blood_grenade": 1
+          }
+        },
+        {
+          "account_id": 1269496060,
+          "personaname": "logicа",
+          "hero": "Rubick",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 520,
+          "healing": 196,
+          "gold_delta": -9,
+          "xp_delta": 124,
+          "killed": {},
+          "ability_uses": {
+            "ogre_magi_bloodlust": 1,
+            "rubick_spell_steal": 2,
+            "rubick_telekinesis": 1,
+            "rubick_fade_bolt": 1
+          },
+          "item_uses": {
+            "bottle": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1275197214,
+          "personaname": "наруто кун",
+          "hero": "Techies",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 995,
+          "healing": 161,
+          "gold_delta": 84,
+          "xp_delta": 86,
+          "killed": {},
+          "ability_uses": {
+            "techies_suicide": 1,
+            "techies_reactive_tazer": 1,
+            "techies_land_mines": 2,
+            "techies_sticky_bomb": 1
+          },
+          "item_uses": {
+            "soul_ring": 1,
+            "famango": 1
+          }
+        },
+        {
+          "account_id": 1264912323,
+          "personaname": "Ненавистник Эстонии",
+          "hero": "Night Stalker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 318,
+          "gold_delta": 197,
+          "xp_delta": 336,
+          "killed": {},
+          "ability_uses": {
+            "night_stalker_void": 1
+          },
+          "item_uses": {
+            "phase_boots": 2
+          }
+        },
+        {
+          "account_id": 1486831671,
+          "personaname": "миша",
+          "hero": "Slark",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 100,
+          "healing": 630,
+          "gold_delta": 101,
+          "xp_delta": 305,
+          "killed": {},
+          "ability_uses": {
+            "slark_pounce": 1,
+            "slark_dark_pact": 2
+          },
+          "item_uses": {
+            "power_treads": 9
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1074,
+          "healing": 94,
+          "gold_delta": 523,
+          "xp_delta": 421,
+          "killed": {
+            "npc_dota_hero_rubick": 1,
+            "npc_dota_hero_techies": 1
+          },
+          "ability_uses": {
+            "windrunner_powershot": 1,
+            "windrunner_focusfire": 1,
+            "windrunner_shackleshot": 1,
+            "windrunner_windrun": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "ward_dispenser": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 314,
+          "healing": 141,
+          "gold_delta": 222,
+          "xp_delta": 487,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_crystal_nova": 1,
+            "crystal_maiden_frostbite": 2
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "ОХЛАМОН",
+          "hero": "Ogre Magi",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1209,
+          "healing": 1475,
+          "gold_delta": 836,
+          "xp_delta": 718,
+          "killed": {
+            "npc_dota_hero_winter_wyvern": 1
+          },
+          "ability_uses": {
+            "ogre_magi_bloodlust": 1,
+            "ogre_magi_ignite": 1,
+            "ogre_magi_fireblast": 2
+          },
+          "item_uses": {
+            "hand_of_midas": 1,
+            "phase_boots": 4,
+            "bottle": 2
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 408,
+          "healing": 192,
+          "gold_delta": 169,
+          "xp_delta": 440,
+          "killed": {},
+          "ability_uses": {
+            "tidehunter_anchor_smash": 1,
+            "tidehunter_gush": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "phase_boots": 3,
+            "tidehunter_fish": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Templar Assassin",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 119,
+          "gold_delta": 164,
+          "xp_delta": 368,
+          "killed": {},
+          "ability_uses": {
+            "templar_assassin_trap": 1,
+            "templar_assassin_meld": 4,
+            "templar_assassin_psionic_trap": 1
+          },
+          "item_uses": {
+            "ward_observer": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 831,
+      "end": 870,
+      "last_death": 855,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 1470128769,
+          "personaname": "+2818419471093492",
+          "hero": "Winter Wyvern",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 317,
+          "healing": 287,
+          "gold_delta": 457,
+          "xp_delta": 1400,
+          "killed": {},
+          "ability_uses": {
+            "winter_wyvern_arctic_burn": 1,
+            "winter_wyvern_cold_embrace": 1,
+            "winter_wyvern_splinter_blast": 2
+          },
+          "item_uses": {
+            "ward_dispenser": 1,
+            "dust": 1
+          }
+        },
+        {
+          "account_id": 1269496060,
+          "personaname": "logicа",
+          "hero": "Rubick",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1369,
+          "healing": 512,
+          "gold_delta": 302,
+          "xp_delta": 1200,
+          "killed": {},
+          "ability_uses": {
+            "rubick_spell_steal": 1,
+            "crystal_maiden_crystal_nova": 1,
+            "rubick_fade_bolt": 2,
+            "rubick_telekinesis": 1,
+            "rubick_telekinesis_land": 3
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "bottle": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1275197214,
+          "personaname": "наруто кун",
+          "hero": "Techies",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 949,
+          "healing": 532,
+          "gold_delta": 890,
+          "xp_delta": 700,
+          "killed": {
+            "npc_dota_hero_tidehunter": 1,
+            "npc_dota_hero_windrunner": 1
+          },
+          "ability_uses": {
+            "techies_suicide": 1,
+            "techies_reactive_tazer": 1,
+            "techies_land_mines": 3,
+            "techies_sticky_bomb": 1
+          },
+          "item_uses": {
+            "famango": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1264912323,
+          "personaname": "Ненавистник Эстонии",
+          "hero": "Night Stalker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1208,
+          "healing": 494,
+          "gold_delta": 513,
+          "xp_delta": 779,
+          "killed": {
+            "npc_dota_hero_crystal_maiden": 1
+          },
+          "ability_uses": {
+            "night_stalker_void": 2,
+            "night_stalker_darkness": 1,
+            "night_stalker_midnight_feast": 1,
+            "night_stalker_crippling_fear": 1
+          },
+          "item_uses": {
+            "phase_boots": 4,
+            "dust": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1486831671,
+          "personaname": "миша",
+          "hero": "Slark",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 714,
+          "healing": 233,
+          "gold_delta": 667,
+          "xp_delta": 858,
+          "killed": {
+            "npc_dota_hero_templar_assassin": 1
+          },
+          "ability_uses": {
+            "slark_pounce": 1,
+            "slark_dark_pact": 3
+          },
+          "item_uses": {
+            "power_treads": 6,
+            "tpscroll": 1,
+            "diffusal_blade": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 621,
+          "healing": 247,
+          "gold_delta": -104,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_powershot": 1,
+            "windrunner_shackleshot": 1,
+            "windrunner_windrun": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 125,
+          "healing": 88,
+          "gold_delta": -51,
+          "xp_delta": 528,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_frostbite": 1
+          },
+          "item_uses": {
+            "ward_sentry": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "ОХЛАМОН",
+          "hero": "Ogre Magi",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 128,
+          "gold_delta": 1514,
+          "xp_delta": 959,
+          "killed": {},
+          "ability_uses": {
+            "ogre_magi_bloodlust": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "hand_of_midas": 1,
+            "phase_boots": 3,
+            "bottle": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 159,
+          "healing": 450,
+          "gold_delta": -139,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "tidehunter_gush": 1
+          },
+          "item_uses": {
+            "phase_boots": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Templar Assassin",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 638,
+          "healing": 294,
+          "gold_delta": -60,
+          "xp_delta": 142,
+          "killed": {},
+          "ability_uses": {
+            "templar_assassin_refraction": 1,
+            "templar_assassin_meld": 1,
+            "templar_assassin_psionic_trap": 1
+          },
+          "item_uses": {
+            "power_treads": 1,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 896,
+      "end": 952,
+      "last_death": 937,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 1470128769,
+          "personaname": "+2818419471093492",
+          "hero": "Winter Wyvern",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 466,
+          "healing": 656,
+          "gold_delta": 65,
+          "xp_delta": 364,
+          "killed": {},
+          "ability_uses": {
+            "winter_wyvern_arctic_burn": 1,
+            "winter_wyvern_cold_embrace": 1,
+            "winter_wyvern_splinter_blast": 2,
+            "winter_wyvern_winters_curse": 1
+          },
+          "item_uses": {
+            "ward_observer": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1269496060,
+          "personaname": "logicа",
+          "hero": "Rubick",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 988,
+          "healing": 60,
+          "gold_delta": 194,
+          "xp_delta": 364,
+          "killed": {
+            "npc_dota_hero_windrunner": 1
+          },
+          "ability_uses": {
+            "rubick_spell_steal": 1,
+            "crystal_maiden_crystal_nova": 1,
+            "rubick_fade_bolt": 1,
+            "windrunner_windrun": 1
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1275197214,
+          "personaname": "наруто кун",
+          "hero": "Techies",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 876,
+          "healing": 555,
+          "gold_delta": 146,
+          "xp_delta": 84,
+          "killed": {},
+          "ability_uses": {
+            "techies_suicide": 1,
+            "techies_reactive_tazer_stop": 1,
+            "techies_reactive_tazer": 1,
+            "techies_land_mines": 2,
+            "techies_sticky_bomb": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 1264912323,
+          "personaname": "Ненавистник Эстонии",
+          "hero": "Night Stalker",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 275,
+          "healing": 213,
+          "gold_delta": -111,
+          "xp_delta": 161,
+          "killed": {},
+          "ability_uses": {
+            "night_stalker_void": 1,
+            "night_stalker_crippling_fear": 1
+          },
+          "item_uses": {
+            "phase_boots": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1486831671,
+          "personaname": "миша",
+          "hero": "Slark",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 140,
+          "healing": 756,
+          "gold_delta": 373,
+          "xp_delta": 621,
+          "killed": {},
+          "ability_uses": {
+            "slark_dark_pact": 2
+          },
+          "item_uses": {
+            "power_treads": 6,
+            "madstone_bundle": 1,
+            "famango": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1406,
+          "healing": 98,
+          "gold_delta": -8,
+          "xp_delta": 57,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_focusfire": 1,
+            "windrunner_powershot": 2,
+            "windrunner_shackleshot": 1,
+            "windrunner_windrun": 2
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "smoke_of_deceit": 1,
+            "flask": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 579,
+          "healing": 194,
+          "gold_delta": 458,
+          "xp_delta": 782,
+          "killed": {
+            "npc_dota_hero_rubick": 1
+          },
+          "ability_uses": {
+            "crystal_maiden_crystal_nova": 2,
+            "crystal_maiden_frostbite": 3
+          },
+          "item_uses": {
+            "ward_observer": 1,
+            "enchanted_mango": 1,
+            "ward_dispenser": 2
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "ОХЛАМОН",
+          "hero": "Ogre Magi",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2374,
+          "healing": 731,
+          "gold_delta": 849,
+          "xp_delta": 1175,
+          "killed": {
+            "npc_dota_hero_winter_wyvern": 1,
+            "npc_dota_hero_night_stalker": 1
+          },
+          "ability_uses": {
+            "ogre_magi_bloodlust": 1,
+            "ogre_magi_ignite": 2,
+            "ogre_magi_fireblast": 4
+          },
+          "item_uses": {
+            "hand_of_midas": 1,
+            "madstone_bundle": 1,
+            "phase_boots": 6,
+            "blink": 3,
+            "bottle": 3
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 389,
+          "healing": 275,
+          "gold_delta": 134,
+          "xp_delta": 807,
+          "killed": {},
+          "ability_uses": {
+            "tidehunter_anchor_smash": 2,
+            "tidehunter_gush": 1
+          },
+          "item_uses": {
+            "phase_boots": 6,
+            "blink": 1,
+            "tidehunter_fish": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Templar Assassin",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 117,
+          "healing": 272,
+          "gold_delta": 644,
+          "xp_delta": 1019,
+          "killed": {},
+          "ability_uses": {
+            "templar_assassin_meld": 2,
+            "templar_assassin_psionic_trap": 1
+          },
+          "item_uses": {
+            "madstone_bundle": 2
+          }
+        }
+      ]
+    },
+    {
+      "start": 1246,
+      "end": 1297,
+      "last_death": 1282,
+      "deaths": 7,
+      "players": [
+        {
+          "account_id": 1470128769,
+          "personaname": "+2818419471093492",
+          "hero": "Winter Wyvern",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2248,
+          "healing": 411,
+          "gold_delta": 1037,
+          "xp_delta": 2507,
+          "killed": {
+            "npc_dota_hero_crystal_maiden": 1,
+            "npc_dota_hero_tidehunter": 1
+          },
+          "ability_uses": {
+            "winter_wyvern_arctic_burn": 2,
+            "winter_wyvern_cold_embrace": 1,
+            "winter_wyvern_splinter_blast": 3,
+            "winter_wyvern_winters_curse": 1
+          },
+          "item_uses": {
+            "mana_draught": 1,
+            "dust": 1
+          }
+        },
+        {
+          "account_id": 1269496060,
+          "personaname": "logicа",
+          "hero": "Rubick",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2354,
+          "healing": 1068,
+          "gold_delta": 723,
+          "xp_delta": 2150,
+          "killed": {},
+          "ability_uses": {
+            "rubick_spell_steal": 1,
+            "rubick_telekinesis": 2,
+            "rubick_fade_bolt": 4,
+            "ogre_magi_fireblast": 2
+          },
+          "item_uses": {
+            "bottle": 3,
+            "blink": 1,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 1275197214,
+          "personaname": "наруто кун",
+          "hero": "Techies",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1304,
+          "healing": 751,
+          "gold_delta": 291,
+          "xp_delta": 467,
+          "killed": {},
+          "ability_uses": {
+            "techies_suicide": 1,
+            "techies_reactive_tazer": 1,
+            "techies_land_mines": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "soul_ring": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1264912323,
+          "personaname": "Ненавистник Эстонии",
+          "hero": "Night Stalker",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 840,
+          "healing": 850,
+          "gold_delta": 465,
+          "xp_delta": 1140,
+          "killed": {},
+          "ability_uses": {
+            "night_stalker_void": 2,
+            "night_stalker_darkness": 1,
+            "night_stalker_midnight_feast": 1,
+            "night_stalker_crippling_fear": 2
+          },
+          "item_uses": {
+            "phase_boots": 4,
+            "crippling_crossbow": 1,
+            "dust": 1,
+            "harpoon": 2,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 1486831671,
+          "personaname": "миша",
+          "hero": "Slark",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2951,
+          "healing": 1908,
+          "gold_delta": 2003,
+          "xp_delta": 2925,
+          "killed": {
+            "npc_dota_hero_templar_assassin": 1,
+            "npc_dota_hero_windrunner": 1,
+            "npc_dota_hero_ogre_magi": 1
+          },
+          "ability_uses": {
+            "slark_shadow_dance": 1,
+            "slark_pounce": 2,
+            "slark_dark_pact": 6
+          },
+          "item_uses": {
+            "power_treads": 6,
+            "diffusal_blade": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1034,
+          "healing": 244,
+          "gold_delta": 40,
+          "xp_delta": 466,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_powershot": 2,
+            "windrunner_focusfire": 1,
+            "windrunner_shackleshot": 1,
+            "ability_lamp_use": 1,
+            "windrunner_windrun": 2,
+            "windrunner_gale_force": 1
+          },
+          "item_uses": {
+            "force_staff": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 924,
+          "healing": 301,
+          "gold_delta": 15,
+          "xp_delta": 68,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_freezing_field": 1,
+            "crystal_maiden_crystal_nova": 1,
+            "crystal_maiden_frostbite": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "ОХЛАМОН",
+          "hero": "Ogre Magi",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2986,
+          "healing": 231,
+          "gold_delta": 307,
+          "xp_delta": 461,
+          "killed": {
+            "npc_dota_hero_techies": 1,
+            "npc_dota_hero_night_stalker": 1
+          },
+          "ability_uses": {
+            "ogre_magi_bloodlust": 1,
+            "ogre_magi_ignite": 2,
+            "ogre_magi_fireblast": 3
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "phase_boots": 3,
+            "bottle": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 733,
+          "healing": 439,
+          "gold_delta": -110,
+          "xp_delta": 47,
+          "killed": {},
+          "ability_uses": {
+            "tidehunter_anchor_smash": 3,
+            "tidehunter_gush": 2
+          },
+          "item_uses": {
+            "phase_boots": 3,
+            "blink": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Templar Assassin",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2748,
+          "healing": 466,
+          "gold_delta": 12,
+          "xp_delta": 438,
+          "killed": {},
+          "ability_uses": {
+            "templar_assassin_refraction": 2,
+            "templar_assassin_meld": 5,
+            "templar_assassin_psionic_trap": 1
+          },
+          "item_uses": {
+            "blink": 1,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1526,
+      "end": 1575,
+      "last_death": 1560,
+      "deaths": 5,
+      "players": [
+        {
+          "account_id": 1470128769,
+          "personaname": "+2818419471093492",
+          "hero": "Winter Wyvern",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2146,
+          "healing": 428,
+          "gold_delta": 80,
+          "xp_delta": 427,
+          "killed": {},
+          "ability_uses": {
+            "winter_wyvern_arctic_burn": 2,
+            "winter_wyvern_cold_embrace": 1,
+            "winter_wyvern_splinter_blast": 3,
+            "winter_wyvern_winters_curse": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "mana_draught": 1,
+            "blink": 2
+          }
+        },
+        {
+          "account_id": 1269496060,
+          "personaname": "logicа",
+          "hero": "Rubick",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1520,
+          "healing": 326,
+          "gold_delta": 621,
+          "xp_delta": 1694,
+          "killed": {
+            "npc_dota_hero_crystal_maiden": 1
+          },
+          "ability_uses": {
+            "rubick_spell_steal": 1,
+            "tidehunter_gush": 3,
+            "rubick_telekinesis": 2,
+            "rubick_fade_bolt": 3,
+            "rubick_telekinesis_land": 2
+          },
+          "item_uses": {
+            "blink": 2,
+            "bottle": 2,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 1275197214,
+          "personaname": "наруто кун",
+          "hero": "Techies",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2414,
+          "healing": 816,
+          "gold_delta": 459,
+          "xp_delta": 1694,
+          "killed": {
+            "npc_dota_hero_ogre_magi": 1
+          },
+          "ability_uses": {
+            "techies_suicide": 1,
+            "techies_reactive_tazer_stop": 1,
+            "techies_reactive_tazer": 2,
+            "techies_land_mines": 2,
+            "techies_sticky_bomb": 2
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1264912323,
+          "personaname": "Ненавистник Эстонии",
+          "hero": "Night Stalker",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 863,
+          "healing": 230,
+          "gold_delta": 109,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "night_stalker_void": 2,
+            "night_stalker_crippling_fear": 1
+          },
+          "item_uses": {
+            "phase_boots": 2,
+            "harpoon": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1486831671,
+          "personaname": "миша",
+          "hero": "Slark",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 482,
+          "healing": 300,
+          "gold_delta": -316,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "slark_shadow_dance": 1,
+            "slark_pounce": 2,
+            "slark_dark_pact": 2
+          },
+          "item_uses": {
+            "ward_observer": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1294,
+          "healing": 166,
+          "gold_delta": 623,
+          "xp_delta": 1434,
+          "killed": {
+            "npc_dota_hero_slark": 1
+          },
+          "ability_uses": {
+            "windrunner_powershot": 4,
+            "windrunner_focusfire": 1,
+            "windrunner_shackleshot": 2,
+            "windrunner_windrun": 4,
+            "windrunner_gale_force": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "force_staff": 2
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1233,
+          "healing": 125,
+          "gold_delta": 68,
+          "xp_delta": 440,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_crystal_clone": 1,
+            "crystal_maiden_crystal_nova": 3
+          },
+          "item_uses": {
+            "ward_dispenser": 1,
+            "famango": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "ОХЛАМОН",
+          "hero": "Ogre Magi",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1890,
+          "healing": 680,
+          "gold_delta": 19,
+          "xp_delta": 836,
+          "killed": {
+            "npc_dota_hero_night_stalker": 1
+          },
+          "ability_uses": {
+            "ogre_magi_bloodlust": 1,
+            "ogre_magi_ignite": 1,
+            "ogre_magi_unrefined_fireblast": 2,
+            "ogre_magi_fireblast": 2
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "phase_boots": 3,
+            "bottle": 3,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 379,
+          "healing": 699,
+          "gold_delta": 315,
+          "xp_delta": 1388,
+          "killed": {},
+          "ability_uses": {
+            "tidehunter_anchor_smash": 1,
+            "tidehunter_gush": 2
+          },
+          "item_uses": {
+            "phase_boots": 6,
+            "blink": 2,
+            "tidehunter_fish": 2,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Templar Assassin",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2764,
+          "healing": 627,
+          "gold_delta": 658,
+          "xp_delta": 1390,
+          "killed": {
+            "npc_dota_hero_techies": 1
+          },
+          "ability_uses": {
+            "templar_assassin_refraction": 3,
+            "templar_assassin_trap": 4,
+            "templar_assassin_meld": 5,
+            "templar_assassin_psionic_trap": 3
+          },
+          "item_uses": {
+            "blink": 3,
+            "force_staff": 2,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1615,
+      "end": 1652,
+      "last_death": 1637,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 1470128769,
+          "personaname": "+2818419471093492",
+          "hero": "Winter Wyvern",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 934,
+          "healing": 1047,
+          "gold_delta": 136,
+          "xp_delta": 768,
+          "killed": {},
+          "ability_uses": {
+            "winter_wyvern_arctic_burn": 1,
+            "winter_wyvern_cold_embrace": 1,
+            "winter_wyvern_splinter_blast": 2
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "blink": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1269496060,
+          "personaname": "logicа",
+          "hero": "Rubick",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2188,
+          "healing": 535,
+          "gold_delta": 380,
+          "xp_delta": 35,
+          "killed": {},
+          "ability_uses": {
+            "rubick_spell_steal": 1,
+            "tidehunter_gush": 3,
+            "rubick_telekinesis": 1,
+            "ogre_magi_unrefined_fireblast": 2,
+            "rubick_fade_bolt": 1,
+            "rubick_telekinesis_land": 1
+          },
+          "item_uses": {
+            "madstone_bundle": 1,
+            "blink": 1,
+            "bottle": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1275197214,
+          "personaname": "наруто кун",
+          "hero": "Techies",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1443,
+          "healing": 50,
+          "gold_delta": 326,
+          "xp_delta": 935,
+          "killed": {
+            "npc_dota_hero_tidehunter": 1
+          },
+          "ability_uses": {
+            "techies_suicide": 1,
+            "techies_reactive_tazer_stop": 1,
+            "techies_reactive_tazer": 1,
+            "techies_land_mines": 2
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 1264912323,
+          "personaname": "Ненавистник Эстонии",
+          "hero": "Night Stalker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 826,
+          "healing": 546,
+          "gold_delta": 396,
+          "xp_delta": 1693,
+          "killed": {},
+          "ability_uses": {
+            "night_stalker_void": 1,
+            "ability_lamp_use": 1,
+            "night_stalker_crippling_fear": 1
+          },
+          "item_uses": {
+            "phase_boots": 3,
+            "crippling_crossbow": 1,
+            "blink": 1,
+            "dust": 1,
+            "harpoon": 1
+          }
+        },
+        {
+          "account_id": 1486831671,
+          "personaname": "миша",
+          "hero": "Slark",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2017,
+          "healing": 776,
+          "gold_delta": 1072,
+          "xp_delta": 2314,
+          "killed": {
+            "npc_dota_hero_templar_assassin": 1,
+            "npc_dota_hero_windrunner": 1
+          },
+          "ability_uses": {
+            "slark_depth_shroud": 1,
+            "slark_pounce": 3,
+            "slark_dark_pact": 4
+          },
+          "item_uses": {
+            "power_treads": 3,
+            "diffusal_blade": 2
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 996,
+          "healing": 283,
+          "gold_delta": 124,
+          "xp_delta": 530,
+          "killed": {
+            "npc_dota_hero_techies": 1
+          },
+          "ability_uses": {
+            "windrunner_focusfire": 1,
+            "windrunner_powershot": 2,
+            "windrunner_shackleshot": 1,
+            "windrunner_windrun": 2,
+            "windrunner_gale_force": 1
+          },
+          "item_uses": {
+            "force_staff": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 423,
+          "healing": 255,
+          "gold_delta": 98,
+          "xp_delta": 530,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_crystal_clone": 1,
+            "crystal_maiden_crystal_nova": 1,
+            "crystal_maiden_frostbite": 2
+          },
+          "item_uses": {
+            "ward_dispenser": 4,
+            "force_staff": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "ОХЛАМОН",
+          "hero": "Ogre Magi",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 4371,
+          "healing": 0,
+          "gold_delta": 578,
+          "xp_delta": 185,
+          "killed": {},
+          "ability_uses": {
+            "ogre_magi_bloodlust": 2,
+            "ogre_magi_ignite": 2,
+            "ogre_magi_unrefined_fireblast": 3,
+            "ogre_magi_fireblast": 3
+          },
+          "item_uses": {
+            "hand_of_midas": 1,
+            "madstone_bundle": 3,
+            "black_king_bar": 1,
+            "phase_boots": 4,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 1235,
+          "gold_delta": -257,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "tidehunter_kraken_shell": 1,
+            "tidehunter_anchor_smash": 2,
+            "tidehunter_gush": 1
+          },
+          "item_uses": {
+            "phase_boots": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Templar Assassin",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2204,
+          "healing": 20,
+          "gold_delta": -238,
+          "xp_delta": 530,
+          "killed": {},
+          "ability_uses": {
+            "templar_assassin_refraction": 1,
+            "templar_assassin_meld": 3
+          },
+          "item_uses": {
+            "blink": 1,
+            "hurricane_pike": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1637,
+      "end": 1681,
+      "last_death": 1666,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 1470128769,
+          "personaname": "+2818419471093492",
+          "hero": "Winter Wyvern",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 947,
+          "healing": 1811,
+          "gold_delta": 459,
+          "xp_delta": 2070,
+          "killed": {},
+          "ability_uses": {
+            "winter_wyvern_arctic_burn": 2,
+            "winter_wyvern_cold_embrace": 2,
+            "winter_wyvern_splinter_blast": 5
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "mana_draught": 1,
+            "blink": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1269496060,
+          "personaname": "logicа",
+          "hero": "Rubick",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1288,
+          "healing": 609,
+          "gold_delta": 54,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "tidehunter_gush": 2,
+            "ogre_magi_unrefined_fireblast": 1,
+            "rubick_fade_bolt": 1
+          },
+          "item_uses": {
+            "blink": 1,
+            "bottle": 3,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1275197214,
+          "personaname": "наруто кун",
+          "hero": "Techies",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 9,
+          "gold_delta": 136,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 1264912323,
+          "personaname": "Ненавистник Эстонии",
+          "hero": "Night Stalker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 654,
+          "healing": 657,
+          "gold_delta": 736,
+          "xp_delta": 2070,
+          "killed": {
+            "npc_dota_hero_ogre_magi": 1
+          },
+          "ability_uses": {
+            "night_stalker_void": 2,
+            "night_stalker_darkness": 1,
+            "night_stalker_crippling_fear": 1
+          },
+          "item_uses": {
+            "phase_boots": 4,
+            "crippling_crossbow": 1,
+            "blink": 1,
+            "harpoon": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1486831671,
+          "personaname": "миша",
+          "hero": "Slark",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2601,
+          "healing": 1299,
+          "gold_delta": 1583,
+          "xp_delta": 3581,
+          "killed": {
+            "npc_dota_hero_crystal_maiden": 1,
+            "npc_dota_hero_templar_assassin": 1,
+            "npc_dota_hero_windrunner": 1
+          },
+          "ability_uses": {
+            "slark_pounce": 3,
+            "slark_dark_pact": 4
+          },
+          "item_uses": {
+            "diffusal_blade": 2,
+            "crippling_crossbow": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 599,
+          "healing": 283,
+          "gold_delta": -211,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_powershot": 1,
+            "windrunner_windrun": 1
+          },
+          "item_uses": {
+            "force_staff": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 208,
+          "healing": 75,
+          "gold_delta": -144,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_frostbite": 1
+          },
+          "item_uses": {
+            "ward_dispenser": 1,
+            "force_staff": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "ОХЛАМОН",
+          "hero": "Ogre Magi",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2814,
+          "healing": 409,
+          "gold_delta": 239,
+          "xp_delta": 2159,
+          "killed": {
+            "npc_dota_hero_rubick": 1
+          },
+          "ability_uses": {
+            "ogre_magi_ignite": 1,
+            "ogre_magi_unrefined_fireblast": 2,
+            "ogre_magi_fireblast": 2
+          },
+          "item_uses": {
+            "phase_boots": 3
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 176,
+          "gold_delta": 0,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Templar Assassin",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": -336,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        }
+      ]
+    },
+    {
+      "start": 1931,
+      "end": 2000,
+      "last_death": 1985,
+      "deaths": 6,
+      "players": [
+        {
+          "account_id": 1470128769,
+          "personaname": "+2818419471093492",
+          "hero": "Winter Wyvern",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1895,
+          "healing": 1192,
+          "gold_delta": 1184,
+          "xp_delta": 2301,
+          "killed": {
+            "npc_dota_hero_crystal_maiden": 1
+          },
+          "ability_uses": {
+            "winter_wyvern_arctic_burn": 2,
+            "winter_wyvern_cold_embrace": 3,
+            "winter_wyvern_splinter_blast": 6,
+            "winter_wyvern_winters_curse": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "ward_sentry": 1,
+            "ghost": 1,
+            "blink": 2
+          }
+        },
+        {
+          "account_id": 1269496060,
+          "personaname": "logicа",
+          "hero": "Rubick",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 4507,
+          "healing": 1367,
+          "gold_delta": 1790,
+          "xp_delta": 3732,
+          "killed": {
+            "npc_dota_hero_windrunner": 1,
+            "npc_dota_hero_tidehunter": 1
+          },
+          "ability_uses": {
+            "rubick_spell_steal": 2,
+            "rubick_telekinesis_land_self": 1,
+            "tidehunter_gush": 7,
+            "rubick_telekinesis": 3,
+            "rubick_fade_bolt": 4,
+            "rubick_telekinesis_land": 1,
+            "ogre_magi_fireblast": 5
+          },
+          "item_uses": {
+            "blink": 2,
+            "bottle": 3,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 1275197214,
+          "personaname": "наруто кун",
+          "hero": "Techies",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 998,
+          "healing": 360,
+          "gold_delta": -53,
+          "xp_delta": 33,
+          "killed": {},
+          "ability_uses": {
+            "techies_suicide": 1,
+            "techies_reactive_tazer": 1
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 1264912323,
+          "personaname": "Ненавистник Эстонии",
+          "hero": "Night Stalker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 4832,
+          "healing": 1261,
+          "gold_delta": 1337,
+          "xp_delta": 3699,
+          "killed": {
+            "npc_dota_hero_ogre_magi": 1
+          },
+          "ability_uses": {
+            "night_stalker_void": 5,
+            "night_stalker_darkness": 1,
+            "night_stalker_crippling_fear": 3
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "phase_boots": 5,
+            "blink": 2,
+            "dust": 1,
+            "harpoon": 2
+          }
+        },
+        {
+          "account_id": 1486831671,
+          "personaname": "миша",
+          "hero": "Slark",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2372,
+          "healing": 3434,
+          "gold_delta": 1561,
+          "xp_delta": 3732,
+          "killed": {
+            "npc_dota_hero_templar_assassin": 1
+          },
+          "ability_uses": {
+            "slark_depth_shroud": 1,
+            "slark_shadow_dance": 1,
+            "slark_pounce": 4,
+            "slark_dark_pact": 5
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "diffusal_blade": 2
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1198,
+          "healing": 506,
+          "gold_delta": -89,
+          "xp_delta": 745,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_powershot": 2,
+            "windrunner_focusfire": 1,
+            "windrunner_shackleshot": 2,
+            "windrunner_windrun": 3,
+            "windrunner_gale_force": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "force_staff": 2,
+            "orchid": 2
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 612,
+          "healing": 13,
+          "gold_delta": -193,
+          "xp_delta": 11,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_crystal_clone": 1,
+            "crystal_maiden_freezing_field": 1,
+            "crystal_maiden_crystal_nova": 1
+          },
+          "item_uses": {
+            "ward_dispenser": 2,
+            "force_staff": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "ОХЛАМОН",
+          "hero": "Ogre Magi",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1511,
+          "healing": 523,
+          "gold_delta": -402,
+          "xp_delta": 629,
+          "killed": {},
+          "ability_uses": {
+            "ogre_magi_ignite": 1,
+            "ogre_magi_fireblast": 1
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "phase_boots": 4,
+            "blink": 2
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2824,
+          "healing": 1210,
+          "gold_delta": 221,
+          "xp_delta": 661,
+          "killed": {
+            "npc_dota_hero_techies": 1
+          },
+          "ability_uses": {
+            "tidehunter_kraken_shell": 1,
+            "tidehunter_anchor_smash": 5,
+            "tidehunter_ravage": 1,
+            "tidehunter_gush": 2
+          },
+          "item_uses": {
+            "soul_ring": 1,
+            "phase_boots": 5,
+            "pipe": 1,
+            "blink": 2,
+            "tidehunter_fish": 1,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Templar Assassin",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 3187,
+          "healing": 353,
+          "gold_delta": -146,
+          "xp_delta": 738,
+          "killed": {},
+          "ability_uses": {
+            "templar_assassin_refraction": 2,
+            "templar_assassin_trap": 2,
+            "templar_assassin_meld": 4,
+            "templar_assassin_psionic_trap": 2
+          },
+          "item_uses": {
+            "blink": 2,
+            "hurricane_pike": 1,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 2245,
+      "end": 2318,
+      "last_death": 2303,
+      "deaths": 8,
+      "players": [
+        {
+          "account_id": 1470128769,
+          "personaname": "+2818419471093492",
+          "hero": "Winter Wyvern",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 3571,
+          "healing": 2113,
+          "gold_delta": 989,
+          "xp_delta": 6660,
+          "killed": {},
+          "ability_uses": {
+            "winter_wyvern_arctic_burn": 3,
+            "winter_wyvern_cold_embrace": 2,
+            "winter_wyvern_splinter_blast": 5,
+            "winter_wyvern_winters_curse": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "great_famango": 1,
+            "ward_dispenser": 3,
+            "blink": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1269496060,
+          "personaname": "logicа",
+          "hero": "Rubick",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 4010,
+          "healing": 620,
+          "gold_delta": 1906,
+          "xp_delta": 7062,
+          "killed": {
+            "npc_dota_hero_templar_assassin": 1,
+            "npc_dota_hero_ogre_magi": 1
+          },
+          "ability_uses": {
+            "rubick_spell_steal": 2,
+            "rubick_telekinesis_land_self": 1,
+            "crystal_maiden_crystal_nova": 6,
+            "tidehunter_gush": 4,
+            "rubick_fade_bolt": 7,
+            "rubick_telekinesis": 3,
+            "windrunner_windrun": 8
+          },
+          "item_uses": {
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 1275197214,
+          "personaname": "наруто кун",
+          "hero": "Techies",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2188,
+          "healing": 147,
+          "gold_delta": 353,
+          "xp_delta": 1025,
+          "killed": {
+            "npc_dota_hero_tidehunter": 1
+          },
+          "ability_uses": {
+            "techies_suicide": 1,
+            "techies_reactive_tazer_stop": 1,
+            "techies_minefield_sign": 1,
+            "techies_reactive_tazer": 1,
+            "techies_land_mines": 3,
+            "techies_sticky_bomb": 2
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 1264912323,
+          "personaname": "Ненавистник Эстонии",
+          "hero": "Night Stalker",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 4224,
+          "healing": 570,
+          "gold_delta": 648,
+          "xp_delta": 1375,
+          "killed": {
+            "npc_dota_hero_crystal_maiden": 1,
+            "npc_dota_hero_windrunner": 1
+          },
+          "ability_uses": {
+            "night_stalker_void": 3,
+            "night_stalker_darkness": 1,
+            "night_stalker_crippling_fear": 2
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "phase_boots": 2,
+            "blink": 1,
+            "dust": 1,
+            "harpoon": 2
+          }
+        },
+        {
+          "account_id": 1486831671,
+          "personaname": "миша",
+          "hero": "Slark",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1211,
+          "healing": 2003,
+          "gold_delta": -171,
+          "xp_delta": 637,
+          "killed": {},
+          "ability_uses": {
+            "slark_shadow_dance": 1,
+            "slark_pounce": 1,
+            "slark_dark_pact": 2
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "disperser": 1,
+            "greater_famango": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 402,
+          "gold_delta": -291,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_powershot": 1,
+            "windrunner_windrun": 2
+          },
+          "item_uses": {
+            "ward_dispenser": 2,
+            "force_staff": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 191,
+          "healing": 162,
+          "gold_delta": -66,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_crystal_clone": 2,
+            "crystal_maiden_crystal_nova": 2
+          },
+          "item_uses": {
+            "force_staff": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "ОХЛАМОН",
+          "hero": "Ogre Magi",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 4931,
+          "healing": 412,
+          "gold_delta": 652,
+          "xp_delta": 2624,
+          "killed": {
+            "npc_dota_hero_night_stalker": 1,
+            "npc_dota_hero_slark": 1
+          },
+          "ability_uses": {
+            "ogre_magi_bloodlust": 1,
+            "ogre_magi_ignite": 1,
+            "ogre_magi_unrefined_fireblast": 2,
+            "ogre_magi_fireblast": 2
+          },
+          "item_uses": {
+            "ethereal_blade": 1,
+            "black_king_bar": 1,
+            "phase_boots": 3,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 3089,
+          "healing": 963,
+          "gold_delta": 690,
+          "xp_delta": 2624,
+          "killed": {},
+          "ability_uses": {
+            "tidehunter_dead_in_the_water": 1,
+            "tidehunter_kraken_shell": 1,
+            "tidehunter_anchor_smash": 5,
+            "tidehunter_ravage": 1,
+            "tidehunter_gush": 2
+          },
+          "item_uses": {
+            "soul_ring": 1,
+            "phase_boots": 4,
+            "pipe": 1,
+            "blink": 2
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Templar Assassin",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 5675,
+          "healing": 316,
+          "gold_delta": 577,
+          "xp_delta": 5373,
+          "killed": {
+            "npc_dota_hero_techies": 1
+          },
+          "ability_uses": {
+            "templar_assassin_refraction": 4,
+            "templar_assassin_trap": 1,
+            "templar_assassin_meld": 6,
+            "templar_assassin_psionic_trap": 1
+          },
+          "item_uses": {
+            "blink": 2,
+            "hurricane_pike": 2
+          }
+        }
+      ]
+    },
+    {
+      "start": 2426,
+      "end": 2469,
+      "last_death": 2454,
+      "deaths": 5,
+      "players": [
+        {
+          "account_id": 1470128769,
+          "personaname": "+2818419471093492",
+          "hero": "Winter Wyvern",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 366,
+          "healing": 2861,
+          "gold_delta": 911,
+          "xp_delta": 3168,
+          "killed": {},
+          "ability_uses": {
+            "winter_wyvern_arctic_burn": 1,
+            "winter_wyvern_cold_embrace": 4,
+            "winter_wyvern_splinter_blast": 3
+          },
+          "item_uses": {
+            "lotus_orb": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1269496060,
+          "personaname": "logicа",
+          "hero": "Rubick",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 7920,
+          "healing": 403,
+          "gold_delta": 1419,
+          "xp_delta": 3195,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_freezing_field": 1,
+            "rubick_telekinesis_land_self": 1,
+            "rubick_fade_bolt": 3,
+            "rubick_telekinesis": 1,
+            "windrunner_windrun": 5
+          },
+          "item_uses": {
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 1275197214,
+          "personaname": "наруто кун",
+          "hero": "Techies",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1823,
+          "healing": 968,
+          "gold_delta": 1378,
+          "xp_delta": 3195,
+          "killed": {
+            "npc_dota_hero_crystal_maiden": 1,
+            "npc_dota_hero_templar_assassin": 1
+          },
+          "ability_uses": {
+            "techies_suicide": 1,
+            "techies_reactive_tazer_stop": 1,
+            "techies_reactive_tazer": 1,
+            "techies_land_mines": 5,
+            "techies_sticky_bomb": 1
+          },
+          "item_uses": {
+            "essence_ring": 1
+          }
+        },
+        {
+          "account_id": 1264912323,
+          "personaname": "Ненавистник Эстонии",
+          "hero": "Night Stalker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1136,
+          "healing": 654,
+          "gold_delta": 1117,
+          "xp_delta": 3195,
+          "killed": {
+            "npc_dota_hero_ogre_magi": 1
+          },
+          "ability_uses": {
+            "night_stalker_void": 2,
+            "night_stalker_crippling_fear": 2
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "phase_boots": 4,
+            "blink": 1,
+            "harpoon": 1
+          }
+        },
+        {
+          "account_id": 1486831671,
+          "personaname": "миша",
+          "hero": "Slark",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1726,
+          "healing": 1231,
+          "gold_delta": 482,
+          "xp_delta": 1927,
+          "killed": {
+            "npc_dota_hero_windrunner": 1
+          },
+          "ability_uses": {
+            "slark_shadow_dance": 1,
+            "slark_pounce": 2,
+            "slark_dark_pact": 2
+          },
+          "item_uses": {
+            "disperser": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 811,
+          "healing": 768,
+          "gold_delta": 39,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_focusfire": 1,
+            "windrunner_shackleshot": 1,
+            "windrunner_windrun": 1,
+            "windrunner_gale_force": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "orchid": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2376,
+          "healing": 120,
+          "gold_delta": 79,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_crystal_clone": 1,
+            "crystal_maiden_freezing_field": 1,
+            "crystal_maiden_crystal_nova": 1
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "force_staff": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "ОХЛАМОН",
+          "hero": "Ogre Magi",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 7055,
+          "healing": 525,
+          "gold_delta": 66,
+          "xp_delta": 4531,
+          "killed": {
+            "npc_dota_hero_slark": 1
+          },
+          "ability_uses": {
+            "ogre_magi_bloodlust": 1,
+            "ogre_magi_ignite": 2,
+            "ogre_magi_unrefined_fireblast": 3,
+            "ogre_magi_fireblast": 3
+          },
+          "item_uses": {
+            "ethereal_blade": 1,
+            "black_king_bar": 1,
+            "phase_boots": 4,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 0,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Templar Assassin",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 43,
+          "gold_delta": -469,
+          "xp_delta": 194,
+          "killed": {},
+          "ability_uses": {
+            "templar_assassin_refraction": 1,
+            "templar_assassin_meld": 1
+          },
+          "item_uses": {
+            "hurricane_pike": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 2500,
+      "end": 2547,
+      "last_death": 2532,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 1470128769,
+          "personaname": "+2818419471093492",
+          "hero": "Winter Wyvern",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1412,
+          "healing": 3154,
+          "gold_delta": 656,
+          "xp_delta": 2430,
+          "killed": {},
+          "ability_uses": {
+            "winter_wyvern_arctic_burn": 3,
+            "winter_wyvern_cold_embrace": 2,
+            "winter_wyvern_splinter_blast": 4,
+            "winter_wyvern_winters_curse": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "lotus_orb": 2,
+            "solar_crest": 2
+          }
+        },
+        {
+          "account_id": 1269496060,
+          "personaname": "logicа",
+          "hero": "Rubick",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 4875,
+          "healing": 1654,
+          "gold_delta": 802,
+          "xp_delta": 2402,
+          "killed": {
+            "npc_dota_hero_crystal_maiden": 1
+          },
+          "ability_uses": {
+            "crystal_maiden_freezing_field": 1,
+            "rubick_fade_bolt": 3,
+            "rubick_telekinesis": 3,
+            "rubick_telekinesis_land": 2,
+            "windrunner_windrun": 5
+          },
+          "item_uses": {
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 1275197214,
+          "personaname": "наруто кун",
+          "hero": "Techies",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2235,
+          "healing": 849,
+          "gold_delta": 662,
+          "xp_delta": 1420,
+          "killed": {},
+          "ability_uses": {
+            "techies_suicide": 2,
+            "techies_reactive_tazer_stop": 1,
+            "techies_minefield_sign": 1,
+            "techies_reactive_tazer": 2,
+            "techies_land_mines": 4,
+            "techies_sticky_bomb": 3
+          },
+          "item_uses": {
+            "shivas_guard": 1
+          }
+        },
+        {
+          "account_id": 1264912323,
+          "personaname": "Ненавистник Эстонии",
+          "hero": "Night Stalker",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2199,
+          "healing": 1993,
+          "gold_delta": 1259,
+          "xp_delta": 2430,
+          "killed": {
+            "npc_dota_hero_tidehunter": 1,
+            "npc_dota_hero_windrunner": 1
+          },
+          "ability_uses": {
+            "night_stalker_void": 2,
+            "night_stalker_darkness": 1,
+            "night_stalker_crippling_fear": 2
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "phase_boots": 4,
+            "harpoon": 2
+          }
+        },
+        {
+          "account_id": 1486831671,
+          "personaname": "миша",
+          "hero": "Slark",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 152,
+          "gold_delta": 145,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Windranger",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 236,
+          "healing": 587,
+          "gold_delta": -159,
+          "xp_delta": 238,
+          "killed": {},
+          "ability_uses": {
+            "windrunner_powershot": 1,
+            "windrunner_focusfire": 1,
+            "windrunner_shackleshot": 1,
+            "windrunner_windrun": 3,
+            "windrunner_gale_force": 1
+          },
+          "item_uses": {
+            "hurricane_pike": 1,
+            "orchid": 1
+          }
+        },
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Crystal Maiden",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 601,
+          "healing": 50,
+          "gold_delta": -152,
+          "xp_delta": 8,
+          "killed": {},
+          "ability_uses": {
+            "crystal_maiden_crystal_clone": 1,
+            "crystal_maiden_frostbite": 1
+          },
+          "item_uses": {
+            "force_staff": 1,
+            "glimmer_cape": 1
+          }
+        },
+        {
+          "account_id": 147124823,
+          "personaname": "ОХЛАМОН",
+          "hero": "Ogre Magi",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 25,
+          "gold_delta": 125,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Tidehunter",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2434,
+          "healing": 785,
+          "gold_delta": 167,
+          "xp_delta": 288,
+          "killed": {},
+          "ability_uses": {
+            "tidehunter_dead_in_the_water": 1,
+            "tidehunter_anchor_smash": 3,
+            "tidehunter_ravage": 1,
+            "tidehunter_gush": 2
+          },
+          "item_uses": {
+            "smoke_of_deceit": 1,
+            "phase_boots": 1,
+            "pipe": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Templar Assassin",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1609,
+          "healing": 337,
+          "gold_delta": 125,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "templar_assassin_refraction": 1,
+            "templar_assassin_meld": 2
+          },
+          "item_uses": {
+            "blink": 1,
+            "hurricane_pike": 1
+          }
+        }
+      ]
+    }
+  ],
   "team_analysis_capabilities": {
     "full_lineups": true,
     "all_player_summaries": true,
-    "teamfights_available": false,
-    "objectives_available": false,
+    "teamfights_available": true,
+    "objectives_available": true,
     "picks_bans_available": true
   }
 }
