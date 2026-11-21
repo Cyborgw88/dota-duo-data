@@ -7,8 +7,8 @@
   "lobby_type": 7,
   "game_mode": 22,
   "radiant_win": false,
-  "parsed": false,
-  "parse_version": null,
+  "parsed": true,
+  "parse_version": 22,
   "same_team": true,
   "cyborg": {
     "account_id": 206620580,
@@ -27,10 +27,14 @@
     "hero_damage": 41800,
     "tower_damage": 7597,
     "hero_healing": 0,
-    "lane": "unknown",
-    "position_guess": 4,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 2,
+    "lane": "mid",
+    "is_roaming": false,
+    "wards_observer": 2,
+    "wards_sentry": 2,
+    "position_guess": 2,
+    "position_confidence": "high",
+    "position_reason": "lane_role=mid"
   },
   "goddess": {
     "account_id": 160810596,
@@ -49,13 +53,1078 @@
     "hero_damage": 17612,
     "tower_damage": 346,
     "hero_healing": 125,
-    "lane": "unknown",
-    "position_guess": 5,
-    "position_confidence": "low",
-    "position_reason": "fallback by farm/economy"
+    "lane_role": 3,
+    "lane": "off",
+    "is_roaming": false,
+    "wards_observer": 4,
+    "wards_sentry": 8,
+    "position_guess": 4,
+    "position_confidence": "medium",
+    "position_reason": "off lane + lower farm/economy"
   },
-  "objectives": [],
-  "teamfights": [],
+  "objectives": [
+    {
+      "time": -14,
+      "type": "CHAT_MESSAGE_FIRSTBLOOD",
+      "key": "8",
+      "slot": 1,
+      "player_slot": 1,
+      "victim_player_slot": 131
+    },
+    {
+      "time": 87,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 2,
+      "value": 30,
+      "killer": 128
+    },
+    {
+      "time": 419,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_beastmaster",
+      "key": "npc_dota_badguys_tower1_mid",
+      "slot": 4,
+      "player_slot": 4
+    },
+    {
+      "time": 561,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 2,
+      "value": 45,
+      "killer": 129
+    },
+    {
+      "time": 581,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_axe",
+      "key": "npc_dota_goodguys_tower1_bot",
+      "slot": 6,
+      "player_slot": 129
+    },
+    {
+      "time": 886,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_vengefulspirit",
+      "key": "npc_dota_badguys_tower1_top",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 976,
+      "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+      "team": 2,
+      "slot": -1
+    },
+    {
+      "time": 1005,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_rubick",
+      "key": "npc_dota_goodguys_tower1_mid",
+      "slot": 9,
+      "player_slot": 132
+    },
+    {
+      "time": 1206,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_beastmaster",
+      "key": "npc_dota_badguys_tower1_bot",
+      "slot": 4,
+      "player_slot": 4
+    },
+    {
+      "time": 1399,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_dragon_knight",
+      "key": "npc_dota_badguys_tower2_mid",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 1550,
+      "type": "CHAT_MESSAGE_ROSHAN_KILL",
+      "team": 2
+    },
+    {
+      "time": 1550,
+      "type": "CHAT_MESSAGE_AEGIS",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 1612,
+      "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+      "team": 2,
+      "slot": 0,
+      "player_slot": 0
+    },
+    {
+      "time": 1643,
+      "type": "CHAT_MESSAGE_COURIER_LOST",
+      "team": 2,
+      "value": 95,
+      "killer": 131
+    },
+    {
+      "time": 1861,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_vengefulspirit",
+      "key": "npc_dota_badguys_tower2_bot",
+      "slot": 3,
+      "player_slot": 3
+    },
+    {
+      "time": 1960,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_medusa",
+      "key": "npc_dota_goodguys_tower2_mid",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 2159,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_medusa",
+      "key": "npc_dota_goodguys_tower2_bot",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 2300,
+      "type": "CHAT_MESSAGE_ROSHAN_KILL",
+      "team": 2
+    },
+    {
+      "time": 2301,
+      "type": "CHAT_MESSAGE_AEGIS",
+      "slot": 2,
+      "player_slot": 2
+    },
+    {
+      "time": 2405,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_dragon_knight",
+      "key": "npc_dota_badguys_tower2_top",
+      "slot": 1,
+      "player_slot": 1
+    },
+    {
+      "time": 2469,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_medusa",
+      "key": "npc_dota_goodguys_tower1_top",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 2495,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_medusa",
+      "key": "npc_dota_goodguys_tower2_top",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 2536,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_medusa",
+      "key": "npc_dota_goodguys_tower3_top",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 2542,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_medusa",
+      "key": "npc_dota_goodguys_range_rax_top",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 2580,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_medusa",
+      "key": "npc_dota_goodguys_melee_rax_top",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 2598,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_rubick",
+      "key": "npc_dota_goodguys_tower3_mid",
+      "slot": 9,
+      "player_slot": 132
+    },
+    {
+      "time": 2601,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_medusa",
+      "key": "npc_dota_goodguys_range_rax_mid",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 2606,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_badguys_melee",
+      "key": "npc_dota_goodguys_melee_rax_mid"
+    },
+    {
+      "time": 2622,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_rubick",
+      "key": "npc_dota_goodguys_tower3_bot",
+      "slot": 9,
+      "player_slot": 132
+    },
+    {
+      "time": 2626,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_medusa",
+      "key": "npc_dota_goodguys_tower4",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 2627,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_rubick",
+      "key": "npc_dota_goodguys_range_rax_bot",
+      "slot": 9,
+      "player_slot": 132
+    },
+    {
+      "time": 2637,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_medusa",
+      "key": "npc_dota_goodguys_tower4",
+      "slot": 7,
+      "player_slot": 130
+    },
+    {
+      "time": 2639,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_rubick",
+      "key": "npc_dota_goodguys_melee_rax_bot",
+      "slot": 9,
+      "player_slot": 132
+    },
+    {
+      "time": 2730,
+      "type": "building_kill",
+      "unit": "npc_dota_hero_beastmaster",
+      "key": "npc_dota_badguys_tower3_mid",
+      "slot": 4,
+      "player_slot": 4
+    },
+    {
+      "time": 2814,
+      "type": "building_kill",
+      "unit": "npc_dota_creep_badguys_melee_upgraded_mega",
+      "key": "npc_dota_goodguys_fort"
+    }
+  ],
+  "teamfights": [
+    {
+      "start": 439,
+      "end": 485,
+      "last_death": 470,
+      "deaths": 6,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 656,
+        "healing": 47,
+        "gold_delta": 128,
+        "xp_delta": 65,
+        "killed": {},
+        "ability_uses": {
+          "beastmaster_wild_axes": 1,
+          "beastmaster_primal_roar": 1,
+          "beastmaster_summon_razorback": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "ward_dispenser": 1,
+          "blood_grenade": 1,
+          "bottle": 1
+        },
+        "deaths_pos": {
+          "82": {
+            "178": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 407,
+        "healing": 15,
+        "gold_delta": 232,
+        "xp_delta": 276,
+        "killed": {
+          "npc_dota_hero_medusa": 1
+        },
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 1,
+          "vengefulspirit_wave_of_terror": 1
+        },
+        "item_uses": {
+          "bloodslinger": 1,
+          "magic_stick": 1
+        },
+        "deaths_pos": {
+          "80": {
+            "172": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 534,
+      "end": 573,
+      "last_death": 558,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1179,
+        "healing": 137,
+        "gold_delta": 578,
+        "xp_delta": 1162,
+        "killed": {
+          "npc_dota_hero_rubick": 1
+        },
+        "ability_uses": {
+          "beastmaster_wild_axes": 2,
+          "beastmaster_primal_roar": 1,
+          "beastmaster_summon_razorback": 1
+        },
+        "item_uses": {
+          "madstone_bundle": 1,
+          "bottle": 4
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 80,
+        "gold_delta": 0,
+        "xp_delta": 66,
+        "killed": {},
+        "ability_uses": {},
+        "item_uses": {
+          "ward_dispenser": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 625,
+      "end": 669,
+      "last_death": 654,
+      "deaths": 5,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 292,
+        "healing": 867,
+        "gold_delta": -57,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {
+          "beastmaster_wild_axes": 1,
+          "beastmaster_summon_razorback": 1
+        },
+        "item_uses": {},
+        "deaths_pos": {
+          "107": {
+            "136": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 923,
+        "healing": 633,
+        "gold_delta": 882,
+        "xp_delta": 1133,
+        "killed": {
+          "npc_dota_hero_treant": 1,
+          "npc_dota_hero_rubick": 1,
+          "npc_dota_hero_axe": 1
+        },
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 2,
+          "vengefulspirit_nether_swap": 1,
+          "vengefulspirit_wave_of_terror": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "bloodslinger": 1,
+          "ward_dispenser": 2,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 830,
+      "end": 876,
+      "last_death": 861,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 1323,
+        "gold_delta": 395,
+        "xp_delta": 924,
+        "killed": {},
+        "ability_uses": {
+          "beastmaster_wild_axes": 2,
+          "beastmaster_summon_raptor": 1,
+          "beastmaster_summon_razorback": 2
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "bottle": 6
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 294,
+        "healing": 182,
+        "gold_delta": 318,
+        "xp_delta": 1235,
+        "killed": {
+          "npc_dota_hero_rubick": 1
+        },
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 1,
+          "vengefulspirit_nether_swap": 1,
+          "vengefulspirit_wave_of_terror": 1
+        },
+        "item_uses": {
+          "ward_observer": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1085,
+      "end": 1130,
+      "last_death": 1115,
+      "deaths": 7,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 657,
+        "healing": 313,
+        "gold_delta": 478,
+        "xp_delta": 1050,
+        "killed": {},
+        "ability_uses": {
+          "beastmaster_wild_axes": 2,
+          "beastmaster_primal_roar": 1,
+          "beastmaster_summon_raptor": 1,
+          "beastmaster_summon_razorback": 1
+        },
+        "item_uses": {
+          "blood_grenade": 1,
+          "bottle": 1
+        },
+        "deaths_pos": {
+          "89": {
+            "171": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 457,
+        "healing": 409,
+        "gold_delta": 434,
+        "xp_delta": 2088,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 1,
+          "vengefulspirit_wave_of_terror": 1
+        },
+        "item_uses": {
+          "bloodslinger": 1,
+          "smoke_of_deceit": 1,
+          "cyclone": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1192,
+      "end": 1228,
+      "last_death": 1213,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 0,
+        "healing": 0,
+        "gold_delta": 633,
+        "xp_delta": 629,
+        "killed": {},
+        "ability_uses": {
+          "beastmaster_wild_axes": 2,
+          "beastmaster_summon_raptor": 1,
+          "beastmaster_summon_razorback": 1
+        },
+        "item_uses": {},
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 760,
+        "healing": 361,
+        "gold_delta": 63,
+        "xp_delta": 104,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 1,
+          "vengefulspirit_nether_swap": 1,
+          "vengefulspirit_wave_of_terror": 1
+        },
+        "item_uses": {
+          "bloodslinger": 1,
+          "cyclone": 1
+        },
+        "deaths_pos": {
+          "124": {
+            "129": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1383,
+      "end": 1443,
+      "last_death": 1428,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 4026,
+        "healing": 774,
+        "gold_delta": 486,
+        "xp_delta": 1455,
+        "killed": {
+          "npc_dota_hero_axe": 1
+        },
+        "ability_uses": {
+          "beastmaster_wild_axes": 4,
+          "beastmaster_primal_roar": 1,
+          "beastmaster_summon_raptor": 2,
+          "beastmaster_summon_razorback": 1,
+          "beastmaster_summon_thunderhide": 1
+        },
+        "item_uses": {
+          "bottle": 1,
+          "blink": 1
+        },
+        "deaths_pos": {
+          "133": {
+            "137": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1080,
+        "healing": 479,
+        "gold_delta": 260,
+        "xp_delta": 1455,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 2,
+          "vengefulspirit_nether_swap": 1,
+          "ability_lamp_use": 1,
+          "vengefulspirit_wave_of_terror": 3
+        },
+        "item_uses": {
+          "bloodslinger": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1485,
+      "end": 1520,
+      "last_death": 1505,
+      "deaths": 3,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1900,
+        "healing": 58,
+        "gold_delta": 996,
+        "xp_delta": 2476,
+        "killed": {
+          "npc_dota_hero_treant": 1
+        },
+        "ability_uses": {
+          "beastmaster_wild_axes": 4,
+          "beastmaster_summon_raptor": 1,
+          "beastmaster_primal_roar": 1,
+          "beastmaster_summon_razorback": 2,
+          "beastmaster_summon_thunderhide": 1
+        },
+        "item_uses": {
+          "blink": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 659,
+        "healing": 351,
+        "gold_delta": 121,
+        "xp_delta": 731,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 1,
+          "vengefulspirit_wave_of_terror": 1
+        },
+        "item_uses": {
+          "ancient_janggo": 1,
+          "bloodslinger": 1,
+          "cyclone": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1617,
+      "end": 1692,
+      "last_death": 1677,
+      "deaths": 10,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 2031,
+        "healing": 688,
+        "gold_delta": 850,
+        "xp_delta": 3459,
+        "killed": {
+          "npc_dota_hero_rubick": 1
+        },
+        "ability_uses": {
+          "beastmaster_wild_axes": 5,
+          "beastmaster_primal_roar": 1,
+          "beastmaster_summon_raptor": 2,
+          "beastmaster_summon_razorback": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "blink": 1
+        },
+        "deaths_pos": {
+          "96": {
+            "177": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 652,
+        "healing": 719,
+        "gold_delta": -224,
+        "xp_delta": 93,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 1,
+          "vengefulspirit_nether_swap": 1,
+          "vengefulspirit_wave_of_terror": 1
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "cyclone": 1,
+          "magic_wand": 1
+        },
+        "deaths_pos": {
+          "92": {
+            "173": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 1788,
+      "end": 1829,
+      "last_death": 1814,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1708,
+        "healing": 543,
+        "gold_delta": 920,
+        "xp_delta": 1168,
+        "killed": {
+          "npc_dota_hero_treant": 1,
+          "npc_dota_hero_venomancer": 1
+        },
+        "ability_uses": {
+          "beastmaster_wild_axes": 4,
+          "beastmaster_primal_roar": 1,
+          "beastmaster_summon_raptor": 1,
+          "beastmaster_summon_razorback": 1
+        },
+        "item_uses": {
+          "blink": 1
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 679,
+        "healing": 274,
+        "gold_delta": 525,
+        "xp_delta": 2304,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 2,
+          "vengefulspirit_wave_of_terror": 2
+        },
+        "item_uses": {
+          "ward_sentry": 1,
+          "cyclone": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 1891,
+      "end": 1930,
+      "last_death": 1915,
+      "deaths": 6,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1729,
+        "healing": 693,
+        "gold_delta": 126,
+        "xp_delta": 1422,
+        "killed": {
+          "npc_dota_hero_treant": 1
+        },
+        "ability_uses": {
+          "beastmaster_wild_axes": 2,
+          "beastmaster_summon_raptor": 1,
+          "beastmaster_primal_roar": 1
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "bottle": 1
+        },
+        "deaths_pos": {
+          "148": {
+            "128": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 643,
+        "healing": 573,
+        "gold_delta": 158,
+        "xp_delta": 1637,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 2,
+          "vengefulspirit_wave_of_terror": 1
+        },
+        "item_uses": {
+          "cyclone": 1
+        },
+        "deaths_pos": {
+          "142": {
+            "129": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 2073,
+      "end": 2128,
+      "last_death": 2113,
+      "deaths": 7,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 3793,
+        "healing": 51,
+        "gold_delta": -209,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {
+          "beastmaster_wild_axes": 1,
+          "beastmaster_primal_roar": 1,
+          "beastmaster_summon_raptor": 1
+        },
+        "item_uses": {
+          "black_king_bar": 1
+        },
+        "deaths_pos": {
+          "165": {
+            "112": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 657,
+        "healing": 10,
+        "gold_delta": -75,
+        "xp_delta": 389,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 2,
+          "vengefulspirit_nether_swap": 1,
+          "vengefulspirit_wave_of_terror": 1
+        },
+        "item_uses": {
+          "bloodslinger": 1
+        },
+        "deaths_pos": {
+          "168": {
+            "107": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 2203,
+      "end": 2262,
+      "last_death": 2247,
+      "deaths": 7,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 7365,
+        "healing": 141,
+        "gold_delta": 1337,
+        "xp_delta": 3786,
+        "killed": {
+          "npc_dota_hero_rubick": 1,
+          "npc_dota_hero_axe": 1
+        },
+        "ability_uses": {
+          "beastmaster_wild_axes": 4,
+          "beastmaster_summon_raptor": 2,
+          "beastmaster_primal_roar": 1,
+          "beastmaster_summon_razorback": 2
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "bottle": 2,
+          "blink": 1
+        },
+        "deaths_pos": {
+          "98": {
+            "132": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 1084,
+        "healing": 975,
+        "gold_delta": 751,
+        "xp_delta": 5506,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 3,
+          "vengefulspirit_nether_swap": 1,
+          "vengefulspirit_wave_of_terror": 4
+        },
+        "item_uses": {
+          "tpscroll": 1,
+          "ancient_janggo": 1,
+          "cyclone": 1
+        },
+        "deaths_pos": {}
+      }
+    },
+    {
+      "start": 2403,
+      "end": 2455,
+      "last_death": 2440,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1403,
+        "healing": 620,
+        "gold_delta": -392,
+        "xp_delta": 0,
+        "killed": {},
+        "ability_uses": {
+          "beastmaster_wild_axes": 1,
+          "beastmaster_primal_roar": 1
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "pipe": 1,
+          "blink": 1,
+          "bottle": 1
+        },
+        "deaths_pos": {
+          "132": {
+            "179": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1242,
+        "healing": 332,
+        "gold_delta": -204,
+        "xp_delta": 179,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 2,
+          "vengefulspirit_nether_swap": 1,
+          "vengefulspirit_wave_of_terror": 2
+        },
+        "item_uses": {
+          "bloodslinger": 1
+        },
+        "deaths_pos": {
+          "122": {
+            "173": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 2532,
+      "end": 2582,
+      "last_death": 2567,
+      "deaths": 7,
+      "cyborg": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1577,
+        "healing": 124,
+        "gold_delta": -57,
+        "xp_delta": 903,
+        "killed": {},
+        "ability_uses": {
+          "beastmaster_wild_axes": 2,
+          "beastmaster_summon_raptor": 1,
+          "beastmaster_primal_roar": 1,
+          "beastmaster_summon_razorback": 1
+        },
+        "item_uses": {
+          "power_treads": 2,
+          "black_king_bar": 1,
+          "blink": 1
+        },
+        "deaths_pos": {
+          "80": {
+            "106": 1
+          }
+        }
+      },
+      "goddess": {
+        "deaths": 1,
+        "buybacks": 0,
+        "damage": 1585,
+        "healing": 482,
+        "gold_delta": 91,
+        "xp_delta": 3516,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 2,
+          "vengefulspirit_nether_swap": 1,
+          "vengefulspirit_wave_of_terror": 3
+        },
+        "item_uses": {
+          "bloodslinger": 1,
+          "boots_of_bearing": 1,
+          "dust": 1,
+          "cyclone": 1
+        },
+        "deaths_pos": {
+          "77": {
+            "97": 1
+          }
+        }
+      }
+    },
+    {
+      "start": 2642,
+      "end": 2686,
+      "last_death": 2671,
+      "deaths": 4,
+      "cyborg": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 2821,
+        "healing": 1407,
+        "gold_delta": 1810,
+        "xp_delta": 4791,
+        "killed": {
+          "npc_dota_hero_rubick": 1
+        },
+        "ability_uses": {
+          "beastmaster_wild_axes": 3,
+          "beastmaster_primal_roar": 1,
+          "beastmaster_summon_raptor": 1,
+          "beastmaster_summon_razorback": 1,
+          "beastmaster_summon_thunderhide": 1
+        },
+        "item_uses": {
+          "black_king_bar": 1,
+          "pipe": 1,
+          "blink": 2
+        },
+        "deaths_pos": {}
+      },
+      "goddess": {
+        "deaths": 0,
+        "buybacks": 0,
+        "damage": 607,
+        "healing": 949,
+        "gold_delta": 1147,
+        "xp_delta": 4738,
+        "killed": {},
+        "ability_uses": {
+          "vengefulspirit_magic_missile": 2,
+          "vengefulspirit_nether_swap": 1,
+          "vengefulspirit_wave_of_terror": 2
+        },
+        "item_uses": {
+          "bloodslinger": 1
+        },
+        "deaths_pos": {}
+      }
+    }
+  ],
   "team_context": {
     "duo_team": "Radiant",
     "radiant_win": false,
@@ -78,8 +1147,12 @@
         "hero_damage": 14486,
         "tower_damage": 0,
         "hero_healing": 1408,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 15,
+        "wards_sentry": 30,
+        "stuns": 5.633203,
         "level": 22,
         "item_0": 102,
         "item_1": 1804,
@@ -92,8 +1165,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.5510204
       },
       {
         "account_id": 100870287,
@@ -113,8 +1186,11 @@
         "hero_damage": 32741,
         "tower_damage": 2568,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 1,
+        "stuns": 41.76645,
         "level": 26,
         "item_0": 0,
         "item_1": 151,
@@ -127,8 +1203,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.5102041
       },
       {
         "account_id": 102773730,
@@ -148,8 +1224,11 @@
         "hero_damage": 44211,
         "tower_damage": 2123,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "wards_sentry": 1,
+        "stuns": 7.5,
         "level": 27,
         "item_0": 100,
         "item_1": 180,
@@ -162,8 +1241,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 1,
+        "teamfight_participation": 0.75510204
       },
       {
         "account_id": 160810596,
@@ -183,8 +1262,12 @@
         "hero_damage": 17612,
         "tower_damage": 346,
         "hero_healing": 125,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "wards_observer": 4,
+        "wards_sentry": 8,
+        "stuns": 83.53153,
         "level": 26,
         "item_0": 931,
         "item_1": 100,
@@ -197,8 +1280,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 1,
+        "teamfight_participation": 0.6938776
       },
       {
         "account_id": 206620580,
@@ -218,8 +1301,12 @@
         "hero_damage": 41800,
         "tower_damage": 7597,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 2,
+        "lane": "mid",
+        "is_roaming": false,
+        "wards_observer": 2,
+        "wards_sentry": 2,
+        "stuns": 83.400024,
         "level": 26,
         "item_0": 55,
         "item_1": 63,
@@ -232,8 +1319,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.67346936
       }
     ],
     "enemies": [
@@ -255,8 +1342,12 @@
         "hero_damage": 22887,
         "tower_damage": 4069,
         "hero_healing": 5124,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "wards_observer": 2,
+        "wards_sentry": 4,
+        "stuns": 153.56876,
         "level": 26,
         "item_0": 1,
         "item_1": 0,
@@ -269,8 +1360,8 @@
         "backpack_2": 4204,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.6231884
       },
       {
         "account_id": 115189896,
@@ -290,8 +1381,10 @@
         "hero_damage": 43206,
         "tower_damage": 452,
         "hero_healing": 860,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 3,
+        "lane": "off",
+        "is_roaming": false,
+        "stuns": 114.23349,
         "level": 28,
         "item_0": 50,
         "item_1": 226,
@@ -304,8 +1397,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.7246377
       },
       {
         "account_id": 94076005,
@@ -325,8 +1418,10 @@
         "hero_damage": 50514,
         "tower_damage": 16519,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "stuns": 72.66833,
         "level": 30,
         "item_0": 141,
         "item_1": 147,
@@ -339,8 +1434,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 1,
+        "teamfight_participation": 0.5362319
       },
       {
         "account_id": 37561456,
@@ -360,8 +1455,12 @@
         "hero_damage": 39954,
         "tower_damage": 768,
         "hero_healing": 3627,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 1,
+        "lane": "safe",
+        "is_roaming": false,
+        "wards_observer": 18,
+        "wards_sentry": 26,
+        "stuns": 0,
         "level": 25,
         "item_0": 231,
         "item_1": 36,
@@ -374,8 +1473,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 1,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 0,
+        "teamfight_participation": 0.7826087
       },
       {
         "account_id": 1238141568,
@@ -395,8 +1494,12 @@
         "hero_damage": 46176,
         "tower_damage": 8709,
         "hero_healing": 0,
-        "lane": "unknown",
-        "stuns": null,
+        "lane_role": 2,
+        "lane": "mid",
+        "is_roaming": false,
+        "wards_observer": 2,
+        "wards_sentry": 1,
+        "stuns": 64.46679,
         "level": 28,
         "item_0": 36,
         "item_1": 1,
@@ -409,8 +1512,8 @@
         "backpack_2": 0,
         "aghanims_scepter": 0,
         "aghanims_shard": 0,
-        "buyback_count": null,
-        "teamfight_participation": null
+        "buyback_count": 1,
+        "teamfight_participation": 0.65217394
       }
     ],
     "radiant_heroes": [
@@ -527,12 +1630,3775 @@
     ],
     "draft_note": "For ranked games picks_bans may be absent; use the final 5v5 hero lineups for composition analysis."
   },
-  "team_teamfights": [],
+  "team_teamfights": [
+    {
+      "start": 439,
+      "end": 485,
+      "last_death": 470,
+      "deaths": 6,
+      "players": [
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Undying",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 889,
+          "healing": 206,
+          "gold_delta": 152,
+          "xp_delta": 249,
+          "killed": {},
+          "ability_uses": {
+            "undying_tombstone": 1,
+            "undying_decay": 3
+          },
+          "item_uses": {
+            "enchanted_mango": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 692,
+          "healing": 638,
+          "gold_delta": 165,
+          "xp_delta": 192,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_dragon_tail": 1,
+            "dragon_knight_breathe_fire": 2
+          },
+          "item_uses": {
+            "power_treads": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Death Prophet",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1260,
+          "healing": 482,
+          "gold_delta": 587,
+          "xp_delta": 1596,
+          "killed": {
+            "npc_dota_hero_rubick": 1,
+            "npc_dota_hero_venomancer": 1
+          },
+          "ability_uses": {
+            "death_prophet_carrion_swarm": 3,
+            "death_prophet_spirit_siphon": 2,
+            "death_prophet_exorcism": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Vengeful Spirit",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 407,
+          "healing": 15,
+          "gold_delta": 232,
+          "xp_delta": 276,
+          "killed": {
+            "npc_dota_hero_medusa": 1
+          },
+          "ability_uses": {
+            "vengefulspirit_magic_missile": 1,
+            "vengefulspirit_wave_of_terror": 1
+          },
+          "item_uses": {
+            "bloodslinger": 1,
+            "magic_stick": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Beastmaster",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 656,
+          "healing": 47,
+          "gold_delta": 128,
+          "xp_delta": 65,
+          "killed": {},
+          "ability_uses": {
+            "beastmaster_wild_axes": 1,
+            "beastmaster_primal_roar": 1,
+            "beastmaster_summon_razorback": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "ward_dispenser": 1,
+            "blood_grenade": 1,
+            "bottle": 1
+          }
+        },
+        {
+          "account_id": 113163683,
+          "personaname": "klwn",
+          "hero": "Treant Protector",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 244,
+          "healing": 443,
+          "gold_delta": 37,
+          "xp_delta": 292,
+          "killed": {},
+          "ability_uses": {
+            "ability_lamp_use": 1,
+            "treant_natures_grasp": 1
+          },
+          "item_uses": {
+            "magic_stick": 1
+          }
+        },
+        {
+          "account_id": 115189896,
+          "personaname": "РАБОТНИК ЖЭКа",
+          "hero": "Axe",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 621,
+          "healing": 884,
+          "gold_delta": 143,
+          "xp_delta": 262,
+          "killed": {},
+          "ability_uses": {
+            "axe_battle_hunger": 1,
+            "axe_berserkers_call": 1
+          },
+          "item_uses": {
+            "madstone_bundle": 1,
+            "famango": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 94076005,
+          "personaname": "montryable",
+          "hero": "Medusa",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 161,
+          "healing": 91,
+          "gold_delta": 66,
+          "xp_delta": 420,
+          "killed": {},
+          "ability_uses": {
+            "medusa_gorgon_grasp": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 37561456,
+          "personaname": "Nutail",
+          "hero": "Venomancer",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 786,
+          "healing": 124,
+          "gold_delta": 693,
+          "xp_delta": 830,
+          "killed": {
+            "npc_dota_hero_beastmaster": 1,
+            "npc_dota_hero_vengefulspirit": 1
+          },
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_snakebite": 1,
+            "venomancer_plague_ward": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "magic_stick": 1,
+            "blood_grenade": 1
+          }
+        },
+        {
+          "account_id": 1238141568,
+          "personaname": "Eey",
+          "hero": "Rubick",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 501,
+          "healing": 15,
+          "gold_delta": 437,
+          "xp_delta": 396,
+          "killed": {},
+          "ability_uses": {
+            "rubick_spell_steal": 1,
+            "rubick_fade_bolt": 1,
+            "rubick_telekinesis": 1,
+            "undying_decay": 1,
+            "rubick_telekinesis_land": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "clarity": 1,
+            "magic_stick": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 534,
+      "end": 573,
+      "last_death": 558,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Undying",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 72,
+          "healing": 52,
+          "gold_delta": -30,
+          "xp_delta": 56,
+          "killed": {},
+          "ability_uses": {
+            "undying_decay": 1
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 299,
+          "healing": 259,
+          "gold_delta": -16,
+          "xp_delta": 56,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_dragon_tail": 1
+          },
+          "item_uses": {
+            "power_treads": 2
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Death Prophet",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 346,
+          "gold_delta": 207,
+          "xp_delta": 575,
+          "killed": {},
+          "ability_uses": {
+            "death_prophet_carrion_swarm": 2
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "madstone_bundle": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Vengeful Spirit",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 80,
+          "gold_delta": 0,
+          "xp_delta": 66,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "ward_dispenser": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Beastmaster",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1179,
+          "healing": 137,
+          "gold_delta": 578,
+          "xp_delta": 1162,
+          "killed": {
+            "npc_dota_hero_rubick": 1
+          },
+          "ability_uses": {
+            "beastmaster_wild_axes": 2,
+            "beastmaster_primal_roar": 1,
+            "beastmaster_summon_razorback": 1
+          },
+          "item_uses": {
+            "madstone_bundle": 1,
+            "bottle": 4
+          }
+        },
+        {
+          "account_id": 113163683,
+          "personaname": "klwn",
+          "hero": "Treant Protector",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 912,
+          "gold_delta": 45,
+          "xp_delta": 191,
+          "killed": {},
+          "ability_uses": {
+            "treant_natures_grasp": 1
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 115189896,
+          "personaname": "РАБОТНИК ЖЭКа",
+          "hero": "Axe",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 775,
+          "healing": 273,
+          "gold_delta": 778,
+          "xp_delta": 703,
+          "killed": {
+            "npc_dota_hero_undying": 1,
+            "npc_dota_hero_dragon_knight": 1
+          },
+          "ability_uses": {
+            "axe_battle_hunger": 1,
+            "axe_berserkers_call": 1,
+            "axe_culling_blade": 2
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 94076005,
+          "personaname": "montryable",
+          "hero": "Medusa",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 3,
+          "gold_delta": 223,
+          "xp_delta": 382,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 37561456,
+          "personaname": "Nutail",
+          "hero": "Venomancer",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1213,
+          "healing": 189,
+          "gold_delta": 304,
+          "xp_delta": 703,
+          "killed": {},
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_snakebite": 1,
+            "venomancer_plague_ward": 4,
+            "venomancer_noxious_plague": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1238141568,
+          "personaname": "Eey",
+          "hero": "Rubick",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 7,
+          "xp_delta": 57,
+          "killed": {},
+          "ability_uses": {
+            "rubick_spell_steal": 1
+          },
+          "item_uses": {}
+        }
+      ]
+    },
+    {
+      "start": 625,
+      "end": 669,
+      "last_death": 654,
+      "deaths": 5,
+      "players": [
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Undying",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1177,
+          "healing": 24,
+          "gold_delta": 142,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "undying_tombstone": 1,
+            "undying_flesh_golem": 1,
+            "undying_decay": 1
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 654,
+          "healing": 511,
+          "gold_delta": 414,
+          "xp_delta": 1238,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_elder_dragon_form": 1,
+            "dragon_knight_dragon_tail": 1,
+            "dragon_knight_breathe_fire": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "madstone_bundle": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Death Prophet",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 438,
+          "healing": 996,
+          "gold_delta": 104,
+          "xp_delta": 465,
+          "killed": {},
+          "ability_uses": {
+            "death_prophet_carrion_swarm": 1,
+            "death_prophet_spirit_siphon": 1,
+            "death_prophet_silence": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Vengeful Spirit",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 923,
+          "healing": 633,
+          "gold_delta": 882,
+          "xp_delta": 1133,
+          "killed": {
+            "npc_dota_hero_treant": 1,
+            "npc_dota_hero_rubick": 1,
+            "npc_dota_hero_axe": 1
+          },
+          "ability_uses": {
+            "vengefulspirit_magic_missile": 2,
+            "vengefulspirit_nether_swap": 1,
+            "vengefulspirit_wave_of_terror": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "bloodslinger": 1,
+            "ward_dispenser": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Beastmaster",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 292,
+          "healing": 867,
+          "gold_delta": -57,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "beastmaster_wild_axes": 1,
+            "beastmaster_summon_razorback": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 113163683,
+          "personaname": "klwn",
+          "hero": "Treant Protector",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 704,
+          "healing": 625,
+          "gold_delta": 338,
+          "xp_delta": 552,
+          "killed": {},
+          "ability_uses": {
+            "treant_overgrowth": 1,
+            "treant_natures_grasp": 1
+          },
+          "item_uses": {
+            "bloodslinger": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 115189896,
+          "personaname": "РАБОТНИК ЖЭКа",
+          "hero": "Axe",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1494,
+          "healing": 607,
+          "gold_delta": 375,
+          "xp_delta": 494,
+          "killed": {
+            "npc_dota_hero_undying": 1,
+            "npc_dota_hero_beastmaster": 1
+          },
+          "ability_uses": {
+            "axe_battle_hunger": 1,
+            "axe_berserkers_call": 1,
+            "axe_culling_blade": 2
+          },
+          "item_uses": {
+            "phase_boots": 3,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 94076005,
+          "personaname": "montryable",
+          "hero": "Medusa",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 2,
+          "gold_delta": 244,
+          "xp_delta": 308,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "power_treads": 1,
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 37561456,
+          "personaname": "Nutail",
+          "hero": "Venomancer",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 26,
+          "gold_delta": 0,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "ward_observer": 1,
+            "ward_dispenser": 2
+          }
+        },
+        {
+          "account_id": 1238141568,
+          "personaname": "Eey",
+          "hero": "Rubick",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1154,
+          "healing": 11,
+          "gold_delta": 98,
+          "xp_delta": 552,
+          "killed": {},
+          "ability_uses": {
+            "beastmaster_wild_axes": 2,
+            "rubick_spell_steal": 1,
+            "rubick_fade_bolt": 1
+          },
+          "item_uses": {}
+        }
+      ]
+    },
+    {
+      "start": 830,
+      "end": 876,
+      "last_death": 861,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Undying",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 773,
+          "healing": 453,
+          "gold_delta": 394,
+          "xp_delta": 934,
+          "killed": {},
+          "ability_uses": {
+            "undying_tombstone": 1,
+            "undying_flesh_golem": 1,
+            "undying_decay": 2,
+            "ability_lamp_use": 1,
+            "undying_soul_rip": 1
+          },
+          "item_uses": {
+            "clarity": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 391,
+          "healing": 877,
+          "gold_delta": 284,
+          "xp_delta": 507,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_elder_dragon_form": 1,
+            "dragon_knight_breathe_fire": 1
+          },
+          "item_uses": {
+            "armlet": 3,
+            "clarity": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Death Prophet",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1470,
+          "healing": 1181,
+          "gold_delta": 221,
+          "xp_delta": 393,
+          "killed": {
+            "npc_dota_hero_venomancer": 1
+          },
+          "ability_uses": {
+            "death_prophet_spirit_siphon": 2,
+            "death_prophet_carrion_swarm": 2,
+            "death_prophet_silence": 1,
+            "death_prophet_exorcism": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Vengeful Spirit",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 294,
+          "healing": 182,
+          "gold_delta": 318,
+          "xp_delta": 1235,
+          "killed": {
+            "npc_dota_hero_rubick": 1
+          },
+          "ability_uses": {
+            "vengefulspirit_magic_missile": 1,
+            "vengefulspirit_nether_swap": 1,
+            "vengefulspirit_wave_of_terror": 1
+          },
+          "item_uses": {
+            "ward_observer": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Beastmaster",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 1323,
+          "gold_delta": 395,
+          "xp_delta": 924,
+          "killed": {},
+          "ability_uses": {
+            "beastmaster_wild_axes": 2,
+            "beastmaster_summon_raptor": 1,
+            "beastmaster_summon_razorback": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "bottle": 6
+          }
+        },
+        {
+          "account_id": 113163683,
+          "personaname": "klwn",
+          "hero": "Treant Protector",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 1082,
+          "gold_delta": 278,
+          "xp_delta": 594,
+          "killed": {},
+          "ability_uses": {
+            "treant_natures_grasp": 2
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 115189896,
+          "personaname": "РАБОТНИК ЖЭКа",
+          "hero": "Axe",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 767,
+          "gold_delta": 333,
+          "xp_delta": 832,
+          "killed": {},
+          "ability_uses": {
+            "axe_battle_hunger": 1,
+            "axe_berserkers_call": 1
+          },
+          "item_uses": {
+            "seeds_of_serenity": 1,
+            "madstone_bundle": 1,
+            "phase_boots": 2
+          }
+        },
+        {
+          "account_id": 94076005,
+          "personaname": "montryable",
+          "hero": "Medusa",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 42,
+          "gold_delta": 469,
+          "xp_delta": 609,
+          "killed": {},
+          "ability_uses": {
+            "medusa_mystic_snake": 3,
+            "medusa_split_shot": 4
+          },
+          "item_uses": {
+            "madstone_bundle": 2
+          }
+        },
+        {
+          "account_id": 37561456,
+          "personaname": "Nutail",
+          "hero": "Venomancer",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1301,
+          "healing": 110,
+          "gold_delta": 40,
+          "xp_delta": 122,
+          "killed": {},
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_snakebite": 1,
+            "venomancer_plague_ward": 1,
+            "venomancer_noxious_plague": 1
+          },
+          "item_uses": {
+            "urn_of_shadows": 1
+          }
+        },
+        {
+          "account_id": 1238141568,
+          "personaname": "Eey",
+          "hero": "Rubick",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1539,
+          "healing": 442,
+          "gold_delta": 342,
+          "xp_delta": 1251,
+          "killed": {
+            "npc_dota_hero_death_prophet": 1
+          },
+          "ability_uses": {
+            "beastmaster_wild_axes": 1,
+            "rubick_spell_steal": 1,
+            "rubick_fade_bolt": 1,
+            "death_prophet_exorcism": 1
+          },
+          "item_uses": {
+            "power_treads": 2,
+            "clarity": 1,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1085,
+      "end": 1130,
+      "last_death": 1115,
+      "deaths": 7,
+      "players": [
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Undying",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 353,
+          "healing": 132,
+          "gold_delta": 461,
+          "xp_delta": 1707,
+          "killed": {},
+          "ability_uses": {
+            "undying_tombstone": 1,
+            "undying_decay": 2,
+            "undying_soul_rip": 2
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "dust": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2825,
+          "healing": 967,
+          "gold_delta": 189,
+          "xp_delta": 1392,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_elder_dragon_form": 1,
+            "dragon_knight_dragon_tail": 2,
+            "dragon_knight_breathe_fire": 1
+          },
+          "item_uses": {
+            "armlet": 1,
+            "tpscroll": 1,
+            "madstone_bundle": 1,
+            "magic_wand": 1,
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Death Prophet",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 3877,
+          "healing": 237,
+          "gold_delta": 1986,
+          "xp_delta": 2223,
+          "killed": {
+            "npc_dota_hero_treant": 1,
+            "npc_dota_hero_rubick": 1,
+            "npc_dota_hero_axe": 1,
+            "npc_dota_hero_venomancer": 1,
+            "npc_dota_hero_medusa": 1
+          },
+          "ability_uses": {
+            "death_prophet_carrion_swarm": 4,
+            "death_prophet_spirit_siphon": 4,
+            "death_prophet_silence": 2,
+            "death_prophet_exorcism": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "tpscroll": 1,
+            "cyclone": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Vengeful Spirit",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 457,
+          "healing": 409,
+          "gold_delta": 434,
+          "xp_delta": 2088,
+          "killed": {},
+          "ability_uses": {
+            "vengefulspirit_magic_missile": 1,
+            "vengefulspirit_wave_of_terror": 1
+          },
+          "item_uses": {
+            "bloodslinger": 1,
+            "smoke_of_deceit": 1,
+            "cyclone": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Beastmaster",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 657,
+          "healing": 313,
+          "gold_delta": 478,
+          "xp_delta": 1050,
+          "killed": {},
+          "ability_uses": {
+            "beastmaster_wild_axes": 2,
+            "beastmaster_primal_roar": 1,
+            "beastmaster_summon_raptor": 1,
+            "beastmaster_summon_razorback": 1
+          },
+          "item_uses": {
+            "blood_grenade": 1,
+            "bottle": 1
+          }
+        },
+        {
+          "account_id": 113163683,
+          "personaname": "klwn",
+          "hero": "Treant Protector",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1869,
+          "healing": 447,
+          "gold_delta": 26,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "treant_overgrowth": 1,
+            "treant_living_armor": 1,
+            "treant_natures_grasp": 1
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 115189896,
+          "personaname": "РАБОТНИК ЖЭКа",
+          "hero": "Axe",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1376,
+          "healing": 837,
+          "gold_delta": 236,
+          "xp_delta": 2353,
+          "killed": {
+            "npc_dota_hero_dragon_knight": 1
+          },
+          "ability_uses": {
+            "axe_battle_hunger": 1,
+            "twin_gate_portal_warp": 1,
+            "axe_berserkers_call": 1,
+            "axe_culling_blade": 1
+          },
+          "item_uses": {
+            "phase_boots": 3,
+            "blink": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 94076005,
+          "personaname": "montryable",
+          "hero": "Medusa",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 629,
+          "healing": 151,
+          "gold_delta": 14,
+          "xp_delta": 1021,
+          "killed": {},
+          "ability_uses": {
+            "medusa_stone_gaze": 1,
+            "medusa_gorgon_grasp": 1,
+            "medusa_split_shot": 2,
+            "medusa_mystic_snake": 1
+          },
+          "item_uses": {
+            "famango": 1
+          }
+        },
+        {
+          "account_id": 37561456,
+          "personaname": "Nutail",
+          "hero": "Venomancer",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1841,
+          "healing": 11,
+          "gold_delta": 513,
+          "xp_delta": 12,
+          "killed": {
+            "npc_dota_hero_beastmaster": 1
+          },
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_snakebite": 1,
+            "venomancer_plague_ward": 1,
+            "venomancer_noxious_plague": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "spirit_vessel": 1
+          }
+        },
+        {
+          "account_id": 1238141568,
+          "personaname": "Eey",
+          "hero": "Rubick",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 684,
+          "healing": 294,
+          "gold_delta": 76,
+          "xp_delta": 131,
+          "killed": {},
+          "ability_uses": {
+            "beastmaster_wild_axes": 2
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1192,
+      "end": 1228,
+      "last_death": 1213,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Undying",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2247,
+          "healing": 536,
+          "gold_delta": 404,
+          "xp_delta": 104,
+          "killed": {
+            "npc_dota_hero_venomancer": 1
+          },
+          "ability_uses": {
+            "undying_tombstone": 1,
+            "undying_flesh_golem": 1,
+            "undying_decay": 4,
+            "undying_soul_rip": 2
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "dust": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 481,
+          "healing": 752,
+          "gold_delta": 296,
+          "xp_delta": 357,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_elder_dragon_form": 1,
+            "dragon_knight_breathe_fire": 1
+          },
+          "item_uses": {
+            "armlet": 3
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Death Prophet",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1882,
+          "healing": 203,
+          "gold_delta": -15,
+          "xp_delta": 104,
+          "killed": {},
+          "ability_uses": {
+            "death_prophet_spirit_siphon": 2,
+            "death_prophet_carrion_swarm": 3,
+            "death_prophet_silence": 1
+          },
+          "item_uses": {
+            "cyclone": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Vengeful Spirit",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 760,
+          "healing": 361,
+          "gold_delta": 63,
+          "xp_delta": 104,
+          "killed": {},
+          "ability_uses": {
+            "vengefulspirit_magic_missile": 1,
+            "vengefulspirit_nether_swap": 1,
+            "vengefulspirit_wave_of_terror": 1
+          },
+          "item_uses": {
+            "bloodslinger": 1,
+            "cyclone": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Beastmaster",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 633,
+          "xp_delta": 629,
+          "killed": {},
+          "ability_uses": {
+            "beastmaster_wild_axes": 2,
+            "beastmaster_summon_raptor": 1,
+            "beastmaster_summon_razorback": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 113163683,
+          "personaname": "klwn",
+          "hero": "Treant Protector",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 477,
+          "healing": 1001,
+          "gold_delta": 206,
+          "xp_delta": 791,
+          "killed": {},
+          "ability_uses": {
+            "treant_living_armor": 2,
+            "treant_natures_grasp": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "bloodslinger": 1,
+            "famango": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 115189896,
+          "personaname": "РАБОТНИК ЖЭКа",
+          "hero": "Axe",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 569,
+          "healing": 515,
+          "gold_delta": 701,
+          "xp_delta": 1400,
+          "killed": {
+            "npc_dota_hero_undying": 1,
+            "npc_dota_hero_vengefulspirit": 1
+          },
+          "ability_uses": {
+            "axe_battle_hunger": 1,
+            "axe_berserkers_call": 1,
+            "axe_culling_blade": 1
+          },
+          "item_uses": {
+            "phase_boots": 3,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 94076005,
+          "personaname": "montryable",
+          "hero": "Medusa",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 336,
+          "xp_delta": 884,
+          "killed": {},
+          "ability_uses": {
+            "medusa_split_shot": 2,
+            "medusa_mystic_snake": 1
+          },
+          "item_uses": {
+            "madstone_bundle": 1,
+            "manta": 1
+          }
+        },
+        {
+          "account_id": 37561456,
+          "personaname": "Nutail",
+          "hero": "Venomancer",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1321,
+          "healing": 442,
+          "gold_delta": 593,
+          "xp_delta": 791,
+          "killed": {
+            "npc_dota_hero_death_prophet": 1
+          },
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_snakebite": 1,
+            "venomancer_plague_ward": 2,
+            "venomancer_noxious_plague": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "spirit_vessel": 2,
+            "kobold_cup": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1238141568,
+          "personaname": "Eey",
+          "hero": "Rubick",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2954,
+          "healing": 393,
+          "gold_delta": 498,
+          "xp_delta": 2430,
+          "killed": {},
+          "ability_uses": {
+            "rubick_spell_steal": 2,
+            "dragon_knight_elder_dragon_form": 1,
+            "death_prophet_carrion_swarm": 4,
+            "rubick_fade_bolt": 2,
+            "rubick_telekinesis": 1,
+            "rubick_telekinesis_land": 1
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1383,
+      "end": 1443,
+      "last_death": 1428,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Undying",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 476,
+          "healing": 227,
+          "gold_delta": 139,
+          "xp_delta": 93,
+          "killed": {},
+          "ability_uses": {
+            "undying_decay": 3,
+            "undying_soul_rip": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "mana_draught": 1,
+            "enchanted_mango": 1,
+            "ward_dispenser": 2
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 687,
+          "healing": 627,
+          "gold_delta": 280,
+          "xp_delta": 144,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "armlet": 2,
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Death Prophet",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 384,
+          "gold_delta": 632,
+          "xp_delta": 954,
+          "killed": {},
+          "ability_uses": {
+            "death_prophet_carrion_swarm": 7
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Vengeful Spirit",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1080,
+          "healing": 479,
+          "gold_delta": 260,
+          "xp_delta": 1455,
+          "killed": {},
+          "ability_uses": {
+            "vengefulspirit_magic_missile": 2,
+            "vengefulspirit_nether_swap": 1,
+            "ability_lamp_use": 1,
+            "vengefulspirit_wave_of_terror": 3
+          },
+          "item_uses": {
+            "bloodslinger": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Beastmaster",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 4026,
+          "healing": 774,
+          "gold_delta": 486,
+          "xp_delta": 1455,
+          "killed": {
+            "npc_dota_hero_axe": 1
+          },
+          "ability_uses": {
+            "beastmaster_wild_axes": 4,
+            "beastmaster_primal_roar": 1,
+            "beastmaster_summon_raptor": 2,
+            "beastmaster_summon_razorback": 1,
+            "beastmaster_summon_thunderhide": 1
+          },
+          "item_uses": {
+            "bottle": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 113163683,
+          "personaname": "klwn",
+          "hero": "Treant Protector",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 360,
+          "healing": 1105,
+          "gold_delta": 263,
+          "xp_delta": 787,
+          "killed": {},
+          "ability_uses": {
+            "treant_overgrowth": 1,
+            "treant_living_armor": 2,
+            "treant_natures_grasp": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "meteor_hammer": 1
+          }
+        },
+        {
+          "account_id": 115189896,
+          "personaname": "РАБОТНИК ЖЭКа",
+          "hero": "Axe",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1266,
+          "healing": 734,
+          "gold_delta": 278,
+          "xp_delta": 1045,
+          "killed": {},
+          "ability_uses": {
+            "axe_battle_hunger": 1,
+            "axe_berserkers_call": 1
+          },
+          "item_uses": {
+            "seeds_of_serenity": 1,
+            "phase_boots": 2,
+            "blade_mail": 1,
+            "blink": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 94076005,
+          "personaname": "montryable",
+          "hero": "Medusa",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 732,
+          "healing": 16,
+          "gold_delta": 495,
+          "xp_delta": 1102,
+          "killed": {},
+          "ability_uses": {
+            "medusa_gorgon_grasp": 1,
+            "medusa_split_shot": 4,
+            "medusa_mystic_snake": 2
+          },
+          "item_uses": {
+            "tpscroll": 1
+          }
+        },
+        {
+          "account_id": 37561456,
+          "personaname": "Nutail",
+          "hero": "Venomancer",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 335,
+          "healing": 452,
+          "gold_delta": 170,
+          "xp_delta": 866,
+          "killed": {},
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_snakebite": 2,
+            "venomancer_plague_ward": 4
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "ward_sentry": 1,
+            "tpscroll": 1,
+            "spirit_vessel": 1,
+            "ward_dispenser": 1,
+            "mekansm": 1
+          }
+        },
+        {
+          "account_id": 1238141568,
+          "personaname": "Eey",
+          "hero": "Rubick",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2395,
+          "healing": 581,
+          "gold_delta": 1777,
+          "xp_delta": 3326,
+          "killed": {
+            "npc_dota_hero_undying": 1,
+            "npc_dota_hero_beastmaster": 1,
+            "npc_dota_hero_dragon_knight": 1
+          },
+          "ability_uses": {
+            "rubick_fade_bolt": 4,
+            "rubick_telekinesis": 2,
+            "undying_decay": 9,
+            "rubick_telekinesis_land": 1
+          },
+          "item_uses": {}
+        }
+      ]
+    },
+    {
+      "start": 1485,
+      "end": 1520,
+      "last_death": 1505,
+      "deaths": 3,
+      "players": [
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Undying",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 469,
+          "healing": 74,
+          "gold_delta": 2,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "undying_flesh_golem": 1,
+            "undying_tombstone": 1,
+            "undying_decay": 1,
+            "undying_soul_rip": 1
+          },
+          "item_uses": {
+            "ward_dispenser": 3,
+            "force_staff": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 274,
+          "healing": 835,
+          "gold_delta": 81,
+          "xp_delta": 176,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_breathe_fire": 1
+          },
+          "item_uses": {
+            "armlet": 2
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Death Prophet",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1117,
+          "healing": 951,
+          "gold_delta": 479,
+          "xp_delta": 879,
+          "killed": {
+            "npc_dota_hero_venomancer": 1
+          },
+          "ability_uses": {
+            "death_prophet_carrion_swarm": 3,
+            "death_prophet_spirit_siphon": 2,
+            "death_prophet_exorcism": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Vengeful Spirit",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 659,
+          "healing": 351,
+          "gold_delta": 121,
+          "xp_delta": 731,
+          "killed": {},
+          "ability_uses": {
+            "vengefulspirit_magic_missile": 1,
+            "vengefulspirit_wave_of_terror": 1
+          },
+          "item_uses": {
+            "ancient_janggo": 1,
+            "bloodslinger": 1,
+            "cyclone": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Beastmaster",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1900,
+          "healing": 58,
+          "gold_delta": 996,
+          "xp_delta": 2476,
+          "killed": {
+            "npc_dota_hero_treant": 1
+          },
+          "ability_uses": {
+            "beastmaster_wild_axes": 4,
+            "beastmaster_summon_raptor": 1,
+            "beastmaster_primal_roar": 1,
+            "beastmaster_summon_razorback": 2,
+            "beastmaster_summon_thunderhide": 1
+          },
+          "item_uses": {
+            "blink": 2
+          }
+        },
+        {
+          "account_id": 113163683,
+          "personaname": "klwn",
+          "hero": "Treant Protector",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": -190,
+          "xp_delta": 40,
+          "killed": {},
+          "ability_uses": {
+            "treant_living_armor": 1,
+            "treant_natures_grasp": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 115189896,
+          "personaname": "РАБОТНИК ЖЭКа",
+          "hero": "Axe",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1269,
+          "healing": 574,
+          "gold_delta": 343,
+          "xp_delta": 903,
+          "killed": {
+            "npc_dota_hero_undying": 1
+          },
+          "ability_uses": {
+            "axe_battle_hunger": 1,
+            "axe_berserkers_call": 1,
+            "axe_culling_blade": 1
+          },
+          "item_uses": {
+            "seeds_of_serenity": 1,
+            "phase_boots": 3,
+            "blade_mail": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 94076005,
+          "personaname": "montryable",
+          "hero": "Medusa",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 277,
+          "xp_delta": 503,
+          "killed": {},
+          "ability_uses": {
+            "medusa_split_shot": 2
+          },
+          "item_uses": {
+            "manta": 1
+          }
+        },
+        {
+          "account_id": 37561456,
+          "personaname": "Nutail",
+          "hero": "Venomancer",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2122,
+          "healing": 41,
+          "gold_delta": -61,
+          "xp_delta": 727,
+          "killed": {},
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_snakebite": 1,
+            "venomancer_plague_ward": 3,
+            "venomancer_noxious_plague": 1
+          },
+          "item_uses": {
+            "spirit_vessel": 1
+          }
+        },
+        {
+          "account_id": 1238141568,
+          "personaname": "Eey",
+          "hero": "Rubick",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 233,
+          "xp_delta": 269,
+          "killed": {},
+          "ability_uses": {
+            "rubick_fade_bolt": 1,
+            "undying_decay": 1
+          },
+          "item_uses": {
+            "blink": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1617,
+      "end": 1692,
+      "last_death": 1677,
+      "deaths": 10,
+      "players": [
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Undying",
+          "team": "Radiant",
+          "deaths": 2,
+          "buybacks": 0,
+          "damage": 1964,
+          "healing": 1290,
+          "gold_delta": 571,
+          "xp_delta": 3611,
+          "killed": {
+            "npc_dota_hero_axe": 1
+          },
+          "ability_uses": {
+            "undying_bite": 2,
+            "undying_tombstone": 1,
+            "undying_flesh_golem": 1,
+            "undying_decay": 4,
+            "undying_soul_rip": 2
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "force_staff": 2,
+            "dust": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2171,
+          "healing": 617,
+          "gold_delta": -310,
+          "xp_delta": 57,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_dragon_tail": 1,
+            "dragon_knight_breathe_fire": 1
+          },
+          "item_uses": {
+            "armlet": 3,
+            "tpscroll": 1,
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Death Prophet",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 5150,
+          "healing": 1767,
+          "gold_delta": 1194,
+          "xp_delta": 3702,
+          "killed": {
+            "npc_dota_hero_treant": 1,
+            "npc_dota_hero_venomancer": 1
+          },
+          "ability_uses": {
+            "death_prophet_carrion_swarm": 6,
+            "death_prophet_spirit_siphon": 3,
+            "death_prophet_silence": 3,
+            "death_prophet_exorcism": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "cyclone": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Vengeful Spirit",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 652,
+          "healing": 719,
+          "gold_delta": -224,
+          "xp_delta": 93,
+          "killed": {},
+          "ability_uses": {
+            "vengefulspirit_magic_missile": 1,
+            "vengefulspirit_nether_swap": 1,
+            "vengefulspirit_wave_of_terror": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "cyclone": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Beastmaster",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2031,
+          "healing": 688,
+          "gold_delta": 850,
+          "xp_delta": 3459,
+          "killed": {
+            "npc_dota_hero_rubick": 1
+          },
+          "ability_uses": {
+            "beastmaster_wild_axes": 5,
+            "beastmaster_primal_roar": 1,
+            "beastmaster_summon_raptor": 2,
+            "beastmaster_summon_razorback": 1
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 113163683,
+          "personaname": "klwn",
+          "hero": "Treant Protector",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2292,
+          "healing": 1765,
+          "gold_delta": 817,
+          "xp_delta": 1847,
+          "killed": {},
+          "ability_uses": {
+            "treant_overgrowth": 1,
+            "treant_living_armor": 1,
+            "treant_natures_grasp": 2
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "bloodslinger": 1,
+            "meteor_hammer": 1,
+            "famango": 1,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 115189896,
+          "personaname": "РАБОТНИК ЖЭКа",
+          "hero": "Axe",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 4942,
+          "healing": 1468,
+          "gold_delta": 1237,
+          "xp_delta": 3423,
+          "killed": {
+            "npc_dota_hero_undying": 1,
+            "npc_dota_hero_death_prophet": 1,
+            "npc_dota_hero_vengefulspirit": 1
+          },
+          "ability_uses": {
+            "axe_battle_hunger": 3,
+            "axe_berserkers_call": 2,
+            "axe_culling_blade": 2
+          },
+          "item_uses": {
+            "seeds_of_serenity": 1,
+            "phase_boots": 5,
+            "blade_mail": 2,
+            "blink": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 94076005,
+          "personaname": "montryable",
+          "hero": "Medusa",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 5759,
+          "healing": 75,
+          "gold_delta": 2488,
+          "xp_delta": 8916,
+          "killed": {
+            "npc_dota_hero_undying": 1,
+            "npc_dota_hero_beastmaster": 1,
+            "npc_dota_hero_dragon_knight": 1
+          },
+          "ability_uses": {
+            "medusa_stone_gaze": 1,
+            "medusa_gorgon_grasp": 3,
+            "medusa_split_shot": 4,
+            "medusa_mystic_snake": 3
+          },
+          "item_uses": {
+            "clarity": 1,
+            "magic_wand": 2
+          }
+        },
+        {
+          "account_id": 37561456,
+          "personaname": "Nutail",
+          "hero": "Venomancer",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 3472,
+          "healing": 520,
+          "gold_delta": 978,
+          "xp_delta": 1760,
+          "killed": {},
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_snakebite": 1,
+            "venomancer_plague_ward": 3,
+            "venomancer_noxious_plague": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "spirit_vessel": 2,
+            "mekansm": 1,
+            "blood_grenade": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1238141568,
+          "personaname": "Eey",
+          "hero": "Rubick",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1259,
+          "healing": 322,
+          "gold_delta": 189,
+          "xp_delta": 307,
+          "killed": {},
+          "ability_uses": {
+            "rubick_spell_steal": 1,
+            "beastmaster_wild_axes": 1,
+            "rubick_fade_bolt": 2,
+            "rubick_telekinesis": 1,
+            "undying_decay": 3,
+            "rubick_telekinesis_land": 1
+          },
+          "item_uses": {
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1788,
+      "end": 1829,
+      "last_death": 1814,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Undying",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 26,
+          "gold_delta": -184,
+          "xp_delta": 114,
+          "killed": {},
+          "ability_uses": {
+            "undying_flesh_golem": 1,
+            "undying_decay": 1
+          },
+          "item_uses": {
+            "force_staff": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 4210,
+          "healing": 1942,
+          "gold_delta": 848,
+          "xp_delta": 2248,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_dragon_tail": 2,
+            "dragon_knight_breathe_fire": 1
+          },
+          "item_uses": {
+            "armlet": 2,
+            "black_king_bar": 1,
+            "magic_wand": 1,
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Death Prophet",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 3259,
+          "healing": 1664,
+          "gold_delta": 897,
+          "xp_delta": 2397,
+          "killed": {
+            "npc_dota_hero_axe": 1
+          },
+          "ability_uses": {
+            "death_prophet_carrion_swarm": 4,
+            "death_prophet_spirit_siphon": 4,
+            "death_prophet_silence": 2,
+            "death_prophet_exorcism": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "tpscroll": 1,
+            "shivas_guard": 1,
+            "cyclone": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Vengeful Spirit",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 679,
+          "healing": 274,
+          "gold_delta": 525,
+          "xp_delta": 2304,
+          "killed": {},
+          "ability_uses": {
+            "vengefulspirit_magic_missile": 2,
+            "vengefulspirit_wave_of_terror": 2
+          },
+          "item_uses": {
+            "ward_sentry": 1,
+            "cyclone": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Beastmaster",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1708,
+          "healing": 543,
+          "gold_delta": 920,
+          "xp_delta": 1168,
+          "killed": {
+            "npc_dota_hero_treant": 1,
+            "npc_dota_hero_venomancer": 1
+          },
+          "ability_uses": {
+            "beastmaster_wild_axes": 4,
+            "beastmaster_primal_roar": 1,
+            "beastmaster_summon_raptor": 1,
+            "beastmaster_summon_razorback": 1
+          },
+          "item_uses": {
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 113163683,
+          "personaname": "klwn",
+          "hero": "Treant Protector",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1157,
+          "healing": 322,
+          "gold_delta": -95,
+          "xp_delta": 638,
+          "killed": {},
+          "ability_uses": {
+            "treant_overgrowth": 1,
+            "treant_eyes_in_the_forest": 2,
+            "treant_natures_grasp": 1
+          },
+          "item_uses": {
+            "meteor_hammer": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 115189896,
+          "personaname": "РАБОТНИК ЖЭКа",
+          "hero": "Axe",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2333,
+          "healing": 1223,
+          "gold_delta": -83,
+          "xp_delta": 703,
+          "killed": {},
+          "ability_uses": {
+            "axe_battle_hunger": 1,
+            "axe_berserkers_call": 2
+          },
+          "item_uses": {
+            "seeds_of_serenity": 1,
+            "lotus_orb": 1,
+            "phase_boots": 2,
+            "blade_mail": 1,
+            "blink": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 94076005,
+          "personaname": "montryable",
+          "hero": "Medusa",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 425,
+          "healing": 8,
+          "gold_delta": 249,
+          "xp_delta": 358,
+          "killed": {},
+          "ability_uses": {
+            "medusa_gorgon_grasp": 1,
+            "medusa_split_shot": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 37561456,
+          "personaname": "Nutail",
+          "hero": "Venomancer",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 3824,
+          "healing": 94,
+          "gold_delta": 210,
+          "xp_delta": 679,
+          "killed": {
+            "npc_dota_hero_undying": 1
+          },
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_snakebite": 1,
+            "venomancer_plague_ward": 3,
+            "venomancer_noxious_plague": 1
+          },
+          "item_uses": {
+            "spirit_vessel": 2,
+            "ward_dispenser": 2
+          }
+        },
+        {
+          "account_id": 1238141568,
+          "personaname": "Eey",
+          "hero": "Rubick",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2454,
+          "healing": 278,
+          "gold_delta": 414,
+          "xp_delta": 848,
+          "killed": {},
+          "ability_uses": {
+            "rubick_spell_steal": 1,
+            "rubick_fade_bolt": 3,
+            "rubick_telekinesis": 1,
+            "undying_decay": 6,
+            "rubick_telekinesis_land": 1
+          },
+          "item_uses": {
+            "mana_draught": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 1891,
+      "end": 1930,
+      "last_death": 1915,
+      "deaths": 6,
+      "players": [
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Undying",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1922,
+          "healing": 825,
+          "gold_delta": 58,
+          "xp_delta": 1394,
+          "killed": {},
+          "ability_uses": {
+            "undying_bite": 1,
+            "undying_tombstone": 1,
+            "undying_decay": 1,
+            "undying_soul_rip": 2
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "force_staff": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 4837,
+          "healing": 1676,
+          "gold_delta": 174,
+          "xp_delta": 1394,
+          "killed": {
+            "npc_dota_hero_axe": 1
+          },
+          "ability_uses": {
+            "dragon_knight_elder_dragon_form": 1,
+            "dragon_knight_dragon_tail": 1
+          },
+          "item_uses": {
+            "armlet": 1,
+            "black_king_bar": 1,
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Death Prophet",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 332,
+          "gold_delta": 398,
+          "xp_delta": 735,
+          "killed": {},
+          "ability_uses": {
+            "death_prophet_carrion_swarm": 3
+          },
+          "item_uses": {
+            "madstone_bundle": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Vengeful Spirit",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 643,
+          "healing": 573,
+          "gold_delta": 158,
+          "xp_delta": 1637,
+          "killed": {},
+          "ability_uses": {
+            "vengefulspirit_magic_missile": 2,
+            "vengefulspirit_wave_of_terror": 1
+          },
+          "item_uses": {
+            "cyclone": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Beastmaster",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1729,
+          "healing": 693,
+          "gold_delta": 126,
+          "xp_delta": 1422,
+          "killed": {
+            "npc_dota_hero_treant": 1
+          },
+          "ability_uses": {
+            "beastmaster_wild_axes": 2,
+            "beastmaster_summon_raptor": 1,
+            "beastmaster_primal_roar": 1
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "bottle": 1
+          }
+        },
+        {
+          "account_id": 113163683,
+          "personaname": "klwn",
+          "hero": "Treant Protector",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1621,
+          "healing": 50,
+          "gold_delta": 534,
+          "xp_delta": 58,
+          "killed": {
+            "npc_dota_hero_undying": 1
+          },
+          "ability_uses": {
+            "treant_overgrowth": 1,
+            "treant_natures_grasp": 1
+          },
+          "item_uses": {
+            "meteor_hammer": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 115189896,
+          "personaname": "РАБОТНИК ЖЭКа",
+          "hero": "Axe",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2879,
+          "healing": 227,
+          "gold_delta": 144,
+          "xp_delta": 72,
+          "killed": {},
+          "ability_uses": {
+            "axe_battle_hunger": 1,
+            "axe_berserkers_call": 1
+          },
+          "item_uses": {
+            "seeds_of_serenity": 1,
+            "lotus_orb": 1,
+            "phase_boots": 1,
+            "blade_mail": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 94076005,
+          "personaname": "montryable",
+          "hero": "Medusa",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 691,
+          "healing": 6,
+          "gold_delta": 733,
+          "xp_delta": 4608,
+          "killed": {},
+          "ability_uses": {
+            "medusa_stone_gaze": 1,
+            "medusa_gorgon_grasp": 1,
+            "medusa_split_shot": 2
+          },
+          "item_uses": {
+            "madstone_bundle": 1
+          }
+        },
+        {
+          "account_id": 37561456,
+          "personaname": "Nutail",
+          "hero": "Venomancer",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2654,
+          "healing": 997,
+          "gold_delta": 1297,
+          "xp_delta": 4478,
+          "killed": {
+            "npc_dota_hero_beastmaster": 1,
+            "npc_dota_hero_dragon_knight": 1
+          },
+          "ability_uses": {
+            "venomancer_venomous_gale": 1,
+            "venomancer_snakebite": 1,
+            "venomancer_plague_ward": 3,
+            "venomancer_noxious_plague": 1
+          },
+          "item_uses": {
+            "guardian_greaves": 1,
+            "spirit_vessel": 1,
+            "smoke_of_deceit": 1
+          }
+        },
+        {
+          "account_id": 1238141568,
+          "personaname": "Eey",
+          "hero": "Rubick",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2804,
+          "healing": 723,
+          "gold_delta": 1080,
+          "xp_delta": 4450,
+          "killed": {
+            "npc_dota_hero_vengefulspirit": 1
+          },
+          "ability_uses": {
+            "rubick_spell_steal": 2,
+            "dragon_knight_elder_dragon_form": 1,
+            "rubick_fade_bolt": 2,
+            "rubick_telekinesis": 1,
+            "undying_decay": 1,
+            "rubick_telekinesis_land": 1
+          },
+          "item_uses": {
+            "blink": 2,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 2073,
+      "end": 2128,
+      "last_death": 2113,
+      "deaths": 7,
+      "players": [
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Undying",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 274,
+          "healing": 74,
+          "gold_delta": 296,
+          "xp_delta": 810,
+          "killed": {},
+          "ability_uses": {
+            "undying_flesh_golem": 1,
+            "undying_tombstone": 1,
+            "undying_decay": 1
+          },
+          "item_uses": {
+            "force_staff": 1,
+            "dust": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 4024,
+          "healing": 2132,
+          "gold_delta": 235,
+          "xp_delta": 3180,
+          "killed": {
+            "npc_dota_hero_treant": 1
+          },
+          "ability_uses": {
+            "dragon_knight_dragon_tail": 2,
+            "dragon_knight_breathe_fire": 1
+          },
+          "item_uses": {
+            "armlet": 3,
+            "tpscroll": 1,
+            "famango": 1,
+            "mask_of_madness": 2
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Death Prophet",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2419,
+          "healing": 1234,
+          "gold_delta": 419,
+          "xp_delta": 3297,
+          "killed": {
+            "npc_dota_hero_rubick": 1
+          },
+          "ability_uses": {
+            "death_prophet_carrion_swarm": 3,
+            "death_prophet_spirit_siphon": 2,
+            "death_prophet_silence": 2
+          },
+          "item_uses": {
+            "shivas_guard": 1,
+            "cyclone": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Vengeful Spirit",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 657,
+          "healing": 10,
+          "gold_delta": -75,
+          "xp_delta": 389,
+          "killed": {},
+          "ability_uses": {
+            "vengefulspirit_magic_missile": 2,
+            "vengefulspirit_nether_swap": 1,
+            "vengefulspirit_wave_of_terror": 1
+          },
+          "item_uses": {
+            "bloodslinger": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Beastmaster",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 3793,
+          "healing": 51,
+          "gold_delta": -209,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "beastmaster_wild_axes": 1,
+            "beastmaster_primal_roar": 1,
+            "beastmaster_summon_raptor": 1
+          },
+          "item_uses": {
+            "black_king_bar": 1
+          }
+        },
+        {
+          "account_id": 113163683,
+          "personaname": "klwn",
+          "hero": "Treant Protector",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2757,
+          "healing": 153,
+          "gold_delta": 375,
+          "xp_delta": 128,
+          "killed": {},
+          "ability_uses": {
+            "treant_overgrowth": 1,
+            "treant_natures_grasp": 1
+          },
+          "item_uses": {
+            "bloodslinger": 1,
+            "smoke_of_deceit": 1,
+            "meteor_hammer": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 115189896,
+          "personaname": "РАБОТНИК ЖЭКа",
+          "hero": "Axe",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 3192,
+          "healing": 1122,
+          "gold_delta": 1714,
+          "xp_delta": 8329,
+          "killed": {
+            "npc_dota_hero_death_prophet": 1,
+            "npc_dota_hero_dragon_knight": 1
+          },
+          "ability_uses": {
+            "axe_battle_hunger": 4,
+            "axe_berserkers_call": 3,
+            "axe_culling_blade": 2
+          },
+          "item_uses": {
+            "lotus_orb": 3,
+            "phase_boots": 5,
+            "blade_mail": 2,
+            "blink": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 94076005,
+          "personaname": "montryable",
+          "hero": "Medusa",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 6858,
+          "healing": 50,
+          "gold_delta": 2277,
+          "xp_delta": 8386,
+          "killed": {
+            "npc_dota_hero_undying": 1,
+            "npc_dota_hero_beastmaster": 1,
+            "npc_dota_hero_vengefulspirit": 1
+          },
+          "ability_uses": {
+            "medusa_stone_gaze": 1,
+            "medusa_gorgon_grasp": 2,
+            "medusa_mystic_snake": 2,
+            "medusa_split_shot": 4
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 37561456,
+          "personaname": "Nutail",
+          "hero": "Venomancer",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 61,
+          "gold_delta": 61,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 1238141568,
+          "personaname": "Eey",
+          "hero": "Rubick",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2544,
+          "healing": 767,
+          "gold_delta": 157,
+          "xp_delta": 2236,
+          "killed": {},
+          "ability_uses": {
+            "rubick_spell_steal": 2,
+            "beastmaster_wild_axes": 2,
+            "death_prophet_spirit_siphon": 1,
+            "rubick_fade_bolt": 1
+          },
+          "item_uses": {
+            "meteor_hammer": 1,
+            "blink": 1,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 2203,
+      "end": 2262,
+      "last_death": 2247,
+      "deaths": 7,
+      "players": [
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Undying",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1000,
+          "healing": 297,
+          "gold_delta": 298,
+          "xp_delta": 2382,
+          "killed": {},
+          "ability_uses": {
+            "undying_bite": 1,
+            "undying_tombstone": 1,
+            "undying_flesh_golem": 1,
+            "undying_decay": 3,
+            "undying_soul_rip": 1
+          },
+          "item_uses": {
+            "arcane_boots": 2,
+            "tpscroll": 1,
+            "force_staff": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1676,
+          "healing": 1427,
+          "gold_delta": 178,
+          "xp_delta": 1798,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_breathe_fire": 1
+          },
+          "item_uses": {
+            "armlet": 5,
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Death Prophet",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1840,
+          "healing": 586,
+          "gold_delta": 1523,
+          "xp_delta": 4466,
+          "killed": {
+            "npc_dota_hero_treant": 1,
+            "npc_dota_hero_venomancer": 1
+          },
+          "ability_uses": {
+            "death_prophet_carrion_swarm": 3,
+            "death_prophet_spirit_siphon": 1,
+            "death_prophet_silence": 1,
+            "death_prophet_exorcism": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "shivas_guard": 1,
+            "cyclone": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Vengeful Spirit",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1084,
+          "healing": 975,
+          "gold_delta": 751,
+          "xp_delta": 5506,
+          "killed": {},
+          "ability_uses": {
+            "vengefulspirit_magic_missile": 3,
+            "vengefulspirit_nether_swap": 1,
+            "vengefulspirit_wave_of_terror": 4
+          },
+          "item_uses": {
+            "tpscroll": 1,
+            "ancient_janggo": 1,
+            "cyclone": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Beastmaster",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 7365,
+          "healing": 141,
+          "gold_delta": 1337,
+          "xp_delta": 3786,
+          "killed": {
+            "npc_dota_hero_rubick": 1,
+            "npc_dota_hero_axe": 1
+          },
+          "ability_uses": {
+            "beastmaster_wild_axes": 4,
+            "beastmaster_summon_raptor": 2,
+            "beastmaster_primal_roar": 1,
+            "beastmaster_summon_razorback": 2
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "bottle": 2,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 113163683,
+          "personaname": "klwn",
+          "hero": "Treant Protector",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1385,
+          "healing": 554,
+          "gold_delta": -62,
+          "xp_delta": 2416,
+          "killed": {},
+          "ability_uses": {
+            "treant_overgrowth": 1,
+            "treant_living_armor": 2,
+            "ability_lamp_use": 1,
+            "treant_natures_grasp": 1
+          },
+          "item_uses": {
+            "ward_sentry": 1,
+            "meteor_hammer": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 115189896,
+          "personaname": "РАБОТНИК ЖЭКа",
+          "hero": "Axe",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 4463,
+          "healing": 959,
+          "gold_delta": 424,
+          "xp_delta": 1074,
+          "killed": {
+            "npc_dota_hero_undying": 1
+          },
+          "ability_uses": {
+            "axe_battle_hunger": 2,
+            "axe_berserkers_call": 2,
+            "axe_culling_blade": 1
+          },
+          "item_uses": {
+            "lotus_orb": 1,
+            "phase_boots": 3,
+            "blade_mail": 1,
+            "blink": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 94076005,
+          "personaname": "montryable",
+          "hero": "Medusa",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 1245,
+          "xp_delta": 1575,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {}
+        },
+        {
+          "account_id": 37561456,
+          "personaname": "Nutail",
+          "hero": "Venomancer",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 4297,
+          "healing": 861,
+          "gold_delta": 1151,
+          "xp_delta": 7333,
+          "killed": {
+            "npc_dota_hero_beastmaster": 1,
+            "npc_dota_hero_dragon_knight": 1
+          },
+          "ability_uses": {
+            "venomancer_venomous_gale": 2,
+            "venomancer_snakebite": 2,
+            "venomancer_plague_ward": 4,
+            "venomancer_noxious_plague": 1
+          },
+          "item_uses": {
+            "guardian_greaves": 1,
+            "tpscroll": 1,
+            "spirit_vessel": 2,
+            "ward_dispenser": 1,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1238141568,
+          "personaname": "Eey",
+          "hero": "Rubick",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1046,
+          "healing": 0,
+          "gold_delta": 69,
+          "xp_delta": 959,
+          "killed": {},
+          "ability_uses": {
+            "undying_bite": 1,
+            "rubick_spell_steal": 2,
+            "rubick_fade_bolt": 1,
+            "rubick_telekinesis": 1,
+            "dragon_knight_breathe_fire": 1
+          },
+          "item_uses": {}
+        }
+      ]
+    },
+    {
+      "start": 2403,
+      "end": 2455,
+      "last_death": 2440,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Undying",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 424,
+          "healing": 309,
+          "gold_delta": -22,
+          "xp_delta": 43,
+          "killed": {},
+          "ability_uses": {
+            "undying_flesh_golem": 1,
+            "undying_tombstone": 1,
+            "undying_soul_rip": 1
+          },
+          "item_uses": {
+            "force_staff": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 3328,
+          "healing": 3575,
+          "gold_delta": 353,
+          "xp_delta": 243,
+          "killed": {},
+          "ability_uses": {
+            "dragon_knight_dragon_tail": 1,
+            "dragon_knight_breathe_fire": 2
+          },
+          "item_uses": {
+            "armlet": 6,
+            "tpscroll": 1,
+            "black_king_bar": 1,
+            "dust": 1,
+            "mask_of_madness": 2
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Death Prophet",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 5910,
+          "healing": 791,
+          "gold_delta": -212,
+          "xp_delta": 179,
+          "killed": {},
+          "ability_uses": {
+            "death_prophet_spirit_siphon": 4,
+            "death_prophet_carrion_swarm": 5,
+            "death_prophet_silence": 3,
+            "death_prophet_exorcism": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "shivas_guard": 2,
+            "cyclone": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Vengeful Spirit",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1242,
+          "healing": 332,
+          "gold_delta": -204,
+          "xp_delta": 179,
+          "killed": {},
+          "ability_uses": {
+            "vengefulspirit_magic_missile": 2,
+            "vengefulspirit_nether_swap": 1,
+            "vengefulspirit_wave_of_terror": 2
+          },
+          "item_uses": {
+            "bloodslinger": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Beastmaster",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1403,
+          "healing": 620,
+          "gold_delta": -392,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "beastmaster_wild_axes": 1,
+            "beastmaster_primal_roar": 1
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "pipe": 1,
+            "blink": 1,
+            "bottle": 1
+          }
+        },
+        {
+          "account_id": 113163683,
+          "personaname": "klwn",
+          "hero": "Treant Protector",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2153,
+          "healing": 2177,
+          "gold_delta": 992,
+          "xp_delta": 4079,
+          "killed": {},
+          "ability_uses": {
+            "treant_overgrowth": 1,
+            "treant_living_armor": 1,
+            "treant_natures_grasp": 2
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "bloodslinger": 1,
+            "meteor_hammer": 2,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 115189896,
+          "personaname": "РАБОТНИК ЖЭКа",
+          "hero": "Axe",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1407,
+          "healing": 1055,
+          "gold_delta": 594,
+          "xp_delta": 3336,
+          "killed": {},
+          "ability_uses": {
+            "axe_battle_hunger": 4,
+            "axe_berserkers_call": 2,
+            "axe_culling_blade": 1
+          },
+          "item_uses": {
+            "lotus_orb": 2,
+            "phase_boots": 5,
+            "blade_mail": 1,
+            "blink": 2,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 94076005,
+          "personaname": "montryable",
+          "hero": "Medusa",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 10241,
+          "healing": 11,
+          "gold_delta": 1823,
+          "xp_delta": 3944,
+          "killed": {
+            "npc_dota_hero_death_prophet": 1,
+            "npc_dota_hero_vengefulspirit": 1
+          },
+          "ability_uses": {
+            "medusa_stone_gaze": 1,
+            "medusa_gorgon_grasp": 2,
+            "medusa_split_shot": 4
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 37561456,
+          "personaname": "Nutail",
+          "hero": "Venomancer",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1438,
+          "healing": 1559,
+          "gold_delta": 603,
+          "xp_delta": 3778,
+          "killed": {},
+          "ability_uses": {
+            "venomancer_venomous_gale": 2,
+            "venomancer_snakebite": 1,
+            "venomancer_plague_ward": 3,
+            "venomancer_noxious_plague": 1
+          },
+          "item_uses": {
+            "guardian_greaves": 1,
+            "spirit_vessel": 4,
+            "magic_wand": 1
+          }
+        },
+        {
+          "account_id": 1238141568,
+          "personaname": "Eey",
+          "hero": "Rubick",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 1939,
+          "healing": 1340,
+          "gold_delta": 1603,
+          "xp_delta": 3764,
+          "killed": {
+            "npc_dota_hero_undying": 1,
+            "npc_dota_hero_beastmaster": 1
+          },
+          "ability_uses": {
+            "rubick_spell_steal": 2,
+            "beastmaster_primal_roar": 1,
+            "death_prophet_carrion_swarm": 3,
+            "rubick_fade_bolt": 4,
+            "rubick_telekinesis": 2,
+            "undying_decay": 4
+          },
+          "item_uses": {
+            "blink": 2,
+            "caduceus": 1,
+            "magic_wand": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 2532,
+      "end": 2582,
+      "last_death": 2567,
+      "deaths": 7,
+      "players": [
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Undying",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 441,
+          "healing": 379,
+          "gold_delta": -82,
+          "xp_delta": 2281,
+          "killed": {},
+          "ability_uses": {
+            "undying_flesh_golem": 1,
+            "undying_soul_rip": 1
+          },
+          "item_uses": {
+            "sheepstick": 1,
+            "force_staff": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 5124,
+          "healing": 1193,
+          "gold_delta": 581,
+          "xp_delta": 2398,
+          "killed": {
+            "npc_dota_hero_venomancer": 1
+          },
+          "ability_uses": {
+            "dragon_knight_elder_dragon_form": 1,
+            "dragon_knight_dragon_tail": 2,
+            "dragon_knight_breathe_fire": 2
+          },
+          "item_uses": {
+            "armlet": 3,
+            "tpscroll": 1,
+            "black_king_bar": 1,
+            "mask_of_madness": 2
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Death Prophet",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 3947,
+          "healing": 1304,
+          "gold_delta": 402,
+          "xp_delta": 3431,
+          "killed": {
+            "npc_dota_hero_axe": 1
+          },
+          "ability_uses": {
+            "death_prophet_carrion_swarm": 4,
+            "death_prophet_spirit_siphon": 4,
+            "death_prophet_silence": 2,
+            "death_prophet_exorcism": 1
+          },
+          "item_uses": {
+            "shivas_guard": 1,
+            "cyclone": 1
+          }
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Vengeful Spirit",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1585,
+          "healing": 482,
+          "gold_delta": 91,
+          "xp_delta": 3516,
+          "killed": {},
+          "ability_uses": {
+            "vengefulspirit_magic_missile": 2,
+            "vengefulspirit_nether_swap": 1,
+            "vengefulspirit_wave_of_terror": 3
+          },
+          "item_uses": {
+            "bloodslinger": 1,
+            "boots_of_bearing": 1,
+            "dust": 1,
+            "cyclone": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Beastmaster",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 1577,
+          "healing": 124,
+          "gold_delta": -57,
+          "xp_delta": 903,
+          "killed": {},
+          "ability_uses": {
+            "beastmaster_wild_axes": 2,
+            "beastmaster_summon_raptor": 1,
+            "beastmaster_primal_roar": 1,
+            "beastmaster_summon_razorback": 1
+          },
+          "item_uses": {
+            "power_treads": 2,
+            "black_king_bar": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 113163683,
+          "personaname": "klwn",
+          "hero": "Treant Protector",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 810,
+          "healing": 1752,
+          "gold_delta": 1197,
+          "xp_delta": 6924,
+          "killed": {},
+          "ability_uses": {
+            "treant_overgrowth": 1,
+            "treant_living_armor": 3,
+            "treant_eyes_in_the_forest": 1,
+            "treant_natures_grasp": 1
+          },
+          "item_uses": {
+            "arcane_boots": 1,
+            "bloodslinger": 1
+          }
+        },
+        {
+          "account_id": 115189896,
+          "personaname": "РАБОТНИК ЖЭКа",
+          "hero": "Axe",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2096,
+          "healing": 355,
+          "gold_delta": 1233,
+          "xp_delta": 4662,
+          "killed": {
+            "npc_dota_hero_beastmaster": 1,
+            "npc_dota_hero_dragon_knight": 1
+          },
+          "ability_uses": {
+            "axe_battle_hunger": 1,
+            "axe_berserkers_call": 1,
+            "axe_culling_blade": 2
+          },
+          "item_uses": {
+            "lotus_orb": 1,
+            "phase_boots": 2,
+            "blade_mail": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 94076005,
+          "personaname": "montryable",
+          "hero": "Medusa",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 9498,
+          "healing": 35,
+          "gold_delta": 3155,
+          "xp_delta": 6532,
+          "killed": {
+            "npc_dota_hero_undying": 1,
+            "npc_dota_hero_death_prophet": 1,
+            "npc_dota_hero_vengefulspirit": 1
+          },
+          "ability_uses": {
+            "medusa_stone_gaze": 1,
+            "medusa_mystic_snake": 1,
+            "medusa_gorgon_grasp": 1,
+            "medusa_split_shot": 3
+          },
+          "item_uses": {
+            "manta": 1
+          }
+        },
+        {
+          "account_id": 37561456,
+          "personaname": "Nutail",
+          "hero": "Venomancer",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 680,
+          "healing": 0,
+          "gold_delta": 793,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "venomancer_plague_ward": 2
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 1238141568,
+          "personaname": "Eey",
+          "hero": "Rubick",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2712,
+          "healing": 479,
+          "gold_delta": 1100,
+          "xp_delta": 6473,
+          "killed": {},
+          "ability_uses": {
+            "rubick_spell_steal": 3,
+            "beastmaster_primal_roar": 1,
+            "beastmaster_summon_razorback": 2,
+            "death_prophet_carrion_swarm": 5,
+            "rubick_fade_bolt": 2,
+            "rubick_telekinesis": 1
+          },
+          "item_uses": {
+            "blink": 1
+          }
+        }
+      ]
+    },
+    {
+      "start": 2642,
+      "end": 2686,
+      "last_death": 2671,
+      "deaths": 4,
+      "players": [
+        {
+          "account_id": 337386027,
+          "personaname": "mid only",
+          "hero": "Undying",
+          "team": "Radiant",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 368,
+          "healing": 602,
+          "gold_delta": 308,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "undying_bite": 1,
+            "undying_decay": 1,
+            "undying_soul_rip": 2
+          },
+          "item_uses": {
+            "sheepstick": 1,
+            "force_staff": 1
+          }
+        },
+        {
+          "account_id": 100870287,
+          "personaname": "Rise~",
+          "hero": "Dragon Knight",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 5037,
+          "healing": 2528,
+          "gold_delta": 1804,
+          "xp_delta": 4766,
+          "killed": {
+            "npc_dota_hero_treant": 1
+          },
+          "ability_uses": {
+            "dragon_knight_elder_dragon_form": 1,
+            "dragon_knight_dragon_tail": 1,
+            "dragon_knight_breathe_fire": 1
+          },
+          "item_uses": {
+            "armlet": 4,
+            "mask_of_madness": 1
+          }
+        },
+        {
+          "account_id": 102773730,
+          "personaname": "Фид на кд",
+          "hero": "Death Prophet",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 1,
+          "damage": 2935,
+          "healing": 1579,
+          "gold_delta": 2120,
+          "xp_delta": 4758,
+          "killed": {
+            "npc_dota_hero_medusa": 1
+          },
+          "ability_uses": {
+            "death_prophet_carrion_swarm": 4,
+            "death_prophet_spirit_siphon": 3,
+            "death_prophet_silence": 1,
+            "death_prophet_exorcism": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 160810596,
+          "personaname": "Goddess",
+          "hero": "Vengeful Spirit",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 607,
+          "healing": 949,
+          "gold_delta": 1147,
+          "xp_delta": 4738,
+          "killed": {},
+          "ability_uses": {
+            "vengefulspirit_magic_missile": 2,
+            "vengefulspirit_nether_swap": 1,
+            "vengefulspirit_wave_of_terror": 2
+          },
+          "item_uses": {
+            "bloodslinger": 1
+          }
+        },
+        {
+          "account_id": 206620580,
+          "personaname": "Cyborg",
+          "hero": "Beastmaster",
+          "team": "Radiant",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 2821,
+          "healing": 1407,
+          "gold_delta": 1810,
+          "xp_delta": 4791,
+          "killed": {
+            "npc_dota_hero_rubick": 1
+          },
+          "ability_uses": {
+            "beastmaster_wild_axes": 3,
+            "beastmaster_primal_roar": 1,
+            "beastmaster_summon_raptor": 1,
+            "beastmaster_summon_razorback": 1,
+            "beastmaster_summon_thunderhide": 1
+          },
+          "item_uses": {
+            "black_king_bar": 1,
+            "pipe": 1,
+            "blink": 2
+          }
+        },
+        {
+          "account_id": 113163683,
+          "personaname": "klwn",
+          "hero": "Treant Protector",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2110,
+          "healing": 840,
+          "gold_delta": -11,
+          "xp_delta": 1478,
+          "killed": {
+            "npc_dota_hero_undying": 1
+          },
+          "ability_uses": {
+            "treant_overgrowth": 1,
+            "treant_natures_grasp": 1
+          },
+          "item_uses": {
+            "bloodslinger": 1,
+            "meteor_hammer": 1,
+            "blink": 1
+          }
+        },
+        {
+          "account_id": 115189896,
+          "personaname": "РАБОТНИК ЖЭКа",
+          "hero": "Axe",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 220,
+          "gold_delta": 74,
+          "xp_delta": 220,
+          "killed": {},
+          "ability_uses": {},
+          "item_uses": {
+            "phase_boots": 2
+          }
+        },
+        {
+          "account_id": 94076005,
+          "personaname": "montryable",
+          "hero": "Medusa",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 2782,
+          "healing": 56,
+          "gold_delta": -226,
+          "xp_delta": 684,
+          "killed": {},
+          "ability_uses": {
+            "medusa_gorgon_grasp": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 37561456,
+          "personaname": "Nutail",
+          "hero": "Venomancer",
+          "team": "Dire",
+          "deaths": 0,
+          "buybacks": 0,
+          "damage": 0,
+          "healing": 0,
+          "gold_delta": 1000,
+          "xp_delta": 0,
+          "killed": {},
+          "ability_uses": {
+            "ability_lamp_use": 1
+          },
+          "item_uses": {}
+        },
+        {
+          "account_id": 1238141568,
+          "personaname": "Eey",
+          "hero": "Rubick",
+          "team": "Dire",
+          "deaths": 1,
+          "buybacks": 0,
+          "damage": 6014,
+          "healing": 0,
+          "gold_delta": -329,
+          "xp_delta": 1992,
+          "killed": {},
+          "ability_uses": {
+            "rubick_spell_steal": 2,
+            "beastmaster_summon_razorback": 1,
+            "death_prophet_carrion_swarm": 2,
+            "rubick_fade_bolt": 2,
+            "rubick_telekinesis": 1,
+            "rubick_telekinesis_land": 1,
+            "vengefulspirit_wave_of_terror": 1
+          },
+          "item_uses": {
+            "starforge": 1
+          }
+        }
+      ]
+    }
+  ],
   "team_analysis_capabilities": {
     "full_lineups": true,
     "all_player_summaries": true,
-    "teamfights_available": false,
-    "objectives_available": false,
+    "teamfights_available": true,
+    "objectives_available": true,
     "picks_bans_available": true
   }
 }
